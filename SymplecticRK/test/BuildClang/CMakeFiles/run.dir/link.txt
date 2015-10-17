@@ -1,0 +1,1 @@
+clang++    -O3 -Wall  -DCLANG    CMakeFiles/run.dir/main.cc.o  -o run -rdynamic -llapack 

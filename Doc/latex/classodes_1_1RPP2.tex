@@ -1,0 +1,127 @@
+\hypertarget{classodes_1_1RPP2}{\section{odes\-:\-:R\-P\-P2 Class Reference}
+\label{classodes_1_1RPP2}\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}}
+}
+
+
+{\ttfamily \#include $<$Tbb\-Utils.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classodes_1_1RPP2_a1d6269bb824aae7aadf14b35611ea17d}{R\-P\-P2} (int \-\_\-size, double \-\_\-y\mbox{[}$\,$\mbox{]}, double a1, double x1\mbox{[}$\,$\mbox{]}, double a2, double x2\mbox{[}$\,$\mbox{]}, double a3, double x3\mbox{[}$\,$\mbox{]}, double a4, double x4\mbox{[}$\,$\mbox{]}, double a5, double x5\mbox{[}$\,$\mbox{]}, double \-\_\-atol, double \-\_\-rtol)
+\item 
+\hyperlink{classodes_1_1RPP2_ae6476aa130f517c98a7785db14ad4165}{R\-P\-P2} (\hyperlink{classodes_1_1RPP2}{R\-P\-P2} \&R, split)
+\item 
+void \hyperlink{classodes_1_1RPP2_a305742b75535419cccea5e65b3600fb6}{operator()} (const blocked\-\_\-range$<$ size\-\_\-t $>$ \&r)
+\item 
+void \hyperlink{classodes_1_1RPP2_ae5e332bf5cc6d6ccff33c7d72b251d77}{join} (const \hyperlink{classodes_1_1RPP2}{R\-P\-P2} \&R)
+\begin{DoxyCompactList}\small\item\em The join method for parallel\-\_\-reduce. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classodes_1_1RPP2_ad5a579b372d17ea03835dae006cc755e}{result}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \hyperlink{classodes_1_1RPP2_a7d2380ce59f91fc9f17515def88ec8b3}{v} \mbox{[}5\mbox{]}
+\item 
+double $\ast$ \hyperlink{classodes_1_1RPP2_a0e3a828108fc0402fd9701866043d3f4}{y}
+\item 
+double \hyperlink{classodes_1_1RPP2_afa694ed8ed7856b02bfba9d769fbe23a}{coeffs} \mbox{[}5\mbox{]}
+\item 
+double \hyperlink{classodes_1_1RPP2_a210e64e297a71aad445df73a24f6d3ca}{atol}
+\item 
+double \hyperlink{classodes_1_1RPP2_ad264a1accdc065b7553cc79366af2579}{rtol}
+\item 
+unsigned int \hyperlink{classodes_1_1RPP2_ad771c8666aed14f8cc5dc5f1c88bb624}{size}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int \hyperlink{classodes_1_1RPP2_a179acb63d58032d8ba8554705abcbc8c}{bsize} =\hyperlink{MacrosForCompilers_8hpp_aaa395acf51db19a6192e10ccd3c47fa2}{B\-L\-O\-C\-K\-\_\-\-F\-A\-C\-T\-O\-R}/sizeof(double)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1RPP2_a1d6269bb824aae7aadf14b35611ea17d}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!R\-P\-P2@{R\-P\-P2}}
+\index{R\-P\-P2@{R\-P\-P2}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{R\-P\-P2}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::\-R\-P\-P2\-::\-R\-P\-P2 (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-size, }
+\item[{double}]{\-\_\-y\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a1, }
+\item[{double}]{x1\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a2, }
+\item[{double}]{x2\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a3, }
+\item[{double}]{x3\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a4, }
+\item[{double}]{x4\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a5, }
+\item[{double}]{x5\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{\-\_\-atol, }
+\item[{double}]{\-\_\-rtol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1RPP2_a1d6269bb824aae7aadf14b35611ea17d}
+\hypertarget{classodes_1_1RPP2_ae6476aa130f517c98a7785db14ad4165}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!R\-P\-P2@{R\-P\-P2}}
+\index{R\-P\-P2@{R\-P\-P2}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{R\-P\-P2}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::\-R\-P\-P2\-::\-R\-P\-P2 (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-P\-P2} \&}]{R, }
+\item[{split}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1RPP2_ae6476aa130f517c98a7785db14ad4165}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classodes_1_1RPP2_ae5e332bf5cc6d6ccff33c7d72b251d77}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!join@{join}}
+\index{join@{join}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{join}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::\-R\-P\-P2\-::join (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-P\-P2} \&}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1RPP2_ae5e332bf5cc6d6ccff33c7d72b251d77}
+
+
+The join method for parallel\-\_\-reduce. 
+
+\hypertarget{classodes_1_1RPP2_a305742b75535419cccea5e65b3600fb6}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!operator()@{operator()}}
+\index{operator()@{operator()}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::\-R\-P\-P2\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const blocked\-\_\-range$<$ size\-\_\-t $>$ \&}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1RPP2_a305742b75535419cccea5e65b3600fb6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1RPP2_a210e64e297a71aad445df73a24f6d3ca}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!atol@{atol}}
+\index{atol@{atol}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{atol}]{\setlength{\rightskip}{0pt plus 5cm}double odes\-::\-R\-P\-P2\-::atol\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1RPP2_a210e64e297a71aad445df73a24f6d3ca}
+\hypertarget{classodes_1_1RPP2_a179acb63d58032d8ba8554705abcbc8c}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!bsize@{bsize}}
+\index{bsize@{bsize}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{bsize}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int odes\-::\-R\-P\-P2\-::bsize ={\bf B\-L\-O\-C\-K\-\_\-\-F\-A\-C\-T\-O\-R}/sizeof(double)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1RPP2_a179acb63d58032d8ba8554705abcbc8c}
+\hypertarget{classodes_1_1RPP2_afa694ed8ed7856b02bfba9d769fbe23a}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!coeffs@{coeffs}}
+\index{coeffs@{coeffs}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{coeffs}]{\setlength{\rightskip}{0pt plus 5cm}double odes\-::\-R\-P\-P2\-::coeffs\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1RPP2_afa694ed8ed7856b02bfba9d769fbe23a}
+\hypertarget{classodes_1_1RPP2_ad5a579b372d17ea03835dae006cc755e}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!result@{result}}
+\index{result@{result}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}double odes\-::\-R\-P\-P2\-::result}}\label{classodes_1_1RPP2_ad5a579b372d17ea03835dae006cc755e}
+\hypertarget{classodes_1_1RPP2_ad264a1accdc065b7553cc79366af2579}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!rtol@{rtol}}
+\index{rtol@{rtol}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{rtol}]{\setlength{\rightskip}{0pt plus 5cm}double odes\-::\-R\-P\-P2\-::rtol\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1RPP2_ad264a1accdc065b7553cc79366af2579}
+\hypertarget{classodes_1_1RPP2_ad771c8666aed14f8cc5dc5f1c88bb624}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!size@{size}}
+\index{size@{size}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int odes\-::\-R\-P\-P2\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1RPP2_ad771c8666aed14f8cc5dc5f1c88bb624}
+\hypertarget{classodes_1_1RPP2_a7d2380ce59f91fc9f17515def88ec8b3}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!v@{v}}
+\index{v@{v}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{v}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ odes\-::\-R\-P\-P2\-::v\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1RPP2_a7d2380ce59f91fc9f17515def88ec8b3}
+\hypertarget{classodes_1_1RPP2_a0e3a828108fc0402fd9701866043d3f4}{\index{odes\-::\-R\-P\-P2@{odes\-::\-R\-P\-P2}!y@{y}}
+\index{y@{y}!odes::RPP2@{odes\-::\-R\-P\-P2}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ odes\-::\-R\-P\-P2\-::y\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1RPP2_a0e3a828108fc0402fd9701866043d3f4}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Rock4-\/\-N\-G/include/\hyperlink{TbbUtils_8hpp}{Tbb\-Utils.\-hpp}\end{DoxyCompactItemize}

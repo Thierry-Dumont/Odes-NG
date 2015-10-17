@@ -1,0 +1,114 @@
+In file included from /homes/doua/tdumont/odes/trunk/Radau5-NG/test/main.cc:8:
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/E5.hpp:22:23: warning: in-class initializer for static data member of type 'const double' is a GNU extension [-Wgnu]
+  static const double M=1.e+06;
+                      ^ ~~~~~~
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/E5.hpp:23:23: warning: in-class initializer for static data member of type 'const double' is a GNU extension [-Wgnu]
+  static const double C=1.13e+03;
+                      ^ ~~~~~~~~
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/E5.hpp:24:23: warning: in-class initializer for static data member of type 'const double' is a GNU extension [-Wgnu]
+  static const double A=7.89e-10;
+                      ^ ~~~~~~~~
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/E5.hpp:25:23: warning: in-class initializer for static data member of type 'const double' is a GNU extension [-Wgnu]
+  static const double B=1.1e+07;
+                      ^ ~~~~~~~
+In file included from /homes/doua/tdumont/odes/trunk/Radau5-NG/test/main.cc:9:
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/BZ.hpp:87:9: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma ivdep
+        ^
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/BZ.hpp:94:9: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma ivdep
+        ^
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/BZ.hpp:101:9: warning: unknown pragma ignored [-Wunknown-pragmas]
+#pragma ivdep
+        ^
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/main.cc:67:10: error: invalid operands to binary expression ('ofstream' (aka 'basic_ofstream<char>') and 'odes::logger')
+  logfile<<Rad.Log()<<endl;
+  ~~~~~~~^ ~~~~~~~~~
+/usr/include/c++/4.6/ostream:226:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'const void *' for 1st argument; take the address of the argument with &
+      operator<<(const void* __p)
+      ^
+/usr/include/c++/4.6/ostream:109:7: note: candidate function not viable: no known conversion from 'odes::logger' to '__ostream_type &(*)(__ostream_type &)' for 1st argument; 
+      operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      ^
+/usr/include/c++/4.6/ostream:118:7: note: candidate function not viable: no known conversion from 'odes::logger' to '__ios_type &(*)(__ios_type &)' for 1st argument; 
+      operator<<(__ios_type& (*__pf)(__ios_type&))
+      ^
+/usr/include/c++/4.6/ostream:128:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'std::ios_base &(*)(std::ios_base &)' for 1st argument; 
+      operator<<(ios_base& (*__pf) (ios_base&))
+      ^
+/usr/include/c++/4.6/ostream:166:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'long' for 1st argument; 
+      operator<<(long __n)
+      ^
+/usr/include/c++/4.6/ostream:170:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'unsigned long' for 1st argument; 
+      operator<<(unsigned long __n)
+      ^
+/usr/include/c++/4.6/ostream:174:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'bool' for 1st argument; 
+      operator<<(bool __n)
+      ^
+/usr/include/c++/4.6/ostream:178:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'short' for 1st argument; 
+      operator<<(short __n);
+      ^
+/usr/include/c++/4.6/ostream:181:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'unsigned short' for 1st argument; 
+      operator<<(unsigned short __n)
+      ^
+/usr/include/c++/4.6/ostream:189:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'int' for 1st argument; 
+      operator<<(int __n);
+      ^
+/usr/include/c++/4.6/ostream:192:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'unsigned int' for 1st argument; 
+      operator<<(unsigned int __n)
+      ^
+/usr/include/c++/4.6/ostream:201:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'long long' for 1st argument; 
+      operator<<(long long __n)
+      ^
+/usr/include/c++/4.6/ostream:205:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'unsigned long long' for 1st argument; 
+      operator<<(unsigned long long __n)
+      ^
+/usr/include/c++/4.6/ostream:210:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'double' for 1st argument; 
+      operator<<(double __f)
+      ^
+/usr/include/c++/4.6/ostream:214:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'float' for 1st argument; 
+      operator<<(float __f)
+      ^
+/usr/include/c++/4.6/ostream:222:7: note: candidate function not viable: no known conversion from 'odes::logger' to 'long double' for 1st argument; 
+      operator<<(long double __f)
+      ^
+/usr/include/c++/4.6/ostream:251:7: note: candidate function not viable: no known conversion from 'odes::logger' to '__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument; 
+      operator<<(__streambuf_type* __sb);
+      ^
+/usr/include/c++/4.6/ostream:455:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'odes::logger' to 'char' for 2nd argument; 
+    operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+    ^
+/usr/include/c++/4.6/ostream:461:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'odes::logger' to 'char' for 2nd argument; 
+    operator<<(basic_ostream<char, _Traits>& __out, char __c)
+    ^
+/usr/include/c++/4.6/ostream:467:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'odes::logger' to 'signed char' for 2nd argument; 
+    operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+    ^
+/usr/include/c++/4.6/ostream:472:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'odes::logger' to 'unsigned char' for 2nd argument; 
+    operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+    ^
+/usr/include/c++/4.6/ostream:509:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'odes::logger' to 'const char *' for 2nd argument; 
+    operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+    ^
+/usr/include/c++/4.6/ostream:522:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'odes::logger' to 'const signed char *' for 2nd argument; 
+    operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+    ^
+/usr/include/c++/4.6/ostream:527:5: note: candidate function [with _Traits = std::char_traits<char>] not viable: no known conversion from 'odes::logger' to 'const unsigned char *' for 2nd argument; 
+    operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+    ^
+/usr/include/c++/4.6/bits/ostream.tcc:322:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>] not viable: no known conversion from 'odes::logger' to 'const char *' for 2nd argument; 
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+    ^
+/usr/include/c++/4.6/ostream:450:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'odes::logger')
+    operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+    ^
+/usr/include/c++/4.6/bits/basic_string.h:2692:5: note: candidate template ignored: failed template argument deduction
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+    ^
+/usr/include/c++/4.6/ostream:492:5: note: candidate template ignored: failed template argument deduction
+    operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+    ^
+7 warnings and 1 error generated.
+make[2]: *** [CMakeFiles/run.dir/main.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/run.dir/all] Erreur 2
+make: *** [all] Erreur 2

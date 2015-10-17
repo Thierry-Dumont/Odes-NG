@@ -1,0 +1,53 @@
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/main.cc(31): (col. 3) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/main.cc(43): (col. 3) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(189): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(215): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(253): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(215): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(224): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(269): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(215): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(224): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(362): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(300): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(215): (col. 7) remark: FUSED LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(385): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(320): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(215): (col. 7) remark: FUSED LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(224): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(343): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(215): (col. 7) remark: FUSED LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(224): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(85): (col. 14) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(215): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(369): (col. 16) remark: loop was not vectorized: not inner loop
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(410): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(338): (col. 7) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(89): (col. 4) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(89): (col. 4) remark: loop skipped: multiversioned
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(81): (col. 7) remark: loop was not vectorized: not inner loop
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(98): (col. 4) remark: loop was not vectorized: low trip count
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(98): (col. 4) remark: loop skipped: multiversioned
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(92): (col. 7) remark: loop was not vectorized: not inner loop
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(97): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(97): (col. 5) remark: loop was not vectorized: not inner loop
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(269): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(274): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(274): (col. 7) remark: loop skipped: multiversioned
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(266): (col. 3) remark: loop was not vectorized: not inner loop
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranArray.hpp(70): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranArray.hpp(78): (col. 5) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(34): (col. 2) remark: loop was not vectorized: existence of vector dependence
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(50): (col. 2) remark: loop was not vectorized: existence of vector dependence
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(59): (col. 3) remark: loop was not vectorized: existence of vector dependence
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(52): (col. 2) remark: loop was not vectorized: not inner loop
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/Hessenberg.hpp(30): (col. 5) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(172): (col. 4) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(164): (col. 7) remark: loop was not vectorized: not inner loop
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(398): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../../common/include/fortranVector.hpp(283): (col. 7) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(228): (col. 2) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(236): (col. 4) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(76): (col. 4) remark: BLOCK WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(79): (col. 4) remark: BLOCK WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rodas-NG/test/../include/Rodascc.hpp(93): (col. 4) remark: BLOCK WAS VECTORIZED

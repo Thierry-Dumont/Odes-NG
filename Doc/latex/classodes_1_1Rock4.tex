@@ -1,0 +1,334 @@
+\hypertarget{classodes_1_1Rock4}{\section{odes\-:\-:Rock4$<$ Fonc, Engine $>$ Class Template Reference}
+\label{classodes_1_1Rock4}\index{odes\-::\-Rock4$<$ Fonc, Engine $>$@{odes\-::\-Rock4$<$ Fonc, Engine $>$}}
+}
+
+
+{\ttfamily \#include $<$Rock4.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classodes_1_1Rock4_aa2727a5ad6d43de35ed2e1d161b56d0d}{Rock4} (Fonc \&F)
+\item 
+\hyperlink{classodes_1_1Rock4_a51ca988666bec1652d648f13d3b02098}{$\sim$\-Rock4} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1Rock4_a88c0944586eeb41418517264b7e0bcf2}{set\-Tolerances} (double \-\_\-atol, double \-\_\-rtol)
+\item 
+int \hyperlink{classodes_1_1Rock4_a584af9026a3d887ec0ea516b500d5582}{Nb\-Stages} () const 
+\begin{DoxyCompactList}\small\item\em number of stages used (we count both methods). \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Rock4_ad9c4514131020c976736b4fde5c4ce78}{Nb\-Rhs\-Computed} () const 
+\begin{DoxyCompactList}\small\item\em number of R\-H\-S computed \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Rock4_aef95db2a0cb17d250b9359ff0c61ff0d}{Nb\-Steps} () const 
+\begin{DoxyCompactList}\small\item\em number of steps performed. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Rock4_a1c757f7b33a0d5f50ff81faa54a1fe1b}{Nb\-Accepted} () const 
+\begin{DoxyCompactList}\small\item\em number of accepted steps. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Rock4_ae7d80ce26137d193b7abc700cadf4482}{Nb\-Rejected} () const 
+\begin{DoxyCompactList}\small\item\em number of rejected steps. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Rock4_af959e5bca4464f383f1fe53d782ffe67}{nb\-Unkn} () const 
+\begin{DoxyCompactList}\small\item\em number of unknowns. \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1Rock4_aa08734fa31ff484abd64e9154e87f330}{operator()} (double $\ast$\&y, double t0, double tend, double \-\_\-h)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classodes_1_1Rock4_a5a1eff4484f4a37692f3c71ca0077442}{switch\-Adr} (double $\ast$\&a, double $\ast$\&b)
+\item 
+void \hyperlink{classodes_1_1Rock4_aed2802f697e7c5802cbf56c37b418337}{mdegre} (int \&\hyperlink{classodes_1_1Rock4_a80db44ee8d908fcb96ca4d6075a46ee4}{mdeg})
+\item 
+double \hyperlink{classodes_1_1Rock4_aaf3121b5489bfc0067f8b8852bada59f}{kernel} (double $\ast$Restrict \&y, double dt)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Fonc $\ast$ \hyperlink{classodes_1_1Rock4_a898f96db31273a1c54bd589bd6929cfa}{Fp}
+\item 
+const int \hyperlink{classodes_1_1Rock4_a92fce238f76152ab800a70c283eaec8a}{size}
+\item 
+double \hyperlink{classodes_1_1Rock4_a12e4452e4125f1349a279c107e84e7df}{atol}
+\item 
+double \hyperlink{classodes_1_1Rock4_a358756fc102debb458cd1351efb38ddc}{rtol}
+\item 
+double \hyperlink{classodes_1_1Rock4_a796e21d91cd4a5b19b1054bf7dfd6912}{uround}
+\item 
+double \hyperlink{classodes_1_1Rock4_a2a2c392ee50d2a4e044d0f4283af3480}{told}
+\item 
+double $\ast$ \hyperlink{classodes_1_1Rock4_a27b36e1d22c1cece0f3e88ddd7a2dc5f}{fn}
+\item 
+double $\ast$ \hyperlink{classodes_1_1Rock4_a608f2e818f5ff65f24e7fb38f054b4de}{k1}
+\item 
+double $\ast$ \hyperlink{classodes_1_1Rock4_a7c9731b0de70405a4f14c0e8c5a8b498}{k2}
+\item 
+double $\ast$ \hyperlink{classodes_1_1Rock4_a710b013eeed6e9959063a6a444dd9a12}{k3}
+\item 
+double $\ast$ \hyperlink{classodes_1_1Rock4_ad9bed2973a3e0748ecdaffefed8dffbd}{k4}
+\item 
+double $\ast$ \hyperlink{classodes_1_1Rock4_ac57b7b19f52d5eacb83a6a0fdf8013a1}{temp}
+\item 
+double $\ast$ \hyperlink{classodes_1_1Rock4_aeec7fd59c059466e1759178222ce678e}{g0}
+\item 
+double $\ast$ \hyperlink{classodes_1_1Rock4_ab00e963339b09af3e02bc80192f16ff2}{Vtemp}
+\item 
+int \hyperlink{classodes_1_1Rock4_a42b5b3858362b8a16c7627a46314fa9e}{mp} \mbox{[}3\mbox{]}
+\item 
+int \hyperlink{classodes_1_1Rock4_a80db44ee8d908fcb96ca4d6075a46ee4}{mdeg}
+\item 
+int \hyperlink{classodes_1_1Rock4_a268f70915136d0bb03f6262e3b341960}{funccal}
+\item 
+int \hyperlink{classodes_1_1Rock4_ab63364c94fc6901269c195c0d7a0565b}{nrej}
+\item 
+int \hyperlink{classodes_1_1Rock4_a598d53853fcd0955898167560d060ee2}{nsteps}
+\item 
+int \hyperlink{classodes_1_1Rock4_af33e626e975c3ea92a6d33962773ccb9}{nacc}
+\item 
+int \hyperlink{classodes_1_1Rock4_a362d2c3d57d65fdaf5af1e03befc34f9}{nstagesmax}
+\item 
+\hyperlink{structodes_1_1Rock4Coeffs}{Rock4\-Coeffs} \hyperlink{classodes_1_1Rock4_a7ec9346124f5026ac28a8f0d6833238a}{Coeffs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1Rock4_aa2727a5ad6d43de35ed2e1d161b56d0d}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Rock4@{Rock4}}
+\index{Rock4@{Rock4}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Rock4}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::{\bf Rock4} (
+\begin{DoxyParamCaption}
+\item[{Fonc \&}]{F}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_aa2727a5ad6d43de35ed2e1d161b56d0d}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em F} & R\-H\-S. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Rock4_a51ca988666bec1652d648f13d3b02098}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!$\sim$\-Rock4@{$\sim$\-Rock4}}
+\index{$\sim$\-Rock4@{$\sim$\-Rock4}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{$\sim$\-Rock4}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::$\sim${\bf Rock4} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_a51ca988666bec1652d648f13d3b02098}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classodes_1_1Rock4_aaf3121b5489bfc0067f8b8852bada59f}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!kernel@{kernel}}
+\index{kernel@{kernel}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{kernel}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::kernel (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict \&}]{y, }
+\item[{double}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classodes_1_1Rock4_aaf3121b5489bfc0067f8b8852bada59f}
+The heart of the computation; perform a dt step. 
+\begin{DoxyParams}{Parameters}
+{\em y} & I\-N/\-O\-U\-T.  time step. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+return error estimator value. 
+\end{DoxyNote}
+finish\-: \hypertarget{classodes_1_1Rock4_aed2802f697e7c5802cbf56c37b418337}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!mdegre@{mdegre}}
+\index{mdegre@{mdegre}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{mdegre}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ void {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::mdegre (
+\begin{DoxyParamCaption}
+\item[{int \&}]{mdeg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classodes_1_1Rock4_aed2802f697e7c5802cbf56c37b418337}
+\hypertarget{classodes_1_1Rock4_a1c757f7b33a0d5f50ff81faa54a1fe1b}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Nb\-Accepted@{Nb\-Accepted}}
+\index{Nb\-Accepted@{Nb\-Accepted}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Nb\-Accepted}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::Nb\-Accepted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_a1c757f7b33a0d5f50ff81faa54a1fe1b}
+
+
+number of accepted steps. 
+
+\hypertarget{classodes_1_1Rock4_ae7d80ce26137d193b7abc700cadf4482}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Nb\-Rejected@{Nb\-Rejected}}
+\index{Nb\-Rejected@{Nb\-Rejected}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Nb\-Rejected}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::Nb\-Rejected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_ae7d80ce26137d193b7abc700cadf4482}
+
+
+number of rejected steps. 
+
+\hypertarget{classodes_1_1Rock4_ad9c4514131020c976736b4fde5c4ce78}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Nb\-Rhs\-Computed@{Nb\-Rhs\-Computed}}
+\index{Nb\-Rhs\-Computed@{Nb\-Rhs\-Computed}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Nb\-Rhs\-Computed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::Nb\-Rhs\-Computed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_ad9c4514131020c976736b4fde5c4ce78}
+
+
+number of R\-H\-S computed 
+
+\hypertarget{classodes_1_1Rock4_a584af9026a3d887ec0ea516b500d5582}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Nb\-Stages@{Nb\-Stages}}
+\index{Nb\-Stages@{Nb\-Stages}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Nb\-Stages}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::Nb\-Stages (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_a584af9026a3d887ec0ea516b500d5582}
+
+
+number of stages used (we count both methods). 
+
+\hypertarget{classodes_1_1Rock4_aef95db2a0cb17d250b9359ff0c61ff0d}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Nb\-Steps@{Nb\-Steps}}
+\index{Nb\-Steps@{Nb\-Steps}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Nb\-Steps}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::Nb\-Steps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_aef95db2a0cb17d250b9359ff0c61ff0d}
+
+
+number of steps performed. 
+
+\hypertarget{classodes_1_1Rock4_af959e5bca4464f383f1fe53d782ffe67}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!nb\-Unkn@{nb\-Unkn}}
+\index{nb\-Unkn@{nb\-Unkn}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{nb\-Unkn}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::nb\-Unkn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_af959e5bca4464f383f1fe53d782ffe67}
+
+
+number of unknowns. 
+
+\hypertarget{classodes_1_1Rock4_aa08734fa31ff484abd64e9154e87f330}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!operator()@{operator()}}
+\index{operator()@{operator()}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ void {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{double $\ast$\&}]{y, }
+\item[{double}]{t0, }
+\item[{double}]{tend, }
+\item[{double}]{\-\_\-h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_aa08734fa31ff484abd64e9154e87f330}
+operator() performs the step, by delegating to kernel. 
+\begin{DoxyParams}{Parameters}
+{\em y} & I\-N/\-O\-U\-T. Initial values on input, final values on output. \\
+\hline
+{\em t0} & initial value of time \\
+\hline
+{\em tend} & final time. \\
+\hline
+{\em \-\_\-h} & proposed time step. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+We integrate from t0 to tend 
+
+{\itshape B\-E\-W\-A\-R\-E} adress y can be changed! 
+\end{DoxyNote}
+\hypertarget{classodes_1_1Rock4_a88c0944586eeb41418517264b7e0bcf2}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!set\-Tolerances@{set\-Tolerances}}
+\index{set\-Tolerances@{set\-Tolerances}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{set\-Tolerances}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ void {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::set\-Tolerances (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-atol, }
+\item[{double}]{\-\_\-rtol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Rock4_a88c0944586eeb41418517264b7e0bcf2}
+fix values to tolerances (set by default in constructor). 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-atol} & \\
+\hline
+{\em \-\_\-rtol} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Rock4_a5a1eff4484f4a37692f3c71ca0077442}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!switch\-Adr@{switch\-Adr}}
+\index{switch\-Adr@{switch\-Adr}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{switch\-Adr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ void {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::switch\-Adr (
+\begin{DoxyParamCaption}
+\item[{double $\ast$\&}]{a, }
+\item[{double $\ast$\&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classodes_1_1Rock4_a5a1eff4484f4a37692f3c71ca0077442}
+switch 2 adresses. 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1Rock4_a12e4452e4125f1349a279c107e84e7df}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!atol@{atol}}
+\index{atol@{atol}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{atol}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::atol\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a12e4452e4125f1349a279c107e84e7df}
+\hypertarget{classodes_1_1Rock4_a7ec9346124f5026ac28a8f0d6833238a}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Coeffs@{Coeffs}}
+\index{Coeffs@{Coeffs}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Coeffs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ {\bf Rock4\-Coeffs} {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::Coeffs\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a7ec9346124f5026ac28a8f0d6833238a}
+\hypertarget{classodes_1_1Rock4_a27b36e1d22c1cece0f3e88ddd7a2dc5f}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!fn@{fn}}
+\index{fn@{fn}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{fn}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double$\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::fn\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a27b36e1d22c1cece0f3e88ddd7a2dc5f}
+\hypertarget{classodes_1_1Rock4_a898f96db31273a1c54bd589bd6929cfa}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Fp@{Fp}}
+\index{Fp@{Fp}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Fp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ Fonc$\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::Fp\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a898f96db31273a1c54bd589bd6929cfa}
+\hypertarget{classodes_1_1Rock4_a268f70915136d0bb03f6262e3b341960}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!funccal@{funccal}}
+\index{funccal@{funccal}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{funccal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::funccal\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a268f70915136d0bb03f6262e3b341960}
+\hypertarget{classodes_1_1Rock4_aeec7fd59c059466e1759178222ce678e}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!g0@{g0}}
+\index{g0@{g0}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{g0}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double $\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::g0\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_aeec7fd59c059466e1759178222ce678e}
+\hypertarget{classodes_1_1Rock4_a608f2e818f5ff65f24e7fb38f054b4de}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!k1@{k1}}
+\index{k1@{k1}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{k1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double $\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::k1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a608f2e818f5ff65f24e7fb38f054b4de}
+\hypertarget{classodes_1_1Rock4_a7c9731b0de70405a4f14c0e8c5a8b498}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!k2@{k2}}
+\index{k2@{k2}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{k2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double $\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::k2\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a7c9731b0de70405a4f14c0e8c5a8b498}
+\hypertarget{classodes_1_1Rock4_a710b013eeed6e9959063a6a444dd9a12}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!k3@{k3}}
+\index{k3@{k3}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{k3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double $\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::k3\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a710b013eeed6e9959063a6a444dd9a12}
+\hypertarget{classodes_1_1Rock4_ad9bed2973a3e0748ecdaffefed8dffbd}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!k4@{k4}}
+\index{k4@{k4}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{k4}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double $\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::k4\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_ad9bed2973a3e0748ecdaffefed8dffbd}
+\hypertarget{classodes_1_1Rock4_a80db44ee8d908fcb96ca4d6075a46ee4}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!mdeg@{mdeg}}
+\index{mdeg@{mdeg}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{mdeg}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::mdeg\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a80db44ee8d908fcb96ca4d6075a46ee4}
+\hypertarget{classodes_1_1Rock4_a42b5b3858362b8a16c7627a46314fa9e}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!mp@{mp}}
+\index{mp@{mp}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{mp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::mp\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a42b5b3858362b8a16c7627a46314fa9e}
+\hypertarget{classodes_1_1Rock4_af33e626e975c3ea92a6d33962773ccb9}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!nacc@{nacc}}
+\index{nacc@{nacc}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{nacc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::nacc\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_af33e626e975c3ea92a6d33962773ccb9}
+\hypertarget{classodes_1_1Rock4_ab63364c94fc6901269c195c0d7a0565b}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!nrej@{nrej}}
+\index{nrej@{nrej}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{nrej}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::nrej\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_ab63364c94fc6901269c195c0d7a0565b}
+\hypertarget{classodes_1_1Rock4_a362d2c3d57d65fdaf5af1e03befc34f9}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!nstagesmax@{nstagesmax}}
+\index{nstagesmax@{nstagesmax}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{nstagesmax}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::nstagesmax\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a362d2c3d57d65fdaf5af1e03befc34f9}
+\hypertarget{classodes_1_1Rock4_a598d53853fcd0955898167560d060ee2}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!nsteps@{nsteps}}
+\index{nsteps@{nsteps}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{nsteps}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::nsteps\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a598d53853fcd0955898167560d060ee2}
+\hypertarget{classodes_1_1Rock4_a358756fc102debb458cd1351efb38ddc}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!rtol@{rtol}}
+\index{rtol@{rtol}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{rtol}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::rtol\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a358756fc102debb458cd1351efb38ddc}
+\hypertarget{classodes_1_1Rock4_a92fce238f76152ab800a70c283eaec8a}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!size@{size}}
+\index{size@{size}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ const int {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a92fce238f76152ab800a70c283eaec8a}
+\hypertarget{classodes_1_1Rock4_ac57b7b19f52d5eacb83a6a0fdf8013a1}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!temp@{temp}}
+\index{temp@{temp}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{temp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double $\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::temp\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_ac57b7b19f52d5eacb83a6a0fdf8013a1}
+\hypertarget{classodes_1_1Rock4_a2a2c392ee50d2a4e044d0f4283af3480}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!told@{told}}
+\index{told@{told}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{told}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::told\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a2a2c392ee50d2a4e044d0f4283af3480}
+\hypertarget{classodes_1_1Rock4_a796e21d91cd4a5b19b1054bf7dfd6912}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!uround@{uround}}
+\index{uround@{uround}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{uround}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::uround\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_a796e21d91cd4a5b19b1054bf7dfd6912}
+\hypertarget{classodes_1_1Rock4_ab00e963339b09af3e02bc80192f16ff2}{\index{odes\-::\-Rock4@{odes\-::\-Rock4}!Vtemp@{Vtemp}}
+\index{Vtemp@{Vtemp}!odes::Rock4@{odes\-::\-Rock4}}
+\subsubsection[{Vtemp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc , class Engine  = Tool\-Sequential$<$\-Fonc$>$$>$ double $\ast$ {\bf odes\-::\-Rock4}$<$ Fonc, Engine $>$\-::Vtemp\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Rock4_ab00e963339b09af3e02bc80192f16ff2}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Rock4-\/\-N\-G/include/\hyperlink{Rock4_8hpp}{Rock4.\-hpp}\end{DoxyCompactItemize}

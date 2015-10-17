@@ -1,0 +1,12 @@
+
+1) All code, except Radau5 routines (dc_decsol.f, decsol.f,
+dc_lapack.f, radau5.f) are under the Cecill-B licence defined in:
+
+Licence_CeCILL-B_V1-fr.txt (french language version)
+Licence_CeCILL-C_V1-en.txt (english version).
+
+2) The fortran version of Radau5 and Rodas routines (dc_decsol.f, decsol.f,
+ dc_lapack.f, radau5.f, rodas.f) are under the licence defined in:
+  Licence_Radau5_Rodas.txt
+( see also: http://www.unige.ch/~hairer/prog/licence.txt).
+

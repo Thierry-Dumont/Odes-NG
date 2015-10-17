@@ -1,0 +1,88 @@
+icpc: remark #10346: optimization reporting will be enabled at link time when performing interprocedural optimizations
+ipo: warning #11021: unresolved pthread_mutex_trylock
+        Referenced in /usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/mkl/lib/intel64/libmkl_core.so
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp(174): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc(31): (col. 3) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc(34): (col. 3) remark: loop was not vectorized: loop was transformed to memset or memcpy
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc(41): (col. 3) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/Lapl1OMP.hpp(35): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp(73): (col. 7) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp(231): (col. 7) remark: loop was not vectorized: not inner loop
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(239): (col. 30) remark: loop was not vectorized: unsupported loop structure
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(165): (col. 9) remark: loop was not vectorized: unsupported loop structure
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: existence of vector dependence
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(77): (col. 4) remark: vector dependence: assumed ANTI dependence between D line 77 and this line 77
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(77): (col. 4) remark: vector dependence: assumed FLOW dependence between this line 77 and D line 77
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(77): (col. 4) remark: vector dependence: assumed FLOW dependence between this line 77 and D line 77
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(77): (col. 4) remark: vector dependence: assumed ANTI dependence between D line 77 and this line 77
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(76): (col. 4) remark: vector dependence: assumed ANTI dependence between D line 76 and this line 76
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(76): (col. 4) remark: vector dependence: assumed FLOW dependence between this line 76 and D line 76
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(76): (col. 4) remark: vector dependence: assumed FLOW dependence between this line 76 and D line 76
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(76): (col. 4) remark: vector dependence: assumed ANTI dependence between D line 76 and this line 76
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(158): (col. 9) remark: loop was not vectorized: unsupported loop structure
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(271): (col. 52) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(147): (col. 6) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(136): (col. 6) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(123): (col. 6) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(111): (col. 6) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(99): (col. 6) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: existence of vector dependence
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(77): (col. 4) remark: vector dependence: assumed ANTI dependence between D line 77 and this line 77
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(77): (col. 4) remark: vector dependence: assumed FLOW dependence between this line 77 and D line 77
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(77): (col. 4) remark: vector dependence: assumed FLOW dependence between this line 77 and D line 77
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(77): (col. 4) remark: vector dependence: assumed ANTI dependence between D line 77 and this line 77
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(76): (col. 4) remark: vector dependence: assumed ANTI dependence between D line 76 and this line 76
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(76): (col. 4) remark: vector dependence: assumed FLOW dependence between this line 76 and D line 76
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(76): (col. 4) remark: vector dependence: assumed FLOW dependence between this line 76 and D line 76
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(76): (col. 4) remark: vector dependence: assumed ANTI dependence between D line 76 and this line 76
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(158): (col. 9) remark: loop was not vectorized: existence of vector dependence
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(180): (col. 9) remark: vector dependence: assumed ANTI dependence between  line 180 and  line 180
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(180): (col. 9) remark: vector dependence: assumed FLOW dependence between  line 180 and  line 180
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(180): (col. 9) remark: vector dependence: assumed FLOW dependence between  line 180 and  line 180
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(180): (col. 9) remark: vector dependence: assumed ANTI dependence between  line 180 and  line 180
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(177): (col. 5) remark: loop was not vectorized: existence of vector dependence
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(180): (col. 2) remark: vector dependence: assumed ANTI dependence between R line 180 and  line 180
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(180): (col. 2) remark: vector dependence: assumed FLOW dependence between  line 180 and R line 180
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(180): (col. 2) remark: vector dependence: assumed FLOW dependence between  line 180 and R line 180
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(180): (col. 2) remark: vector dependence: assumed ANTI dependence between R line 180 and  line 180
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(179): (col. 2) remark: vector dependence: assumed ANTI dependence between R line 179 and  line 179
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(179): (col. 2) remark: vector dependence: assumed FLOW dependence between  line 179 and R line 179
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(179): (col. 2) remark: vector dependence: assumed FLOW dependence between  line 179 and R line 179
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(179): (col. 2) remark: vector dependence: assumed ANTI dependence between R line 179 and  line 179
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(165): (col. 9) remark: loop was not vectorized: unsupported loop structure
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(193): (col. 5) remark: loop was not vectorized: existence of vector dependence
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(198): (col. 2) remark: vector dependence: assumed ANTI dependence between  line 198 and  line 198
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(198): (col. 2) remark: vector dependence: assumed FLOW dependence between  line 198 and  line 198
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(198): (col. 2) remark: vector dependence: assumed FLOW dependence between  line 198 and  line 196
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(196): (col. 16) remark: vector dependence: assumed ANTI dependence between  line 196 and  line 198
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(196): (col. 16) remark: vector dependence: assumed ANTI dependence between  line 196 and  line 198
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(198): (col. 2) remark: vector dependence: assumed FLOW dependence between  line 198 and  line 196
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(158): (col. 9) remark: loop was not vectorized: existence of vector dependence
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(180): (col. 9) remark: vector dependence: assumed ANTI dependence between my_head line 180 and my_head line 180
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(180): (col. 9) remark: vector dependence: assumed FLOW dependence between my_head line 180 and my_head line 180
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(180): (col. 9) remark: vector dependence: assumed FLOW dependence between my_head line 180 and my_head line 180
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(180): (col. 9) remark: vector dependence: assumed ANTI dependence between my_head line 180 and my_head line 180
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(193): (col. 5) remark: loop was not vectorized: existence of vector dependence
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(198): (col. 2) remark: vector dependence: assumed ANTI dependence between  line 198 and  line 198
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(198): (col. 2) remark: vector dependence: assumed FLOW dependence between  line 198 and  line 198
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(198): (col. 2) remark: vector dependence: assumed FLOW dependence between this line 198 and  line 196
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(196): (col. 16) remark: vector dependence: assumed ANTI dependence between  line 196 and this line 198
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(196): (col. 16) remark: vector dependence: assumed ANTI dependence between  line 196 and this line 198
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(198): (col. 2) remark: vector dependence: assumed FLOW dependence between this line 198 and  line 196
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(239): (col. 30) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/tbb/include/tbb/partitioner.h(271): (col. 52) remark: loop was not vectorized: nonstandard loop is not a vectorization candidate
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/Lapl1OMP.hpp(35): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/Lapl1OMP.hpp(35): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp(104): (col. 7) remark: loop was not vectorized: not inner loop
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/Lapl1OMP.hpp(35): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/Lapl1OMP.hpp(35): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/Lapl1OMP.hpp(35): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/Lapl1OMP.hpp(35): (col. 5) remark: LOOP WAS VECTORIZED
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/TbbUtils.hpp(74): (col. 7) remark: loop was not vectorized: vectorization possible but seems inefficient
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/Lapl1OMP.hpp(35): (col. 5) remark: LOOP WAS VECTORIZED

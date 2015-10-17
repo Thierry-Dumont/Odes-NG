@@ -1,0 +1,30 @@
+\form#0:$ k_i=f(y_0+h\sum_{j=1}^{i}a_{i,j}k_j)$
+\form#1:$ i=1,n.$
+\form#2:$ k_i=f(y_0+z_i)$
+\form#3:$ Z= h A F(K)$
+\form#4:$ z_i=h \sum_{j=1}^{i}a_{i,j} f(y_0+z_j).$
+\form#5:$f$
+\form#6:$f(u)=Lu $
+\form#7:$z_i=h L((\sum_{j=1}^{i}a_{i,j})y_0+ \sum_{j=1}^{i} a_{i,j} z_j).$
+\form#8:$q_i=(\sum_{j=1}^{i}a_{i,j})y_0+ \sum_{j=1}^{i} a_{i,j} z_j),$
+\form#9:$ (I-ha_{i,i}L) q_i =b_i,$
+\form#10:$b_i=(\sum_{j=1}^{i}a_{i,j})y_0+ \sum_{j=1}^{i-1} a_{i,j} z_j,$
+\form#11:$ z_i=a_{i,i}^{-1} (q_i-b_i).$
+\form#12:$ a_{i,i}^{-1}$
+\form#13:$b_i:= a_{i,i}^{-1}b_i. $
+\form#14:$ A$
+\form#15:$a_{i,i} $
+\form#16:$i. $
+\form#17:$ y_1=y_0+ \sum_{i=1}^{n} d_i z_i, $
+\form#18:$ d=b.A^{-1}.$
+\form#19:$f(u)=Lu +B $
+\form#20:$B $
+\form#21:$ A_{i,j}$
+\form#22:$ S_i= \sum_j A_{i,j}$
+\form#23:$ D= B.A^{-1} $
+\form#24:$ out = \sum_{i=1}^{nv} c_i v_i.$
+\form#25:$ out += \sum_{i=1}^{nv} c_i v_i.$
+\form#26:$ du/dt= A u +B.$
+\form#27:$ A $
+\form#28:$ B $
+\form#29:$ t.$

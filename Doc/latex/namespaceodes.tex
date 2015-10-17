@@ -1,0 +1,271 @@
+\hypertarget{namespaceodes}{\section{odes Namespace Reference}
+\label{namespaceodes}\index{odes@{odes}}
+}
+
+
+Compute all matrix operations.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classodes_1_1fortranArray}{fortran\-Array}
+\begin{DoxyCompactList}\small\item\em Array of double. \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1fortranComplexArray}{fortran\-Complex\-Array}
+\begin{DoxyCompactList}\small\item\em Array of complex.. \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1fortranRectangularArray}{fortran\-Rectangular\-Array}
+\begin{DoxyCompactList}\small\item\em Banded Array of double. \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1fortranRectangularComplexArray}{fortran\-Rectangular\-Complex\-Array}
+\begin{DoxyCompactList}\small\item\em Banded Array of complex.. \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1fortranVector}{fortran\-Vector}
+\begin{DoxyCompactList}\small\item\em Vector class (of doubles). \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}
+\begin{DoxyCompactList}\small\item\em Vector class (of doubles). \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1logger}{logger}
+\begin{DoxyCompactList}\small\item\em For logging events. \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1Matrices}{Matrices}
+\begin{DoxyCompactList}\small\item\em full matrices. \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1Matrices_3_01false_00_01false_00_01n_00_01nsub_00_01nsup_01_4}{Matrices$<$ false, false, n, nsub, nsup $>$}
+\item 
+class \hyperlink{classodes_1_1Matrices_3_01true_00_01true_00_01n_00_01nsub_00_01nsup_01_4}{Matrices$<$ true, true, n, nsub, nsup $>$}
+\begin{DoxyCompactList}\small\item\em Full matrices, Hessenberg=true. \end{DoxyCompactList}\item 
+class \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4}{Matrices$<$ false, true, n, nsub, nsup $>$}
+\begin{DoxyCompactList}\small\item\em Banded matrices, Hessenberg=true\-: error. \end{DoxyCompactList}\item 
+struct \hyperlink{structodes_1_1Matrixtype}{Matrixtype}
+\item 
+class \hyperlink{classodes_1_1Radau5cc}{Radau5cc}
+\begin{DoxyCompactList}\small\item\em A C++ implementation of Radau5. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8}{event\-Type} \{ \\*
+\hyperlink{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ad4b896da4797189f441c09833809cd9b}{success} =0, 
+\hyperlink{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8a63543747bb83162c25560885509e7ee2}{rejected\-Step}, 
+\hyperlink{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ab34441382e71cf7d70c345be11743cee}{Newton\-Failed}, 
+\hyperlink{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8aa3c3a7a051ec8570634a29155a6b62e0}{Newton\-Will\-Not\-Converge}, 
+\\*
+\hyperlink{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8a00d366881a9a224a0e426eb018f1db23}{changed\-H}, 
+\hyperlink{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ad985883a2a443d3b103d6b312caefef2}{all}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespaceodes_af0b7a0203a69c4fa322079ad196cdcae}{dgetrf\-\_\-} (int $\ast$n, int $\ast$m, double $\ast$a, int $\ast$lda, int $\ast$ipiv, int $\ast$info)
+\begin{DoxyCompactList}\small\item\em prototypes for lapack routines. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceodes_a68cd3ad2ee6d143463ea0a41971b45ca}{zgetrf\-\_\-} (int $\ast$n, int $\ast$m, double $\ast$a, int $\ast$lda, int $\ast$ipiv, int $\ast$info)
+\item 
+void \hyperlink{namespaceodes_acb38308231063d618ca8f4bfcf8f3912}{dgetrs\-\_\-} (const char $\ast$s, int $\ast$N, int $\ast$N\-R\-H\-S, double $\ast$A, int $\ast$L\-D\-A, int $\ast$I\-P\-I\-V, double $\ast$B, int $\ast$L\-D\-B, int $\ast$I\-N\-F\-O)
+\item 
+void \hyperlink{namespaceodes_ab6f6bedf50ce1e3b9e01f7cacbd5a9a8}{zgetrs\-\_\-} (const char $\ast$s, int $\ast$N, int $\ast$N\-R\-H\-S, double $\ast$A, int $\ast$L\-D\-A, int $\ast$I\-P\-I\-V, double $\ast$B, int $\ast$L\-D\-B, int $\ast$I\-N\-F\-O)
+\item 
+void \hyperlink{namespaceodes_a84c781070989698cdb58c37a5074a91c}{dgbtrf\-\_\-} (int $\ast$n, int $\ast$m, int $\ast$k1, int $\ast$k2, double $\ast$a, int $\ast$lda, int $\ast$ipiv, int $\ast$info)
+\item 
+void \hyperlink{namespaceodes_ae9a95c96e0823f5ac279e572fba93550}{zgbtrf\-\_\-} (int $\ast$n, int $\ast$m, int $\ast$k1, int $\ast$k2, double $\ast$a, int $\ast$lda, int $\ast$ipiv, int $\ast$info)
+\item 
+void \hyperlink{namespaceodes_a8ef9d46ddb5b78777217d2162ac4470f}{dgbtrs\-\_\-} (const char $\ast$s, int $\ast$N, int $\ast$k1, int $\ast$k2, int $\ast$N\-R\-H\-S, double $\ast$A, int $\ast$L\-D\-A, int $\ast$I\-P\-I\-V, double $\ast$B, int $\ast$L\-D\-B, int $\ast$I\-N\-F\-O)
+\item 
+void \hyperlink{namespaceodes_ad56f5a1a4c30315e999fb0c3f1be7c24}{zgbtrs\-\_\-} (const char $\ast$s, int $\ast$N, int $\ast$k1, int $\ast$k2, int $\ast$N\-R\-H\-S, double $\ast$A, int $\ast$L\-D\-A, int $\ast$I\-P\-I\-V, double $\ast$B, int $\ast$L\-D\-B, int $\ast$I\-N\-F\-O)
+\item 
+void \hyperlink{namespaceodes_aee13c6130981afb5d561ed5a7d61f523}{dlarnv\-\_\-} (int $\ast$idist, int iseed\mbox{[}$\,$\mbox{]}, int $\ast$n, double $\ast$x)
+\item 
+void \hyperlink{namespaceodes_a8e1a54591e1e244caf5bdda4a798210d}{dgehrd\-\_\-} (int $\ast$n, int $\ast$ilo, int $\ast$ihi, double $\ast$a, int $\ast$lda, double tau\mbox{[}$\,$\mbox{]}, double work\mbox{[}$\,$\mbox{]}, int $\ast$lwork, int $\ast$info)
+\item 
+void \hyperlink{namespaceodes_adff449269843fe4af255e0956be12fd0}{dorghr\-\_\-} (int $\ast$n, int $\ast$ilo, int $\ast$ihi, double $\ast$a, int $\ast$lda, double tau\mbox{[}$\,$\mbox{]}, double work\mbox{[}$\,$\mbox{]}, int $\ast$lwork, int $\ast$info)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compute all matrix operations. determine the type of Jacobian matrices.
+
+Compute all matrix operations\-: -\/compute Jacobian matrix -\/....... Factorisations.
+\begin{DoxyItemize}
+\item solve systems. Template for full matrix, with specializations for banded matrices and full matrix, transformed in Hessenberg form. Trying to instanciate a banded matrix matrix in Hessenberg form is impossible and should be capturated with \char`\"{}compat.\-hpp\char`\"{}
+\end{DoxyItemize}
+
+Helper class, used at compile time to determine the type of Jacobian matrices. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8}{\index{odes@{odes}!event\-Type@{event\-Type}}
+\index{event\-Type@{event\-Type}!odes@{odes}}
+\subsubsection[{event\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf odes\-::event\-Type}}}\label{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{success@{success}!odes@{odes}}\index{odes@{odes}!success@{success}}\item[{\em 
+\hypertarget{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ad4b896da4797189f441c09833809cd9b}{success}\label{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ad4b896da4797189f441c09833809cd9b}
+}]\index{rejected\-Step@{rejected\-Step}!odes@{odes}}\index{odes@{odes}!rejected\-Step@{rejected\-Step}}\item[{\em 
+\hypertarget{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8a63543747bb83162c25560885509e7ee2}{rejected\-Step}\label{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8a63543747bb83162c25560885509e7ee2}
+}]\index{Newton\-Failed@{Newton\-Failed}!odes@{odes}}\index{odes@{odes}!Newton\-Failed@{Newton\-Failed}}\item[{\em 
+\hypertarget{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ab34441382e71cf7d70c345be11743cee}{Newton\-Failed}\label{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ab34441382e71cf7d70c345be11743cee}
+}]\index{Newton\-Will\-Not\-Converge@{Newton\-Will\-Not\-Converge}!odes@{odes}}\index{odes@{odes}!Newton\-Will\-Not\-Converge@{Newton\-Will\-Not\-Converge}}\item[{\em 
+\hypertarget{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8aa3c3a7a051ec8570634a29155a6b62e0}{Newton\-Will\-Not\-Converge}\label{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8aa3c3a7a051ec8570634a29155a6b62e0}
+}]\index{changed\-H@{changed\-H}!odes@{odes}}\index{odes@{odes}!changed\-H@{changed\-H}}\item[{\em 
+\hypertarget{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8a00d366881a9a224a0e426eb018f1db23}{changed\-H}\label{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8a00d366881a9a224a0e426eb018f1db23}
+}]\index{all@{all}!odes@{odes}}\index{odes@{odes}!all@{all}}\item[{\em 
+\hypertarget{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ad985883a2a443d3b103d6b312caefef2}{all}\label{namespaceodes_a0e9924dcd4d2b0cedc36ec2eff4dcba8ad985883a2a443d3b103d6b312caefef2}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceodes_a84c781070989698cdb58c37a5074a91c}{\index{odes@{odes}!dgbtrf\-\_\-@{dgbtrf\-\_\-}}
+\index{dgbtrf\-\_\-@{dgbtrf\-\_\-}!odes@{odes}}
+\subsubsection[{dgbtrf\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::dgbtrf\-\_\- (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n, }
+\item[{int $\ast$}]{m, }
+\item[{int $\ast$}]{k1, }
+\item[{int $\ast$}]{k2, }
+\item[{double $\ast$}]{a, }
+\item[{int $\ast$}]{lda, }
+\item[{int $\ast$}]{ipiv, }
+\item[{int $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_a84c781070989698cdb58c37a5074a91c}
+\hypertarget{namespaceodes_a8ef9d46ddb5b78777217d2162ac4470f}{\index{odes@{odes}!dgbtrs\-\_\-@{dgbtrs\-\_\-}}
+\index{dgbtrs\-\_\-@{dgbtrs\-\_\-}!odes@{odes}}
+\subsubsection[{dgbtrs\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::dgbtrs\-\_\- (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s, }
+\item[{int $\ast$}]{N, }
+\item[{int $\ast$}]{k1, }
+\item[{int $\ast$}]{k2, }
+\item[{int $\ast$}]{N\-R\-H\-S, }
+\item[{double $\ast$}]{A, }
+\item[{int $\ast$}]{L\-D\-A, }
+\item[{int $\ast$}]{I\-P\-I\-V, }
+\item[{double $\ast$}]{B, }
+\item[{int $\ast$}]{L\-D\-B, }
+\item[{int $\ast$}]{I\-N\-F\-O}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_a8ef9d46ddb5b78777217d2162ac4470f}
+\hypertarget{namespaceodes_a8e1a54591e1e244caf5bdda4a798210d}{\index{odes@{odes}!dgehrd\-\_\-@{dgehrd\-\_\-}}
+\index{dgehrd\-\_\-@{dgehrd\-\_\-}!odes@{odes}}
+\subsubsection[{dgehrd\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::dgehrd\-\_\- (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n, }
+\item[{int $\ast$}]{ilo, }
+\item[{int $\ast$}]{ihi, }
+\item[{double $\ast$}]{a, }
+\item[{int $\ast$}]{lda, }
+\item[{double}]{tau\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{work\mbox{[}$\,$\mbox{]}, }
+\item[{int $\ast$}]{lwork, }
+\item[{int $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_a8e1a54591e1e244caf5bdda4a798210d}
+\hypertarget{namespaceodes_af0b7a0203a69c4fa322079ad196cdcae}{\index{odes@{odes}!dgetrf\-\_\-@{dgetrf\-\_\-}}
+\index{dgetrf\-\_\-@{dgetrf\-\_\-}!odes@{odes}}
+\subsubsection[{dgetrf\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::dgetrf\-\_\- (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n, }
+\item[{int $\ast$}]{m, }
+\item[{double $\ast$}]{a, }
+\item[{int $\ast$}]{lda, }
+\item[{int $\ast$}]{ipiv, }
+\item[{int $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_af0b7a0203a69c4fa322079ad196cdcae}
+
+
+prototypes for lapack routines. 
+
+\hypertarget{namespaceodes_acb38308231063d618ca8f4bfcf8f3912}{\index{odes@{odes}!dgetrs\-\_\-@{dgetrs\-\_\-}}
+\index{dgetrs\-\_\-@{dgetrs\-\_\-}!odes@{odes}}
+\subsubsection[{dgetrs\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::dgetrs\-\_\- (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s, }
+\item[{int $\ast$}]{N, }
+\item[{int $\ast$}]{N\-R\-H\-S, }
+\item[{double $\ast$}]{A, }
+\item[{int $\ast$}]{L\-D\-A, }
+\item[{int $\ast$}]{I\-P\-I\-V, }
+\item[{double $\ast$}]{B, }
+\item[{int $\ast$}]{L\-D\-B, }
+\item[{int $\ast$}]{I\-N\-F\-O}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_acb38308231063d618ca8f4bfcf8f3912}
+\hypertarget{namespaceodes_aee13c6130981afb5d561ed5a7d61f523}{\index{odes@{odes}!dlarnv\-\_\-@{dlarnv\-\_\-}}
+\index{dlarnv\-\_\-@{dlarnv\-\_\-}!odes@{odes}}
+\subsubsection[{dlarnv\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::dlarnv\-\_\- (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{idist, }
+\item[{int}]{iseed\mbox{[}$\,$\mbox{]}, }
+\item[{int $\ast$}]{n, }
+\item[{double $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_aee13c6130981afb5d561ed5a7d61f523}
+\hypertarget{namespaceodes_adff449269843fe4af255e0956be12fd0}{\index{odes@{odes}!dorghr\-\_\-@{dorghr\-\_\-}}
+\index{dorghr\-\_\-@{dorghr\-\_\-}!odes@{odes}}
+\subsubsection[{dorghr\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::dorghr\-\_\- (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n, }
+\item[{int $\ast$}]{ilo, }
+\item[{int $\ast$}]{ihi, }
+\item[{double $\ast$}]{a, }
+\item[{int $\ast$}]{lda, }
+\item[{double}]{tau\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{work\mbox{[}$\,$\mbox{]}, }
+\item[{int $\ast$}]{lwork, }
+\item[{int $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_adff449269843fe4af255e0956be12fd0}
+\hypertarget{namespaceodes_ae9a95c96e0823f5ac279e572fba93550}{\index{odes@{odes}!zgbtrf\-\_\-@{zgbtrf\-\_\-}}
+\index{zgbtrf\-\_\-@{zgbtrf\-\_\-}!odes@{odes}}
+\subsubsection[{zgbtrf\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::zgbtrf\-\_\- (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n, }
+\item[{int $\ast$}]{m, }
+\item[{int $\ast$}]{k1, }
+\item[{int $\ast$}]{k2, }
+\item[{double $\ast$}]{a, }
+\item[{int $\ast$}]{lda, }
+\item[{int $\ast$}]{ipiv, }
+\item[{int $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_ae9a95c96e0823f5ac279e572fba93550}
+\hypertarget{namespaceodes_ad56f5a1a4c30315e999fb0c3f1be7c24}{\index{odes@{odes}!zgbtrs\-\_\-@{zgbtrs\-\_\-}}
+\index{zgbtrs\-\_\-@{zgbtrs\-\_\-}!odes@{odes}}
+\subsubsection[{zgbtrs\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::zgbtrs\-\_\- (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s, }
+\item[{int $\ast$}]{N, }
+\item[{int $\ast$}]{k1, }
+\item[{int $\ast$}]{k2, }
+\item[{int $\ast$}]{N\-R\-H\-S, }
+\item[{double $\ast$}]{A, }
+\item[{int $\ast$}]{L\-D\-A, }
+\item[{int $\ast$}]{I\-P\-I\-V, }
+\item[{double $\ast$}]{B, }
+\item[{int $\ast$}]{L\-D\-B, }
+\item[{int $\ast$}]{I\-N\-F\-O}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_ad56f5a1a4c30315e999fb0c3f1be7c24}
+\hypertarget{namespaceodes_a68cd3ad2ee6d143463ea0a41971b45ca}{\index{odes@{odes}!zgetrf\-\_\-@{zgetrf\-\_\-}}
+\index{zgetrf\-\_\-@{zgetrf\-\_\-}!odes@{odes}}
+\subsubsection[{zgetrf\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::zgetrf\-\_\- (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n, }
+\item[{int $\ast$}]{m, }
+\item[{double $\ast$}]{a, }
+\item[{int $\ast$}]{lda, }
+\item[{int $\ast$}]{ipiv, }
+\item[{int $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_a68cd3ad2ee6d143463ea0a41971b45ca}
+\hypertarget{namespaceodes_ab6f6bedf50ce1e3b9e01f7cacbd5a9a8}{\index{odes@{odes}!zgetrs\-\_\-@{zgetrs\-\_\-}}
+\index{zgetrs\-\_\-@{zgetrs\-\_\-}!odes@{odes}}
+\subsubsection[{zgetrs\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::zgetrs\-\_\- (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s, }
+\item[{int $\ast$}]{N, }
+\item[{int $\ast$}]{N\-R\-H\-S, }
+\item[{double $\ast$}]{A, }
+\item[{int $\ast$}]{L\-D\-A, }
+\item[{int $\ast$}]{I\-P\-I\-V, }
+\item[{double $\ast$}]{B, }
+\item[{int $\ast$}]{L\-D\-B, }
+\item[{int $\ast$}]{I\-N\-F\-O}
+\end{DoxyParamCaption}
+)}}\label{namespaceodes_ab6f6bedf50ce1e3b9e01f7cacbd5a9a8}

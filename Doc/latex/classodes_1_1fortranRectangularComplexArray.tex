@@ -1,0 +1,176 @@
+\hypertarget{classodes_1_1fortranRectangularComplexArray}{\section{odes\-:\-:fortran\-Rectangular\-Complex\-Array$<$ n, kl, ku $>$ Class Template Reference}
+\label{classodes_1_1fortranRectangularComplexArray}\index{odes\-::fortran\-Rectangular\-Complex\-Array$<$ n, kl, ku $>$@{odes\-::fortran\-Rectangular\-Complex\-Array$<$ n, kl, ku $>$}}
+}
+
+
+Banded Array of complex..  
+
+
+
+
+{\ttfamily \#include $<$fortran\-Rectangular\-Complex\-Array.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classodes_1_1fortranRectangularComplexArray_a3350b7de9dcc01f0384bc676f7945680}{fortran\-Rectangular\-Complex\-Array} ()
+\begin{DoxyCompactList}\small\item\em contructor \end{DoxyCompactList}\item 
+\hyperlink{classodes_1_1fortranRectangularComplexArray_a3279352a8670d9606569870563b3396e}{$\sim$fortran\-Rectangular\-Complex\-Array} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1fortranRectangularComplexArray_a0afbfc5d739ef869582edcf28367402b}{set} (int i, int j, double Real\-Part, double Imag\-Part=0)
+\item 
+double \& \hyperlink{classodes_1_1fortranRectangularComplexArray_aac1f6f911dcd3b2acc8bb231d451be3d}{Re} (int i, int j)
+\item 
+double \& \hyperlink{classodes_1_1fortranRectangularComplexArray_abbb4a814d9b0f6305a90533d6ecccdc8}{Im} (int i, int j)
+\item 
+double $\ast$ \hyperlink{classodes_1_1fortranRectangularComplexArray_afa636966bb08ef793ffca369bea73cc2}{operator\&} ()
+\begin{DoxyCompactList}\small\item\em return adress of double array. \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1fortranRectangularComplexArray_a8d912a7c2f32484a031e30aa95360fff}{print} (std\-::string s=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \hyperlink{classodes_1_1fortranRectangularComplexArray_a04409d9c6123c7ab97b2c9599ddec0cd}{x}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classodes_1_1fortranRectangularComplexArray_a44b92ded1ed0bf332322a6f4ed439db5}{ldab} =2$\ast$kl+ku+1
+\item 
+static const int \hyperlink{classodes_1_1fortranRectangularComplexArray_a0ec73fecad411a352df4b99c247780ca}{klku} =kl+ku
+\item 
+static const int \hyperlink{classodes_1_1fortranRectangularComplexArray_a92dd60f10c597b14d4a38502ab291cba}{size} =2$\ast$\hyperlink{classodes_1_1fortranRectangularComplexArray_a44b92ded1ed0bf332322a6f4ed439db5}{ldab}$\ast$n
+\item 
+static const int \hyperlink{classodes_1_1fortranRectangularComplexArray_a0b1f7b8193f5ee24cfde0c6953aee714}{l1} =\hyperlink{classodes_1_1fortranRectangularComplexArray_a44b92ded1ed0bf332322a6f4ed439db5}{ldab}-\/1
+\item 
+static const int \hyperlink{classodes_1_1fortranRectangularComplexArray_a527c968c7a1db51e34a8c5a1c65192fb}{cc} =\hyperlink{classodes_1_1fortranRectangularComplexArray_a0ec73fecad411a352df4b99c247780ca}{klku}-\/\hyperlink{classodes_1_1fortranRectangularComplexArray_a44b92ded1ed0bf332322a6f4ed439db5}{ldab}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int n, int kl, int ku$>$class odes\-::fortran\-Rectangular\-Complex\-Array$<$ n, kl, ku $>$}
+
+Banded Array of complex.. 
+
+Banded Array of Complex, of fixed size n, with kl subdiagonals and ku superdiagonals, fortran indexing, like in lapack routines (see zgbtrf for axample). Actually, we do not make use of complex$<$double$>$ class (we just want to store coefficients for lapack zge$\ast$ routines). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a3350b7de9dcc01f0384bc676f7945680}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!fortran\-Rectangular\-Complex\-Array@{fortran\-Rectangular\-Complex\-Array}}
+\index{fortran\-Rectangular\-Complex\-Array@{fortran\-Rectangular\-Complex\-Array}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{fortran\-Rectangular\-Complex\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::{\bf fortran\-Rectangular\-Complex\-Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranRectangularComplexArray_a3350b7de9dcc01f0384bc676f7945680}
+
+
+contructor 
+
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a3279352a8670d9606569870563b3396e}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!$\sim$fortran\-Rectangular\-Complex\-Array@{$\sim$fortran\-Rectangular\-Complex\-Array}}
+\index{$\sim$fortran\-Rectangular\-Complex\-Array@{$\sim$fortran\-Rectangular\-Complex\-Array}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{$\sim$fortran\-Rectangular\-Complex\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::$\sim${\bf fortran\-Rectangular\-Complex\-Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranRectangularComplexArray_a3279352a8670d9606569870563b3396e}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_abbb4a814d9b0f6305a90533d6ecccdc8}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!Im@{Im}}
+\index{Im@{Im}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{Im}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ double\& {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::Im (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranRectangularComplexArray_abbb4a814d9b0f6305a90533d6ecccdc8}
+Indexing, return a reference to \char`\"{}\-Imaginary\char`\"{} part. 
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+fortran indexing (row major, i$>$=1, j$>$=1,i$<$=n, j$<$=n). 
+\end{DoxyNote}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_afa636966bb08ef793ffca369bea73cc2}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{operator\&}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ double$\ast$ {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::operator\& (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranRectangularComplexArray_afa636966bb08ef793ffca369bea73cc2}
+
+
+return adress of double array. 
+
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a8d912a7c2f32484a031e30aa95360fff}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!print@{print}}
+\index{print@{print}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ void {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{s = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranRectangularComplexArray_a8d912a7c2f32484a031e30aa95360fff}
+
+
+print 
+
+\hypertarget{classodes_1_1fortranRectangularComplexArray_aac1f6f911dcd3b2acc8bb231d451be3d}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!Re@{Re}}
+\index{Re@{Re}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{Re}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ double\& {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::Re (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranRectangularComplexArray_aac1f6f911dcd3b2acc8bb231d451be3d}
+Indexing, return a reference to \char`\"{}real\char`\"{} part. 
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+fortran indexing (row major, i$>$=1, j$>$=1,i$<$=n, j$<$=n). 
+\end{DoxyNote}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a0afbfc5d739ef869582edcf28367402b}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!set@{set}}
+\index{set@{set}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ void {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::set (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{double}]{Real\-Part, }
+\item[{double}]{Imag\-Part = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranRectangularComplexArray_a0afbfc5d739ef869582edcf28367402b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a527c968c7a1db51e34a8c5a1c65192fb}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!cc@{cc}}
+\index{cc@{cc}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{cc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ const int {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::cc ={\bf klku}-\/{\bf ldab}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1fortranRectangularComplexArray_a527c968c7a1db51e34a8c5a1c65192fb}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a0ec73fecad411a352df4b99c247780ca}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!klku@{klku}}
+\index{klku@{klku}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{klku}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ const int {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::klku =kl+ku\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1fortranRectangularComplexArray_a0ec73fecad411a352df4b99c247780ca}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a0b1f7b8193f5ee24cfde0c6953aee714}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!l1@{l1}}
+\index{l1@{l1}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{l1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ const int {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::l1 ={\bf ldab}-\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1fortranRectangularComplexArray_a0b1f7b8193f5ee24cfde0c6953aee714}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a44b92ded1ed0bf332322a6f4ed439db5}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!ldab@{ldab}}
+\index{ldab@{ldab}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{ldab}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ const int {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::ldab =2$\ast$kl+ku+1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1fortranRectangularComplexArray_a44b92ded1ed0bf332322a6f4ed439db5}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a92dd60f10c597b14d4a38502ab291cba}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!size@{size}}
+\index{size@{size}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ const int {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::size =2$\ast${\bf ldab}$\ast$n\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1fortranRectangularComplexArray_a92dd60f10c597b14d4a38502ab291cba}
+\hypertarget{classodes_1_1fortranRectangularComplexArray_a04409d9c6123c7ab97b2c9599ddec0cd}{\index{odes\-::fortran\-Rectangular\-Complex\-Array@{odes\-::fortran\-Rectangular\-Complex\-Array}!x@{x}}
+\index{x@{x}!odes::fortranRectangularComplexArray@{odes\-::fortran\-Rectangular\-Complex\-Array}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int kl, int ku$>$ double$\ast$ {\bf odes\-::fortran\-Rectangular\-Complex\-Array}$<$ n, kl, ku $>$\-::x\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1fortranRectangularComplexArray_a04409d9c6123c7ab97b2c9599ddec0cd}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+common/include/\hyperlink{fortranRectangularComplexArray_8hpp}{fortran\-Rectangular\-Complex\-Array.\-hpp}\end{DoxyCompactItemize}

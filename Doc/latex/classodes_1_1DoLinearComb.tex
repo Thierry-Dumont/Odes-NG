@@ -1,0 +1,177 @@
+\hypertarget{classodes_1_1DoLinearComb}{\section{odes\-:\-:Do\-Linear\-Comb Class Reference}
+\label{classodes_1_1DoLinearComb}\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}}
+}
+
+
+{\ttfamily \#include $<$Tbb\-Utils.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classodes_1_1DoLinearComb_a8ecabd9cdebebd5f3ef869303c956253}{Do\-Linear\-Comb} (int \-\_\-size, double $\ast$Restrict cible, double $\ast$Restrict \-\_\-y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2, double a3, double $\ast$Restrict x3, double a4, double $\ast$Restrict x4)
+\item 
+\hyperlink{classodes_1_1DoLinearComb_ab3fa21cee3ac7fc00113b71d69ca76a3}{Do\-Linear\-Comb} (int \-\_\-size, double $\ast$Restrict cible, double $\ast$Restrict \-\_\-y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2, double a3, double $\ast$Restrict x3)
+\item 
+\hyperlink{classodes_1_1DoLinearComb_ac4e35004eb6c34517b3283fa5175d824}{Do\-Linear\-Comb} (int \-\_\-size, double $\ast$Restrict cible, double $\ast$Restrict \-\_\-y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2)
+\item 
+\hyperlink{classodes_1_1DoLinearComb_aa647ba6ec2b96f87c151a607e4c757fa}{Do\-Linear\-Comb} (int \-\_\-size, double $\ast$Restrict cible, double $\ast$Restrict \-\_\-y, double a1, double $\ast$Restrict x1)
+\item 
+\hyperlink{classodes_1_1DoLinearComb_a52645777917ddf452424311ad48a4964}{Do\-Linear\-Comb} (int \-\_\-size, double $\ast$cible, double a0, double $\ast$Restrict \-\_\-y, double a1, double $\ast$Restrict x1, double a2, double $\ast$x2)
+\item 
+\hyperlink{classodes_1_1DoLinearComb_a310e93696dc566bd1e5c52be4f2ae7d1}{Do\-Linear\-Comb} (const \hyperlink{classodes_1_1DoLinearComb}{Do\-Linear\-Comb} \&D)
+\begin{DoxyCompactList}\small\item\em param D \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1DoLinearComb_ac1520ee3f407eb901cfe6928211cc723}{operator()} (const blocked\-\_\-range$<$ size\-\_\-t $>$ \&r) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classodes_1_1DoLinearComb_a8d6bed1c8a4303372cde7d8ad5848d68}{nvec}
+\item 
+unsigned int \hyperlink{classodes_1_1DoLinearComb_afe0cd5ac7e7ba7f5d38a1d686d20604d}{size}
+\item 
+double $\ast$ \hyperlink{classodes_1_1DoLinearComb_a0375d94ddde01ef97012bc854f178c21}{v} \mbox{[}5\mbox{]}
+\item 
+double $\ast$ \hyperlink{classodes_1_1DoLinearComb_aae38a367a81194099c5d3a36696f071e}{y}
+\item 
+double \hyperlink{classodes_1_1DoLinearComb_a1cc69496a188c64186220467afda7152}{coeffs} \mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned int \hyperlink{classodes_1_1DoLinearComb_aa174ae87b125c39ac5afb2355efca9f2}{bsize} =\hyperlink{MacrosForCompilers_8hpp_aaa395acf51db19a6192e10ccd3c47fa2}{B\-L\-O\-C\-K\-\_\-\-F\-A\-C\-T\-O\-R}/sizeof(double)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic classes for Tbb\-: these classes are parameters to parallel\-\_\-for or parallel\-\_\-reduce. 1) Linear combinaisons. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1DoLinearComb_a8ecabd9cdebebd5f3ef869303c956253}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!Do\-Linear\-Comb@{Do\-Linear\-Comb}}
+\index{Do\-Linear\-Comb@{Do\-Linear\-Comb}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{Do\-Linear\-Comb}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::\-Do\-Linear\-Comb\-::\-Do\-Linear\-Comb (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-size, }
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{\-\_\-y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2, }
+\item[{double}]{a3, }
+\item[{double $\ast$Restrict}]{x3, }
+\item[{double}]{a4, }
+\item[{double $\ast$Restrict}]{x4}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1DoLinearComb_a8ecabd9cdebebd5f3ef869303c956253}
+Contructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-size} & number of variables. \\
+\hline
+{\em cible} & result \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1DoLinearComb_ab3fa21cee3ac7fc00113b71d69ca76a3}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!Do\-Linear\-Comb@{Do\-Linear\-Comb}}
+\index{Do\-Linear\-Comb@{Do\-Linear\-Comb}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{Do\-Linear\-Comb}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::\-Do\-Linear\-Comb\-::\-Do\-Linear\-Comb (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-size, }
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{\-\_\-y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2, }
+\item[{double}]{a3, }
+\item[{double $\ast$Restrict}]{x3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1DoLinearComb_ab3fa21cee3ac7fc00113b71d69ca76a3}
+\hypertarget{classodes_1_1DoLinearComb_ac4e35004eb6c34517b3283fa5175d824}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!Do\-Linear\-Comb@{Do\-Linear\-Comb}}
+\index{Do\-Linear\-Comb@{Do\-Linear\-Comb}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{Do\-Linear\-Comb}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::\-Do\-Linear\-Comb\-::\-Do\-Linear\-Comb (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-size, }
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{\-\_\-y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1DoLinearComb_ac4e35004eb6c34517b3283fa5175d824}
+\hypertarget{classodes_1_1DoLinearComb_aa647ba6ec2b96f87c151a607e4c757fa}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!Do\-Linear\-Comb@{Do\-Linear\-Comb}}
+\index{Do\-Linear\-Comb@{Do\-Linear\-Comb}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{Do\-Linear\-Comb}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::\-Do\-Linear\-Comb\-::\-Do\-Linear\-Comb (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-size, }
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{\-\_\-y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1DoLinearComb_aa647ba6ec2b96f87c151a607e4c757fa}
+\hypertarget{classodes_1_1DoLinearComb_a52645777917ddf452424311ad48a4964}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!Do\-Linear\-Comb@{Do\-Linear\-Comb}}
+\index{Do\-Linear\-Comb@{Do\-Linear\-Comb}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{Do\-Linear\-Comb}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::\-Do\-Linear\-Comb\-::\-Do\-Linear\-Comb (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-size, }
+\item[{double $\ast$}]{cible, }
+\item[{double}]{a0, }
+\item[{double $\ast$Restrict}]{\-\_\-y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$}]{x2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1DoLinearComb_a52645777917ddf452424311ad48a4964}
+\hypertarget{classodes_1_1DoLinearComb_a310e93696dc566bd1e5c52be4f2ae7d1}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!Do\-Linear\-Comb@{Do\-Linear\-Comb}}
+\index{Do\-Linear\-Comb@{Do\-Linear\-Comb}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{Do\-Linear\-Comb}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::\-Do\-Linear\-Comb\-::\-Do\-Linear\-Comb (
+\begin{DoxyParamCaption}
+\item[{const {\bf Do\-Linear\-Comb} \&}]{D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1DoLinearComb_a310e93696dc566bd1e5c52be4f2ae7d1}
+
+
+param D 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classodes_1_1DoLinearComb_ac1520ee3f407eb901cfe6928211cc723}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!operator()@{operator()}}
+\index{operator()@{operator()}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::\-Do\-Linear\-Comb\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const blocked\-\_\-range$<$ size\-\_\-t $>$ \&}]{r}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1DoLinearComb_ac1520ee3f407eb901cfe6928211cc723}
+operator used by tbb 
+\begin{DoxyParams}{Parameters}
+{\em r} & a subrange of the indices. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1DoLinearComb_aa174ae87b125c39ac5afb2355efca9f2}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!bsize@{bsize}}
+\index{bsize@{bsize}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{bsize}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int odes\-::\-Do\-Linear\-Comb\-::bsize ={\bf B\-L\-O\-C\-K\-\_\-\-F\-A\-C\-T\-O\-R}/sizeof(double)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1DoLinearComb_aa174ae87b125c39ac5afb2355efca9f2}
+\hypertarget{classodes_1_1DoLinearComb_a1cc69496a188c64186220467afda7152}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!coeffs@{coeffs}}
+\index{coeffs@{coeffs}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{coeffs}]{\setlength{\rightskip}{0pt plus 5cm}double odes\-::\-Do\-Linear\-Comb\-::coeffs\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1DoLinearComb_a1cc69496a188c64186220467afda7152}
+\hypertarget{classodes_1_1DoLinearComb_a8d6bed1c8a4303372cde7d8ad5848d68}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!nvec@{nvec}}
+\index{nvec@{nvec}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{nvec}]{\setlength{\rightskip}{0pt plus 5cm}int odes\-::\-Do\-Linear\-Comb\-::nvec\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1DoLinearComb_a8d6bed1c8a4303372cde7d8ad5848d68}
+\hypertarget{classodes_1_1DoLinearComb_afe0cd5ac7e7ba7f5d38a1d686d20604d}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!size@{size}}
+\index{size@{size}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int odes\-::\-Do\-Linear\-Comb\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1DoLinearComb_afe0cd5ac7e7ba7f5d38a1d686d20604d}
+\hypertarget{classodes_1_1DoLinearComb_a0375d94ddde01ef97012bc854f178c21}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!v@{v}}
+\index{v@{v}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{v}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ odes\-::\-Do\-Linear\-Comb\-::v\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1DoLinearComb_a0375d94ddde01ef97012bc854f178c21}
+\hypertarget{classodes_1_1DoLinearComb_aae38a367a81194099c5d3a36696f071e}{\index{odes\-::\-Do\-Linear\-Comb@{odes\-::\-Do\-Linear\-Comb}!y@{y}}
+\index{y@{y}!odes::DoLinearComb@{odes\-::\-Do\-Linear\-Comb}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ odes\-::\-Do\-Linear\-Comb\-::y\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1DoLinearComb_aae38a367a81194099c5d3a36696f071e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Rock4-\/\-N\-G/include/\hyperlink{TbbUtils_8hpp}{Tbb\-Utils.\-hpp}\end{DoxyCompactItemize}

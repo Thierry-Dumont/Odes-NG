@@ -1,0 +1,187 @@
+\hypertarget{classodes_1_1fortranArray}{\section{odes\-:\-:fortran\-Array$<$ n $>$ Class Template Reference}
+\label{classodes_1_1fortranArray}\index{odes\-::fortran\-Array$<$ n $>$@{odes\-::fortran\-Array$<$ n $>$}}
+}
+
+
+Array of double.  
+
+
+
+
+{\ttfamily \#include $<$fortran\-Array.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classodes_1_1fortranArray_a8df00fb51f372f5094232edcef336c3f}{fortran\-Array} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{classodes_1_1fortranArray_a6497db7c1e408bf8888e29ed142fda94}{fortran\-Array} (const \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&A\-A)
+\begin{DoxyCompactList}\small\item\em constructor (copy). \end{DoxyCompactList}\item 
+\hyperlink{classodes_1_1fortranArray_ac70234541156d66bceb76a914f7d7970}{$\sim$fortran\-Array} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+double \hyperlink{classodes_1_1fortranArray_a8da3208d04c048239fc3a8584090d2da}{operator()} (int i, int j) const 
+\item 
+double \& \hyperlink{classodes_1_1fortranArray_a8c8bbde9344a64c1c3a26b30f1a6d56f}{operator()} (int i, int j)
+\item 
+void \hyperlink{classodes_1_1fortranArray_a2ee01351fbf74c6f7b5d158ee16c84a0}{equal\-\_\-minus} (\hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&X)
+\item 
+void \hyperlink{classodes_1_1fortranArray_a5ada5ca2fd55f5e5dfb339de35b9f5ad}{add\-Diag} (double v)
+\item 
+double $\ast$ \hyperlink{classodes_1_1fortranArray_afc0615001fbb2d11c67e33c947478ad7}{operator\&} ()
+\begin{DoxyCompactList}\small\item\em return adress of double array. \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1fortranArray_ab119083abce68d9a216909784f42821d}{print} (std\-::string s=\char`\"{}\char`\"{}) const 
+\begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \hyperlink{classodes_1_1fortranArray_a71fc035c3f3ff899674122533b6713c1}{x}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classodes_1_1fortranArray_a730a0a23dd09551539653ee6fd2c973d}{n2} =n$\ast$n
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int n$>$class odes\-::fortran\-Array$<$ n $>$}
+
+Array of double. 
+
+Array of double, of fixed size n.\-n, fortran indexing. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1fortranArray_a8df00fb51f372f5094232edcef336c3f}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!fortran\-Array@{fortran\-Array}}
+\index{fortran\-Array@{fortran\-Array}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{fortran\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ {\bf odes\-::fortran\-Array}$<$ n $>$\-::{\bf fortran\-Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_a8df00fb51f372f5094232edcef336c3f}
+
+
+constructor 
+
+\hypertarget{classodes_1_1fortranArray_a6497db7c1e408bf8888e29ed142fda94}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!fortran\-Array@{fortran\-Array}}
+\index{fortran\-Array@{fortran\-Array}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{fortran\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ {\bf odes\-::fortran\-Array}$<$ n $>$\-::{\bf fortran\-Array} (
+\begin{DoxyParamCaption}
+\item[{const {\bf fortran\-Array}$<$ n $>$ \&}]{A\-A}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_a6497db7c1e408bf8888e29ed142fda94}
+
+
+constructor (copy). 
+
+define the ivdep pragma for different compilers.\hypertarget{classodes_1_1fortranArray_ac70234541156d66bceb76a914f7d7970}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!$\sim$fortran\-Array@{$\sim$fortran\-Array}}
+\index{$\sim$fortran\-Array@{$\sim$fortran\-Array}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{$\sim$fortran\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ {\bf odes\-::fortran\-Array}$<$ n $>$\-::$\sim${\bf fortran\-Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_ac70234541156d66bceb76a914f7d7970}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classodes_1_1fortranArray_a5ada5ca2fd55f5e5dfb339de35b9f5ad}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!add\-Diag@{add\-Diag}}
+\index{add\-Diag@{add\-Diag}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{add\-Diag}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ void {\bf odes\-::fortran\-Array}$<$ n $>$\-::add\-Diag (
+\begin{DoxyParamCaption}
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_a5ada5ca2fd55f5e5dfb339de35b9f5ad}
+add a value to diagonal. 
+\begin{DoxyParams}{Parameters}
+{\em v} & the value. \\
+\hline
+\end{DoxyParams}
+define the ivdep pragma for different compilers.\hypertarget{classodes_1_1fortranArray_a2ee01351fbf74c6f7b5d158ee16c84a0}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!equal\-\_\-minus@{equal\-\_\-minus}}
+\index{equal\-\_\-minus@{equal\-\_\-minus}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{equal\-\_\-minus}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ void {\bf odes\-::fortran\-Array}$<$ n $>$\-::equal\-\_\-minus (
+\begin{DoxyParamCaption}
+\item[{{\bf fortran\-Array}$<$ n $>$ \&}]{X}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_a2ee01351fbf74c6f7b5d158ee16c84a0}
+this = -\/array. 
+\begin{DoxyParams}{Parameters}
+{\em X} & the array. \\
+\hline
+\end{DoxyParams}
+define the ivdep pragma for different compilers.\hypertarget{classodes_1_1fortranArray_afc0615001fbb2d11c67e33c947478ad7}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{operator\&}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ double$\ast$ {\bf odes\-::fortran\-Array}$<$ n $>$\-::operator\& (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_afc0615001fbb2d11c67e33c947478ad7}
+
+
+return adress of double array. 
+
+\hypertarget{classodes_1_1fortranArray_a8da3208d04c048239fc3a8584090d2da}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!operator()@{operator()}}
+\index{operator()@{operator()}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ double {\bf odes\-::fortran\-Array}$<$ n $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_a8da3208d04c048239fc3a8584090d2da}
+indexing 
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+fortran indexing (row major, i$>$=1, j$>$=1,i$<$=n, j$<$=n). 
+\end{DoxyNote}
+\hypertarget{classodes_1_1fortranArray_a8c8bbde9344a64c1c3a26b30f1a6d56f}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!operator()@{operator()}}
+\index{operator()@{operator()}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ double\& {\bf odes\-::fortran\-Array}$<$ n $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_a8c8bbde9344a64c1c3a26b30f1a6d56f}
+indexing. 
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+fortran indexing (row major, i$>$=1, j$>$=1,i$<$=n, j$<$=n). 
+
+returns a reference, possible leftvalue. 
+\end{DoxyNote}
+\hypertarget{classodes_1_1fortranArray_ab119083abce68d9a216909784f42821d}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!print@{print}}
+\index{print@{print}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ void {\bf odes\-::fortran\-Array}$<$ n $>$\-::print (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{s = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranArray_ab119083abce68d9a216909784f42821d}
+
+
+print 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1fortranArray_a730a0a23dd09551539653ee6fd2c973d}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!n2@{n2}}
+\index{n2@{n2}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{n2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ const int {\bf odes\-::fortran\-Array}$<$ n $>$\-::n2 =n$\ast$n\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1fortranArray_a730a0a23dd09551539653ee6fd2c973d}
+\hypertarget{classodes_1_1fortranArray_a71fc035c3f3ff899674122533b6713c1}{\index{odes\-::fortran\-Array@{odes\-::fortran\-Array}!x@{x}}
+\index{x@{x}!odes::fortranArray@{odes\-::fortran\-Array}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ double$\ast$ {\bf odes\-::fortran\-Array}$<$ n $>$\-::x\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1fortranArray_a71fc035c3f3ff899674122533b6713c1}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+common/include/\hyperlink{fortranArray_8hpp}{fortran\-Array.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,233 @@
+\hypertarget{classodes_1_1ToolSequential}{\section{odes\-:\-:Tool\-Sequential$<$ Fonc $>$ Class Template Reference}
+\label{classodes_1_1ToolSequential}\index{odes\-::\-Tool\-Sequential$<$ Fonc $>$@{odes\-::\-Tool\-Sequential$<$ Fonc $>$}}
+}
+
+
+{\ttfamily \#include $<$Tool\-Sequential.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classodes_1_1ToolSequential_abacef9e3603066fcbf9516467493fd5d}{print} (double x\mbox{[}$\,$\mbox{]}, string s=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classodes_1_1ToolSequential_ae681d13b161f735fedb5f340c042909b}{Tool\-Sequential} (int \-\_\-mr, int \-\_\-mz, int \-\_\-size, double \-\_\-h)
+\item 
+\hyperlink{classodes_1_1ToolSequential_a3f5b60f436f0d9c48a4614d09b926193}{$\sim$\-Tool\-Sequential} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1ToolSequential_a951ac437e954114f7c81edc801625b46}{apply} (Fonc \&F, int deg, double $\ast$Restrict g1, double $\ast$Restrict g0, double $\ast$Restrict vtemp)
+\item 
+void \hyperlink{classodes_1_1ToolSequential_a67f98bd54ea71a1118d685fce853f909}{apply} (Fonc \&F, double $\ast$Restrict g2, double $\ast$Restrict g1, double $\ast$Restrict g0)
+\item 
+void \hyperlink{classodes_1_1ToolSequential_accc88cc8648687b1bff7da26c5a7c007}{cl} (double $\ast$Restrict g, double $\ast$Restrict y, double $\ast$Restrict fn)
+\item 
+void \hyperlink{classodes_1_1ToolSequential_a5997929574f84f8e3d491ecedec4b556}{cl} (double $\ast$Restrict cible, double $\ast$Restrict y, double a1, double $\ast$Restrict x1)
+\item 
+void \hyperlink{classodes_1_1ToolSequential_adb424c1762d42185d527465264ae58c0}{cl} (double $\ast$Restrict cible, double $\ast$Restrict y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2)
+\item 
+void \hyperlink{classodes_1_1ToolSequential_a21f01a60762239df96d72d10efd60c9c}{cl} (double $\ast$Restrict cible, double $\ast$Restrict y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2, double a3, double $\ast$Restrict x3)
+\item 
+void \hyperlink{classodes_1_1ToolSequential_a8d4e4f3681112f2ff0f7ddd0e2975dd0}{ct} (double $\ast$Restrict cible, double $\ast$Restrict y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2, double a3, double $\ast$Restrict x3, double a4, double $\ast$Restrict x4)
+\item 
+double \hyperlink{classodes_1_1ToolSequential_acb8be967e6ba34773629a020e0ed207c}{rpp2} (double $\ast$Restrict y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2, double a3, double $\ast$Restrict x3, double a4, double $\ast$Restrict x4, double a5, double $\ast$Restrict x5, double atol, double rtol)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classodes_1_1ToolSequential_a6a4ceae2b6963e6f0e610ff4964f7365}{mr}
+\item 
+int \hyperlink{classodes_1_1ToolSequential_ac5272f8a618d35954514a7002dad6536}{mz}
+\item 
+int \hyperlink{classodes_1_1ToolSequential_a43153d094b10b73072739d6e97ba86ad}{size}
+\item 
+double \hyperlink{classodes_1_1ToolSequential_ae7202d1172c35aa94d2d76642b8d6935}{h}
+\item 
+\hyperlink{structodes_1_1Rock4Coeffs}{Rock4\-Coeffs} \hyperlink{classodes_1_1ToolSequential_a0aa8a52176b407d740953c0b07b00ae0}{Coeffs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Fonc$>$class odes\-::\-Tool\-Sequential$<$ Fonc $>$}
+
+Perform basic operations for \hyperlink{classodes_1_1Rock4}{Rock4}. This is the sequential (but vectorized) case.
+
+!\-V\-E\-C annotation means that the loop as proved to be vectorizable. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1ToolSequential_ae681d13b161f735fedb5f340c042909b}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!Tool\-Sequential@{Tool\-Sequential}}
+\index{Tool\-Sequential@{Tool\-Sequential}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{Tool\-Sequential}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::{\bf Tool\-Sequential} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-mr, }
+\item[{int}]{\-\_\-mz, }
+\item[{int}]{\-\_\-size, }
+\item[{double}]{\-\_\-h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_ae681d13b161f735fedb5f340c042909b}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-mr} & see \hyperlink{Rock4_8hpp}{Rock4.\-hpp} \\
+\hline
+{\em \-\_\-mz} & see \hyperlink{Rock4_8hpp}{Rock4.\-hpp} \\
+\hline
+{\em \-\_\-size} & see \hyperlink{Rock4_8hpp}{Rock4.\-hpp} \\
+\hline
+{\em h} & time step. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1ToolSequential_a3f5b60f436f0d9c48a4614d09b926193}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!$\sim$\-Tool\-Sequential@{$\sim$\-Tool\-Sequential}}
+\index{$\sim$\-Tool\-Sequential@{$\sim$\-Tool\-Sequential}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{$\sim$\-Tool\-Sequential}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::$\sim${\bf Tool\-Sequential} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_a3f5b60f436f0d9c48a4614d09b926193}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classodes_1_1ToolSequential_a951ac437e954114f7c81edc801625b46}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!apply@{apply}}
+\index{apply@{apply}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::apply (
+\begin{DoxyParamCaption}
+\item[{Fonc \&}]{F, }
+\item[{int}]{deg, }
+\item[{double $\ast$Restrict}]{g1, }
+\item[{double $\ast$Restrict}]{g0, }
+\item[{double $\ast$Restrict}]{vtemp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_a951ac437e954114f7c81edc801625b46}
+The recurrence for one degree. 
+\begin{DoxyParams}{Parameters}
+{\em F} & R\-H\-S. \\
+\hline
+{\em g1} & preceeding term \\
+\hline
+{\em g0} & on input\-: 2 terms ago; result on output. \\
+\hline
+{\em deg} & degree.. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1ToolSequential_a67f98bd54ea71a1118d685fce853f909}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!apply@{apply}}
+\index{apply@{apply}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::apply (
+\begin{DoxyParamCaption}
+\item[{Fonc \&}]{F, }
+\item[{double $\ast$Restrict}]{g2, }
+\item[{double $\ast$Restrict}]{g1, }
+\item[{double $\ast$Restrict}]{g0}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_a67f98bd54ea71a1118d685fce853f909}
+\hypertarget{classodes_1_1ToolSequential_accc88cc8648687b1bff7da26c5a7c007}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!cl@{cl}}
+\index{cl@{cl}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::cl (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{g, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double $\ast$Restrict}]{fn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_accc88cc8648687b1bff7da26c5a7c007}
+\hypertarget{classodes_1_1ToolSequential_a5997929574f84f8e3d491ecedec4b556}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!cl@{cl}}
+\index{cl@{cl}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::cl (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_a5997929574f84f8e3d491ecedec4b556}
+\hypertarget{classodes_1_1ToolSequential_adb424c1762d42185d527465264ae58c0}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!cl@{cl}}
+\index{cl@{cl}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::cl (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_adb424c1762d42185d527465264ae58c0}
+\hypertarget{classodes_1_1ToolSequential_a21f01a60762239df96d72d10efd60c9c}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!cl@{cl}}
+\index{cl@{cl}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::cl (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2, }
+\item[{double}]{a3, }
+\item[{double $\ast$Restrict}]{x3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_a21f01a60762239df96d72d10efd60c9c}
+\hypertarget{classodes_1_1ToolSequential_a8d4e4f3681112f2ff0f7ddd0e2975dd0}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!ct@{ct}}
+\index{ct@{ct}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{ct}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::ct (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2, }
+\item[{double}]{a3, }
+\item[{double $\ast$Restrict}]{x3, }
+\item[{double}]{a4, }
+\item[{double $\ast$Restrict}]{x4}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_a8d4e4f3681112f2ff0f7ddd0e2975dd0}
+\hypertarget{classodes_1_1ToolSequential_abacef9e3603066fcbf9516467493fd5d}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!print@{print}}
+\index{print@{print}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::print (
+\begin{DoxyParamCaption}
+\item[{double}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{string}]{s = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_abacef9e3603066fcbf9516467493fd5d}
+\hypertarget{classodes_1_1ToolSequential_acb8be967e6ba34773629a020e0ed207c}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!rpp2@{rpp2}}
+\index{rpp2@{rpp2}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{rpp2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ double {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::rpp2 (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2, }
+\item[{double}]{a3, }
+\item[{double $\ast$Restrict}]{x3, }
+\item[{double}]{a4, }
+\item[{double $\ast$Restrict}]{x4, }
+\item[{double}]{a5, }
+\item[{double $\ast$Restrict}]{x5, }
+\item[{double}]{atol, }
+\item[{double}]{rtol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolSequential_acb8be967e6ba34773629a020e0ed207c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1ToolSequential_a0aa8a52176b407d740953c0b07b00ae0}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!Coeffs@{Coeffs}}
+\index{Coeffs@{Coeffs}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{Coeffs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ {\bf Rock4\-Coeffs} {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::Coeffs\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolSequential_a0aa8a52176b407d740953c0b07b00ae0}
+\hypertarget{classodes_1_1ToolSequential_ae7202d1172c35aa94d2d76642b8d6935}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!h@{h}}
+\index{h@{h}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ double {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::h\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolSequential_ae7202d1172c35aa94d2d76642b8d6935}
+\hypertarget{classodes_1_1ToolSequential_a6a4ceae2b6963e6f0e610ff4964f7365}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!mr@{mr}}
+\index{mr@{mr}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{mr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ int {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::mr\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolSequential_a6a4ceae2b6963e6f0e610ff4964f7365}
+\hypertarget{classodes_1_1ToolSequential_ac5272f8a618d35954514a7002dad6536}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!mz@{mz}}
+\index{mz@{mz}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{mz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ int {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::mz\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolSequential_ac5272f8a618d35954514a7002dad6536}
+\hypertarget{classodes_1_1ToolSequential_a43153d094b10b73072739d6e97ba86ad}{\index{odes\-::\-Tool\-Sequential@{odes\-::\-Tool\-Sequential}!size@{size}}
+\index{size@{size}!odes::ToolSequential@{odes\-::\-Tool\-Sequential}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ int {\bf odes\-::\-Tool\-Sequential}$<$ Fonc $>$\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolSequential_a43153d094b10b73072739d6e97ba86ad}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Rock4-\/\-N\-G/include/\hyperlink{ToolSequential_8hpp}{Tool\-Sequential.\-hpp}\end{DoxyCompactItemize}

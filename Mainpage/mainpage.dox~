@@ -1,0 +1,25 @@
+/*! \mainpage Documentation.
+ *
+ \section Introduction
+
+The source directories Radau5-NG, Rock4-NG, Rock4-L, Rodas-NG, SDIRKL and SymplecticRK
+contains sources of different Runge-Kutta methods written in C++. 
+
+> <b> Radau5-NG </b> is a rewritting of Hairer and Wanner code, optimized, but with some 
+restrictions (see documentation).
+
+> <b>  Rock4-NG </b> is a rewritting of A. Abdulle code, avoiding vector copies.
+
+> <b> Rock4-L </b> is an adaptation of Rock4 method ro linear (actually affine)
+problems \f$ du/dt= A u +B.\f$, with  \f A \f$ linear and  \f$ B \f$  independent of  \f$ t.\f$
+
+> <b> Rodas-NG </b> is a rewritting of Hairer and Wanner code, optimized, but with some 
+restrictions (see documentation).
+
+> <b> SDIRKL</b> is a generic implementation of SDIRK methods in the linear (affine) case. Thus, linear systems must be solved.
+
+> <b> SymplecticRK</b> is the (the family of) symplectic Gauss methods.
+
+See documentation of individual programs.
+
+*/

@@ -1,0 +1,19 @@
+
+     Computing coefficients for Gaussian RK formulas.
+     ===============================================
+
+comp.sage is a Sage (http://www.sagemath.org/) script to generate the 
+coefficients of any Gaussian Runge-Kutta formula.
+
+Adapt s to the number of steps of your formula,
+and adapt the field RR.
+
+You can use comp.sage like this:
+
+>sage
+sage: load("comp.sage")
+
+or in your web browser using any Sage web server. 
+
+The coefficients generated are in C++ syntax.
+

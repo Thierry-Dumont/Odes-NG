@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structcompat.html" title="compat\&lt;(Fonct::n&#45;Fonct\l::nsub)==1 &amp;&amp;(Fonct::n\l&#45;Fonct::nsup)==1, Fonct\l::Hessenberg \&gt;" alt="" coords="20,5,183,91"/>
+<area shape="rect" id="node3" href="$classodes_1_1Radau5cc.html" title="A C++ implementation of Radau5. " alt="" coords="245,70,424,101"/>
+<area shape="rect" id="node4" href="$classodes_1_1Matrices.html" title="odes::Matrices\&lt;(Fonct\l::n&#45;Fonct::nsub)==1 &amp;&amp;\l(Fonct::n&#45;Fonct::nsup)\l==1, Fonct::Hessenberg,\l Fonct::n, Fonct::nsub, Fonct\l::nsup \&gt;" alt="" coords="5,114,197,238"/>
+<area shape="rect" id="node7" href="$classodes_1_1Rodascc.html" title="A C++ implementation of Rodas. " alt="" coords="249,161,420,191"/>
+</map>

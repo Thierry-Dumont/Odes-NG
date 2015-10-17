@@ -1,0 +1,52 @@
+\hypertarget{SymplecticRK_8hpp}{\section{Symplectic\-R\-K/include/\-Symplectic\-R\-K.hpp File Reference}
+\label{SymplecticRK_8hpp}\index{Symplectic\-R\-K/include/\-Symplectic\-R\-K.\-hpp@{Symplectic\-R\-K/include/\-Symplectic\-R\-K.\-hpp}}
+}
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include \char`\"{}Gaussian\-Method.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Ftest.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Extrap.\-hpp\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}Ivdep.\-hpp\char`\"{}}\\*
+Include dependency graph for Symplectic\-R\-K.\-hpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SymplecticRK_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSymplectikRK_1_1SymplecticRK}{Symplectik\-R\-K\-::\-Symplectic\-R\-K$<$ Fonct, nsteps, Double $>$}
+\begin{DoxyCompactList}\small\item\em Symplectic R\-K method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceSymplectikRK}{Symplectik\-R\-K}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{SymplecticRK_8hpp_aacc3ee1a7f283f8ef65cea31f4436a95}{M\-A\-X}(x, y)~((x)$>$(y)?(x)\-:(y))
+\item 
+\#define \hyperlink{SymplecticRK_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}{A\-B\-S}(a)~(((a) $>$= (0.\-0)) ? (a) \-: (-\/a))
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{SymplecticRK_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}{\index{Symplectic\-R\-K.\-hpp@{Symplectic\-R\-K.\-hpp}!A\-B\-S@{A\-B\-S}}
+\index{A\-B\-S@{A\-B\-S}!SymplecticRK.hpp@{Symplectic\-R\-K.\-hpp}}
+\subsubsection[{A\-B\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-B\-S(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~(((a) $>$= (0.\-0)) ? (a) \-: (-\/a))}}\label{SymplecticRK_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}
+\hypertarget{SymplecticRK_8hpp_aacc3ee1a7f283f8ef65cea31f4436a95}{\index{Symplectic\-R\-K.\-hpp@{Symplectic\-R\-K.\-hpp}!M\-A\-X@{M\-A\-X}}
+\index{M\-A\-X@{M\-A\-X}!SymplecticRK.hpp@{Symplectic\-R\-K.\-hpp}}
+\subsubsection[{M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~((x)$>$(y)?(x)\-:(y))}}\label{SymplecticRK_8hpp_aacc3ee1a7f283f8ef65cea31f4436a95}

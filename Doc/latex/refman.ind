@@ -1,0 +1,1487 @@
+\begin{theindex}
+
+  \item {$\sim $\discretionary {-}{}{}Matrices}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+  \item {$\sim $\discretionary {-}{}{}Radau5cc}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{54}
+  \item {$\sim $fortran\discretionary {-}{}{}Array}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{17}
+  \item {$\sim $fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+  \item {$\sim $fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{22}
+  \item {$\sim $fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{24}
+  \item {$\sim $fortran\discretionary {-}{}{}Vector}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{27}
+  \item {$\sim $fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{30}
+  \item {$\sim $logger}
+    \subitem {odes\discretionary {-}{}{}::logger}, \hyperpage{38}
+
+  \indexspace
+
+  \item {a\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Y}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{30}
+  \item {a\discretionary {-}{}{}\_\discretionary {-}{}{}x\discretionary {-}{}{}\_\discretionary {-}{}{}plus\discretionary {-}{}{}\_\discretionary {-}{}{}y}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{30}
+  \item {A\discretionary {-}{}{}B\discretionary {-}{}{}S}
+    \subitem {Hessenberg.\discretionary {-}{}{}hpp}, \hyperpage{75}
+    \subitem {Radau5cc.\discretionary {-}{}{}hpp}, \hyperpage{82}
+  \item {A\discretionary {-}{}{}L\discretionary {-}{}{}P\discretionary {-}{}{}H}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}T}
+    \subitem {compat.\discretionary {-}{}{}hpp}, \hyperpage{67}
+  \item {A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {compat.\discretionary {-}{}{}hpp}, \hyperpage{67}
+  \item {A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}D}
+    \subitem {Allocate\discretionary {-}{}{}Destroy\discretionary {-}{}{}Vector.\discretionary {-}{}{}hpp}, 
+		\hyperpage{66}
+  \item {add\discretionary {-}{}{}Diag}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{17}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{22}
+  \item {all}
+    \subitem {odes}, \hyperpage{12}
+  \item {alloc\discretionary {-}{}{}Double\discretionary {-}{}{}Array}
+    \subitem {Allocate\discretionary {-}{}{}Destroy\discretionary {-}{}{}Vector.\discretionary {-}{}{}hpp}, 
+		\hyperpage{66}
+  \item {Allocate\discretionary {-}{}{}Destroy\discretionary {-}{}{}Vector.\discretionary {-}{}{}hpp}
+    \subitem {A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}D}, 
+		\hyperpage{66}
+    \subitem {alloc\discretionary {-}{}{}Double\discretionary {-}{}{}Array}, 
+		\hyperpage{66}
+    \subitem {destroy\discretionary {-}{}{}Double\discretionary {-}{}{}Array}, 
+		\hyperpage{66}
+  \item {atol}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+
+  \indexspace
+
+  \item {B\discretionary {-}{}{}E\discretionary {-}{}{}T\discretionary {-}{}{}A}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}
+    \subitem {Macros\discretionary {-}{}{}For\discretionary {-}{}{}Compilers.\discretionary {-}{}{}hpp}, 
+		\hyperpage{78}
+
+  \indexspace
+
+  \item {C1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {C1\discretionary {-}{}{}M1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {C1\discretionary {-}{}{}M\discretionary {-}{}{}C2}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {C2}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {C2\discretionary {-}{}{}M1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {C\discretionary {-}{}{}N\discretionary {-}{}{}O}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}T1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {calhes}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{47}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {caljac}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {cc}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{23}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+  \item {cfac}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {changed\-H}
+    \subitem {odes}, \hyperpage{12}
+  \item {Ci}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+  \item {clear}
+    \subitem {odes\discretionary {-}{}{}::logger}, \hyperpage{39}
+  \item {common/include/\discretionary {-}{}{}Allocate\discretionary {-}{}{}Destroy\discretionary {-}{}{}Vector.\discretionary {-}{}{}hpp}, 
+		\hyperpage{65}
+  \item {common/include/\discretionary {-}{}{}Generic\discretionary {-}{}{}Exception.\discretionary {-}{}{}hpp}, 
+		\hyperpage{73}
+  \item {common/include/\discretionary {-}{}{}Hessenberg.\discretionary {-}{}{}hpp}, 
+		\hyperpage{74}
+  \item {common/include/\discretionary {-}{}{}Ivdep.\discretionary {-}{}{}hpp}, 
+		\hyperpage{77}
+  \item {common/include/\discretionary {-}{}{}Macros\discretionary {-}{}{}For\discretionary {-}{}{}Compilers.\discretionary {-}{}{}hpp}, 
+		\hyperpage{78}
+  \item {common/include/\discretionary {-}{}{}Matrices.\discretionary {-}{}{}hpp}, 
+		\hyperpage{78}
+  \item {common/include/\discretionary {-}{}{}Matrix\discretionary {-}{}{}Type.\discretionary {-}{}{}hpp}, 
+		\hyperpage{80}
+  \item {common/include/compat.\discretionary {-}{}{}hpp}, 
+		\hyperpage{66}
+  \item {common/include/fortran\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}, 
+		\hyperpage{67}
+  \item {common/include/fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}, 
+		\hyperpage{68}
+  \item {common/include/fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}, 
+		\hyperpage{69}
+  \item {common/include/fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}, 
+		\hyperpage{70}
+  \item {common/include/fortran\discretionary {-}{}{}Vector.\discretionary {-}{}{}hpp}, 
+		\hyperpage{72}
+  \item {common/include/logger.\discretionary {-}{}{}hpp}, 
+		\hyperpage{77}
+  \item {common/include/protos\discretionary {-}{}{}\_\discretionary {-}{}{}lapack.\discretionary {-}{}{}hpp}, 
+		\hyperpage{81}
+  \item {compat}
+    \subitem {ct\discretionary {-}{}{}\_\discretionary {-}{}{}assert}, 
+		\hyperpage{15}
+  \item {compat$<$ full, Hessenberg $>$}, \hyperpage{15}
+  \item {compat.\discretionary {-}{}{}hpp}
+    \subitem {A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}T}, 
+		\hyperpage{67}
+    \subitem {A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{67}
+    \subitem {ct\discretionary {-}{}{}\_\discretionary {-}{}{}assert}, 
+		\hyperpage{67}
+  \item {Compute\discretionary {-}{}{}Jacobian\discretionary {-}{}{}Numerically}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {converged}
+    \subitem {odes\-::\-Radau5cc}, \hyperpage{54}
+  \item {Cr}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {ct\discretionary {-}{}{}\_\discretionary {-}{}{}assert}
+    \subitem {compat}, \hyperpage{15}
+    \subitem {compat.\discretionary {-}{}{}hpp}, \hyperpage{67}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{54}
+
+  \indexspace
+
+  \item {d2}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{21}
+  \item {D\discretionary {-}{}{}D1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {D\discretionary {-}{}{}D2}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {D\discretionary {-}{}{}D3}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {dech}
+    \subitem {Hessenberg.\discretionary {-}{}{}hpp}, \hyperpage{75}
+  \item {dechc}
+    \subitem {Hessenberg.\discretionary {-}{}{}hpp}, \hyperpage{75}
+  \item {decomc}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{40}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{44}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{54}
+  \item {decomr}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{40}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{44}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{54}
+  \item {deletable}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{28}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{35}
+  \item {destroy\discretionary {-}{}{}Double\discretionary {-}{}{}Array}
+    \subitem {Allocate\discretionary {-}{}{}Destroy\discretionary {-}{}{}Vector.\discretionary {-}{}{}hpp}, 
+		\hyperpage{66}
+  \item {dgbtrf\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{12}
+  \item {dgbtrs\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{12}
+  \item {dgehrd\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{12}
+  \item {dgetrf\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{12}
+  \item {dgetrs\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{12}
+  \item {did\-Not\-Converge}
+    \subitem {odes\-::\-Radau5cc}, \hyperpage{54}
+  \item {dlarnv\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{13}
+  \item {do\discretionary {-}{}{}Newton\discretionary {-}{}{}Matrices}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {do\discretionary {-}{}{}Scal}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {dorghr\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{13}
+  \item {dyno}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {dynold}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+
+  \indexspace
+
+  \item {E1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {E2\discretionary {-}{}{}I}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {E2\discretionary {-}{}{}R}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {equal\discretionary {-}{}{}\_\discretionary {-}{}{}minus}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{17}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{22}
+  \item {erracc}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {estrad}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {event}
+    \subitem {odes\discretionary {-}{}{}::logger\discretionary {-}{}{}::event}, 
+		\hyperpage{15}
+  \item {event\discretionary {-}{}{}Type}
+    \subitem {odes}, \hyperpage{12}
+
+  \indexspace
+
+  \item {F}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {F1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {F2}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {F3}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {faccon}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {facl}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {facr}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {Fi}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {first}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {first\discretionary {-}{}{}Accepted\discretionary {-}{}{}Step}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {fnewt}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+  \item {fortran\discretionary {-}{}{}Array}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{17}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{28}
+  \item {fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+  \item {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{22}
+  \item {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X}, 
+		\hyperpage{70}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N}, 
+		\hyperpage{70}
+  \item {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{24}
+  \item {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X}, 
+		\hyperpage{72}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N}, 
+		\hyperpage{72}
+  \item {fortran\discretionary {-}{}{}Vector}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{27}
+  \item {fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{28}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{30}
+  \item {Fr}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {Full}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrixtype}, 
+		\hyperpage{49}
+
+  \indexspace
+
+  \item {Generic\discretionary {-}{}{}Exception}, \hyperpage{36}
+    \subitem {Generic\discretionary {-}{}{}Exception}, 
+		\hyperpage{37, 38}
+    \subitem {Generic\discretionary {-}{}{}Exception}, 
+		\hyperpage{37, 38}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}size}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{27}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{31}
+  \item {get\discretionary {-}{}{}Last\discretionary {-}{}{}Time\discretionary {-}{}{}Step}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}N\discretionary {-}{}{}Jac}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{57}
+  \item {get\discretionary {-}{}{}Naccpt}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}Ndec}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}Newt}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}Nfonc\discretionary {-}{}{}Called}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {get\discretionary {-}{}{}Nrejct}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{57}
+  \item {get\discretionary {-}{}{}Nstep}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{57}
+  \item {getfirst\discretionary {-}{}{}Accepted\discretionary {-}{}{}Step}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{56}
+  \item {gustafsson\discretionary {-}{}{}Test}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{61}
+
+  \indexspace
+
+  \item {h}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {hacc}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {Hessenberg}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {Hessenberg.\discretionary {-}{}{}hpp}
+    \subitem {A\discretionary {-}{}{}B\discretionary {-}{}{}S}, 
+		\hyperpage{75}
+    \subitem {dech}, \hyperpage{75}
+    \subitem {dechc}, \hyperpage{75}
+    \subitem {householder}, \hyperpage{76}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N}, 
+		\hyperpage{75}
+    \subitem {solh}, \hyperpage{76}
+    \subitem {solhc}, \hyperpage{76}
+  \item {hhfac}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {hmax}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {hmaxn}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {hold}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {hopt}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {householder}
+    \subitem {Hessenberg.\discretionary {-}{}{}hpp}, \hyperpage{76}
+
+  \indexspace
+
+  \item {Ibegin}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{44}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{57}
+  \item {Iend}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{44}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{57}
+  \item {Im}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+  \item {ipi}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {ipivc}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+  \item {ipivr}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+  \item {ipr}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+
+  \indexspace
+
+  \item {Jac}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {Jacobian}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{57}
+
+  \indexspace
+
+  \item {klku}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{23}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+
+  \indexspace
+
+  \item {L}
+    \subitem {odes\discretionary {-}{}{}::logger}, \hyperpage{39}
+  \item {l1}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{23}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+  \item {last}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {lc2}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{31}
+  \item {lc3}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{31}
+  \item {lc4}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{31}
+  \item {lc5}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{32}
+  \item {ldab}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{23}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+  \item {logger}
+    \subitem {odes\discretionary {-}{}{}::logger}, \hyperpage{38}
+  \item {lwork}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+
+  \indexspace
+
+  \item {M\discretionary {-}{}{}A\discretionary {-}{}{}X}
+    \subitem {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}, 
+		\hyperpage{70}
+    \subitem {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}, 
+		\hyperpage{72}
+    \subitem {Matrices.\discretionary {-}{}{}hpp}, \hyperpage{80}
+    \subitem {Radau5cc.\discretionary {-}{}{}hpp}, \hyperpage{82}
+  \item {M\discretionary {-}{}{}I\discretionary {-}{}{}N}
+    \subitem {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}, 
+		\hyperpage{70}
+    \subitem {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array.\discretionary {-}{}{}hpp}, 
+		\hyperpage{72}
+    \subitem {Hessenberg.\discretionary {-}{}{}hpp}, \hyperpage{75}
+    \subitem {Matrices.\discretionary {-}{}{}hpp}, \hyperpage{80}
+    \subitem {Radau5cc.\discretionary {-}{}{}hpp}, \hyperpage{82}
+  \item {Macros\discretionary {-}{}{}For\discretionary {-}{}{}Compilers.\discretionary {-}{}{}hpp}
+    \subitem {B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
+		\hyperpage{78}
+  \item {Mainpage/mainpage.\discretionary {-}{}{}dox}, \hyperpage{81}
+  \item {Matrices}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{40}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{44}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+  \item {Matrices.\discretionary {-}{}{}hpp}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X}, 
+		\hyperpage{80}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N}, 
+		\hyperpage{80}
+  \item {Matrix}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrixtype}, 
+		\hyperpage{49}
+  \item {Matrix\discretionary {-}{}{}Complex}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{40}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{44}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{54}
+  \item {Matrix\discretionary {-}{}{}Full}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {Matrix\discretionary {-}{}{}Real}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{40}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{44}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{54}
+
+  \indexspace
+
+  \item {n}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {n2}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{19}
+  \item {naccpt}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {ndec}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {newt}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {Newton}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{57}
+  \item {Newton\-Failed}
+    \subitem {odes}, \hyperpage{12}
+  \item {Newton\-Will\-Not\-Converge}
+    \subitem {odes}, \hyperpage{12}
+  \item {Newton\discretionary {-}{}{}Iteration\discretionary {-}{}{}Test}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{58}
+  \item {nfonccalled}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {ninf}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {nit}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {njac}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {nmax}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {nrejct}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {nstep}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {nsup}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+
+  \indexspace
+
+  \item {odes}, \hyperpage{11}
+    \subitem {all}, \hyperpage{12}
+    \subitem {changed\-H}, \hyperpage{12}
+    \subitem {dgbtrf\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{12}
+    \subitem {dgbtrs\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{12}
+    \subitem {dgehrd\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{12}
+    \subitem {dgetrf\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{12}
+    \subitem {dgetrs\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{12}
+    \subitem {dlarnv\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{13}
+    \subitem {dorghr\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{13}
+    \subitem {event\discretionary {-}{}{}Type}, \hyperpage{12}
+    \subitem {Newton\-Failed}, \hyperpage{12}
+    \subitem {Newton\-Will\-Not\-Converge}, \hyperpage{12}
+    \subitem {rejected\-Step}, \hyperpage{12}
+    \subitem {success}, \hyperpage{12}
+    \subitem {zgbtrf\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{13}
+    \subitem {zgbtrs\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{13}
+    \subitem {zgetrf\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{13}
+    \subitem {zgetrs\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{13}
+  \item {odes\-::\-Radau5cc}
+    \subitem {converged}, \hyperpage{54}
+    \subitem {did\-Not\-Converge}, \hyperpage{54}
+    \subitem {will\-Not\-Converge}, \hyperpage{54}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}
+    \subitem {calhes}, \hyperpage{42}
+    \subitem {decomc}, \hyperpage{40}
+    \subitem {decomr}, \hyperpage{40}
+    \subitem {E1}, \hyperpage{42}
+    \subitem {E2\discretionary {-}{}{}R}, \hyperpage{42}
+    \subitem {Ibegin}, \hyperpage{42}
+    \subitem {Iend}, \hyperpage{42}
+    \subitem {ipivc}, \hyperpage{42}
+    \subitem {ipivr}, \hyperpage{42}
+    \subitem {Matrices}, \hyperpage{40}
+    \subitem {Matrix\discretionary {-}{}{}Complex}, \hyperpage{40}
+    \subitem {Matrix\discretionary {-}{}{}Real}, \hyperpage{40}
+    \subitem {solvecomplex}, \hyperpage{42}
+    \subitem {solvereal}, \hyperpage{42}
+    \subitem {Z2\discretionary {-}{}{}N}, \hyperpage{43}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{43}
+    \subitem {calhes}, \hyperpage{45}
+    \subitem {decomc}, \hyperpage{44}
+    \subitem {decomr}, \hyperpage{44}
+    \subitem {E1}, \hyperpage{45}
+    \subitem {E2\discretionary {-}{}{}R}, \hyperpage{45}
+    \subitem {Ibegin}, \hyperpage{44}
+    \subitem {Iend}, \hyperpage{44}
+    \subitem {ipivc}, \hyperpage{45}
+    \subitem {ipivr}, \hyperpage{45}
+    \subitem {ldab}, \hyperpage{45}
+    \subitem {Matrices}, \hyperpage{44}
+    \subitem {Matrix\discretionary {-}{}{}Complex}, \hyperpage{44}
+    \subitem {Matrix\discretionary {-}{}{}Real}, \hyperpage{44}
+    \subitem {solvecomplex}, \hyperpage{44}
+    \subitem {solvereal}, \hyperpage{45}
+    \subitem {Z2\discretionary {-}{}{}N}, \hyperpage{45}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+    \subitem {calhes}, \hyperpage{47}
+    \subitem {decomc}, \hyperpage{46}
+    \subitem {decomr}, \hyperpage{46}
+    \subitem {Ibegin}, \hyperpage{46}
+    \subitem {Iend}, \hyperpage{46}
+    \subitem {Matrices}, \hyperpage{46}
+    \subitem {Matrix\discretionary {-}{}{}Complex}, \hyperpage{46}
+    \subitem {Matrix\discretionary {-}{}{}Real}, \hyperpage{46}
+    \subitem {solvecomplex}, \hyperpage{46}
+    \subitem {solvereal}, \hyperpage{46}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ full, Hessengerg, n, nsub, nsup $>$}, 
+		\hyperpage{39}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{47}
+    \subitem {$\sim $\discretionary {-}{}{}Matrices}, \hyperpage{48}
+    \subitem {calhes}, \hyperpage{48}
+    \subitem {Ci}, \hyperpage{48}
+    \subitem {Cr}, \hyperpage{49}
+    \subitem {decomc}, \hyperpage{48}
+    \subitem {decomr}, \hyperpage{48}
+    \subitem {E1}, \hyperpage{49}
+    \subitem {E2\discretionary {-}{}{}I}, \hyperpage{49}
+    \subitem {E2\discretionary {-}{}{}R}, \hyperpage{49}
+    \subitem {Fi}, \hyperpage{49}
+    \subitem {Fr}, \hyperpage{49}
+    \subitem {Ibegin}, \hyperpage{48}
+    \subitem {Iend}, \hyperpage{48}
+    \subitem {ipi}, \hyperpage{49}
+    \subitem {ipr}, \hyperpage{49}
+    \subitem {lwork}, \hyperpage{49}
+    \subitem {Matrices}, \hyperpage{48}
+    \subitem {Matrix\discretionary {-}{}{}Complex}, \hyperpage{48}
+    \subitem {Matrix\discretionary {-}{}{}Real}, \hyperpage{48}
+    \subitem {solvecomplex}, \hyperpage{48}
+    \subitem {solvereal}, \hyperpage{48}
+    \subitem {tau}, \hyperpage{49}
+    \subitem {work}, \hyperpage{49}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrixtype}
+    \subitem {Full}, \hyperpage{49}
+    \subitem {Matrix}, \hyperpage{49}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrixtype$<$ n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}
+    \subitem {$\sim $\discretionary {-}{}{}Radau5cc}, \hyperpage{54}
+    \subitem {A\discretionary {-}{}{}L\discretionary {-}{}{}P\discretionary {-}{}{}H}, 
+		\hyperpage{60}
+    \subitem {atol}, \hyperpage{60}
+    \subitem {B\discretionary {-}{}{}E\discretionary {-}{}{}T\discretionary {-}{}{}A}, 
+		\hyperpage{60}
+    \subitem {C1}, \hyperpage{60}
+    \subitem {C1\discretionary {-}{}{}M1}, \hyperpage{60}
+    \subitem {C1\discretionary {-}{}{}M\discretionary {-}{}{}C2}, 
+		\hyperpage{60}
+    \subitem {C2}, \hyperpage{61}
+    \subitem {C2\discretionary {-}{}{}M1}, \hyperpage{61}
+    \subitem {C\discretionary {-}{}{}N\discretionary {-}{}{}O}, 
+		\hyperpage{61}
+    \subitem {C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}T1}, 
+		\hyperpage{61}
+    \subitem {calhes}, \hyperpage{61}
+    \subitem {caljac}, \hyperpage{61}
+    \subitem {cfac}, \hyperpage{61}
+    \subitem {Compute\discretionary {-}{}{}Jacobian\discretionary {-}{}{}Numerically}, 
+		\hyperpage{61}
+    \subitem {ct\discretionary {-}{}{}\_\discretionary {-}{}{}assert}, 
+		\hyperpage{54}
+    \subitem {D\discretionary {-}{}{}D1}, \hyperpage{61}
+    \subitem {D\discretionary {-}{}{}D2}, \hyperpage{61}
+    \subitem {D\discretionary {-}{}{}D3}, \hyperpage{61}
+    \subitem {decomc}, \hyperpage{54}
+    \subitem {decomr}, \hyperpage{54}
+    \subitem {do\discretionary {-}{}{}Newton\discretionary {-}{}{}Matrices}, 
+		\hyperpage{56}
+    \subitem {do\discretionary {-}{}{}Scal}, \hyperpage{56}
+    \subitem {dyno}, \hyperpage{61}
+    \subitem {dynold}, \hyperpage{61}
+    \subitem {erracc}, \hyperpage{61}
+    \subitem {estrad}, \hyperpage{56}
+    \subitem {F}, \hyperpage{61}
+    \subitem {F1}, \hyperpage{61}
+    \subitem {F2}, \hyperpage{61}
+    \subitem {F3}, \hyperpage{61}
+    \subitem {faccon}, \hyperpage{61}
+    \subitem {facl}, \hyperpage{61}
+    \subitem {facr}, \hyperpage{61}
+    \subitem {first}, \hyperpage{61}
+    \subitem {first\discretionary {-}{}{}Accepted\discretionary {-}{}{}Step}, 
+		\hyperpage{61}
+    \subitem {fnewt}, \hyperpage{61}
+    \subitem {get\discretionary {-}{}{}Last\discretionary {-}{}{}Time\discretionary {-}{}{}Step}, 
+		\hyperpage{56}
+    \subitem {get\discretionary {-}{}{}N\discretionary {-}{}{}Jac}, 
+		\hyperpage{57}
+    \subitem {get\discretionary {-}{}{}Naccpt}, \hyperpage{56}
+    \subitem {get\discretionary {-}{}{}Ndec}, \hyperpage{56}
+    \subitem {get\discretionary {-}{}{}Newt}, \hyperpage{56}
+    \subitem {get\discretionary {-}{}{}Nfonc\discretionary {-}{}{}Called}, 
+		\hyperpage{56}
+    \subitem {get\discretionary {-}{}{}Nrejct}, \hyperpage{57}
+    \subitem {get\discretionary {-}{}{}Nstep}, \hyperpage{57}
+    \subitem {getfirst\discretionary {-}{}{}Accepted\discretionary {-}{}{}Step}, 
+		\hyperpage{56}
+    \subitem {gustafsson\discretionary {-}{}{}Test}, \hyperpage{61}
+    \subitem {h}, \hyperpage{62}
+    \subitem {hacc}, \hyperpage{62}
+    \subitem {Hessenberg}, \hyperpage{62}
+    \subitem {hhfac}, \hyperpage{62}
+    \subitem {hmax}, \hyperpage{62}
+    \subitem {hmaxn}, \hyperpage{62}
+    \subitem {hold}, \hyperpage{62}
+    \subitem {hopt}, \hyperpage{62}
+    \subitem {Ibegin}, \hyperpage{57}
+    \subitem {Iend}, \hyperpage{57}
+    \subitem {Jac}, \hyperpage{62}
+    \subitem {Jacobian}, \hyperpage{57}
+    \subitem {last}, \hyperpage{62}
+    \subitem {Matrix\discretionary {-}{}{}Complex}, \hyperpage{54}
+    \subitem {Matrix\discretionary {-}{}{}Full}, \hyperpage{62}
+    \subitem {Matrix\discretionary {-}{}{}Real}, \hyperpage{54}
+    \subitem {n}, \hyperpage{62}
+    \subitem {naccpt}, \hyperpage{62}
+    \subitem {ndec}, \hyperpage{62}
+    \subitem {newt}, \hyperpage{62}
+    \subitem {Newton}, \hyperpage{57}
+    \subitem {Newton\discretionary {-}{}{}Iteration\discretionary {-}{}{}Test}, 
+		\hyperpage{58}
+    \subitem {nfonccalled}, \hyperpage{62}
+    \subitem {ninf}, \hyperpage{62}
+    \subitem {nit}, \hyperpage{62}
+    \subitem {njac}, \hyperpage{62}
+    \subitem {nmax}, \hyperpage{62}
+    \subitem {nrejct}, \hyperpage{62}
+    \subitem {nstep}, \hyperpage{62}
+    \subitem {nsup}, \hyperpage{62}
+    \subitem {only\discretionary {-}{}{}One\discretionary {-}{}{}Step}, 
+		\hyperpage{62}
+    \subitem {operator()}, \hyperpage{58}
+    \subitem {Out\discretionary {-}{}{}Newton\discretionary {-}{}{}Loop}, 
+		\hyperpage{54}
+    \subitem {perform\discretionary {-}{}{}Only\discretionary {-}{}{}One\discretionary {-}{}{}Step}, 
+		\hyperpage{58}
+    \subitem {posneg}, \hyperpage{62}
+    \subitem {quot1}, \hyperpage{62}
+    \subitem {quot2}, \hyperpage{62}
+    \subitem {Radau5cc}, \hyperpage{54}
+    \subitem {reject}, \hyperpage{63}
+    \subitem {rhs}, \hyperpage{58}
+    \subitem {rtol}, \hyperpage{63}
+    \subitem {S\discretionary {-}{}{}Q6}, \hyperpage{63}
+    \subitem {safe}, \hyperpage{63}
+    \subitem {same\discretionary {-}{}{}Test\discretionary {-}{}{}Value}, 
+		\hyperpage{63}
+    \subitem {save1}, \hyperpage{63}
+    \subitem {save2}, \hyperpage{63}
+    \subitem {save3}, \hyperpage{63}
+    \subitem {scal}, \hyperpage{63}
+    \subitem {set\discretionary {-}{}{}Facr\discretionary {-}{}{}Facl}, 
+		\hyperpage{58}
+    \subitem {set\discretionary {-}{}{}Fnewt}, \hyperpage{59}
+    \subitem {set\discretionary {-}{}{}Gustafsson\discretionary {-}{}{}Test}, 
+		\hyperpage{59}
+    \subitem {set\discretionary {-}{}{}Max\discretionary {-}{}{}Iterations\discretionary {-}{}{}Newton}, 
+		\hyperpage{59}
+    \subitem {set\discretionary {-}{}{}Nmax}, \hyperpage{59}
+    \subitem {set\discretionary {-}{}{}Recompute\discretionary {-}{}{}Jacobian\discretionary {-}{}{}Treshold}, 
+		\hyperpage{59}
+    \subitem {set\discretionary {-}{}{}Safe}, \hyperpage{59}
+    \subitem {set\discretionary {-}{}{}Test\discretionary {-}{}{}Policy}, 
+		\hyperpage{60}
+    \subitem {seth}, \hyperpage{59}
+    \subitem {slvrad}, \hyperpage{60}
+    \subitem {solvecomplex}, \hyperpage{60}
+    \subitem {solvereal}, \hyperpage{60}
+    \subitem {startn}, \hyperpage{63}
+    \subitem {T11}, \hyperpage{63}
+    \subitem {T12}, \hyperpage{63}
+    \subitem {T13}, \hyperpage{63}
+    \subitem {T21}, \hyperpage{63}
+    \subitem {T22}, \hyperpage{63}
+    \subitem {T23}, \hyperpage{63}
+    \subitem {T31}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I11}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I12}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I13}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I21}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I22}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I23}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I31}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I32}, \hyperpage{63}
+    \subitem {T\discretionary {-}{}{}I33}, \hyperpage{64}
+    \subitem {thet}, \hyperpage{63}
+    \subitem {theta}, \hyperpage{63}
+    \subitem {thqold}, \hyperpage{63}
+    \subitem {tolst}, \hyperpage{64}
+    \subitem {U1}, \hyperpage{64}
+    \subitem {uround}, \hyperpage{64}
+    \subitem {xend}, \hyperpage{64}
+    \subitem {xold}, \hyperpage{64}
+    \subitem {xph}, \hyperpage{64}
+    \subitem {Z1}, \hyperpage{64}
+    \subitem {Z1\discretionary {-}{}{}T}, \hyperpage{64}
+    \subitem {Z2}, \hyperpage{64}
+    \subitem {Z2\discretionary {-}{}{}T}, \hyperpage{64}
+    \subitem {Z3}, \hyperpage{64}
+    \subitem {Z3\discretionary {-}{}{}T}, \hyperpage{64}
+  \item {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc$<$ Fonct $>$}, 
+		\hyperpage{50}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}
+    \subitem {$\sim $fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{17}
+    \subitem {add\discretionary {-}{}{}Diag}, \hyperpage{17}
+    \subitem {equal\discretionary {-}{}{}\_\discretionary {-}{}{}minus}, 
+		\hyperpage{17}
+    \subitem {fortran\discretionary {-}{}{}Array}, \hyperpage{17}
+    \subitem {n2}, \hyperpage{19}
+    \subitem {operator()}, \hyperpage{17}
+    \subitem {operator\&}, \hyperpage{17}
+    \subitem {print}, \hyperpage{19}
+    \subitem {x}, \hyperpage{19}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array$<$ n $>$}, 
+		\hyperpage{16}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}
+    \subitem {$\sim $fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+    \subitem {d2}, \hyperpage{21}
+    \subitem {fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+    \subitem {Im}, \hyperpage{20}
+    \subitem {operator\&}, \hyperpage{20}
+    \subitem {print}, \hyperpage{20}
+    \subitem {Re}, \hyperpage{20}
+    \subitem {set}, \hyperpage{20}
+    \subitem {size}, \hyperpage{21}
+    \subitem {x}, \hyperpage{21}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array$<$ n $>$}, 
+		\hyperpage{19}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}
+    \subitem {$\sim $fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{22}
+    \subitem {add\discretionary {-}{}{}Diag}, \hyperpage{22}
+    \subitem {cc}, \hyperpage{23}
+    \subitem {equal\discretionary {-}{}{}\_\discretionary {-}{}{}minus}, 
+		\hyperpage{22}
+    \subitem {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{22}
+    \subitem {klku}, \hyperpage{23}
+    \subitem {l1}, \hyperpage{23}
+    \subitem {ldab}, \hyperpage{23}
+    \subitem {operator()}, \hyperpage{22, 23}
+    \subitem {operator\&}, \hyperpage{22}
+    \subitem {print}, \hyperpage{23}
+    \subitem {size}, \hyperpage{23}
+    \subitem {x}, \hyperpage{23}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array$<$ n, kl, ku $>$}, 
+		\hyperpage{21}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}
+    \subitem {$\sim $fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{24}
+    \subitem {cc}, \hyperpage{25}
+    \subitem {fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{24}
+    \subitem {Im}, \hyperpage{25}
+    \subitem {klku}, \hyperpage{25}
+    \subitem {l1}, \hyperpage{25}
+    \subitem {ldab}, \hyperpage{25}
+    \subitem {operator\&}, \hyperpage{25}
+    \subitem {print}, \hyperpage{25}
+    \subitem {Re}, \hyperpage{25}
+    \subitem {set}, \hyperpage{25}
+    \subitem {size}, \hyperpage{26}
+    \subitem {x}, \hyperpage{26}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array$<$ n, kl, ku $>$}, 
+		\hyperpage{24}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{26}
+    \subitem {$\sim $fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{27}
+    \subitem {deletable}, \hyperpage{28}
+    \subitem {fortran\discretionary {-}{}{}Array}, \hyperpage{28}
+    \subitem {fortran\discretionary {-}{}{}Vector}, \hyperpage{27}
+    \subitem {fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{28}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}size}, 
+		\hyperpage{27}
+    \subitem {operator()}, \hyperpage{27, 28}
+    \subitem {operator+=}, \hyperpage{28}
+    \subitem {operator=}, \hyperpage{28}
+    \subitem {operator\&}, \hyperpage{27}
+    \subitem {print}, \hyperpage{28}
+    \subitem {setsize}, \hyperpage{28}
+    \subitem {size}, \hyperpage{29}
+    \subitem {x}, \hyperpage{29}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}
+    \subitem {$\sim $fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{30}
+    \subitem {a\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Y}, 
+		\hyperpage{30}
+    \subitem {a\discretionary {-}{}{}\_\discretionary {-}{}{}x\discretionary {-}{}{}\_\discretionary {-}{}{}plus\discretionary {-}{}{}\_\discretionary {-}{}{}y}, 
+		\hyperpage{30}
+    \subitem {deletable}, \hyperpage{35}
+    \subitem {fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{30}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}size}, 
+		\hyperpage{31}
+    \subitem {lc2}, \hyperpage{31}
+    \subitem {lc3}, \hyperpage{31}
+    \subitem {lc4}, \hyperpage{31}
+    \subitem {lc5}, \hyperpage{32}
+    \subitem {operator()}, \hyperpage{32}
+    \subitem {operator+=}, \hyperpage{32, 33}
+    \subitem {operator=}, \hyperpage{33}
+    \subitem {operator\&}, \hyperpage{32}
+    \subitem {print}, \hyperpage{33}
+    \subitem {put}, \hyperpage{33}
+    \subitem {setsize}, \hyperpage{34}
+    \subitem {setsum2}, \hyperpage{34}
+    \subitem {size}, \hyperpage{36}
+    \subitem {sum}, \hyperpage{34}
+    \subitem {switchadr}, \hyperpage{34}
+    \subitem {x}, \hyperpage{36}
+    \subitem {x\discretionary {-}{}{}\_\discretionary {-}{}{}lc2}, 
+		\hyperpage{35}
+    \subitem {x\discretionary {-}{}{}\_\discretionary {-}{}{}lc3}, 
+		\hyperpage{35}
+    \subitem {x\discretionary {-}{}{}\_\discretionary {-}{}{}lc4}, 
+		\hyperpage{35}
+    \subitem {y}, \hyperpage{36}
+  \item {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F$<$ n $>$}, 
+		\hyperpage{29}
+  \item {odes\discretionary {-}{}{}::logger}, \hyperpage{38}
+    \subitem {$\sim $logger}, \hyperpage{38}
+    \subitem {clear}, \hyperpage{39}
+    \subitem {L}, \hyperpage{39}
+    \subitem {logger}, \hyperpage{38}
+    \subitem {print}, \hyperpage{39}
+    \subitem {put}, \hyperpage{39}
+  \item {odes\discretionary {-}{}{}::logger\discretionary {-}{}{}::event}, 
+		\hyperpage{15}
+    \subitem {event}, \hyperpage{15}
+    \subitem {step}, \hyperpage{15}
+    \subitem {The\discretionary {-}{}{}Event}, \hyperpage{16}
+    \subitem {time}, \hyperpage{16}
+    \subitem {value}, \hyperpage{16}
+  \item {only\discretionary {-}{}{}One\discretionary {-}{}{}Step}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {operator()}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{17}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{22, 23}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{27, 28}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{32}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{58}
+  \item {operator+=}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{28}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{32, 33}
+  \item {operator=}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{28}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{33}
+  \item {operator\&}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{17}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{22}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{27}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{32}
+  \item {Out\discretionary {-}{}{}Newton\discretionary {-}{}{}Loop}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{54}
+
+  \indexspace
+
+  \item {perform\discretionary {-}{}{}Only\discretionary {-}{}{}One\discretionary {-}{}{}Step}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{58}
+  \item {posneg}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {print}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{19}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{23}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{28}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{33}
+    \subitem {odes\discretionary {-}{}{}::logger}, \hyperpage{39}
+  \item {put}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{33}
+    \subitem {odes\discretionary {-}{}{}::logger}, \hyperpage{39}
+
+  \indexspace
+
+  \item {quot1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+  \item {quot2}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{62}
+
+  \indexspace
+
+  \item {Radau5-\/\discretionary {-}{}{}N\discretionary {-}{}{}G/include/\discretionary {-}{}{}Radau5cc.\discretionary {-}{}{}hpp}, 
+		\hyperpage{82}
+  \item {Radau5cc}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{54}
+  \item {Radau5cc.\discretionary {-}{}{}hpp}
+    \subitem {A\discretionary {-}{}{}B\discretionary {-}{}{}S}, 
+		\hyperpage{82}
+    \subitem {M\discretionary {-}{}{}A\discretionary {-}{}{}X}, 
+		\hyperpage{82}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N}, 
+		\hyperpage{82}
+    \subitem {S\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}N}, 
+		\hyperpage{82}
+  \item {Re}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+  \item {reject}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {rejected\-Step}
+    \subitem {odes}, \hyperpage{12}
+  \item {rhs}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{58}
+  \item {rtol}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+
+  \indexspace
+
+  \item {S\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}N}
+    \subitem {Radau5cc.\discretionary {-}{}{}hpp}, \hyperpage{82}
+  \item {S\discretionary {-}{}{}Q6}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {safe}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {same\discretionary {-}{}{}Test\discretionary {-}{}{}Value}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {save1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {save2}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {save3}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {scal}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {set}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{20}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{25}
+  \item {set\discretionary {-}{}{}Facr\discretionary {-}{}{}Facl}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{58}
+  \item {set\discretionary {-}{}{}Fnewt}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{59}
+  \item {set\discretionary {-}{}{}Gustafsson\discretionary {-}{}{}Test}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{59}
+  \item {set\discretionary {-}{}{}Max\discretionary {-}{}{}Iterations\discretionary {-}{}{}Newton}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{59}
+  \item {set\discretionary {-}{}{}Nmax}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{59}
+  \item {set\discretionary {-}{}{}Recompute\discretionary {-}{}{}Jacobian\discretionary {-}{}{}Treshold}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{59}
+  \item {set\discretionary {-}{}{}Safe}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{59}
+  \item {set\discretionary {-}{}{}Test\discretionary {-}{}{}Policy}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {seth}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{59}
+  \item {setsize}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{28}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{34}
+  \item {setsum2}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{34}
+  \item {size}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{21}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{23}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{26}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{29}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{36}
+  \item {slvrad}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {solh}
+    \subitem {Hessenberg.\discretionary {-}{}{}hpp}, \hyperpage{76}
+  \item {solhc}
+    \subitem {Hessenberg.\discretionary {-}{}{}hpp}, \hyperpage{76}
+  \item {solvecomplex}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{44}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {solvereal}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{42}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, true, n, nsub, nsup $>$}, 
+		\hyperpage{46}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{48}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{60}
+  \item {startn}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {step}
+    \subitem {odes\discretionary {-}{}{}::logger\discretionary {-}{}{}::event}, 
+		\hyperpage{15}
+  \item {success}
+    \subitem {odes}, \hyperpage{12}
+  \item {sum}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{34}
+  \item {switchadr}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{34}
+
+  \indexspace
+
+  \item {T11}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T12}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T13}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T21}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T22}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T23}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T31}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I11}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I12}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I13}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I21}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I22}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I23}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I31}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I32}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {T\discretionary {-}{}{}I33}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {tau}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+  \item {The\discretionary {-}{}{}Event}
+    \subitem {odes\discretionary {-}{}{}::logger\discretionary {-}{}{}::event}, 
+		\hyperpage{16}
+  \item {thet}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {theta}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {thqold}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{63}
+  \item {time}
+    \subitem {odes\discretionary {-}{}{}::logger\discretionary {-}{}{}::event}, 
+		\hyperpage{16}
+  \item {tolst}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+
+  \indexspace
+
+  \item {U1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {uround}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+
+  \indexspace
+
+  \item {value}
+    \subitem {odes\discretionary {-}{}{}::logger\discretionary {-}{}{}::event}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {will\-Not\-Converge}
+    \subitem {odes\-::\-Radau5cc}, \hyperpage{54}
+  \item {work}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ true, true, n, nsub, nsup $>$}, 
+		\hyperpage{49}
+
+  \indexspace
+
+  \item {x}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Array}, 
+		\hyperpage{19}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{21}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}, 
+		\hyperpage{23}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}, 
+		\hyperpage{26}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector}, 
+		\hyperpage{29}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{36}
+  \item {x\discretionary {-}{}{}\_\discretionary {-}{}{}lc2}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{35}
+  \item {x\discretionary {-}{}{}\_\discretionary {-}{}{}lc3}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{35}
+  \item {x\discretionary {-}{}{}\_\discretionary {-}{}{}lc4}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{35}
+  \item {xend}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {xold}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {xph}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+
+  \indexspace
+
+  \item {y}
+    \subitem {odes\discretionary {-}{}{}::fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}, 
+		\hyperpage{36}
+
+  \indexspace
+
+  \item {Z1}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {Z1\discretionary {-}{}{}T}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {Z2}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {Z2\discretionary {-}{}{}N}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices}, 
+		\hyperpage{43}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Matrices$<$ false, false, n, nsub, nsup $>$}, 
+		\hyperpage{45}
+  \item {Z2\discretionary {-}{}{}T}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {Z3}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {Z3\discretionary {-}{}{}T}
+    \subitem {odes\discretionary {-}{}{}::\discretionary {-}{}{}Radau5cc}, 
+		\hyperpage{64}
+  \item {zgbtrf\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{13}
+  \item {zgbtrs\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{13}
+  \item {zgetrf\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{13}
+  \item {zgetrs\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {odes}, \hyperpage{13}
+
+\end{theindex}

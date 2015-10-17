@@ -1,0 +1,228 @@
+\hypertarget{classodes_1_1ToolTbb}{\section{odes\-:\-:Tool\-Tbb$<$ Fonc $>$ Class Template Reference}
+\label{classodes_1_1ToolTbb}\index{odes\-::\-Tool\-Tbb$<$ Fonc $>$@{odes\-::\-Tool\-Tbb$<$ Fonc $>$}}
+}
+
+
+{\ttfamily \#include $<$Tool\-Tbb.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classodes_1_1ToolTbb_a36028d154efa3967589e6b3fce396944}{print} (double x\mbox{[}$\,$\mbox{]}, string s=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classodes_1_1ToolTbb_a3a6a25aaa58669651fb208f4b1526973}{Tool\-Tbb} (int \-\_\-mr, int \-\_\-mz, int \-\_\-size, double \-\_\-h)
+\item 
+\hyperlink{classodes_1_1ToolTbb_a945ee5b4acc49c20aeeb2a2418ff3ae7}{$\sim$\-Tool\-Tbb} ()
+\item 
+void \hyperlink{classodes_1_1ToolTbb_ac9bb9fa0f00210f3b52d5e0d1a64ab68}{cl} (double $\ast$Restrict g, double $\ast$Restrict y, double $\ast$Restrict fn)
+\item 
+void \hyperlink{classodes_1_1ToolTbb_a1635342c236cbb5f0be07e732b4d1450}{cl} (double $\ast$Restrict cible, double $\ast$Restrict y, double a1, double x1\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{classodes_1_1ToolTbb_af142765718592c09ffb3b50fef46e540}{cl} (double $\ast$Restrict cible, double $\ast$Restrict y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2)
+\item 
+void \hyperlink{classodes_1_1ToolTbb_a3de2db9fe795de59cdf249b6ed480450}{cl} (double $\ast$Restrict cible, double $\ast$Restrict y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2, double a3, double $\ast$Restrict x3)
+\item 
+void \hyperlink{classodes_1_1ToolTbb_a5a60ee6890991b8c764f40706c2cb719}{ct} (double cible\mbox{[}$\,$\mbox{]}, double y\mbox{[}$\,$\mbox{]}, double a1, double x1\mbox{[}$\,$\mbox{]}, double a2, double x2\mbox{[}$\,$\mbox{]}, double a3, double x3\mbox{[}$\,$\mbox{]}, double a4, double x4\mbox{[}$\,$\mbox{]})
+\item 
+double \hyperlink{classodes_1_1ToolTbb_ab8e4ba10098eba75c83ae7749762e2a6}{rpp2} (double $\ast$Restrict y, double a1, double $\ast$Restrict x1, double a2, double $\ast$Restrict x2, double a3, double $\ast$Restrict x3, double a4, double $\ast$Restrict x4, double a5, double $\ast$Restrict x5, double atol, double rtol)
+\item 
+void \hyperlink{classodes_1_1ToolTbb_a9f9936b923e233e7f9f7391bc00e31dd}{apply} (Fonc \&F, int deg, double g1\mbox{[}$\,$\mbox{]}, double g0\mbox{[}$\,$\mbox{]}, double vtemp\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{classodes_1_1ToolTbb_a4128d137da3c522409727039feec74ab}{apply} (Fonc \&F, double g2\mbox{[}$\,$\mbox{]}, double g1\mbox{[}$\,$\mbox{]}, double g0\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classodes_1_1ToolTbb_a4d0df7852c635e872bf45b71120f95ae}{mr}
+\item 
+int \hyperlink{classodes_1_1ToolTbb_a012568dae6afffb573423821506f0cf7}{mz}
+\item 
+int \hyperlink{classodes_1_1ToolTbb_a0d1270750a64754fa58e5538abb523cf}{size}
+\item 
+int \hyperlink{classodes_1_1ToolTbb_a4cd67d6bdcebe46c2b5b9ea79e2d8a3a}{sizep}
+\item 
+double \hyperlink{classodes_1_1ToolTbb_aa9b6605c14ba2b50561ed7bea5c6b8e4}{h}
+\item 
+\hyperlink{structodes_1_1Rock4Coeffs}{Rock4\-Coeffs} \hyperlink{classodes_1_1ToolTbb_aa4d2b275599d8eb1d8e2f9ab6cb9b3a9}{Coeffs}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classodes_1_1ToolTbb_a27a5da88ed795805c407db7d2afc0626}{bsize} =\hyperlink{MacrosForCompilers_8hpp_aaa395acf51db19a6192e10ccd3c47fa2}{B\-L\-O\-C\-K\-\_\-\-F\-A\-C\-T\-O\-R}/sizeof(double)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1ToolTbb_a3a6a25aaa58669651fb208f4b1526973}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!Tool\-Tbb@{Tool\-Tbb}}
+\index{Tool\-Tbb@{Tool\-Tbb}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{Tool\-Tbb}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::{\bf Tool\-Tbb} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-mr, }
+\item[{int}]{\-\_\-mz, }
+\item[{int}]{\-\_\-size, }
+\item[{double}]{\-\_\-h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_a3a6a25aaa58669651fb208f4b1526973}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-mr} & see \hyperlink{Rock4_8hpp}{Rock4.\-hpp} \\
+\hline
+{\em \-\_\-mz} & see \hyperlink{Rock4_8hpp}{Rock4.\-hpp} \\
+\hline
+{\em \-\_\-size} & see \hyperlink{Rock4_8hpp}{Rock4.\-hpp} \\
+\hline
+{\em h} & time step. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1ToolTbb_a945ee5b4acc49c20aeeb2a2418ff3ae7}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!$\sim$\-Tool\-Tbb@{$\sim$\-Tool\-Tbb}}
+\index{$\sim$\-Tool\-Tbb@{$\sim$\-Tool\-Tbb}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{$\sim$\-Tool\-Tbb}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::$\sim${\bf Tool\-Tbb} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_a945ee5b4acc49c20aeeb2a2418ff3ae7}
+
+
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classodes_1_1ToolTbb_a9f9936b923e233e7f9f7391bc00e31dd}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!apply@{apply}}
+\index{apply@{apply}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::apply (
+\begin{DoxyParamCaption}
+\item[{Fonc \&}]{F, }
+\item[{int}]{deg, }
+\item[{double}]{g1\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{g0\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{vtemp\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_a9f9936b923e233e7f9f7391bc00e31dd}
+\hypertarget{classodes_1_1ToolTbb_a4128d137da3c522409727039feec74ab}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!apply@{apply}}
+\index{apply@{apply}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::apply (
+\begin{DoxyParamCaption}
+\item[{Fonc \&}]{F, }
+\item[{double}]{g2\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{g1\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{g0\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_a4128d137da3c522409727039feec74ab}
+\hypertarget{classodes_1_1ToolTbb_ac9bb9fa0f00210f3b52d5e0d1a64ab68}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!cl@{cl}}
+\index{cl@{cl}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::cl (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{g, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double $\ast$Restrict}]{fn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_ac9bb9fa0f00210f3b52d5e0d1a64ab68}
+\hypertarget{classodes_1_1ToolTbb_a1635342c236cbb5f0be07e732b4d1450}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!cl@{cl}}
+\index{cl@{cl}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::cl (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double}]{x1\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_a1635342c236cbb5f0be07e732b4d1450}
+\hypertarget{classodes_1_1ToolTbb_af142765718592c09ffb3b50fef46e540}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!cl@{cl}}
+\index{cl@{cl}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::cl (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_af142765718592c09ffb3b50fef46e540}
+\hypertarget{classodes_1_1ToolTbb_a3de2db9fe795de59cdf249b6ed480450}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!cl@{cl}}
+\index{cl@{cl}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::cl (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{cible, }
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2, }
+\item[{double}]{a3, }
+\item[{double $\ast$Restrict}]{x3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_a3de2db9fe795de59cdf249b6ed480450}
+\hypertarget{classodes_1_1ToolTbb_a5a60ee6890991b8c764f40706c2cb719}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!ct@{ct}}
+\index{ct@{ct}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{ct}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::ct (
+\begin{DoxyParamCaption}
+\item[{double}]{cible\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a1, }
+\item[{double}]{x1\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a2, }
+\item[{double}]{x2\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a3, }
+\item[{double}]{x3\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{a4, }
+\item[{double}]{x4\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_a5a60ee6890991b8c764f40706c2cb719}
+\hypertarget{classodes_1_1ToolTbb_a36028d154efa3967589e6b3fce396944}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!print@{print}}
+\index{print@{print}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ void {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::print (
+\begin{DoxyParamCaption}
+\item[{double}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{string}]{s = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_a36028d154efa3967589e6b3fce396944}
+\hypertarget{classodes_1_1ToolTbb_ab8e4ba10098eba75c83ae7749762e2a6}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!rpp2@{rpp2}}
+\index{rpp2@{rpp2}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{rpp2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ double {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::rpp2 (
+\begin{DoxyParamCaption}
+\item[{double $\ast$Restrict}]{y, }
+\item[{double}]{a1, }
+\item[{double $\ast$Restrict}]{x1, }
+\item[{double}]{a2, }
+\item[{double $\ast$Restrict}]{x2, }
+\item[{double}]{a3, }
+\item[{double $\ast$Restrict}]{x3, }
+\item[{double}]{a4, }
+\item[{double $\ast$Restrict}]{x4, }
+\item[{double}]{a5, }
+\item[{double $\ast$Restrict}]{x5, }
+\item[{double}]{atol, }
+\item[{double}]{rtol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1ToolTbb_ab8e4ba10098eba75c83ae7749762e2a6}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1ToolTbb_a27a5da88ed795805c407db7d2afc0626}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!bsize@{bsize}}
+\index{bsize@{bsize}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{bsize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ const int {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::bsize ={\bf B\-L\-O\-C\-K\-\_\-\-F\-A\-C\-T\-O\-R}/sizeof(double)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1ToolTbb_a27a5da88ed795805c407db7d2afc0626}
+\hypertarget{classodes_1_1ToolTbb_aa4d2b275599d8eb1d8e2f9ab6cb9b3a9}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!Coeffs@{Coeffs}}
+\index{Coeffs@{Coeffs}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{Coeffs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ {\bf Rock4\-Coeffs} {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::Coeffs\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolTbb_aa4d2b275599d8eb1d8e2f9ab6cb9b3a9}
+\hypertarget{classodes_1_1ToolTbb_aa9b6605c14ba2b50561ed7bea5c6b8e4}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!h@{h}}
+\index{h@{h}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ double {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::h\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolTbb_aa9b6605c14ba2b50561ed7bea5c6b8e4}
+\hypertarget{classodes_1_1ToolTbb_a4d0df7852c635e872bf45b71120f95ae}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!mr@{mr}}
+\index{mr@{mr}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{mr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ int {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::mr\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolTbb_a4d0df7852c635e872bf45b71120f95ae}
+\hypertarget{classodes_1_1ToolTbb_a012568dae6afffb573423821506f0cf7}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!mz@{mz}}
+\index{mz@{mz}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{mz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ int {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::mz\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolTbb_a012568dae6afffb573423821506f0cf7}
+\hypertarget{classodes_1_1ToolTbb_a0d1270750a64754fa58e5538abb523cf}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!size@{size}}
+\index{size@{size}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ int {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::size\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolTbb_a0d1270750a64754fa58e5538abb523cf}
+\hypertarget{classodes_1_1ToolTbb_a4cd67d6bdcebe46c2b5b9ea79e2d8a3a}{\index{odes\-::\-Tool\-Tbb@{odes\-::\-Tool\-Tbb}!sizep@{sizep}}
+\index{sizep@{sizep}!odes::ToolTbb@{odes\-::\-Tool\-Tbb}}
+\subsubsection[{sizep}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonc $>$ int {\bf odes\-::\-Tool\-Tbb}$<$ Fonc $>$\-::sizep\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1ToolTbb_a4cd67d6bdcebe46c2b5b9ea79e2d8a3a}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Rock4-\/\-N\-G/include/\hyperlink{ToolTbb_8hpp}{Tool\-Tbb.\-hpp}\end{DoxyCompactItemize}

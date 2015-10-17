@@ -1,0 +1,487 @@
+\contentsline {chapter}{\numberline {1}Documentation.}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}General considerations about implementation.}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Directory structure\discretionary {-}{}{}:}{2}{subsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.1.1}Test directories\discretionary {-}{}{}:}{2}{subsubsection.1.2.1.1}
+\contentsline {chapter}{\numberline {2}Namespace Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Namespace List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Hierarchical Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class Hierarchy}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Class List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}File Index}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}File List}{9}{section.5.1}
+\contentsline {chapter}{\numberline {6}Namespace Documentation}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}odes Namespace Reference}{11}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{12}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Enumeration Type Documentation}{12}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}event\discretionary {-}{}{}Type}{12}{subsubsection.6.1.2.1}
+\contentsline {subsection}{\numberline {6.1.3}Function Documentation}{12}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}dgbtrf\discretionary {-}{}{}\_\discretionary {-}{}{}}{12}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}dgbtrs\discretionary {-}{}{}\_\discretionary {-}{}{}}{12}{subsubsection.6.1.3.2}
+\contentsline {subsubsection}{\numberline {6.1.3.3}dgehrd\discretionary {-}{}{}\_\discretionary {-}{}{}}{12}{subsubsection.6.1.3.3}
+\contentsline {subsubsection}{\numberline {6.1.3.4}dgetrf\discretionary {-}{}{}\_\discretionary {-}{}{}}{12}{subsubsection.6.1.3.4}
+\contentsline {subsubsection}{\numberline {6.1.3.5}dgetrs\discretionary {-}{}{}\_\discretionary {-}{}{}}{13}{subsubsection.6.1.3.5}
+\contentsline {subsubsection}{\numberline {6.1.3.6}dlarnv\discretionary {-}{}{}\_\discretionary {-}{}{}}{13}{subsubsection.6.1.3.6}
+\contentsline {subsubsection}{\numberline {6.1.3.7}dorghr\discretionary {-}{}{}\_\discretionary {-}{}{}}{13}{subsubsection.6.1.3.7}
+\contentsline {subsubsection}{\numberline {6.1.3.8}zgbtrf\discretionary {-}{}{}\_\discretionary {-}{}{}}{13}{subsubsection.6.1.3.8}
+\contentsline {subsubsection}{\numberline {6.1.3.9}zgbtrs\discretionary {-}{}{}\_\discretionary {-}{}{}}{13}{subsubsection.6.1.3.9}
+\contentsline {subsubsection}{\numberline {6.1.3.10}zgetrf\discretionary {-}{}{}\_\discretionary {-}{}{}}{13}{subsubsection.6.1.3.10}
+\contentsline {subsubsection}{\numberline {6.1.3.11}zgetrs\discretionary {-}{}{}\_\discretionary {-}{}{}}{13}{subsubsection.6.1.3.11}
+\contentsline {chapter}{\numberline {7}Class Documentation}{15}{chapter.7}
+\contentsline {section}{\numberline {7.1}compat$<$ full, Hessenberg $>$ Struct Template Reference}{15}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Member Function Documentation}{15}{subsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.1.1}ct\discretionary {-}{}{}\_\discretionary {-}{}{}assert}{15}{subsubsection.7.1.1.1}
+\contentsline {section}{\numberline {7.2}odes\discretionary {-}{}{}:\discretionary {-}{}{}:logger\discretionary {-}{}{}:\discretionary {-}{}{}:event Struct Reference}{15}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Constructor \& Destructor Documentation}{15}{subsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.1.1}event}{15}{subsubsection.7.2.1.1}
+\contentsline {subsection}{\numberline {7.2.2}Member Data Documentation}{15}{subsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2.1}step}{16}{subsubsection.7.2.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2.2}The\discretionary {-}{}{}Event}{16}{subsubsection.7.2.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2.3}time}{16}{subsubsection.7.2.2.3}
+\contentsline {subsubsection}{\numberline {7.2.2.4}value}{16}{subsubsection.7.2.2.4}
+\contentsline {section}{\numberline {7.3}odes\discretionary {-}{}{}:\discretionary {-}{}{}:fortran\discretionary {-}{}{}Array$<$ n $>$ Class Template Reference}{16}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{16}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Constructor \& Destructor Documentation}{17}{subsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.2.1}fortran\discretionary {-}{}{}Array}{17}{subsubsection.7.3.2.1}
+\contentsline {subsubsection}{\numberline {7.3.2.2}fortran\discretionary {-}{}{}Array}{17}{subsubsection.7.3.2.2}
+\contentsline {subsubsection}{\numberline {7.3.2.3}$\sim $fortran\discretionary {-}{}{}Array}{17}{subsubsection.7.3.2.3}
+\contentsline {subsection}{\numberline {7.3.3}Member Function Documentation}{17}{subsection.7.3.3}
+\contentsline {subsubsection}{\numberline {7.3.3.1}add\discretionary {-}{}{}Diag}{17}{subsubsection.7.3.3.1}
+\contentsline {subsubsection}{\numberline {7.3.3.2}equal\discretionary {-}{}{}\_\discretionary {-}{}{}minus}{17}{subsubsection.7.3.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3.3}operator\&}{17}{subsubsection.7.3.3.3}
+\contentsline {subsubsection}{\numberline {7.3.3.4}operator()}{17}{subsubsection.7.3.3.4}
+\contentsline {subsubsection}{\numberline {7.3.3.5}operator()}{18}{subsubsection.7.3.3.5}
+\contentsline {subsubsection}{\numberline {7.3.3.6}print}{19}{subsubsection.7.3.3.6}
+\contentsline {subsection}{\numberline {7.3.4}Member Data Documentation}{19}{subsection.7.3.4}
+\contentsline {subsubsection}{\numberline {7.3.4.1}n2}{19}{subsubsection.7.3.4.1}
+\contentsline {subsubsection}{\numberline {7.3.4.2}x}{19}{subsubsection.7.3.4.2}
+\contentsline {section}{\numberline {7.4}odes\discretionary {-}{}{}:\discretionary {-}{}{}:fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array$<$ n $>$ Class Template Reference}{19}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{20}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Constructor \& Destructor Documentation}{20}{subsection.7.4.2}
+\contentsline {subsubsection}{\numberline {7.4.2.1}fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}{20}{subsubsection.7.4.2.1}
+\contentsline {subsubsection}{\numberline {7.4.2.2}$\sim $fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}{20}{subsubsection.7.4.2.2}
+\contentsline {subsection}{\numberline {7.4.3}Member Function Documentation}{20}{subsection.7.4.3}
+\contentsline {subsubsection}{\numberline {7.4.3.1}Im}{20}{subsubsection.7.4.3.1}
+\contentsline {subsubsection}{\numberline {7.4.3.2}operator\&}{20}{subsubsection.7.4.3.2}
+\contentsline {subsubsection}{\numberline {7.4.3.3}print}{20}{subsubsection.7.4.3.3}
+\contentsline {subsubsection}{\numberline {7.4.3.4}Re}{20}{subsubsection.7.4.3.4}
+\contentsline {subsubsection}{\numberline {7.4.3.5}set}{21}{subsubsection.7.4.3.5}
+\contentsline {subsection}{\numberline {7.4.4}Member Data Documentation}{21}{subsection.7.4.4}
+\contentsline {subsubsection}{\numberline {7.4.4.1}d2}{21}{subsubsection.7.4.4.1}
+\contentsline {subsubsection}{\numberline {7.4.4.2}size}{21}{subsubsection.7.4.4.2}
+\contentsline {subsubsection}{\numberline {7.4.4.3}x}{21}{subsubsection.7.4.4.3}
+\contentsline {section}{\numberline {7.5}odes\discretionary {-}{}{}:\discretionary {-}{}{}:fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array$<$ n, kl, ku $>$ Class Template Reference}{21}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Detailed Description}{22}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Constructor \& Destructor Documentation}{22}{subsection.7.5.2}
+\contentsline {subsubsection}{\numberline {7.5.2.1}fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}{22}{subsubsection.7.5.2.1}
+\contentsline {subsubsection}{\numberline {7.5.2.2}$\sim $fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array}{22}{subsubsection.7.5.2.2}
+\contentsline {subsection}{\numberline {7.5.3}Member Function Documentation}{22}{subsection.7.5.3}
+\contentsline {subsubsection}{\numberline {7.5.3.1}add\discretionary {-}{}{}Diag}{22}{subsubsection.7.5.3.1}
+\contentsline {subsubsection}{\numberline {7.5.3.2}equal\discretionary {-}{}{}\_\discretionary {-}{}{}minus}{22}{subsubsection.7.5.3.2}
+\contentsline {subsubsection}{\numberline {7.5.3.3}operator\&}{22}{subsubsection.7.5.3.3}
+\contentsline {subsubsection}{\numberline {7.5.3.4}operator()}{22}{subsubsection.7.5.3.4}
+\contentsline {subsubsection}{\numberline {7.5.3.5}operator()}{23}{subsubsection.7.5.3.5}
+\contentsline {subsubsection}{\numberline {7.5.3.6}print}{23}{subsubsection.7.5.3.6}
+\contentsline {subsection}{\numberline {7.5.4}Member Data Documentation}{23}{subsection.7.5.4}
+\contentsline {subsubsection}{\numberline {7.5.4.1}cc}{23}{subsubsection.7.5.4.1}
+\contentsline {subsubsection}{\numberline {7.5.4.2}klku}{23}{subsubsection.7.5.4.2}
+\contentsline {subsubsection}{\numberline {7.5.4.3}l1}{23}{subsubsection.7.5.4.3}
+\contentsline {subsubsection}{\numberline {7.5.4.4}ldab}{23}{subsubsection.7.5.4.4}
+\contentsline {subsubsection}{\numberline {7.5.4.5}size}{23}{subsubsection.7.5.4.5}
+\contentsline {subsubsection}{\numberline {7.5.4.6}x}{23}{subsubsection.7.5.4.6}
+\contentsline {section}{\numberline {7.6}odes\discretionary {-}{}{}:\discretionary {-}{}{}:fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array$<$ n, kl, ku $>$ Class Template Reference}{24}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{24}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Constructor \& Destructor Documentation}{24}{subsection.7.6.2}
+\contentsline {subsubsection}{\numberline {7.6.2.1}fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}{24}{subsubsection.7.6.2.1}
+\contentsline {subsubsection}{\numberline {7.6.2.2}$\sim $fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array}{24}{subsubsection.7.6.2.2}
+\contentsline {subsection}{\numberline {7.6.3}Member Function Documentation}{25}{subsection.7.6.3}
+\contentsline {subsubsection}{\numberline {7.6.3.1}Im}{25}{subsubsection.7.6.3.1}
+\contentsline {subsubsection}{\numberline {7.6.3.2}operator\&}{25}{subsubsection.7.6.3.2}
+\contentsline {subsubsection}{\numberline {7.6.3.3}print}{25}{subsubsection.7.6.3.3}
+\contentsline {subsubsection}{\numberline {7.6.3.4}Re}{25}{subsubsection.7.6.3.4}
+\contentsline {subsubsection}{\numberline {7.6.3.5}set}{25}{subsubsection.7.6.3.5}
+\contentsline {subsection}{\numberline {7.6.4}Member Data Documentation}{25}{subsection.7.6.4}
+\contentsline {subsubsection}{\numberline {7.6.4.1}cc}{25}{subsubsection.7.6.4.1}
+\contentsline {subsubsection}{\numberline {7.6.4.2}klku}{25}{subsubsection.7.6.4.2}
+\contentsline {subsubsection}{\numberline {7.6.4.3}l1}{25}{subsubsection.7.6.4.3}
+\contentsline {subsubsection}{\numberline {7.6.4.4}ldab}{26}{subsubsection.7.6.4.4}
+\contentsline {subsubsection}{\numberline {7.6.4.5}size}{26}{subsubsection.7.6.4.5}
+\contentsline {subsubsection}{\numberline {7.6.4.6}x}{26}{subsubsection.7.6.4.6}
+\contentsline {section}{\numberline {7.7}odes\discretionary {-}{}{}:\discretionary {-}{}{}:fortran\discretionary {-}{}{}Vector Class Reference}{26}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Detailed Description}{27}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Constructor \& Destructor Documentation}{27}{subsection.7.7.2}
+\contentsline {subsubsection}{\numberline {7.7.2.1}fortran\discretionary {-}{}{}Vector}{27}{subsubsection.7.7.2.1}
+\contentsline {subsubsection}{\numberline {7.7.2.2}fortran\discretionary {-}{}{}Vector}{27}{subsubsection.7.7.2.2}
+\contentsline {subsubsection}{\numberline {7.7.2.3}fortran\discretionary {-}{}{}Vector}{27}{subsubsection.7.7.2.3}
+\contentsline {subsubsection}{\numberline {7.7.2.4}$\sim $fortran\discretionary {-}{}{}Vector}{27}{subsubsection.7.7.2.4}
+\contentsline {subsection}{\numberline {7.7.3}Member Function Documentation}{27}{subsection.7.7.3}
+\contentsline {subsubsection}{\numberline {7.7.3.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}size}{27}{subsubsection.7.7.3.1}
+\contentsline {subsubsection}{\numberline {7.7.3.2}operator\&}{27}{subsubsection.7.7.3.2}
+\contentsline {subsubsection}{\numberline {7.7.3.3}operator()}{27}{subsubsection.7.7.3.3}
+\contentsline {subsubsection}{\numberline {7.7.3.4}operator()}{28}{subsubsection.7.7.3.4}
+\contentsline {subsubsection}{\numberline {7.7.3.5}operator+=}{28}{subsubsection.7.7.3.5}
+\contentsline {subsubsection}{\numberline {7.7.3.6}operator=}{28}{subsubsection.7.7.3.6}
+\contentsline {subsubsection}{\numberline {7.7.3.7}print}{28}{subsubsection.7.7.3.7}
+\contentsline {subsubsection}{\numberline {7.7.3.8}setsize}{28}{subsubsection.7.7.3.8}
+\contentsline {subsection}{\numberline {7.7.4}Friends And Related Function Documentation}{28}{subsection.7.7.4}
+\contentsline {subsubsection}{\numberline {7.7.4.1}fortran\discretionary {-}{}{}Array}{28}{subsubsection.7.7.4.1}
+\contentsline {subsubsection}{\numberline {7.7.4.2}fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}{28}{subsubsection.7.7.4.2}
+\contentsline {subsection}{\numberline {7.7.5}Member Data Documentation}{28}{subsection.7.7.5}
+\contentsline {subsubsection}{\numberline {7.7.5.1}deletable}{29}{subsubsection.7.7.5.1}
+\contentsline {subsubsection}{\numberline {7.7.5.2}size}{29}{subsubsection.7.7.5.2}
+\contentsline {subsubsection}{\numberline {7.7.5.3}x}{29}{subsubsection.7.7.5.3}
+\contentsline {section}{\numberline {7.8}odes\discretionary {-}{}{}:\discretionary {-}{}{}:fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F$<$ n $>$ Class Template Reference}{29}{section.7.8}
+\contentsline {subsection}{\numberline {7.8.1}Detailed Description}{30}{subsection.7.8.1}
+\contentsline {subsection}{\numberline {7.8.2}Constructor \& Destructor Documentation}{30}{subsection.7.8.2}
+\contentsline {subsubsection}{\numberline {7.8.2.1}fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}{30}{subsubsection.7.8.2.1}
+\contentsline {subsubsection}{\numberline {7.8.2.2}$\sim $fortran\discretionary {-}{}{}Vector\discretionary {-}{}{}F}{30}{subsubsection.7.8.2.2}
+\contentsline {subsection}{\numberline {7.8.3}Member Function Documentation}{30}{subsection.7.8.3}
+\contentsline {subsubsection}{\numberline {7.8.3.1}a\discretionary {-}{}{}\_\discretionary {-}{}{}x\discretionary {-}{}{}\_\discretionary {-}{}{}plus\discretionary {-}{}{}\_\discretionary {-}{}{}y}{30}{subsubsection.7.8.3.1}
+\contentsline {subsubsection}{\numberline {7.8.3.2}a\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Y}{30}{subsubsection.7.8.3.2}
+\contentsline {subsubsection}{\numberline {7.8.3.3}get\discretionary {-}{}{}\_\discretionary {-}{}{}size}{31}{subsubsection.7.8.3.3}
+\contentsline {subsubsection}{\numberline {7.8.3.4}lc2}{31}{subsubsection.7.8.3.4}
+\contentsline {subsubsection}{\numberline {7.8.3.5}lc3}{31}{subsubsection.7.8.3.5}
+\contentsline {subsubsection}{\numberline {7.8.3.6}lc4}{31}{subsubsection.7.8.3.6}
+\contentsline {subsubsection}{\numberline {7.8.3.7}lc5}{32}{subsubsection.7.8.3.7}
+\contentsline {subsubsection}{\numberline {7.8.3.8}operator\&}{32}{subsubsection.7.8.3.8}
+\contentsline {subsubsection}{\numberline {7.8.3.9}operator()}{32}{subsubsection.7.8.3.9}
+\contentsline {subsubsection}{\numberline {7.8.3.10}operator()}{32}{subsubsection.7.8.3.10}
+\contentsline {subsubsection}{\numberline {7.8.3.11}operator+=}{32}{subsubsection.7.8.3.11}
+\contentsline {subsubsection}{\numberline {7.8.3.12}operator+=}{33}{subsubsection.7.8.3.12}
+\contentsline {subsubsection}{\numberline {7.8.3.13}operator=}{33}{subsubsection.7.8.3.13}
+\contentsline {subsubsection}{\numberline {7.8.3.14}operator=}{33}{subsubsection.7.8.3.14}
+\contentsline {subsubsection}{\numberline {7.8.3.15}operator=}{33}{subsubsection.7.8.3.15}
+\contentsline {subsubsection}{\numberline {7.8.3.16}print}{33}{subsubsection.7.8.3.16}
+\contentsline {subsubsection}{\numberline {7.8.3.17}put}{33}{subsubsection.7.8.3.17}
+\contentsline {subsubsection}{\numberline {7.8.3.18}setsize}{34}{subsubsection.7.8.3.18}
+\contentsline {subsubsection}{\numberline {7.8.3.19}setsum2}{34}{subsubsection.7.8.3.19}
+\contentsline {subsubsection}{\numberline {7.8.3.20}sum}{34}{subsubsection.7.8.3.20}
+\contentsline {subsubsection}{\numberline {7.8.3.21}sum}{34}{subsubsection.7.8.3.21}
+\contentsline {subsubsection}{\numberline {7.8.3.22}switchadr}{34}{subsubsection.7.8.3.22}
+\contentsline {subsubsection}{\numberline {7.8.3.23}x\discretionary {-}{}{}\_\discretionary {-}{}{}lc2}{35}{subsubsection.7.8.3.23}
+\contentsline {subsubsection}{\numberline {7.8.3.24}x\discretionary {-}{}{}\_\discretionary {-}{}{}lc3}{35}{subsubsection.7.8.3.24}
+\contentsline {subsubsection}{\numberline {7.8.3.25}x\discretionary {-}{}{}\_\discretionary {-}{}{}lc4}{35}{subsubsection.7.8.3.25}
+\contentsline {subsection}{\numberline {7.8.4}Member Data Documentation}{35}{subsection.7.8.4}
+\contentsline {subsubsection}{\numberline {7.8.4.1}deletable}{36}{subsubsection.7.8.4.1}
+\contentsline {subsubsection}{\numberline {7.8.4.2}size}{36}{subsubsection.7.8.4.2}
+\contentsline {subsubsection}{\numberline {7.8.4.3}x}{36}{subsubsection.7.8.4.3}
+\contentsline {subsubsection}{\numberline {7.8.4.4}y}{36}{subsubsection.7.8.4.4}
+\contentsline {section}{\numberline {7.9}Generic\discretionary {-}{}{}Exception Class Reference}{36}{section.7.9}
+\contentsline {subsection}{\numberline {7.9.1}Detailed Description}{37}{subsection.7.9.1}
+\contentsline {subsection}{\numberline {7.9.2}Constructor \& Destructor Documentation}{37}{subsection.7.9.2}
+\contentsline {subsubsection}{\numberline {7.9.2.1}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.1}
+\contentsline {subsubsection}{\numberline {7.9.2.2}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.2}
+\contentsline {subsubsection}{\numberline {7.9.2.3}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.3}
+\contentsline {subsubsection}{\numberline {7.9.2.4}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.4}
+\contentsline {subsubsection}{\numberline {7.9.2.5}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.5}
+\contentsline {subsubsection}{\numberline {7.9.2.6}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.6}
+\contentsline {subsubsection}{\numberline {7.9.2.7}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.7}
+\contentsline {subsubsection}{\numberline {7.9.2.8}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.8}
+\contentsline {subsubsection}{\numberline {7.9.2.9}Generic\discretionary {-}{}{}Exception}{37}{subsubsection.7.9.2.9}
+\contentsline {subsubsection}{\numberline {7.9.2.10}Generic\discretionary {-}{}{}Exception}{38}{subsubsection.7.9.2.10}
+\contentsline {subsubsection}{\numberline {7.9.2.11}Generic\discretionary {-}{}{}Exception}{38}{subsubsection.7.9.2.11}
+\contentsline {section}{\numberline {7.10}odes\discretionary {-}{}{}:\discretionary {-}{}{}:logger Class Reference}{38}{section.7.10}
+\contentsline {subsection}{\numberline {7.10.1}Detailed Description}{38}{subsection.7.10.1}
+\contentsline {subsection}{\numberline {7.10.2}Constructor \& Destructor Documentation}{38}{subsection.7.10.2}
+\contentsline {subsubsection}{\numberline {7.10.2.1}logger}{38}{subsubsection.7.10.2.1}
+\contentsline {subsubsection}{\numberline {7.10.2.2}$\sim $logger}{39}{subsubsection.7.10.2.2}
+\contentsline {subsection}{\numberline {7.10.3}Member Function Documentation}{39}{subsection.7.10.3}
+\contentsline {subsubsection}{\numberline {7.10.3.1}clear}{39}{subsubsection.7.10.3.1}
+\contentsline {subsubsection}{\numberline {7.10.3.2}print}{39}{subsubsection.7.10.3.2}
+\contentsline {subsubsection}{\numberline {7.10.3.3}put}{39}{subsubsection.7.10.3.3}
+\contentsline {subsection}{\numberline {7.10.4}Member Data Documentation}{39}{subsection.7.10.4}
+\contentsline {subsubsection}{\numberline {7.10.4.1}L}{39}{subsubsection.7.10.4.1}
+\contentsline {section}{\numberline {7.11}odes\discretionary {-}{}{}:\discretionary {-}{}{}:Matrices$<$ full, Hessengerg, n, nsub, nsup $>$ Class Template Reference}{39}{section.7.11}
+\contentsline {subsection}{\numberline {7.11.1}Detailed Description}{40}{subsection.7.11.1}
+\contentsline {subsection}{\numberline {7.11.2}Member Typedef Documentation}{40}{subsection.7.11.2}
+\contentsline {subsubsection}{\numberline {7.11.2.1}Matrix\discretionary {-}{}{}Complex}{40}{subsubsection.7.11.2.1}
+\contentsline {subsubsection}{\numberline {7.11.2.2}Matrix\discretionary {-}{}{}Real}{40}{subsubsection.7.11.2.2}
+\contentsline {subsection}{\numberline {7.11.3}Constructor \& Destructor Documentation}{40}{subsection.7.11.3}
+\contentsline {subsubsection}{\numberline {7.11.3.1}Matrices}{40}{subsubsection.7.11.3.1}
+\contentsline {subsection}{\numberline {7.11.4}Member Function Documentation}{40}{subsection.7.11.4}
+\contentsline {subsubsection}{\numberline {7.11.4.1}decomc}{40}{subsubsection.7.11.4.1}
+\contentsline {subsubsection}{\numberline {7.11.4.2}decomr}{41}{subsubsection.7.11.4.2}
+\contentsline {subsubsection}{\numberline {7.11.4.3}Ibegin}{41}{subsubsection.7.11.4.3}
+\contentsline {subsubsection}{\numberline {7.11.4.4}Iend}{41}{subsubsection.7.11.4.4}
+\contentsline {subsubsection}{\numberline {7.11.4.5}solvecomplex}{41}{subsubsection.7.11.4.5}
+\contentsline {subsubsection}{\numberline {7.11.4.6}solvereal}{41}{subsubsection.7.11.4.6}
+\contentsline {subsection}{\numberline {7.11.5}Member Data Documentation}{41}{subsection.7.11.5}
+\contentsline {subsubsection}{\numberline {7.11.5.1}calhes}{41}{subsubsection.7.11.5.1}
+\contentsline {subsubsection}{\numberline {7.11.5.2}E1}{42}{subsubsection.7.11.5.2}
+\contentsline {subsubsection}{\numberline {7.11.5.3}E2\discretionary {-}{}{}R}{42}{subsubsection.7.11.5.3}
+\contentsline {subsubsection}{\numberline {7.11.5.4}ipivc}{42}{subsubsection.7.11.5.4}
+\contentsline {subsubsection}{\numberline {7.11.5.5}ipivr}{42}{subsubsection.7.11.5.5}
+\contentsline {subsubsection}{\numberline {7.11.5.6}Z2\discretionary {-}{}{}N}{42}{subsubsection.7.11.5.6}
+\contentsline {section}{\numberline {7.12}odes\discretionary {-}{}{}:\discretionary {-}{}{}:Matrices$<$ false, false, n, nsub, nsup $>$ Class Template Reference}{42}{section.7.12}
+\contentsline {subsection}{\numberline {7.12.1}Detailed Description}{43}{subsection.7.12.1}
+\contentsline {subsection}{\numberline {7.12.2}Member Typedef Documentation}{43}{subsection.7.12.2}
+\contentsline {subsubsection}{\numberline {7.12.2.1}Matrix\discretionary {-}{}{}Complex}{43}{subsubsection.7.12.2.1}
+\contentsline {subsubsection}{\numberline {7.12.2.2}Matrix\discretionary {-}{}{}Real}{43}{subsubsection.7.12.2.2}
+\contentsline {subsection}{\numberline {7.12.3}Constructor \& Destructor Documentation}{43}{subsection.7.12.3}
+\contentsline {subsubsection}{\numberline {7.12.3.1}Matrices}{43}{subsubsection.7.12.3.1}
+\contentsline {subsection}{\numberline {7.12.4}Member Function Documentation}{43}{subsection.7.12.4}
+\contentsline {subsubsection}{\numberline {7.12.4.1}decomc}{43}{subsubsection.7.12.4.1}
+\contentsline {subsubsection}{\numberline {7.12.4.2}decomr}{43}{subsubsection.7.12.4.2}
+\contentsline {subsubsection}{\numberline {7.12.4.3}Ibegin}{43}{subsubsection.7.12.4.3}
+\contentsline {subsubsection}{\numberline {7.12.4.4}Iend}{44}{subsubsection.7.12.4.4}
+\contentsline {subsubsection}{\numberline {7.12.4.5}solvecomplex}{44}{subsubsection.7.12.4.5}
+\contentsline {subsubsection}{\numberline {7.12.4.6}solvereal}{44}{subsubsection.7.12.4.6}
+\contentsline {subsection}{\numberline {7.12.5}Member Data Documentation}{44}{subsection.7.12.5}
+\contentsline {subsubsection}{\numberline {7.12.5.1}calhes}{44}{subsubsection.7.12.5.1}
+\contentsline {subsubsection}{\numberline {7.12.5.2}E1}{44}{subsubsection.7.12.5.2}
+\contentsline {subsubsection}{\numberline {7.12.5.3}E2\discretionary {-}{}{}R}{44}{subsubsection.7.12.5.3}
+\contentsline {subsubsection}{\numberline {7.12.5.4}ipivc}{44}{subsubsection.7.12.5.4}
+\contentsline {subsubsection}{\numberline {7.12.5.5}ipivr}{44}{subsubsection.7.12.5.5}
+\contentsline {subsubsection}{\numberline {7.12.5.6}ldab}{44}{subsubsection.7.12.5.6}
+\contentsline {subsubsection}{\numberline {7.12.5.7}Z2\discretionary {-}{}{}N}{44}{subsubsection.7.12.5.7}
+\contentsline {section}{\numberline {7.13}odes\discretionary {-}{}{}:\discretionary {-}{}{}:Matrices$<$ false, true, n, nsub, nsup $>$ Class Template Reference}{44}{section.7.13}
+\contentsline {subsection}{\numberline {7.13.1}Detailed Description}{45}{subsection.7.13.1}
+\contentsline {subsection}{\numberline {7.13.2}Member Typedef Documentation}{45}{subsection.7.13.2}
+\contentsline {subsubsection}{\numberline {7.13.2.1}Matrix\discretionary {-}{}{}Complex}{45}{subsubsection.7.13.2.1}
+\contentsline {subsubsection}{\numberline {7.13.2.2}Matrix\discretionary {-}{}{}Real}{45}{subsubsection.7.13.2.2}
+\contentsline {subsection}{\numberline {7.13.3}Constructor \& Destructor Documentation}{45}{subsection.7.13.3}
+\contentsline {subsubsection}{\numberline {7.13.3.1}Matrices}{45}{subsubsection.7.13.3.1}
+\contentsline {subsection}{\numberline {7.13.4}Member Function Documentation}{45}{subsection.7.13.4}
+\contentsline {subsubsection}{\numberline {7.13.4.1}decomc}{45}{subsubsection.7.13.4.1}
+\contentsline {subsubsection}{\numberline {7.13.4.2}decomr}{45}{subsubsection.7.13.4.2}
+\contentsline {subsubsection}{\numberline {7.13.4.3}Ibegin}{45}{subsubsection.7.13.4.3}
+\contentsline {subsubsection}{\numberline {7.13.4.4}Iend}{45}{subsubsection.7.13.4.4}
+\contentsline {subsubsection}{\numberline {7.13.4.5}solvecomplex}{45}{subsubsection.7.13.4.5}
+\contentsline {subsubsection}{\numberline {7.13.4.6}solvereal}{46}{subsubsection.7.13.4.6}
+\contentsline {subsection}{\numberline {7.13.5}Member Data Documentation}{46}{subsection.7.13.5}
+\contentsline {subsubsection}{\numberline {7.13.5.1}calhes}{46}{subsubsection.7.13.5.1}
+\contentsline {section}{\numberline {7.14}odes\discretionary {-}{}{}:\discretionary {-}{}{}:Matrices$<$ true, true, n, nsub, nsup $>$ Class Template Reference}{46}{section.7.14}
+\contentsline {subsection}{\numberline {7.14.1}Detailed Description}{47}{subsection.7.14.1}
+\contentsline {subsection}{\numberline {7.14.2}Member Typedef Documentation}{47}{subsection.7.14.2}
+\contentsline {subsubsection}{\numberline {7.14.2.1}Matrix\discretionary {-}{}{}Complex}{47}{subsubsection.7.14.2.1}
+\contentsline {subsubsection}{\numberline {7.14.2.2}Matrix\discretionary {-}{}{}Real}{47}{subsubsection.7.14.2.2}
+\contentsline {subsection}{\numberline {7.14.3}Constructor \& Destructor Documentation}{47}{subsection.7.14.3}
+\contentsline {subsubsection}{\numberline {7.14.3.1}Matrices}{47}{subsubsection.7.14.3.1}
+\contentsline {subsubsection}{\numberline {7.14.3.2}$\sim $\discretionary {-}{}{}Matrices}{47}{subsubsection.7.14.3.2}
+\contentsline {subsection}{\numberline {7.14.4}Member Function Documentation}{47}{subsection.7.14.4}
+\contentsline {subsubsection}{\numberline {7.14.4.1}decomc}{47}{subsubsection.7.14.4.1}
+\contentsline {subsubsection}{\numberline {7.14.4.2}decomr}{47}{subsubsection.7.14.4.2}
+\contentsline {subsubsection}{\numberline {7.14.4.3}Ibegin}{47}{subsubsection.7.14.4.3}
+\contentsline {subsubsection}{\numberline {7.14.4.4}Iend}{47}{subsubsection.7.14.4.4}
+\contentsline {subsubsection}{\numberline {7.14.4.5}solvecomplex}{47}{subsubsection.7.14.4.5}
+\contentsline {subsubsection}{\numberline {7.14.4.6}solvereal}{47}{subsubsection.7.14.4.6}
+\contentsline {subsection}{\numberline {7.14.5}Member Data Documentation}{47}{subsection.7.14.5}
+\contentsline {subsubsection}{\numberline {7.14.5.1}calhes}{47}{subsubsection.7.14.5.1}
+\contentsline {subsubsection}{\numberline {7.14.5.2}Ci}{48}{subsubsection.7.14.5.2}
+\contentsline {subsubsection}{\numberline {7.14.5.3}Cr}{48}{subsubsection.7.14.5.3}
+\contentsline {subsubsection}{\numberline {7.14.5.4}E1}{48}{subsubsection.7.14.5.4}
+\contentsline {subsubsection}{\numberline {7.14.5.5}E2\discretionary {-}{}{}I}{48}{subsubsection.7.14.5.5}
+\contentsline {subsubsection}{\numberline {7.14.5.6}E2\discretionary {-}{}{}R}{48}{subsubsection.7.14.5.6}
+\contentsline {subsubsection}{\numberline {7.14.5.7}Fi}{48}{subsubsection.7.14.5.7}
+\contentsline {subsubsection}{\numberline {7.14.5.8}Fr}{48}{subsubsection.7.14.5.8}
+\contentsline {subsubsection}{\numberline {7.14.5.9}ipi}{48}{subsubsection.7.14.5.9}
+\contentsline {subsubsection}{\numberline {7.14.5.10}ipr}{48}{subsubsection.7.14.5.10}
+\contentsline {subsubsection}{\numberline {7.14.5.11}lwork}{48}{subsubsection.7.14.5.11}
+\contentsline {subsubsection}{\numberline {7.14.5.12}tau}{48}{subsubsection.7.14.5.12}
+\contentsline {subsubsection}{\numberline {7.14.5.13}work}{48}{subsubsection.7.14.5.13}
+\contentsline {section}{\numberline {7.15}odes\discretionary {-}{}{}:\discretionary {-}{}{}:Matrixtype$<$ n, nsub, nsup $>$ Struct Template Reference}{48}{section.7.15}
+\contentsline {subsection}{\numberline {7.15.1}Member Typedef Documentation}{48}{subsection.7.15.1}
+\contentsline {subsubsection}{\numberline {7.15.1.1}Matrix}{48}{subsubsection.7.15.1.1}
+\contentsline {subsection}{\numberline {7.15.2}Member Data Documentation}{48}{subsection.7.15.2}
+\contentsline {subsubsection}{\numberline {7.15.2.1}Full}{49}{subsubsection.7.15.2.1}
+\contentsline {section}{\numberline {7.16}odes\discretionary {-}{}{}:\discretionary {-}{}{}:Radau5cc$<$ Fonct $>$ Class Template Reference}{49}{section.7.16}
+\contentsline {subsection}{\numberline {7.16.1}Detailed Description}{52}{subsection.7.16.1}
+\contentsline {subsection}{\numberline {7.16.2}Member Typedef Documentation}{53}{subsection.7.16.2}
+\contentsline {subsubsection}{\numberline {7.16.2.1}Matrix\discretionary {-}{}{}Complex}{53}{subsubsection.7.16.2.1}
+\contentsline {subsubsection}{\numberline {7.16.2.2}Matrix\discretionary {-}{}{}Real}{53}{subsubsection.7.16.2.2}
+\contentsline {subsection}{\numberline {7.16.3}Member Enumeration Documentation}{53}{subsection.7.16.3}
+\contentsline {subsubsection}{\numberline {7.16.3.1}Out\discretionary {-}{}{}Newton\discretionary {-}{}{}Loop}{53}{subsubsection.7.16.3.1}
+\contentsline {subsection}{\numberline {7.16.4}Constructor \& Destructor Documentation}{53}{subsection.7.16.4}
+\contentsline {subsubsection}{\numberline {7.16.4.1}Radau5cc}{53}{subsubsection.7.16.4.1}
+\contentsline {subsubsection}{\numberline {7.16.4.2}$\sim $\discretionary {-}{}{}Radau5cc}{53}{subsubsection.7.16.4.2}
+\contentsline {subsection}{\numberline {7.16.5}Member Function Documentation}{53}{subsection.7.16.5}
+\contentsline {subsubsection}{\numberline {7.16.5.1}ct\discretionary {-}{}{}\_\discretionary {-}{}{}assert}{53}{subsubsection.7.16.5.1}
+\contentsline {subsubsection}{\numberline {7.16.5.2}decomc}{53}{subsubsection.7.16.5.2}
+\contentsline {subsubsection}{\numberline {7.16.5.3}decomr}{54}{subsubsection.7.16.5.3}
+\contentsline {subsubsection}{\numberline {7.16.5.4}do\discretionary {-}{}{}Newton\discretionary {-}{}{}Matrices}{54}{subsubsection.7.16.5.4}
+\contentsline {subsubsection}{\numberline {7.16.5.5}do\discretionary {-}{}{}Scal}{54}{subsubsection.7.16.5.5}
+\contentsline {subsubsection}{\numberline {7.16.5.6}estrad}{54}{subsubsection.7.16.5.6}
+\contentsline {subsubsection}{\numberline {7.16.5.7}getfirst\discretionary {-}{}{}Accepted\discretionary {-}{}{}Step}{54}{subsubsection.7.16.5.7}
+\contentsline {subsubsection}{\numberline {7.16.5.8}get\discretionary {-}{}{}Last\discretionary {-}{}{}Time\discretionary {-}{}{}Step}{54}{subsubsection.7.16.5.8}
+\contentsline {subsubsection}{\numberline {7.16.5.9}get\discretionary {-}{}{}Naccpt}{54}{subsubsection.7.16.5.9}
+\contentsline {subsubsection}{\numberline {7.16.5.10}get\discretionary {-}{}{}Ndec}{55}{subsubsection.7.16.5.10}
+\contentsline {subsubsection}{\numberline {7.16.5.11}get\discretionary {-}{}{}Newt}{55}{subsubsection.7.16.5.11}
+\contentsline {subsubsection}{\numberline {7.16.5.12}get\discretionary {-}{}{}Nfonc\discretionary {-}{}{}Called}{55}{subsubsection.7.16.5.12}
+\contentsline {subsubsection}{\numberline {7.16.5.13}get\discretionary {-}{}{}N\discretionary {-}{}{}Jac}{55}{subsubsection.7.16.5.13}
+\contentsline {subsubsection}{\numberline {7.16.5.14}get\discretionary {-}{}{}Nrejct}{55}{subsubsection.7.16.5.14}
+\contentsline {subsubsection}{\numberline {7.16.5.15}get\discretionary {-}{}{}Nstep}{55}{subsubsection.7.16.5.15}
+\contentsline {subsubsection}{\numberline {7.16.5.16}Ibegin}{55}{subsubsection.7.16.5.16}
+\contentsline {subsubsection}{\numberline {7.16.5.17}Iend}{55}{subsubsection.7.16.5.17}
+\contentsline {subsubsection}{\numberline {7.16.5.18}Jacobian}{55}{subsubsection.7.16.5.18}
+\contentsline {subsubsection}{\numberline {7.16.5.19}Jacobian}{56}{subsubsection.7.16.5.19}
+\contentsline {subsubsection}{\numberline {7.16.5.20}Newton}{56}{subsubsection.7.16.5.20}
+\contentsline {subsubsection}{\numberline {7.16.5.21}Newton\discretionary {-}{}{}Iteration\discretionary {-}{}{}Test}{56}{subsubsection.7.16.5.21}
+\contentsline {subsubsection}{\numberline {7.16.5.22}operator()}{56}{subsubsection.7.16.5.22}
+\contentsline {subsubsection}{\numberline {7.16.5.23}perform\discretionary {-}{}{}Only\discretionary {-}{}{}One\discretionary {-}{}{}Step}{56}{subsubsection.7.16.5.23}
+\contentsline {subsubsection}{\numberline {7.16.5.24}rhs}{56}{subsubsection.7.16.5.24}
+\contentsline {subsubsection}{\numberline {7.16.5.25}set\discretionary {-}{}{}Facr\discretionary {-}{}{}Facl}{57}{subsubsection.7.16.5.25}
+\contentsline {subsubsection}{\numberline {7.16.5.26}set\discretionary {-}{}{}Fnewt}{58}{subsubsection.7.16.5.26}
+\contentsline {subsubsection}{\numberline {7.16.5.27}set\discretionary {-}{}{}Gustafsson\discretionary {-}{}{}Test}{58}{subsubsection.7.16.5.27}
+\contentsline {subsubsection}{\numberline {7.16.5.28}seth}{58}{subsubsection.7.16.5.28}
+\contentsline {subsubsection}{\numberline {7.16.5.29}set\discretionary {-}{}{}Max\discretionary {-}{}{}Iterations\discretionary {-}{}{}Newton}{58}{subsubsection.7.16.5.29}
+\contentsline {subsubsection}{\numberline {7.16.5.30}set\discretionary {-}{}{}Nmax}{58}{subsubsection.7.16.5.30}
+\contentsline {subsubsection}{\numberline {7.16.5.31}set\discretionary {-}{}{}Recompute\discretionary {-}{}{}Jacobian\discretionary {-}{}{}Treshold}{58}{subsubsection.7.16.5.31}
+\contentsline {subsubsection}{\numberline {7.16.5.32}set\discretionary {-}{}{}Safe}{58}{subsubsection.7.16.5.32}
+\contentsline {subsubsection}{\numberline {7.16.5.33}set\discretionary {-}{}{}Test\discretionary {-}{}{}Policy}{59}{subsubsection.7.16.5.33}
+\contentsline {subsubsection}{\numberline {7.16.5.34}slvrad}{59}{subsubsection.7.16.5.34}
+\contentsline {subsubsection}{\numberline {7.16.5.35}solvecomplex}{59}{subsubsection.7.16.5.35}
+\contentsline {subsubsection}{\numberline {7.16.5.36}solvereal}{59}{subsubsection.7.16.5.36}
+\contentsline {subsection}{\numberline {7.16.6}Member Data Documentation}{59}{subsection.7.16.6}
+\contentsline {subsubsection}{\numberline {7.16.6.1}A\discretionary {-}{}{}L\discretionary {-}{}{}P\discretionary {-}{}{}H}{59}{subsubsection.7.16.6.1}
+\contentsline {subsubsection}{\numberline {7.16.6.2}atol}{59}{subsubsection.7.16.6.2}
+\contentsline {subsubsection}{\numberline {7.16.6.3}B\discretionary {-}{}{}E\discretionary {-}{}{}T\discretionary {-}{}{}A}{59}{subsubsection.7.16.6.3}
+\contentsline {subsubsection}{\numberline {7.16.6.4}C1}{59}{subsubsection.7.16.6.4}
+\contentsline {subsubsection}{\numberline {7.16.6.5}C1\discretionary {-}{}{}M1}{59}{subsubsection.7.16.6.5}
+\contentsline {subsubsection}{\numberline {7.16.6.6}C1\discretionary {-}{}{}M\discretionary {-}{}{}C2}{60}{subsubsection.7.16.6.6}
+\contentsline {subsubsection}{\numberline {7.16.6.7}C2}{60}{subsubsection.7.16.6.7}
+\contentsline {subsubsection}{\numberline {7.16.6.8}C2\discretionary {-}{}{}M1}{60}{subsubsection.7.16.6.8}
+\contentsline {subsubsection}{\numberline {7.16.6.9}calhes}{60}{subsubsection.7.16.6.9}
+\contentsline {subsubsection}{\numberline {7.16.6.10}caljac}{60}{subsubsection.7.16.6.10}
+\contentsline {subsubsection}{\numberline {7.16.6.11}cfac}{60}{subsubsection.7.16.6.11}
+\contentsline {subsubsection}{\numberline {7.16.6.12}C\discretionary {-}{}{}N\discretionary {-}{}{}O}{60}{subsubsection.7.16.6.12}
+\contentsline {subsubsection}{\numberline {7.16.6.13}Compute\discretionary {-}{}{}Jacobian\discretionary {-}{}{}Numerically}{60}{subsubsection.7.16.6.13}
+\contentsline {subsubsection}{\numberline {7.16.6.14}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}T1}{60}{subsubsection.7.16.6.14}
+\contentsline {subsubsection}{\numberline {7.16.6.15}D\discretionary {-}{}{}D1}{60}{subsubsection.7.16.6.15}
+\contentsline {subsubsection}{\numberline {7.16.6.16}D\discretionary {-}{}{}D2}{60}{subsubsection.7.16.6.16}
+\contentsline {subsubsection}{\numberline {7.16.6.17}D\discretionary {-}{}{}D3}{60}{subsubsection.7.16.6.17}
+\contentsline {subsubsection}{\numberline {7.16.6.18}dyno}{60}{subsubsection.7.16.6.18}
+\contentsline {subsubsection}{\numberline {7.16.6.19}dynold}{60}{subsubsection.7.16.6.19}
+\contentsline {subsubsection}{\numberline {7.16.6.20}erracc}{60}{subsubsection.7.16.6.20}
+\contentsline {subsubsection}{\numberline {7.16.6.21}F}{60}{subsubsection.7.16.6.21}
+\contentsline {subsubsection}{\numberline {7.16.6.22}F1}{60}{subsubsection.7.16.6.22}
+\contentsline {subsubsection}{\numberline {7.16.6.23}F2}{60}{subsubsection.7.16.6.23}
+\contentsline {subsubsection}{\numberline {7.16.6.24}F3}{60}{subsubsection.7.16.6.24}
+\contentsline {subsubsection}{\numberline {7.16.6.25}faccon}{60}{subsubsection.7.16.6.25}
+\contentsline {subsubsection}{\numberline {7.16.6.26}facl}{60}{subsubsection.7.16.6.26}
+\contentsline {subsubsection}{\numberline {7.16.6.27}facr}{60}{subsubsection.7.16.6.27}
+\contentsline {subsubsection}{\numberline {7.16.6.28}first}{60}{subsubsection.7.16.6.28}
+\contentsline {subsubsection}{\numberline {7.16.6.29}first\discretionary {-}{}{}Accepted\discretionary {-}{}{}Step}{60}{subsubsection.7.16.6.29}
+\contentsline {subsubsection}{\numberline {7.16.6.30}fnewt}{60}{subsubsection.7.16.6.30}
+\contentsline {subsubsection}{\numberline {7.16.6.31}gustafsson\discretionary {-}{}{}Test}{61}{subsubsection.7.16.6.31}
+\contentsline {subsubsection}{\numberline {7.16.6.32}h}{61}{subsubsection.7.16.6.32}
+\contentsline {subsubsection}{\numberline {7.16.6.33}hacc}{61}{subsubsection.7.16.6.33}
+\contentsline {subsubsection}{\numberline {7.16.6.34}Hessenberg}{61}{subsubsection.7.16.6.34}
+\contentsline {subsubsection}{\numberline {7.16.6.35}hhfac}{61}{subsubsection.7.16.6.35}
+\contentsline {subsubsection}{\numberline {7.16.6.36}hmax}{61}{subsubsection.7.16.6.36}
+\contentsline {subsubsection}{\numberline {7.16.6.37}hmaxn}{61}{subsubsection.7.16.6.37}
+\contentsline {subsubsection}{\numberline {7.16.6.38}hold}{61}{subsubsection.7.16.6.38}
+\contentsline {subsubsection}{\numberline {7.16.6.39}hopt}{61}{subsubsection.7.16.6.39}
+\contentsline {subsubsection}{\numberline {7.16.6.40}Jac}{61}{subsubsection.7.16.6.40}
+\contentsline {subsubsection}{\numberline {7.16.6.41}last}{61}{subsubsection.7.16.6.41}
+\contentsline {subsubsection}{\numberline {7.16.6.42}Matrix\discretionary {-}{}{}Full}{61}{subsubsection.7.16.6.42}
+\contentsline {subsubsection}{\numberline {7.16.6.43}n}{61}{subsubsection.7.16.6.43}
+\contentsline {subsubsection}{\numberline {7.16.6.44}naccpt}{61}{subsubsection.7.16.6.44}
+\contentsline {subsubsection}{\numberline {7.16.6.45}ndec}{61}{subsubsection.7.16.6.45}
+\contentsline {subsubsection}{\numberline {7.16.6.46}newt}{61}{subsubsection.7.16.6.46}
+\contentsline {subsubsection}{\numberline {7.16.6.47}nfonccalled}{61}{subsubsection.7.16.6.47}
+\contentsline {subsubsection}{\numberline {7.16.6.48}ninf}{61}{subsubsection.7.16.6.48}
+\contentsline {subsubsection}{\numberline {7.16.6.49}nit}{61}{subsubsection.7.16.6.49}
+\contentsline {subsubsection}{\numberline {7.16.6.50}njac}{61}{subsubsection.7.16.6.50}
+\contentsline {subsubsection}{\numberline {7.16.6.51}nmax}{61}{subsubsection.7.16.6.51}
+\contentsline {subsubsection}{\numberline {7.16.6.52}nrejct}{61}{subsubsection.7.16.6.52}
+\contentsline {subsubsection}{\numberline {7.16.6.53}nstep}{61}{subsubsection.7.16.6.53}
+\contentsline {subsubsection}{\numberline {7.16.6.54}nsup}{61}{subsubsection.7.16.6.54}
+\contentsline {subsubsection}{\numberline {7.16.6.55}only\discretionary {-}{}{}One\discretionary {-}{}{}Step}{61}{subsubsection.7.16.6.55}
+\contentsline {subsubsection}{\numberline {7.16.6.56}posneg}{61}{subsubsection.7.16.6.56}
+\contentsline {subsubsection}{\numberline {7.16.6.57}quot1}{61}{subsubsection.7.16.6.57}
+\contentsline {subsubsection}{\numberline {7.16.6.58}quot2}{62}{subsubsection.7.16.6.58}
+\contentsline {subsubsection}{\numberline {7.16.6.59}reject}{62}{subsubsection.7.16.6.59}
+\contentsline {subsubsection}{\numberline {7.16.6.60}rtol}{62}{subsubsection.7.16.6.60}
+\contentsline {subsubsection}{\numberline {7.16.6.61}safe}{62}{subsubsection.7.16.6.61}
+\contentsline {subsubsection}{\numberline {7.16.6.62}same\discretionary {-}{}{}Test\discretionary {-}{}{}Value}{62}{subsubsection.7.16.6.62}
+\contentsline {subsubsection}{\numberline {7.16.6.63}save1}{62}{subsubsection.7.16.6.63}
+\contentsline {subsubsection}{\numberline {7.16.6.64}save2}{62}{subsubsection.7.16.6.64}
+\contentsline {subsubsection}{\numberline {7.16.6.65}save3}{62}{subsubsection.7.16.6.65}
+\contentsline {subsubsection}{\numberline {7.16.6.66}scal}{62}{subsubsection.7.16.6.66}
+\contentsline {subsubsection}{\numberline {7.16.6.67}S\discretionary {-}{}{}Q6}{62}{subsubsection.7.16.6.67}
+\contentsline {subsubsection}{\numberline {7.16.6.68}startn}{62}{subsubsection.7.16.6.68}
+\contentsline {subsubsection}{\numberline {7.16.6.69}T11}{62}{subsubsection.7.16.6.69}
+\contentsline {subsubsection}{\numberline {7.16.6.70}T12}{62}{subsubsection.7.16.6.70}
+\contentsline {subsubsection}{\numberline {7.16.6.71}T13}{62}{subsubsection.7.16.6.71}
+\contentsline {subsubsection}{\numberline {7.16.6.72}T21}{62}{subsubsection.7.16.6.72}
+\contentsline {subsubsection}{\numberline {7.16.6.73}T22}{62}{subsubsection.7.16.6.73}
+\contentsline {subsubsection}{\numberline {7.16.6.74}T23}{62}{subsubsection.7.16.6.74}
+\contentsline {subsubsection}{\numberline {7.16.6.75}T31}{62}{subsubsection.7.16.6.75}
+\contentsline {subsubsection}{\numberline {7.16.6.76}thet}{62}{subsubsection.7.16.6.76}
+\contentsline {subsubsection}{\numberline {7.16.6.77}theta}{62}{subsubsection.7.16.6.77}
+\contentsline {subsubsection}{\numberline {7.16.6.78}thqold}{62}{subsubsection.7.16.6.78}
+\contentsline {subsubsection}{\numberline {7.16.6.79}T\discretionary {-}{}{}I11}{62}{subsubsection.7.16.6.79}
+\contentsline {subsubsection}{\numberline {7.16.6.80}T\discretionary {-}{}{}I12}{62}{subsubsection.7.16.6.80}
+\contentsline {subsubsection}{\numberline {7.16.6.81}T\discretionary {-}{}{}I13}{62}{subsubsection.7.16.6.81}
+\contentsline {subsubsection}{\numberline {7.16.6.82}T\discretionary {-}{}{}I21}{62}{subsubsection.7.16.6.82}
+\contentsline {subsubsection}{\numberline {7.16.6.83}T\discretionary {-}{}{}I22}{62}{subsubsection.7.16.6.83}
+\contentsline {subsubsection}{\numberline {7.16.6.84}T\discretionary {-}{}{}I23}{62}{subsubsection.7.16.6.84}
+\contentsline {subsubsection}{\numberline {7.16.6.85}T\discretionary {-}{}{}I31}{62}{subsubsection.7.16.6.85}
+\contentsline {subsubsection}{\numberline {7.16.6.86}T\discretionary {-}{}{}I32}{63}{subsubsection.7.16.6.86}
+\contentsline {subsubsection}{\numberline {7.16.6.87}T\discretionary {-}{}{}I33}{63}{subsubsection.7.16.6.87}
+\contentsline {subsubsection}{\numberline {7.16.6.88}tolst}{63}{subsubsection.7.16.6.88}
+\contentsline {subsubsection}{\numberline {7.16.6.89}U1}{63}{subsubsection.7.16.6.89}
+\contentsline {subsubsection}{\numberline {7.16.6.90}uround}{63}{subsubsection.7.16.6.90}
+\contentsline {subsubsection}{\numberline {7.16.6.91}xend}{63}{subsubsection.7.16.6.91}
+\contentsline {subsubsection}{\numberline {7.16.6.92}xold}{63}{subsubsection.7.16.6.92}
+\contentsline {subsubsection}{\numberline {7.16.6.93}xph}{63}{subsubsection.7.16.6.93}
+\contentsline {subsubsection}{\numberline {7.16.6.94}Z1}{63}{subsubsection.7.16.6.94}
+\contentsline {subsubsection}{\numberline {7.16.6.95}Z1\discretionary {-}{}{}T}{63}{subsubsection.7.16.6.95}
+\contentsline {subsubsection}{\numberline {7.16.6.96}Z2}{63}{subsubsection.7.16.6.96}
+\contentsline {subsubsection}{\numberline {7.16.6.97}Z2\discretionary {-}{}{}T}{63}{subsubsection.7.16.6.97}
+\contentsline {subsubsection}{\numberline {7.16.6.98}Z3}{63}{subsubsection.7.16.6.98}
+\contentsline {subsubsection}{\numberline {7.16.6.99}Z3\discretionary {-}{}{}T}{63}{subsubsection.7.16.6.99}
+\contentsline {chapter}{\numberline {8}File Documentation}{65}{chapter.8}
+\contentsline {section}{\numberline {8.1}common/include/\discretionary {-}{}{}Allocate\discretionary {-}{}{}Destroy\discretionary {-}{}{}Vector.hpp File Reference}{65}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Macro Definition Documentation}{66}{subsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.1.1}A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}D}{66}{subsubsection.8.1.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Function Documentation}{66}{subsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.2.1}alloc\discretionary {-}{}{}Double\discretionary {-}{}{}Array}{66}{subsubsection.8.1.2.1}
+\contentsline {subsubsection}{\numberline {8.1.2.2}destroy\discretionary {-}{}{}Double\discretionary {-}{}{}Array}{66}{subsubsection.8.1.2.2}
+\contentsline {section}{\numberline {8.2}common/include/compat.hpp File Reference}{66}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Macro Definition Documentation}{67}{subsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.1.1}A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}T}{67}{subsubsection.8.2.1.1}
+\contentsline {subsubsection}{\numberline {8.2.1.2}A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}}{67}{subsubsection.8.2.1.2}
+\contentsline {subsubsection}{\numberline {8.2.1.3}ct\discretionary {-}{}{}\_\discretionary {-}{}{}assert}{67}{subsubsection.8.2.1.3}
+\contentsline {section}{\numberline {8.3}common/include/fortran\discretionary {-}{}{}Array.hpp File Reference}{67}{section.8.3}
+\contentsline {section}{\numberline {8.4}common/include/fortran\discretionary {-}{}{}Complex\discretionary {-}{}{}Array.hpp File Reference}{68}{section.8.4}
+\contentsline {section}{\numberline {8.5}common/include/fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Array.hpp File Reference}{69}{section.8.5}
+\contentsline {subsection}{\numberline {8.5.1}Macro Definition Documentation}{70}{subsection.8.5.1}
+\contentsline {subsubsection}{\numberline {8.5.1.1}M\discretionary {-}{}{}A\discretionary {-}{}{}X}{70}{subsubsection.8.5.1.1}
+\contentsline {subsubsection}{\numberline {8.5.1.2}M\discretionary {-}{}{}I\discretionary {-}{}{}N}{70}{subsubsection.8.5.1.2}
+\contentsline {section}{\numberline {8.6}common/include/fortran\discretionary {-}{}{}Rectangular\discretionary {-}{}{}Complex\discretionary {-}{}{}Array.hpp File Reference}{70}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}Macro Definition Documentation}{72}{subsection.8.6.1}
+\contentsline {subsubsection}{\numberline {8.6.1.1}M\discretionary {-}{}{}A\discretionary {-}{}{}X}{72}{subsubsection.8.6.1.1}
+\contentsline {subsubsection}{\numberline {8.6.1.2}M\discretionary {-}{}{}I\discretionary {-}{}{}N}{72}{subsubsection.8.6.1.2}
+\contentsline {section}{\numberline {8.7}common/include/fortran\discretionary {-}{}{}Vector.hpp File Reference}{72}{section.8.7}
+\contentsline {section}{\numberline {8.8}common/include/\discretionary {-}{}{}Generic\discretionary {-}{}{}Exception.hpp File Reference}{73}{section.8.8}
+\contentsline {section}{\numberline {8.9}common/include/\discretionary {-}{}{}Hessenberg.hpp File Reference}{74}{section.8.9}
+\contentsline {subsection}{\numberline {8.9.1}Macro Definition Documentation}{75}{subsection.8.9.1}
+\contentsline {subsubsection}{\numberline {8.9.1.1}A\discretionary {-}{}{}B\discretionary {-}{}{}S}{75}{subsubsection.8.9.1.1}
+\contentsline {subsubsection}{\numberline {8.9.1.2}M\discretionary {-}{}{}I\discretionary {-}{}{}N}{75}{subsubsection.8.9.1.2}
+\contentsline {subsection}{\numberline {8.9.2}Function Documentation}{75}{subsection.8.9.2}
+\contentsline {subsubsection}{\numberline {8.9.2.1}dech}{75}{subsubsection.8.9.2.1}
+\contentsline {subsubsection}{\numberline {8.9.2.2}dechc}{75}{subsubsection.8.9.2.2}
+\contentsline {subsubsection}{\numberline {8.9.2.3}householder}{76}{subsubsection.8.9.2.3}
+\contentsline {subsubsection}{\numberline {8.9.2.4}solh}{76}{subsubsection.8.9.2.4}
+\contentsline {subsubsection}{\numberline {8.9.2.5}solhc}{76}{subsubsection.8.9.2.5}
+\contentsline {section}{\numberline {8.10}common/include/\discretionary {-}{}{}Ivdep.hpp File Reference}{77}{section.8.10}
+\contentsline {section}{\numberline {8.11}common/include/logger.hpp File Reference}{77}{section.8.11}
+\contentsline {section}{\numberline {8.12}common/include/\discretionary {-}{}{}Macros\discretionary {-}{}{}For\discretionary {-}{}{}Compilers.hpp File Reference}{78}{section.8.12}
+\contentsline {subsection}{\numberline {8.12.1}Macro Definition Documentation}{78}{subsection.8.12.1}
+\contentsline {subsubsection}{\numberline {8.12.1.1}B\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{78}{subsubsection.8.12.1.1}
+\contentsline {section}{\numberline {8.13}common/include/\discretionary {-}{}{}Matrices.hpp File Reference}{78}{section.8.13}
+\contentsline {subsection}{\numberline {8.13.1}Macro Definition Documentation}{80}{subsection.8.13.1}
+\contentsline {subsubsection}{\numberline {8.13.1.1}M\discretionary {-}{}{}A\discretionary {-}{}{}X}{80}{subsubsection.8.13.1.1}
+\contentsline {subsubsection}{\numberline {8.13.1.2}M\discretionary {-}{}{}I\discretionary {-}{}{}N}{80}{subsubsection.8.13.1.2}
+\contentsline {section}{\numberline {8.14}common/include/\discretionary {-}{}{}Matrix\discretionary {-}{}{}Type.hpp File Reference}{80}{section.8.14}
+\contentsline {section}{\numberline {8.15}common/include/protos\discretionary {-}{}{}\_\discretionary {-}{}{}lapack.hpp File Reference}{81}{section.8.15}
+\contentsline {section}{\numberline {8.16}Mainpage/mainpage.dox File Reference}{81}{section.8.16}
+\contentsline {section}{\numberline {8.17}Radau5-\/\discretionary {-}{}{}N\discretionary {-}{}{}G/include/\discretionary {-}{}{}Radau5cc.hpp File Reference}{82}{section.8.17}
+\contentsline {subsection}{\numberline {8.17.1}Macro Definition Documentation}{82}{subsection.8.17.1}
+\contentsline {subsubsection}{\numberline {8.17.1.1}A\discretionary {-}{}{}B\discretionary {-}{}{}S}{82}{subsubsection.8.17.1.1}
+\contentsline {subsubsection}{\numberline {8.17.1.2}M\discretionary {-}{}{}A\discretionary {-}{}{}X}{82}{subsubsection.8.17.1.2}
+\contentsline {subsubsection}{\numberline {8.17.1.3}M\discretionary {-}{}{}I\discretionary {-}{}{}N}{82}{subsubsection.8.17.1.3}
+\contentsline {subsubsection}{\numberline {8.17.1.4}S\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}N}{82}{subsubsection.8.17.1.4}
+\contentsline {chapter}{Index}{83}{section*.98}

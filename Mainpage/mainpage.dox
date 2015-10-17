@@ -1,0 +1,53 @@
+/*! \mainpage Documentation.
+ *
+ \section Introduction
+
+The source directories Radau5-NG, Rock4-NG, Rock4-L, Rodas-NG, SDIRKL and SymplecticRK
+contains sources of different Runge-Kutta methods written in C++. 
+
+> <b> Radau5-NG </b> is a rewritting of Hairer and Wanner code, optimized, but with some 
+restrictions (see documentation).
+
+> <b>  Rock4-NG </b> is a rewritting of A. Abdulle code, avoiding vector copies.
+
+> <b> Rock4-L </b> is an adaptation of Rock4 method ro linear (actually affine)
+problems \f$ du/dt= A u +B.\f$, with  \f$ A \f$ linear and  \f$ B \f$  independent of  \f$ t.\f$
+
+> <b> Rodas-NG </b> is a rewritting of Hairer and Wanner code, optimized, but with some 
+restrictions (see documentation).
+
+> <b> SDIRKL</b> is a generic implementation of SDIRK methods in the linear (affine) case. Thus, linear systems must be solved.
+
+> <b> SymplecticRK</b> is the (the family of) symplectic Gauss methods.
+
+See documentation of individual programs.
+
+\section General General considerations about implementation.
+
+All is written in C++, and some program must be used with recent compilers (c++-11 norm). Everuthing has been tested with g++, icc and clang compilers.
+
+This is a library of templates, no intermediate binary is created.
+
+For all these programs, a class must be created wich describes the program to be solved.
+
+\subsection  Directory Directory structure:
+
+>  <b> common/include</b>  contains all the classes, methods and functions common to the different programs.
+
+> for each program, the corresponding directory contains an  <b>include</b>  directory, which stores the different classes of the program and  <b>test</b>  directories.
+
+\subsubsection test  Test directories:
+
+Each  <b> test</b> directory contains a main program, all the necessary classes, and a cmake file. To compile and test the program:
+
+> Adapt CMake file if necessary. 
+
+> <b>cd Build</b>  directory
+
+> <b>cmake ..</b>  (possibly with an option to determine the compiler you want to use); see the Cmake files provided.
+
+> <b> make</b>    a  <b> ./run </b> file is created.
+
+> <b>run</b> to execute the program.
+
+*/

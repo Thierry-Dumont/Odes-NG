@@ -1,0 +1,9 @@
+GAP REPORT LOG OPENED ON Wed Oct 29 15:19:09 2014
+
+remark #30761: Add -parallel option if you want the compiler to generate recommendations for improving auto-parallelization.
+
+/homes/doua/tdumont/odes/trunk/Radau5-NG/test/BZ.hpp(9): remark #30752: (DTRANS) Split the structure 'BZ' into two parts to improve data locality. Frequently accessed fields are 'u7'; performance may improve by putting these fields into one structure and the remaining fields into another structure. [VERIFY] The suggestion is based on the field references in the current compilation. Please make sure that the restructuring is applied to field references in all source files of the application, and that the restructured code satisfies the original program semantics.
+
+Number of advice-messages emitted for this compilation session: 1.
+END OF GAP REPORT LOG
+icpc: warning #10015: multi-file optimization .o file produced; no link

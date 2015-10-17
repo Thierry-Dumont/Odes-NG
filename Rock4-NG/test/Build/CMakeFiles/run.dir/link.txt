@@ -1,0 +1,1 @@
+g++-4.8     -Wall  -O3  -std=c++11 -g -DGCC -DALIGN_BLOCKED  -march=native    CMakeFiles/run.dir/main.cc.o  -o run  -L/homes/doua/tdumont/odes/trunk/Rock4-NG/test/tbb/lib -rdynamic -llapack -ltbb -ltbbmalloc_proxy -ltbbmalloc -lrt -Wl,-rpath,/homes/doua/tdumont/odes/trunk/Rock4-NG/test/tbb/lib 

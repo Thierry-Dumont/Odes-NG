@@ -1,0 +1,24 @@
+
+- Radau5-NG: a novel implementation of the classical Radau5 routine.
+
+- Rodas-NG:  a novel implementation of the classical Rodas routine.
+
+These two programs are a complete rewriting of the fortran programes of 
+Hairer and Wanner
+(see: Solving Ordinary Differential Equations, TII: 
+      Stiff and differential-algebraic problems. 
+      Springer Series in Computational Mathematics, 14.).
+
+- Rock4: a rewriting (with as less vector copies as possible) of A. Abdulle
+         code.
+- Rock4-L: an implementation of the Rock method for linear and affine 
+           problems du/dt= Au +B.
+
+- SDIRKL: a generic implementation of digonally implicit RK. methods for
+          linear and affine problems: du/dt=Au +B.
+
+- SymplectikRK: an implementation of the Gaussian Runge-Kutta symplectik
+                method.
+- common:  classes, routines... common to Radau5-NG and  Rodas-NG.
+
+

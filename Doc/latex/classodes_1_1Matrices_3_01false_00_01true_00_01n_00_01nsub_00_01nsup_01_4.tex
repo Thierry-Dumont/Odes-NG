@@ -1,0 +1,131 @@
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4}{\section{odes\-:\-:Matrices$<$ false, true, n, nsub, nsup $>$ Class Template Reference}
+\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4}\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+}
+
+
+Banded matrices, Hessenberg=true\-: error.  
+
+
+
+
+{\ttfamily \#include $<$Matrices.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a63af1e92e4c06d6986909d7af6a9c0b9}{Matrix\-Real}
+\item 
+typedef \hyperlink{classodes_1_1fortranComplexArray}{fortran\-Complex\-Array}$<$ n $>$ \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_ab1d809758e20fa3ef210700989a47fa0}{Matrix\-Complex}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_aceb158d0871ec7d9a8a739dfb202545b}{Matrices} ()
+\begin{DoxyCompactList}\small\item\em constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a5570c10a9d52c573ef39c23a315a93e2}{decomr} (double fac1, const \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a63af1e92e4c06d6986909d7af6a9c0b9}{Matrix\-Real} \&Jac)
+\item 
+void \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a15d008b4bfcf95664aaa7ae4e9407a97}{decomc} (double alpha, double beta, const \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a63af1e92e4c06d6986909d7af6a9c0b9}{Matrix\-Real} \&Jac)
+\item 
+void \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_afc5be522ad79bd8355612626428ff493}{solvereal} (\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ n $>$ \&Z, const \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a63af1e92e4c06d6986909d7af6a9c0b9}{Matrix\-Real} \&Jac)
+\item 
+void \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a445a775dd02c735734a64f82426de56d}{solvecomplex} (\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ n $>$ \&Zr, \hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ n $>$ \&Zi, const \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&Jac)
+\item 
+int \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a644087ff1a72cf68a018b0a8dd8de5bd}{Ibegin} (int i) const 
+\item 
+int \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a2e74712e03d6d2c13305aca0d9dd4c21}{Iend} (int i) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a69754fb4b71b97a43059ba4cd1d1afee}{calhes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int n, int nsub, int nsup$>$class odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}
+
+Banded matrices, Hessenberg=true\-: error. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_ab1d809758e20fa3ef210700989a47fa0}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!Matrix\-Complex@{Matrix\-Complex}}
+\index{Matrix\-Complex@{Matrix\-Complex}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{Matrix\-Complex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ typedef {\bf fortran\-Complex\-Array}$<$n$>$ {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::{\bf Matrix\-Complex}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_ab1d809758e20fa3ef210700989a47fa0}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a63af1e92e4c06d6986909d7af6a9c0b9}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!Matrix\-Real@{Matrix\-Real}}
+\index{Matrix\-Real@{Matrix\-Real}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{Matrix\-Real}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ typedef {\bf fortran\-Array}$<$n$>$ {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::{\bf Matrix\-Real}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a63af1e92e4c06d6986909d7af6a9c0b9}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_aceb158d0871ec7d9a8a739dfb202545b}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!Matrices@{Matrices}}
+\index{Matrices@{Matrices}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{Matrices}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::{\bf Matrices} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_aceb158d0871ec7d9a8a739dfb202545b}
+
+
+constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a15d008b4bfcf95664aaa7ae4e9407a97}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!decomc@{decomc}}
+\index{decomc@{decomc}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{decomc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ void {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::decomc (
+\begin{DoxyParamCaption}
+\item[{double}]{alpha, }
+\item[{double}]{beta, }
+\item[{const {\bf Matrix\-Real} \&}]{Jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a15d008b4bfcf95664aaa7ae4e9407a97}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a5570c10a9d52c573ef39c23a315a93e2}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!decomr@{decomr}}
+\index{decomr@{decomr}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{decomr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ void {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::decomr (
+\begin{DoxyParamCaption}
+\item[{double}]{fac1, }
+\item[{const {\bf Matrix\-Real} \&}]{Jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a5570c10a9d52c573ef39c23a315a93e2}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a644087ff1a72cf68a018b0a8dd8de5bd}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!Ibegin@{Ibegin}}
+\index{Ibegin@{Ibegin}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{Ibegin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ int {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::Ibegin (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a644087ff1a72cf68a018b0a8dd8de5bd}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a2e74712e03d6d2c13305aca0d9dd4c21}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!Iend@{Iend}}
+\index{Iend@{Iend}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{Iend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ int {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::Iend (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a2e74712e03d6d2c13305aca0d9dd4c21}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a445a775dd02c735734a64f82426de56d}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!solvecomplex@{solvecomplex}}
+\index{solvecomplex@{solvecomplex}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{solvecomplex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ void {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::solvecomplex (
+\begin{DoxyParamCaption}
+\item[{{\bf fortran\-Vector\-F}$<$ n $>$ \&}]{Zr, }
+\item[{{\bf fortran\-Vector\-F}$<$ n $>$ \&}]{Zi, }
+\item[{const {\bf fortran\-Array}$<$ n $>$ \&}]{Jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a445a775dd02c735734a64f82426de56d}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_afc5be522ad79bd8355612626428ff493}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!solvereal@{solvereal}}
+\index{solvereal@{solvereal}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{solvereal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ void {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::solvereal (
+\begin{DoxyParamCaption}
+\item[{{\bf fortran\-Vector\-F}$<$ n $>$ \&}]{Z, }
+\item[{const {\bf Matrix\-Real} \&}]{Jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_afc5be522ad79bd8355612626428ff493}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a69754fb4b71b97a43059ba4cd1d1afee}{\index{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}!calhes@{calhes}}
+\index{calhes@{calhes}!odes::Matrices< false, true, n, nsub, nsup >@{odes\-::\-Matrices$<$ false, true, n, nsub, nsup $>$}}
+\subsubsection[{calhes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n, int nsub, int nsup$>$ bool {\bf odes\-::\-Matrices}$<$ false, true, n, nsub, nsup $>$\-::calhes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Matrices_3_01false_00_01true_00_01n_00_01nsub_00_01nsup_01_4_a69754fb4b71b97a43059ba4cd1d1afee}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+common/include/\hyperlink{Matrices_8hpp}{Matrices.\-hpp}\end{DoxyCompactItemize}

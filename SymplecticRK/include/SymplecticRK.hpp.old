@@ -1,0 +1,125 @@
+#ifndef SymplecticRK__h
+#define SymplecticRK__h
+#include <cmath>
+#include "GaussianMethod.hpp"
+#include <iostream>
+#define MAX(x,y) ((x)>(y)?(x):(y))
+#define ABS(a) (((a) >= (0.0)) ? (a) : (-a))
+using namespace std;
+namespace SymplectikRK{
+///////////////////////////////////////////////////////////////////////////
+///
+/// Symplectic RK method based on Gaussian quadrature.
+///
+/// \brief Symplectic RK method.
+//////////////////////////////////////////////////////////////////////////
+template<class Fonct,int nsteps,class Double=double> class SymplecticRK: 
+  public GaussianMethod<nsteps,Double>
+{
+  static const int n=Fonct::n;
+  Double v[n],Y[n*nsteps],Y1[n*nsteps],z,w[n],delta[n],e[n],a[n];
+  int iter,itermax;
+  Double uround;
+  Fonct f;
+
+  using GaussianMethod<nsteps,Double>::b;
+  using GaussianMethod<nsteps,Double>::A;
+  
+public:
+  using GaussianMethod<nsteps,Double>::verify;
+  //! constructor.
+  // \param _itermax max. itration allowed.
+  SymplecticRK(int _itermax):GaussianMethod<nsteps,Double>()
+  { 
+    itermax=_itermax;
+    uround=5.e-324;
+    for(int i=0;i<n;i++) 
+      e[i]=0.0; //for Compensated Summation.
+   }
+  //! destructor
+  ~SymplecticRK()
+  {}
+
+  //! set test value for iterations.
+  inline void setUround(Double _uround)
+  { uround=_uround;}
+  //! number of iterations performed.
+  inline int maxIter() const {return iter;}
+  //! last computed value for the residual
+  inline Double lastdiff() const {return z;}
+  //return a reference to F, the right hand side of teh system.
+  inline Fonct& rhs() {return f;}
+  //! make one step.
+  //! \param h time step.
+  //! \param u initial value on input, value computed on output
+  //! \note return true iff the fixed points iterations converged.
+  bool step(Double h,Double u[])
+  {
+
+    for(int i=0;i<nsteps;i++)
+      for(int j=0;j<n;j++)
+	Y[i*n+j]=u[j];
+
+    bool success=false; double zold=1.e+10;
+
+    // iteration loop:
+    for(iter=0; iter<itermax;iter++)
+      {
+	for(int i=0;i<nsteps;i++)
+	  {
+	    for(int j=0;j<n;j++) v[j]=Y[i*n+j];
+	    f(v,w);
+	    for(int j=0;j<n;j++) Y1[i*n+j]=w[j];
+	  } 
+	z=0.0;
+	for(int i=0;i<nsteps;i++)
+	  {
+	    for(int l=0;l<n;l++)
+	      v[l]=u[l];
+	    for(int j=0;j<nsteps;j++)
+	      {
+		Double aa=h*A(i,j);
+		for(int l=0;l<n;l++)
+		  v[l]+=aa*Y1[j*n+l];
+	      }
+	    for(int l=0;l<n;l++)
+	      {
+		z+=(v[l]-Y[i*n+l])*(v[l]-Y[i*n+l]);
+		Y[i*n+l]=v[l];
+	      }
+	  }
+
+	success=iter > 0 && z<=uround && z<=zold;
+	if(success) break;
+	zold=z;
+      }
+   
+    // 2nd phase:
+    if(success)
+      {
+	// use Compensated Summation (see Hairer & Co. 2nd edition, page 323).
+	for(int i=0;i<n;i++)
+	  delta[i]=0.0;
+	for(int i=0;i<nsteps;i++)
+	  {
+	    Double bh=h*b[i];
+	    for(int j=0;j<n;j++)
+	      delta[j]+=bh*Y1[i*n+j];
+	  }
+
+	for(int i=0;i<n;i++)
+	  a[i]=u[i];
+	for(int i=0;i<n;i++)
+	  e[i]+=delta[i];
+	for(int i=0;i<n;i++)
+	  u[i]=a[i]+e[i];
+	for(int i=0;i<n;i++)
+	  e[i]+=(a[i]-u[i]);
+      }
+    return success;
+  }
+
+
+};
+}
+#endif

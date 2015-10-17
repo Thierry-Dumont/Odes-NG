@@ -1,0 +1,1 @@
+g++-4.9     -O3 -g -std=c++11 -Wall -DALIGN_BLOCKED -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math    CMakeFiles/run.dir/main.cpp.o CMakeFiles/run.dir/Lapl/SuperLu.cpp.o CMakeFiles/run.dir/Lapl/csr.cpp.o  -o run  -L/homes/doua/tdumont/odes/trunk/SDIRKL/test/tbb/lib -rdynamic -lsuperlu -Wl,-rpath,/homes/doua/tdumont/odes/trunk/SDIRKL/test/tbb/lib 

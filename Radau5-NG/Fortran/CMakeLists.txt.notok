@@ -1,0 +1,45 @@
+cmake_minimum_required(VERSION 2.6)
+project(NewRadau5)
+enable_language(Fortran)
+#
+# To use intel compiler:
+# CXX=icpc FORTRAN=ifort cmake ..
+# otherwise, to use gfortran:
+#  cmake ..
+#
+if (Fortran_COMPILER_NAME MATCHES "ifort.*$")
+  set(CMAKE_Fortran_FLAGS  "${CMAKE_FORTRAN_FLAGS}  -DICC  -restrict -O3  -g -ansi-alias -Wall -vec-report2")
+  message("ifort")
+else ()
+  set (USING_GNU TRUE)
+  set(CMAKE_FORTRAN_COMPILER "gfortran")
+  set(CMAKE_FORTRAN_FLAGS "${CMAKE_FORTRAN_FLAGS} -O3 -Wall  -DGCC -ftree-vectorizer-verbose=0")
+
+endif ()
+include_directories(
+${CMAKE_SOURCE_DIR}/../include
+${CMAKE_SOURCE_DIR}/../../common/include
+)
+add_executable(
+  run
+  ../main.f ../dc_lapack.f ../F.f  ../radau5.f
+  )
+if ( Fortran_COMPILER_NAME MATCHES "ifort.*$")
+  target_link_libraries(
+    run
+    mkl_intel_lp64
+    mkl_sequential
+    mkl_core
+    mkl_lapack95_lp64
+    mkl_blas95_lp64
+    rt
+    )
+else ()
+  target_link_libraries(
+    run
+    lapack 
+    )
+endif ()
+
+
+

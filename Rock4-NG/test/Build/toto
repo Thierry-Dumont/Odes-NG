@@ -1,0 +1,328 @@
+In file included from /homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:4:0,
+                 from /homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:5:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In member function ‘void odes::ToolSequential<Fonc>::apply(Fonc&, int, double*, double*, double*)’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:52:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:52:24: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:52:44: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                                            ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:53:27: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(vtemp);
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In member function ‘void odes::ToolSequential<Fonc>::apply(Fonc&, double*, double*, double*)’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:68:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:68:44: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                                            ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:69:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(g2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In member function ‘void odes::ToolSequential<Fonc>::cl(double*, double*, double*)’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:77:23: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(g);  ASSUME_ALIGNED(y);
+                       ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:77:43: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(g);  ASSUME_ALIGNED(y);
+                                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:78:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(fn);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In member function ‘void odes::ToolSequential<Fonc>::cl(double*, double*, double, double*)’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:86:27: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:86:47: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);
+                                               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:87:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In member function ‘void odes::ToolSequential<Fonc>::cl(double*, double*, double, double*, double, double*)’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:96:27: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:96:47: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                                               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:97:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2); 
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:97:45: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2); 
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In member function ‘void odes::ToolSequential<Fonc>::cl(double*, double*, double, double*, double, double*, double, double*)’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:106:27: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:106:47: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                                               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:107:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:107:45: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:108:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x3); 
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In member function ‘void odes::ToolSequential<Fonc>::ct(double*, double*, double, double*, double, double*, double, double*, double, double*)’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:27: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:47: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                                               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:120:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:120:45: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:121:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x3);  ASSUME_ALIGNED(x4); 
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:121:45: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x3);  ASSUME_ALIGNED(x4); 
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In member function ‘double odes::ToolSequential<Fonc>::rpp2(double*, double, double*, double, double*, double, double*, double, double*, double, double*, double, double)’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:45: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:135:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x3);  ASSUME_ALIGNED(x4); 
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:135:45: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x3);  ASSUME_ALIGNED(x4); 
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:136:24: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x5);  ASSUME_ALIGNED(y);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:136:44: error: there are no arguments to ‘ASSUME_ALIGNED’ that depend on a template parameter, so a declaration of ‘ASSUME_ALIGNED’ must be available [-fpermissive]
+       ASSUME_ALIGNED(x5);  ASSUME_ALIGNED(y);
+                                            ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc: In function ‘int main()’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:35:15: error: ‘class odes::Rock4<Lapl1>’ has no member named ‘alloc_vec’
+   double* y=R.alloc_vec();
+               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:49:5: error: ‘class odes::Rock4<Lapl1>’ has no member named ‘delete_vec’
+   R.delete_vec(y);
+     ^
+In file included from /homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:4:0,
+                 from /homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:5:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In instantiation of ‘void odes::ToolSequential<Fonc>::cl(double*, double*, double*) [with Fonc = Lapl1]’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:74:7:   required from ‘double odes::Rock4<Fonc, Engine>::kernel(double* __restrict__&, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:235:25:   required from ‘void odes::Rock4<Fonc, Engine>::operator()(double*&, double, double, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:42:21:   required from here
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:77:23: error: ‘ASSUME_ALIGNED’ was not declared in this scope
+       ASSUME_ALIGNED(g);  ASSUME_ALIGNED(y);
+                       ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:77:43: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(g);  ASSUME_ALIGNED(y);
+                                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:77:23: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(g);  ASSUME_ALIGNED(y);
+                       ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:78:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(fn);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:77:23: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(g);  ASSUME_ALIGNED(y);
+                       ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In instantiation of ‘void odes::ToolSequential<Fonc>::apply(Fonc&, double*, double*, double*) [with Fonc = Lapl1]’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:81:8:   required from ‘double odes::Rock4<Fonc, Engine>::kernel(double* __restrict__&, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:235:25:   required from ‘void odes::Rock4<Fonc, Engine>::operator()(double*&, double, double, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:42:21:   required from here
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:68:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:68:44: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                                            ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:68:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:69:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(g2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:68:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In instantiation of ‘void odes::ToolSequential<Fonc>::apply(Fonc&, int, double*, double*, double*) [with Fonc = Lapl1]’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:86:8:   required from ‘double odes::Rock4<Fonc, Engine>::kernel(double* __restrict__&, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:235:25:   required from ‘void odes::Rock4<Fonc, Engine>::operator()(double*&, double, double, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:42:21:   required from here
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:52:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:52:44: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                                            ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:52:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:53:27: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(vtemp);
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:52:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In instantiation of ‘void odes::ToolSequential<Fonc>::cl(double*, double*, double, double*) [with Fonc = Lapl1]’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:102:7:   required from ‘double odes::Rock4<Fonc, Engine>::kernel(double* __restrict__&, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:235:25:   required from ‘void odes::Rock4<Fonc, Engine>::operator()(double*&, double, double, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:42:21:   required from here
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:86:27: error: ‘ASSUME_ALIGNED’ was not declared in this scope
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:86:47: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);
+                                               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:86:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:87:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x1);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:86:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In instantiation of ‘void odes::ToolSequential<Fonc>::cl(double*, double*, double, double*, double, double*) [with Fonc = Lapl1]’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:107:7:   required from ‘double odes::Rock4<Fonc, Engine>::kernel(double* __restrict__&, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:235:25:   required from ‘void odes::Rock4<Fonc, Engine>::operator()(double*&, double, double, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:42:21:   required from here
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:96:27: error: ‘ASSUME_ALIGNED’ was not declared in this scope
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:96:47: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                                               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:96:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:97:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2); 
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:96:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:97:45: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2); 
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:96:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In instantiation of ‘void odes::ToolSequential<Fonc>::cl(double*, double*, double, double*, double, double*, double, double*) [with Fonc = Lapl1]’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:113:7:   required from ‘double odes::Rock4<Fonc, Engine>::kernel(double* __restrict__&, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:235:25:   required from ‘void odes::Rock4<Fonc, Engine>::operator()(double*&, double, double, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:42:21:   required from here
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:106:27: error: ‘ASSUME_ALIGNED’ was not declared in this scope
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:106:47: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                                               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:106:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:107:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:106:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:107:45: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:106:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:108:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x3); 
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:106:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In instantiation of ‘void odes::ToolSequential<Fonc>::ct(double*, double*, double, double*, double, double*, double, double*, double, double*) [with Fonc = Lapl1]’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:121:7:   required from ‘double odes::Rock4<Fonc, Engine>::kernel(double* __restrict__&, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:235:25:   required from ‘void odes::Rock4<Fonc, Engine>::operator()(double*&, double, double, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:42:21:   required from here
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:27: error: ‘ASSUME_ALIGNED’ was not declared in this scope
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:47: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                                               ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:120:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:120:45: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:121:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x3);  ASSUME_ALIGNED(x4); 
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:121:45: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x3);  ASSUME_ALIGNED(x4); 
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:119:27: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);  
+                           ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp: In instantiation of ‘double odes::ToolSequential<Fonc>::rpp2(double*, double, double*, double, double*, double, double*, double, double*, double, double*, double, double) [with Fonc = Lapl1]’:
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:136:19:   required from ‘double odes::Rock4<Fonc, Engine>::kernel(double* __restrict__&, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/Rock4.hpp:235:25:   required from ‘void odes::Rock4<Fonc, Engine>::operator()(double*&, double, double, double) [with Fonc = Lapl1; Engine = odes::ToolSequential<Lapl1>]’
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/main.cc:42:21:   required from here
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:45: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:135:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x3);  ASSUME_ALIGNED(x4); 
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:135:45: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x3);  ASSUME_ALIGNED(x4); 
+                                             ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:136:24: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x5);  ASSUME_ALIGNED(y);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:136:44: error: ‘ASSUME_ALIGNED’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+       ASSUME_ALIGNED(x5);  ASSUME_ALIGNED(y);
+                                            ^
+/homes/doua/tdumont/odes/trunk/Rock4-NG/test/../include/ToolSequential.hpp:134:24: note: ‘ASSUME_ALIGNED’ declared here, later in the translation unit
+       ASSUME_ALIGNED(x1);  ASSUME_ALIGNED(x2);
+                        ^
+make[2]: *** [CMakeFiles/run.dir/main.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/run.dir/all] Erreur 2
+make: *** [all] Erreur 2

@@ -1,0 +1,1172 @@
+\hypertarget{classodes_1_1Radau5cc}{\section{odes\-:\-:Radau5cc$<$ Fonct $>$ Class Template Reference}
+\label{classodes_1_1Radau5cc}\index{odes\-::\-Radau5cc$<$ Fonct $>$@{odes\-::\-Radau5cc$<$ Fonct $>$}}
+}
+
+
+A C++ implementation of Radau5.  
+
+
+
+
+{\ttfamily \#include $<$Radau5cc.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a94bc8707bc5faac1fb8516d044f9f061}{set\-Test\-Policy} (bool \-\_\-same\-Test\-Value, double \-\_\-atol\mbox{[}$\,$\mbox{]}, double \-\_\-rtol\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}{Matrix\-Real} \& \hyperlink{classodes_1_1Radau5cc_a68e870fccb45ca4568665a34d0bb1aa8}{Jacobian} ()
+\begin{DoxyCompactList}\small\item\em return a reference to the Jacobian. \end{DoxyCompactList}\item 
+Fonct \& \hyperlink{classodes_1_1Radau5cc_a761efc49340f89b5148350ce5e76fb64}{rhs} ()
+\begin{DoxyCompactList}\small\item\em return a reference to the right-\/hand side object function. \end{DoxyCompactList}\item 
+\hyperlink{classodes_1_1Radau5cc_a87750274a7c162114b18a45cd8da0b52}{Radau5cc} (bool \-\_\-same\-Test\-Value, double \-\_\-atol\mbox{[}$\,$\mbox{]}, double \-\_\-rtol\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{classodes_1_1Radau5cc_adcb8d2836087285468b23e675645592c}{$\sim$\-Radau5cc} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1Radau5cc_a982fb7b6b00c6fd760c49fd36d9a4750}{perform\-Only\-One\-Step} (bool val)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a6ded95131d3d3475848df0db823eddcf}{set\-Recompute\-Jacobian\-Treshold} (double \-\_\-thet)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a3ba97342c5095591820ee7e085ac72a2}{set\-Max\-Iterations\-Newton} (int \-\_\-nit)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a0a606af9c7bf97f1c8b0f8f3aa9d7fb1}{set\-Safe} (double \-\_\-safe)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_ae688f9f0edc04e3c0c2a670d62b51837}{set\-Facr\-Facl} (double \-\_\-facr, double \-\_\-facl)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a0bb7e7fe363b343a024500e031e6b7e9}{set\-Gustafsson\-Test} (bool val)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a94a01a41bda7f6e63e756fd8ba9f50f7}{set\-Nmax} (int \-\_\-nmax)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a19f8c9954b7d6cfa2dfbb9718c3cd506}{set\-Fnewt} (double \-\_\-fnewt)
+\item 
+int \hyperlink{classodes_1_1Radau5cc_a02c7ae60849eec0ab3229c702d027441}{get\-Nstep} () const 
+\begin{DoxyCompactList}\small\item\em get number of steps performed. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Radau5cc_af6a62564a5e98a69a906c75c077f918d}{get\-Naccpt} () const 
+\begin{DoxyCompactList}\small\item\em get number of steps accepted. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Radau5cc_a6f7c73b74c3de68b1e8ed9cc948f5da4}{get\-Nrejct} () const 
+\begin{DoxyCompactList}\small\item\em get number of steps rejected. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Radau5cc_ad369e8cda90230d3632c61aea00eef74}{get\-N\-Jac} () const 
+\begin{DoxyCompactList}\small\item\em get number of jacobian computed. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Radau5cc_a86803d5cfa5219a6fbbb63bd9576ecf1}{get\-Ndec} () const 
+\begin{DoxyCompactList}\small\item\em get number of matrix decompositions. \end{DoxyCompactList}\item 
+double \hyperlink{classodes_1_1Radau5cc_a84f2521afde22fe621a92526e5f402b8}{get\-Last\-Time\-Step} () const 
+\begin{DoxyCompactList}\small\item\em get last time step used. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Radau5cc_a9dd359045cfe3667949697176a2be296}{get\-Newt} () const 
+\begin{DoxyCompactList}\small\item\em get number of Newton iterations performed. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Radau5cc_a49eecba7aba4da1dca5fe5f3848cab34}{get\-Nfonc\-Called} () const 
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a44a8f7a188fc1171f059ffcebbf15de2}{getfirst\-Accepted\-Step} () const 
+\item 
+void \hyperlink{classodes_1_1Radau5cc_aee81c868cdc434f266e495a72689cec5}{operator()} (double \-\_\-h, double \&x, double \-\_\-xend, double y\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a488b0601e6404991edfab78e4a2957e4}{Jacobian} (double t, \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} y, const \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} Fy)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_ad0fe2959c9f23fcd76029cc54533ad07}{do\-Newton\-Matrices} ()
+\begin{DoxyCompactList}\small\item\em make Newton matrices (factorize them). \end{DoxyCompactList}\item 
+void \hyperlink{classodes_1_1Radau5cc_a78b4b4f6a4adb0d2de7dbbb0f841d082}{slvrad} ()
+\begin{DoxyCompactList}\small\item\em Linear system solution in Newton iterations. \end{DoxyCompactList}\item 
+std\-::pair$<$ bool, double $>$ \hyperlink{classodes_1_1Radau5cc_ac6b74a8cf1d2fdc83c8fec8189bd1d42}{Newton\-Iteration\-Test} ()
+\item 
+int \hyperlink{classodes_1_1Radau5cc_a7a78640ed38b67431551584da7cdbc09}{Newton} (double x, \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&Y)
+\item 
+void \hyperlink{classodes_1_1Radau5cc_a2e6e502fa601a91fd32df312d6db47e2}{do\-Scal} (const \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&Y)
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a30bad88ca054d7dcf430a5d352a23d38}{estrad} (\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \&y0, \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&y, double t, bool \hyperlink{classodes_1_1Radau5cc_a788454a3dee88b6547430e881856fec7}{first}, bool \hyperlink{classodes_1_1Radau5cc_aedacfeb52f4072557c312adf7817bcf6}{reject})
+\item 
+void \hyperlink{classodes_1_1Radau5cc_aca7a11800037ae39edd9a6d644317653}{seth} (double x, double newh)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Fonct \hyperlink{classodes_1_1Radau5cc_addca7bd0b74d75fd6f453969f6a619e2}{F}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_af04c79b433c9fabdf12fe44a52158a67}{Z1}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_aee840f9b8646bc3a0660c3c53ab7c988}{Z2}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a5b34e13256e93e89d9e8e5a9d00c9431}{Z3}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a7de9ff28e7bc72516e36010c8d2d65b9}{F1}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a7937b348a68aae3a31a1324a9c385bfa}{F2}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a1382307c537eb6d6747b1b68b9a977ff}{F3}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a596f99b5ee176439461a9e72da725c59}{Z1\-T}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a4b4c5fa798698101e62b0180acd9d2a0}{Z2\-T}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a5f581024591f9a6b4097994b8a9525a1}{Z3\-T}
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2d}{Out\-Newton\-Loop} \{ \hyperlink{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2da9c86014618b5c6f2e6ce53e385cd80f7}{converged}, 
+\hyperlink{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2dade02d21b4fd6d41fda13e76994c35ea2}{will\-Not\-Converge}, 
+\hyperlink{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2da649d2035432ef689c9c03cdd074a1ded}{did\-Not\-Converge}
+ \}
+\item 
+typedef \hyperlink{classodes_1_1Matrices}{Matrices}$<$ \hyperlink{classodes_1_1Radau5cc_a8e67471bdbf858fff865561d859a066a}{Matrix\-Full}, \\*
+\hyperlink{classodes_1_1Radau5cc_ae66683695f55d21d7c11ca7e3323d0e9}{Hessenberg}, \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n}, \hyperlink{classodes_1_1Radau5cc_ac47e67a43369971eeb08c2d2200a76d5}{ninf}, \hyperlink{classodes_1_1Radau5cc_a4e80b8064e4d8f60262591531fcd1ff0}{nsup} $>$\\*
+\-::\hyperlink{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}{Matrix\-Real} \hyperlink{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}{Matrix\-Real}
+\item 
+typedef \hyperlink{classodes_1_1fortranComplexArray}{fortran\-Complex\-Array}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Matrices_aa1313b5ab7fdab6f5320c8d5aa3bfc24}{Matrix\-Complex}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classodes_1_1Matrices_a8dc1bc6d92d06af08d4bf8fb2b357a7d}{decomr} (double fac1, \hyperlink{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}{Matrix\-Real} \&\hyperlink{classodes_1_1Radau5cc_a67b952c35d2c7ecddc9dd75cb2c3afe1}{Jac})
+\item 
+void \hyperlink{classodes_1_1Matrices_a9f497885fb6dd9bb22179fab49d9b587}{decomc} (double alpha, double beta, const \hyperlink{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}{Matrix\-Real} \&\hyperlink{classodes_1_1Radau5cc_a67b952c35d2c7ecddc9dd75cb2c3afe1}{Jac})
+\item 
+void \hyperlink{classodes_1_1Matrices_ace113b7bfa2377d513c2faaf645aecaa}{solvereal} (\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \&Z, const \hyperlink{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}{Matrix\-Real} \&\hyperlink{classodes_1_1Radau5cc_a67b952c35d2c7ecddc9dd75cb2c3afe1}{Jac})
+\item 
+void \hyperlink{classodes_1_1Matrices_abce8558c305de75740568ec55e49338e}{solvecomplex} (\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \&Zr, \hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \&Zi, const \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \&\hyperlink{classodes_1_1Radau5cc_a67b952c35d2c7ecddc9dd75cb2c3afe1}{Jac})
+\item 
+int \hyperlink{classodes_1_1Matrices_a9eb26d713d3e391f60d83798337d87a6}{Ibegin} (int i) const
+\begin{DoxyCompactList}\small\item\em begining of line i. \end{DoxyCompactList}\item 
+int \hyperlink{classodes_1_1Matrices_a589402cfa0e11666cd152a06e048c6f7}{Iend} (int i) const
+\begin{DoxyCompactList}\small\item\em end of line i. \end{DoxyCompactList}\item 
+\hyperlink{structcompat_afed990d40241e2a95d09e2ac8ac20cb4}{ct\-\_\-assert} (full$\vert$$\vert$(!full \&\&!\hyperlink{classodes_1_1Radau5cc_ae66683695f55d21d7c11ca7e3323d0e9}{Hessenberg}))
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ab72c18864827bc09b414a8c01e956698}{S\-Q6}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ad1df67bebb6c9753e789643dbbac4b64}{C1}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a4c4e52ad2bb85b6e3a598b75aecbdad8}{C2}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a1cf578a3f19e8e43321e182c46f710f4}{C1\-M1}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ab2b14b1062b5fb6dde7557fbac202c29}{C2\-M1}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a9d7ed1a3ffb2f3c582e1790e65f24671}{C1\-M\-C2}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a9a211ff738351641da6cdd159917fef2}{D\-D1}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a86933b385c18f7ff7072da61f03daf05}{D\-D2}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a1c94a1f803b67e35bbed88d6152d1fff}{D\-D3}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ae23acdd71ce8640aa40e111b4df06922}{U1}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a42e13c53f1b12eee97f358a2913f8e4f}{A\-L\-P\-H}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_aca32380625f370758068d4c225958cd1}{B\-E\-T\-A}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_aaa49f4e7f5289a7012e2ce29d2a7dab8}{C\-N\-O}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a3538e815c4a1a4449692ef7cf5331fcc}{T11}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ac47257f4b685d8016d8bdc0aaf6c3861}{T12}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a49b429abb614b8d4f41e6df611a12c06}{T13}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a5933359813b622b1dd1f67605df31521}{T21}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a1c4adb6f7b47032fe75bd53884a37ef3}{T22}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a7a1d50f08a07a822568cbe9d52b75d45}{T23}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ab80295b9270d7ac0dde3e7d36dcff866}{T31}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a50cc7d8eee62bccf6069a4c1f43d019b}{T\-I11}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_aaed25bf9d94e2cbbbeed75c093c0406f}{T\-I12}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a6da247a0623462bb1d61e5c97d67a39f}{T\-I13}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a14b80d1886a7562f3a72ce7acd738272}{T\-I21}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a77584ef2a5a6cccef4fe531e95c800d7}{T\-I22}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_aafd01d1393c2dbe3edc148f073bf24f6}{T\-I23}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a0b21d463e63aaa3ae216def4605ed64a}{T\-I31}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a6707fd7852c5536fcdc9a85cb78cef5c}{T\-I32}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a6641ca56a3e50256303f70f839365c93}{T\-I33}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_aecb9b0f5b18f8bb94a14435e20bdd65b}{uround}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ae3cb85f022d29c80ae8f980e57f1bbf5}{faccon}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_af6debb655768cb0a251e2886544d87cb}{fnewt}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_abdf9186a294f8720b8d5100335b6e39a}{tolst}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a9f9ba87113cef033764f5282f987a832}{xph}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a1a7b580bbae9fcd5c49fa116e877ac5c}{first\-Accepted\-Step}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a340c376fb3c4521c3c8e95a7b9911792}{thet}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a5d60671c8cf94cc855a57a2afe201565}{dynold}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_afa3dc089844e77046c958a4ff2dcab1a}{h}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ad853d1040e37757aad020edde3b2ec28}{hhfac}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_af9475ed436133a308c22edfda6892988}{theta}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a36cb3bec1d0c8e1f6ea23eec088d5fa7}{dyno}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a8809fb6e400f5eaa32331a2e463f9cdb}{safe}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_afa383ebf8974ba3aac8841b6a4b43afa}{cfac}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a2bda7f90bc9aabbc2d98ff14daeaa491}{facr}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a13fe7121c4b03dca25bfb7b362032182}{facl}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_adda256e4a50fe0b527b9a389ba06a9c4}{thqold}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a868b61b5db9d458fd554f004ca366a52}{hacc}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a54eb4159056970d5c2c3ea85e79154bb}{erracc}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a042b65cfeb0816edd1c2218ea9fe56c9}{hold}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a46e492dffaba4f529881e74bda794bbd}{xold}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_ac6e95e640106e403c36b260fa97d1bb6}{xend}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a4acabf9c37c68c6b50dd32c6a12724a6}{posneg}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_aa3b6b73884b0a085cf7f2b701940658e}{hmaxn}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a73d88dc2c07d7e200a1c03dae8caa7f4}{hmax}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a9c91cdeb773885e6b7cf3699142c80eb}{hopt}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a0c3cc3ba99f9aca257eab5b3a1f4cb43}{quot1}
+\item 
+double \hyperlink{classodes_1_1Radau5cc_a66d2ae6f5ecac2c7983fe54293a6cc30}{quot2}
+\item 
+bool \hyperlink{classodes_1_1Radau5cc_acab8ee5b4ea97c71a0f34bf41f145a58}{same\-Test\-Value}
+\item 
+bool \hyperlink{classodes_1_1Radau5cc_a04284948029a635e8d0d4ea79e15c5ea}{startn}
+\item 
+bool \hyperlink{classodes_1_1Radau5cc_a788454a3dee88b6547430e881856fec7}{first}
+\item 
+bool \hyperlink{classodes_1_1Radau5cc_a774b282697116ae2f25f6d2fdce9410c}{caljac}
+\item 
+bool \hyperlink{classodes_1_1Radau5cc_aedacfeb52f4072557c312adf7817bcf6}{reject}
+\item 
+bool \hyperlink{classodes_1_1Radau5cc_ad867e67510b9f73391d1778c96bb8e06}{gustafsson\-Test}
+\item 
+bool \hyperlink{classodes_1_1Radau5cc_a3eed33adfb541114d62bafd3144bf188}{last}
+\item 
+bool \hyperlink{classodes_1_1Radau5cc_a99fc26950c9004ac83c8b16f8cc41070}{only\-One\-Step}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a4a905596498d2d8ab9f46201d54eaa4d}{atol}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a6fb4ed14d3b1141a927cbbaf3f3f5536}{rtol}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_ae99cd8b33b1370b4b2dddb0361d6bb1e}{C\-O\-N\-T1}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a5f604f76403a66677e194915e2f2d8d8}{scal}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a2d4840f821ba5e059d73ca63a002aca1}{save1}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a8928e81eefe11977cd13856b65048dac}{save2}
+\item 
+\hyperlink{classodes_1_1fortranVectorF}{fortran\-Vector\-F}$<$ \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} $>$ \hyperlink{classodes_1_1Radau5cc_a060ca481b33c11ca111a49b25df64c80}{save3}
+\item 
+\hyperlink{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}{Matrix\-Real} \hyperlink{classodes_1_1Radau5cc_a67b952c35d2c7ecddc9dd75cb2c3afe1}{Jac}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_a39e641457e737321720c75578189d0db}{naccpt}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_a98eae21674bed3d783e49f92f7c38a20}{nit}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_a957de41c2a36e2f254836a6c05dbfb92}{newt}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_a42980e5cf06bc0f4c1a0ef1a1922615f}{nmax}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_a04e6193a9f5be15a7e969b2ad4e5f344}{nrejct}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_ade6f8961bd6dacdc3e89761d8af04172}{njac}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_af1a16f749cd5fd53c66af9a913a37d0a}{nstep}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_af849903adc1f88a3bc6042994bec5621}{ndec}
+\item 
+int \hyperlink{classodes_1_1Radau5cc_a6363884e5172cc77c13a1d9ca9ed630a}{nfonccalled}
+\item 
+bool \hyperlink{classodes_1_1Matrices_a82e935680c27f58bcff8a559700411c6}{calhes}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n} =Fonct\-::n
+\item 
+static const int \hyperlink{classodes_1_1Radau5cc_ac47e67a43369971eeb08c2d2200a76d5}{ninf} =Fonct\-::nsub
+\item 
+static const int \hyperlink{classodes_1_1Radau5cc_a4e80b8064e4d8f60262591531fcd1ff0}{nsup} =Fonct\-::nsup
+\item 
+static const bool \hyperlink{classodes_1_1Radau5cc_a8e67471bdbf858fff865561d859a066a}{Matrix\-Full} =(\hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n}-\/\hyperlink{classodes_1_1Radau5cc_ac47e67a43369971eeb08c2d2200a76d5}{ninf})==1\&\&(\hyperlink{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{n}-\/\hyperlink{classodes_1_1Radau5cc_a4e80b8064e4d8f60262591531fcd1ff0}{nsup})==1
+\item 
+static const bool \hyperlink{classodes_1_1Radau5cc_ae66683695f55d21d7c11ca7e3323d0e9}{Hessenberg} =Fonct\-::\-Hessenberg
+\item 
+static const bool \hyperlink{classodes_1_1Radau5cc_a742c490578cf9e4dcf692e6706c2ec90}{Compute\-Jacobian\-Numerically}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Fonct$>$class odes\-::\-Radau5cc$<$ Fonct $>$}
+
+A C++ implementation of Radau5. 
+
+Class \hyperlink{classodes_1_1Radau5cc}{Radau5cc}
+
+A C++ implementation of (most part of) Hairer \& Wanner Radau5. program. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classodes_1_1Matrices_aa1313b5ab7fdab6f5320c8d5aa3bfc24}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Matrix\-Complex@{Matrix\-Complex}}
+\index{Matrix\-Complex@{Matrix\-Complex}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Matrix\-Complex}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf fortran\-Complex\-Array}$<${\bf n}$>$ {\bf odes\-::\-Matrices}$<$ full, Hessengerg, {\bf n}, nsub, {\bf nsup} $>$\-::{\bf Matrix\-Complex}\hspace{0.3cm}{\ttfamily [inherited]}}}\label{classodes_1_1Matrices_aa1313b5ab7fdab6f5320c8d5aa3bfc24}
+\hypertarget{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Matrix\-Real@{Matrix\-Real}}
+\index{Matrix\-Real@{Matrix\-Real}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Matrix\-Real}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ typedef {\bf Matrices}$<${\bf Matrix\-Full},{\bf Hessenberg},{\bf n},{\bf ninf},{\bf nsup}$>$\-::{\bf Matrix\-Real} {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::{\bf Matrix\-Real}\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a8ef067b8852403d48d8528f601a4626a}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2d}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Out\-Newton\-Loop@{Out\-Newton\-Loop}}
+\index{Out\-Newton\-Loop@{Out\-Newton\-Loop}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Out\-Newton\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ enum {\bf odes\-::\-Radau5cc\-::\-Out\-Newton\-Loop}\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{converged@{converged}!odes\-::\-Radau5cc@{odes\-::\-Radau5cc}}\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!converged@{converged}}\item[{\em 
+\hypertarget{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2da9c86014618b5c6f2e6ce53e385cd80f7}{converged}\label{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2da9c86014618b5c6f2e6ce53e385cd80f7}
+}]\index{will\-Not\-Converge@{will\-Not\-Converge}!odes\-::\-Radau5cc@{odes\-::\-Radau5cc}}\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!will\-Not\-Converge@{will\-Not\-Converge}}\item[{\em 
+\hypertarget{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2dade02d21b4fd6d41fda13e76994c35ea2}{will\-Not\-Converge}\label{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2dade02d21b4fd6d41fda13e76994c35ea2}
+}]\index{did\-Not\-Converge@{did\-Not\-Converge}!odes\-::\-Radau5cc@{odes\-::\-Radau5cc}}\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!did\-Not\-Converge@{did\-Not\-Converge}}\item[{\em 
+\hypertarget{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2da649d2035432ef689c9c03cdd074a1ded}{did\-Not\-Converge}\label{classodes_1_1Radau5cc_a530d53d29f5c75bb20865fb786cd5f2da649d2035432ef689c9c03cdd074a1ded}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classodes_1_1Radau5cc_a87750274a7c162114b18a45cd8da0b52}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Radau5cc@{Radau5cc}}
+\index{Radau5cc@{Radau5cc}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Radau5cc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::{\bf Radau5cc} (
+\begin{DoxyParamCaption}
+\item[{bool}]{\-\_\-same\-Test\-Value, }
+\item[{double}]{\-\_\-atol\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{\-\_\-rtol\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a87750274a7c162114b18a45cd8da0b52}
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-same\-Test\-Value} & if true error tolerance are scalar \\
+\hline
+{\em \-\_\-atol} & absolute tolerance \\
+\hline
+{\em \-\_\-rtol} & relative tolerance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+even if the tolerance are scalar, \-\_\-atol and \-\_\-rtol are arrays. 
+\end{DoxyNote}
+\hypertarget{classodes_1_1Radau5cc_adcb8d2836087285468b23e675645592c}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!$\sim$\-Radau5cc@{$\sim$\-Radau5cc}}
+\index{$\sim$\-Radau5cc@{$\sim$\-Radau5cc}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{$\sim$\-Radau5cc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::$\sim${\bf Radau5cc} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_adcb8d2836087285468b23e675645592c}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcompat_afed990d40241e2a95d09e2ac8ac20cb4}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!ct\-\_\-assert@{ct\-\_\-assert}}
+\index{ct\-\_\-assert@{ct\-\_\-assert}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{ct\-\_\-assert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf compat}$<$ full, {\bf Hessenberg} $>$\-::ct\-\_\-assert (
+\begin{DoxyParamCaption}
+\item[{full$\vert$$\vert$}]{!full \&\&!\-Hessenberg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inherited]}}}\label{structcompat_afed990d40241e2a95d09e2ac8ac20cb4}
+\hypertarget{classodes_1_1Matrices_a9f497885fb6dd9bb22179fab49d9b587}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!decomc@{decomc}}
+\index{decomc@{decomc}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{decomc}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf odes\-::\-Matrices}$<$ full, Hessengerg, {\bf n}, nsub, {\bf nsup} $>$\-::decomc (
+\begin{DoxyParamCaption}
+\item[{double}]{alpha, }
+\item[{double}]{beta, }
+\item[{const {\bf Matrix\-Real} \&}]{Jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classodes_1_1Matrices_a9f497885fb6dd9bb22179fab49d9b587}
+build and factorize \char`\"{}complex\char`\"{} matrix 
+\begin{DoxyParams}{Parameters}
+{\em alpha} & \-: we add alpha$\ast$\-I to the real part of the Jacobian. \\
+\hline
+{\em beta} & \-: we add alpha$\ast$\-I to the imaginary part of the Jacobian. \\
+\hline
+{\em Jac} & the jacobian. \\
+\hline
+\end{DoxyParams}
+define the ivdep pragma for different compilers.
+
+define the ivdep pragma for different compilers.\hypertarget{classodes_1_1Matrices_a8dc1bc6d92d06af08d4bf8fb2b357a7d}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!decomr@{decomr}}
+\index{decomr@{decomr}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{decomr}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf odes\-::\-Matrices}$<$ full, Hessengerg, {\bf n}, nsub, {\bf nsup} $>$\-::decomr (
+\begin{DoxyParamCaption}
+\item[{double}]{fac1, }
+\item[{{\bf Matrix\-Real} \&}]{Jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classodes_1_1Matrices_a8dc1bc6d92d06af08d4bf8fb2b357a7d}
+build and factorize \char`\"{}real\char`\"{} matrix 
+\begin{DoxyParams}{Parameters}
+{\em fac1} & \-: we add fac1$\ast$\-I to the Jacobian. \\
+\hline
+{\em Jac} & the jacobian. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_ad0fe2959c9f23fcd76029cc54533ad07}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!do\-Newton\-Matrices@{do\-Newton\-Matrices}}
+\index{do\-Newton\-Matrices@{do\-Newton\-Matrices}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{do\-Newton\-Matrices}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::do\-Newton\-Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_ad0fe2959c9f23fcd76029cc54533ad07}
+
+
+make Newton matrices (factorize them). 
+
+\hypertarget{classodes_1_1Radau5cc_a2e6e502fa601a91fd32df312d6db47e2}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!do\-Scal@{do\-Scal}}
+\index{do\-Scal@{do\-Scal}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{do\-Scal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::do\-Scal (
+\begin{DoxyParamCaption}
+\item[{const {\bf fortran\-Vector} \&}]{Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a2e6e502fa601a91fd32df312d6db47e2}
+(re) compute scal 
+\begin{DoxyParams}{Parameters}
+{\em Y} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_a30bad88ca054d7dcf430a5d352a23d38}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!estrad@{estrad}}
+\index{estrad@{estrad}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{estrad}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::estrad (
+\begin{DoxyParamCaption}
+\item[{{\bf fortran\-Vector\-F}$<$ {\bf n} $>$ \&}]{y0, }
+\item[{{\bf fortran\-Vector} \&}]{y, }
+\item[{double}]{t, }
+\item[{bool}]{first, }
+\item[{bool}]{reject}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a30bad88ca054d7dcf430a5d352a23d38}
+error estimation. 
+\begin{DoxyParams}{Parameters}
+{\em y0} & \\
+\hline
+{\em y} & \\
+\hline
+{\em t} & \\
+\hline
+{\em first} & \\
+\hline
+{\em reject} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_a44a8f7a188fc1171f059ffcebbf15de2}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!getfirst\-Accepted\-Step@{getfirst\-Accepted\-Step}}
+\index{getfirst\-Accepted\-Step@{getfirst\-Accepted\-Step}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{getfirst\-Accepted\-Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::getfirst\-Accepted\-Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a44a8f7a188fc1171f059ffcebbf15de2}
+\hypertarget{classodes_1_1Radau5cc_a84f2521afde22fe621a92526e5f402b8}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!get\-Last\-Time\-Step@{get\-Last\-Time\-Step}}
+\index{get\-Last\-Time\-Step@{get\-Last\-Time\-Step}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{get\-Last\-Time\-Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::get\-Last\-Time\-Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a84f2521afde22fe621a92526e5f402b8}
+
+
+get last time step used. 
+
+\hypertarget{classodes_1_1Radau5cc_af6a62564a5e98a69a906c75c077f918d}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!get\-Naccpt@{get\-Naccpt}}
+\index{get\-Naccpt@{get\-Naccpt}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{get\-Naccpt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::get\-Naccpt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_af6a62564a5e98a69a906c75c077f918d}
+
+
+get number of steps accepted. 
+
+\hypertarget{classodes_1_1Radau5cc_a86803d5cfa5219a6fbbb63bd9576ecf1}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!get\-Ndec@{get\-Ndec}}
+\index{get\-Ndec@{get\-Ndec}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{get\-Ndec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::get\-Ndec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a86803d5cfa5219a6fbbb63bd9576ecf1}
+
+
+get number of matrix decompositions. 
+
+\hypertarget{classodes_1_1Radau5cc_a9dd359045cfe3667949697176a2be296}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!get\-Newt@{get\-Newt}}
+\index{get\-Newt@{get\-Newt}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{get\-Newt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::get\-Newt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a9dd359045cfe3667949697176a2be296}
+
+
+get number of Newton iterations performed. 
+
+\hypertarget{classodes_1_1Radau5cc_a49eecba7aba4da1dca5fe5f3848cab34}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!get\-Nfonc\-Called@{get\-Nfonc\-Called}}
+\index{get\-Nfonc\-Called@{get\-Nfonc\-Called}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{get\-Nfonc\-Called}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::get\-Nfonc\-Called (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a49eecba7aba4da1dca5fe5f3848cab34}
+get number of function call. \begin{DoxyNote}{Note}
+Z! if jacobian is computed numerically, we have n call for it. else, an estimation of the cost must take account of the cost of the computation of the exact Jacobian. 
+\end{DoxyNote}
+\hypertarget{classodes_1_1Radau5cc_ad369e8cda90230d3632c61aea00eef74}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!get\-N\-Jac@{get\-N\-Jac}}
+\index{get\-N\-Jac@{get\-N\-Jac}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{get\-N\-Jac}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::get\-N\-Jac (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_ad369e8cda90230d3632c61aea00eef74}
+
+
+get number of jacobian computed. 
+
+\hypertarget{classodes_1_1Radau5cc_a6f7c73b74c3de68b1e8ed9cc948f5da4}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!get\-Nrejct@{get\-Nrejct}}
+\index{get\-Nrejct@{get\-Nrejct}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{get\-Nrejct}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::get\-Nrejct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a6f7c73b74c3de68b1e8ed9cc948f5da4}
+
+
+get number of steps rejected. 
+
+\hypertarget{classodes_1_1Radau5cc_a02c7ae60849eec0ab3229c702d027441}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!get\-Nstep@{get\-Nstep}}
+\index{get\-Nstep@{get\-Nstep}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{get\-Nstep}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::get\-Nstep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a02c7ae60849eec0ab3229c702d027441}
+
+
+get number of steps performed. 
+
+\hypertarget{classodes_1_1Matrices_a9eb26d713d3e391f60d83798337d87a6}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Ibegin@{Ibegin}}
+\index{Ibegin@{Ibegin}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Ibegin}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf odes\-::\-Matrices}$<$ full, Hessengerg, {\bf n}, nsub, {\bf nsup} $>$\-::Ibegin (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classodes_1_1Matrices_a9eb26d713d3e391f60d83798337d87a6}
+
+
+begining of line i. 
+
+\hypertarget{classodes_1_1Matrices_a589402cfa0e11666cd152a06e048c6f7}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Iend@{Iend}}
+\index{Iend@{Iend}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Iend}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf odes\-::\-Matrices}$<$ full, Hessengerg, {\bf n}, nsub, {\bf nsup} $>$\-::Iend (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classodes_1_1Matrices_a589402cfa0e11666cd152a06e048c6f7}
+
+
+end of line i. 
+
+\hypertarget{classodes_1_1Radau5cc_a488b0601e6404991edfab78e4a2957e4}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Jacobian@{Jacobian}}
+\index{Jacobian@{Jacobian}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Jacobian}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Jacobian (
+\begin{DoxyParamCaption}
+\item[{double}]{t, }
+\item[{{\bf fortran\-Vector}}]{y, }
+\item[{const {\bf fortran\-Vector}}]{Fy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a488b0601e6404991edfab78e4a2957e4}
+compute (numerically) jacobian of Fonct 
+\begin{DoxyParams}{Parameters}
+{\em t} & current time (I\-N) \\
+\hline
+{\em y} & current value of unknowns (I\-N) \\
+\hline
+{\em Fy} & computed values of F(t,y,..) (I\-N) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_a68e870fccb45ca4568665a34d0bb1aa8}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Jacobian@{Jacobian}}
+\index{Jacobian@{Jacobian}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Jacobian}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf Matrix\-Real}\& {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Jacobian (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a68e870fccb45ca4568665a34d0bb1aa8}
+
+
+return a reference to the Jacobian. 
+
+\hypertarget{classodes_1_1Radau5cc_a7a78640ed38b67431551584da7cdbc09}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Newton@{Newton}}
+\index{Newton@{Newton}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Newton}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Newton (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{{\bf fortran\-Vector} \&}]{Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a7a78640ed38b67431551584da7cdbc09}
+perform simplified Newton iterations. 
+\begin{DoxyParams}{Parameters}
+{\em x} & time \\
+\hline
+{\em Y} & current value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+we return the reason for which we break iterations. 
+\end{DoxyNote}
+\hypertarget{classodes_1_1Radau5cc_ac6b74a8cf1d2fdc83c8fec8189bd1d42}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Newton\-Iteration\-Test@{Newton\-Iteration\-Test}}
+\index{Newton\-Iteration\-Test@{Newton\-Iteration\-Test}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Newton\-Iteration\-Test}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ std\-::pair$<$bool,double$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Newton\-Iteration\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_ac6b74a8cf1d2fdc83c8fec8189bd1d42}
+Test simplified Newton iterations convergence. \begin{DoxyNote}{Note}
+return a pair made ok\-: (true or false) depending if the convergence. a suggested new value for the time step h. 
+\end{DoxyNote}
+\hypertarget{classodes_1_1Radau5cc_aee81c868cdc434f266e495a72689cec5}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!operator()@{operator()}}
+\index{operator()@{operator()}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-h, }
+\item[{double \&}]{x, }
+\item[{double}]{\-\_\-xend, }
+\item[{double}]{y\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_aee81c868cdc434f266e495a72689cec5}
+make one time step. 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-h} & time step \\
+\hline
+{\em x} & actual time \\
+\hline
+{\em \-\_\-xend} & we integrate from x to \-\_\-xend \\
+\hline
+{\em y\mbox{[}$\,$\mbox{]}} & current unknowns values. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_a982fb7b6b00c6fd760c49fd36d9a4750}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!perform\-Only\-One\-Step@{perform\-Only\-One\-Step}}
+\index{perform\-Only\-One\-Step@{perform\-Only\-One\-Step}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{perform\-Only\-One\-Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::perform\-Only\-One\-Step (
+\begin{DoxyParamCaption}
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a982fb7b6b00c6fd760c49fd36d9a4750}
+operator will perform only one step, and return,whatever the value of time x. 
+\begin{DoxyParams}{Parameters}
+{\em val} & set only\-One\-Step to val \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+default is false, ie operator() will integrate up to \-\_\-xend (see operator()). 
+\end{DoxyNote}
+\hypertarget{classodes_1_1Radau5cc_a761efc49340f89b5148350ce5e76fb64}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!rhs@{rhs}}
+\index{rhs@{rhs}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{rhs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ Fonct\& {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::rhs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a761efc49340f89b5148350ce5e76fb64}
+
+
+return a reference to the right-\/hand side object function. 
+
+\hypertarget{classodes_1_1Radau5cc_ae688f9f0edc04e3c0c2a670d62b51837}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!set\-Facr\-Facl@{set\-Facr\-Facl}}
+\index{set\-Facr\-Facl@{set\-Facr\-Facl}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{set\-Facr\-Facl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::set\-Facr\-Facl (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-facr, }
+\item[{double}]{\-\_\-facl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_ae688f9f0edc04e3c0c2a670d62b51837}
+change parameters for step size reduction. 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-facr} & \\
+\hline
+{\em \-\_\-facl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+new step h is chose so that \-\_\-facl$<$= h/hold$<$=facr 
+\end{DoxyNote}
+\hypertarget{classodes_1_1Radau5cc_a19f8c9954b7d6cfa2dfbb9718c3cd506}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!set\-Fnewt@{set\-Fnewt}}
+\index{set\-Fnewt@{set\-Fnewt}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{set\-Fnewt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::set\-Fnewt (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-fnewt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a19f8c9954b7d6cfa2dfbb9718c3cd506}
+change stopping criterion for Newton iterations. 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-fnewt} & new value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_a0bb7e7fe363b343a024500e031e6b7e9}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!set\-Gustafsson\-Test@{set\-Gustafsson\-Test}}
+\index{set\-Gustafsson\-Test@{set\-Gustafsson\-Test}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{set\-Gustafsson\-Test}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::set\-Gustafsson\-Test (
+\begin{DoxyParamCaption}
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a0bb7e7fe363b343a024500e031e6b7e9}
+perform Gustafsson test? (default yes). 
+\begin{DoxyParams}{Parameters}
+{\em val} & boolean. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_aca7a11800037ae39edd9a6d644317653}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!seth@{seth}}
+\index{seth@{seth}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{seth}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::seth (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{newh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_aca7a11800037ae39edd9a6d644317653}
+set value of h. 
+\begin{DoxyParams}{Parameters}
+{\em x} & current value of time. \\
+\hline
+{\em newh} & newvalue of h. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+can be used to keep an history of h modifications. 
+\end{DoxyNote}
+\hypertarget{classodes_1_1Radau5cc_a3ba97342c5095591820ee7e085ac72a2}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!set\-Max\-Iterations\-Newton@{set\-Max\-Iterations\-Newton}}
+\index{set\-Max\-Iterations\-Newton@{set\-Max\-Iterations\-Newton}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{set\-Max\-Iterations\-Newton}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::set\-Max\-Iterations\-Newton (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-nit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a3ba97342c5095591820ee7e085ac72a2}
+\hypertarget{classodes_1_1Radau5cc_a94a01a41bda7f6e63e756fd8ba9f50f7}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!set\-Nmax@{set\-Nmax}}
+\index{set\-Nmax@{set\-Nmax}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{set\-Nmax}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::set\-Nmax (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-nmax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a94a01a41bda7f6e63e756fd8ba9f50f7}
+change the maximum number of allowed steps. 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-nmax} & new value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_a6ded95131d3d3475848df0db823eddcf}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!set\-Recompute\-Jacobian\-Treshold@{set\-Recompute\-Jacobian\-Treshold}}
+\index{set\-Recompute\-Jacobian\-Treshold@{set\-Recompute\-Jacobian\-Treshold}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{set\-Recompute\-Jacobian\-Treshold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::set\-Recompute\-Jacobian\-Treshold (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-thet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a6ded95131d3d3475848df0db823eddcf}
+\hypertarget{classodes_1_1Radau5cc_a0a606af9c7bf97f1c8b0f8f3aa9d7fb1}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!set\-Safe@{set\-Safe}}
+\index{set\-Safe@{set\-Safe}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{set\-Safe}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::set\-Safe (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-safe}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a0a606af9c7bf97f1c8b0f8f3aa9d7fb1}
+change safety factor for step size reduction 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-safe} & new value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_a94bc8707bc5faac1fb8516d044f9f061}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!set\-Test\-Policy@{set\-Test\-Policy}}
+\index{set\-Test\-Policy@{set\-Test\-Policy}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{set\-Test\-Policy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::set\-Test\-Policy (
+\begin{DoxyParamCaption}
+\item[{bool}]{\-\_\-same\-Test\-Value, }
+\item[{double}]{\-\_\-atol\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{\-\_\-rtol\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1Radau5cc_a94bc8707bc5faac1fb8516d044f9f061}
+set the error test policy 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-same\-Test\-Value} & == true iff atol and rtol are scalar \\
+\hline
+{\em \-\_\-atol} & \\
+\hline
+{\em \-\_\-rtol} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classodes_1_1Radau5cc_a78b4b4f6a4adb0d2de7dbbb0f841d082}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!slvrad@{slvrad}}
+\index{slvrad@{slvrad}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{slvrad}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ void {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::slvrad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a78b4b4f6a4adb0d2de7dbbb0f841d082}
+
+
+Linear system solution in Newton iterations. 
+
+\hypertarget{classodes_1_1Matrices_abce8558c305de75740568ec55e49338e}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!solvecomplex@{solvecomplex}}
+\index{solvecomplex@{solvecomplex}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{solvecomplex}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf odes\-::\-Matrices}$<$ full, Hessengerg, {\bf n}, nsub, {\bf nsup} $>$\-::solvecomplex (
+\begin{DoxyParamCaption}
+\item[{{\bf fortran\-Vector\-F}$<$ n $>$ \&}]{Zr, }
+\item[{{\bf fortran\-Vector\-F}$<$ n $>$ \&}]{Zi, }
+\item[{const {\bf fortran\-Array}$<$ n $>$ \&}]{Jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classodes_1_1Matrices_abce8558c305de75740568ec55e49338e}
+solve \char`\"{}imaginary\char`\"{} part. 
+\begin{DoxyParams}{Parameters}
+{\em Zr} & I\-N/\-O\-U\-T\-: R\-H\-S, real part (I\-N); result,real part (O\-U\-T). \\
+\hline
+{\em Zi} & I\-N/\-O\-U\-T\-: R\-H\-S, imag. part (I\-N); result,imag part (O\-U\-T). \\
+\hline
+{\em Jac} & the Jacobian matrix. \\
+\hline
+\end{DoxyParams}
+define the ivdep pragma for different compilers.
+
+define the ivdep pragma for different compilers.\hypertarget{classodes_1_1Matrices_ace113b7bfa2377d513c2faaf645aecaa}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!solvereal@{solvereal}}
+\index{solvereal@{solvereal}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{solvereal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf odes\-::\-Matrices}$<$ full, Hessengerg, {\bf n}, nsub, {\bf nsup} $>$\-::solvereal (
+\begin{DoxyParamCaption}
+\item[{{\bf fortran\-Vector\-F}$<$ n $>$ \&}]{Z, }
+\item[{const {\bf Matrix\-Real} \&}]{Jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classodes_1_1Matrices_ace113b7bfa2377d513c2faaf645aecaa}
+solve \char`\"{}real\char`\"{} part. 
+\begin{DoxyParams}{Parameters}
+{\em Z} & I\-N/\-O\-U\-T\-: 2nd member (I\-N); result (O\-U\-T). \\
+\hline
+{\em Jac} & the Jacobian matrix. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classodes_1_1Radau5cc_a42e13c53f1b12eee97f358a2913f8e4f}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!A\-L\-P\-H@{A\-L\-P\-H}}
+\index{A\-L\-P\-H@{A\-L\-P\-H}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{A\-L\-P\-H}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::A\-L\-P\-H\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a42e13c53f1b12eee97f358a2913f8e4f}
+\hypertarget{classodes_1_1Radau5cc_a4a905596498d2d8ab9f46201d54eaa4d}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!atol@{atol}}
+\index{atol@{atol}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{atol}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::atol\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a4a905596498d2d8ab9f46201d54eaa4d}
+\hypertarget{classodes_1_1Radau5cc_aca32380625f370758068d4c225958cd1}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!B\-E\-T\-A@{B\-E\-T\-A}}
+\index{B\-E\-T\-A@{B\-E\-T\-A}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{B\-E\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::B\-E\-T\-A\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_aca32380625f370758068d4c225958cd1}
+\hypertarget{classodes_1_1Radau5cc_ad1df67bebb6c9753e789643dbbac4b64}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!C1@{C1}}
+\index{C1@{C1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{C1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::C1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ad1df67bebb6c9753e789643dbbac4b64}
+\hypertarget{classodes_1_1Radau5cc_a1cf578a3f19e8e43321e182c46f710f4}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!C1\-M1@{C1\-M1}}
+\index{C1\-M1@{C1\-M1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{C1\-M1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::C1\-M1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a1cf578a3f19e8e43321e182c46f710f4}
+\hypertarget{classodes_1_1Radau5cc_a9d7ed1a3ffb2f3c582e1790e65f24671}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!C1\-M\-C2@{C1\-M\-C2}}
+\index{C1\-M\-C2@{C1\-M\-C2}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{C1\-M\-C2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::C1\-M\-C2\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a9d7ed1a3ffb2f3c582e1790e65f24671}
+\hypertarget{classodes_1_1Radau5cc_a4c4e52ad2bb85b6e3a598b75aecbdad8}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!C2@{C2}}
+\index{C2@{C2}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{C2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::C2\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a4c4e52ad2bb85b6e3a598b75aecbdad8}
+\hypertarget{classodes_1_1Radau5cc_ab2b14b1062b5fb6dde7557fbac202c29}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!C2\-M1@{C2\-M1}}
+\index{C2\-M1@{C2\-M1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{C2\-M1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::C2\-M1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ab2b14b1062b5fb6dde7557fbac202c29}
+\hypertarget{classodes_1_1Matrices_a82e935680c27f58bcff8a559700411c6}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!calhes@{calhes}}
+\index{calhes@{calhes}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{calhes}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf odes\-::\-Matrices}$<$ full, Hessengerg, {\bf n}, nsub, {\bf nsup} $>$\-::calhes\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}}\label{classodes_1_1Matrices_a82e935680c27f58bcff8a559700411c6}
+\hypertarget{classodes_1_1Radau5cc_a774b282697116ae2f25f6d2fdce9410c}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!caljac@{caljac}}
+\index{caljac@{caljac}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{caljac}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::caljac\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a774b282697116ae2f25f6d2fdce9410c}
+\hypertarget{classodes_1_1Radau5cc_afa383ebf8974ba3aac8841b6a4b43afa}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!cfac@{cfac}}
+\index{cfac@{cfac}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{cfac}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::cfac\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_afa383ebf8974ba3aac8841b6a4b43afa}
+\hypertarget{classodes_1_1Radau5cc_aaa49f4e7f5289a7012e2ce29d2a7dab8}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!C\-N\-O@{C\-N\-O}}
+\index{C\-N\-O@{C\-N\-O}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{C\-N\-O}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::C\-N\-O\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_aaa49f4e7f5289a7012e2ce29d2a7dab8}
+\hypertarget{classodes_1_1Radau5cc_a742c490578cf9e4dcf692e6706c2ec90}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Compute\-Jacobian\-Numerically@{Compute\-Jacobian\-Numerically}}
+\index{Compute\-Jacobian\-Numerically@{Compute\-Jacobian\-Numerically}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Compute\-Jacobian\-Numerically}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ const bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Compute\-Jacobian\-Numerically\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a742c490578cf9e4dcf692e6706c2ec90}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+      Fonct::ComputeJacobianNumerically
+\end{DoxyCode}
+\hypertarget{classodes_1_1Radau5cc_ae99cd8b33b1370b4b2dddb0361d6bb1e}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!C\-O\-N\-T1@{C\-O\-N\-T1}}
+\index{C\-O\-N\-T1@{C\-O\-N\-T1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{C\-O\-N\-T1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::C\-O\-N\-T1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ae99cd8b33b1370b4b2dddb0361d6bb1e}
+\hypertarget{classodes_1_1Radau5cc_a9a211ff738351641da6cdd159917fef2}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!D\-D1@{D\-D1}}
+\index{D\-D1@{D\-D1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{D\-D1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::D\-D1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a9a211ff738351641da6cdd159917fef2}
+\hypertarget{classodes_1_1Radau5cc_a86933b385c18f7ff7072da61f03daf05}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!D\-D2@{D\-D2}}
+\index{D\-D2@{D\-D2}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{D\-D2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::D\-D2\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a86933b385c18f7ff7072da61f03daf05}
+\hypertarget{classodes_1_1Radau5cc_a1c94a1f803b67e35bbed88d6152d1fff}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!D\-D3@{D\-D3}}
+\index{D\-D3@{D\-D3}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{D\-D3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::D\-D3\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a1c94a1f803b67e35bbed88d6152d1fff}
+\hypertarget{classodes_1_1Radau5cc_a36cb3bec1d0c8e1f6ea23eec088d5fa7}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!dyno@{dyno}}
+\index{dyno@{dyno}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{dyno}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::dyno\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a36cb3bec1d0c8e1f6ea23eec088d5fa7}
+\hypertarget{classodes_1_1Radau5cc_a5d60671c8cf94cc855a57a2afe201565}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!dynold@{dynold}}
+\index{dynold@{dynold}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{dynold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::dynold\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a5d60671c8cf94cc855a57a2afe201565}
+\hypertarget{classodes_1_1Radau5cc_a54eb4159056970d5c2c3ea85e79154bb}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!erracc@{erracc}}
+\index{erracc@{erracc}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{erracc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::erracc\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a54eb4159056970d5c2c3ea85e79154bb}
+\hypertarget{classodes_1_1Radau5cc_addca7bd0b74d75fd6f453969f6a619e2}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!F@{F}}
+\index{F@{F}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{F}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ Fonct {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::F\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_addca7bd0b74d75fd6f453969f6a619e2}
+\hypertarget{classodes_1_1Radau5cc_a7de9ff28e7bc72516e36010c8d2d65b9}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!F1@{F1}}
+\index{F1@{F1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{F1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::F1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a7de9ff28e7bc72516e36010c8d2d65b9}
+\hypertarget{classodes_1_1Radau5cc_a7937b348a68aae3a31a1324a9c385bfa}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!F2@{F2}}
+\index{F2@{F2}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{F2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::F2\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a7937b348a68aae3a31a1324a9c385bfa}
+\hypertarget{classodes_1_1Radau5cc_a1382307c537eb6d6747b1b68b9a977ff}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!F3@{F3}}
+\index{F3@{F3}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{F3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::F3\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a1382307c537eb6d6747b1b68b9a977ff}
+\hypertarget{classodes_1_1Radau5cc_ae3cb85f022d29c80ae8f980e57f1bbf5}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!faccon@{faccon}}
+\index{faccon@{faccon}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{faccon}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::faccon\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ae3cb85f022d29c80ae8f980e57f1bbf5}
+\hypertarget{classodes_1_1Radau5cc_a13fe7121c4b03dca25bfb7b362032182}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!facl@{facl}}
+\index{facl@{facl}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{facl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::facl\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a13fe7121c4b03dca25bfb7b362032182}
+\hypertarget{classodes_1_1Radau5cc_a2bda7f90bc9aabbc2d98ff14daeaa491}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!facr@{facr}}
+\index{facr@{facr}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{facr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::facr\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a2bda7f90bc9aabbc2d98ff14daeaa491}
+\hypertarget{classodes_1_1Radau5cc_a788454a3dee88b6547430e881856fec7}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!first@{first}}
+\index{first@{first}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{first}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::first\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a788454a3dee88b6547430e881856fec7}
+\hypertarget{classodes_1_1Radau5cc_a1a7b580bbae9fcd5c49fa116e877ac5c}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!first\-Accepted\-Step@{first\-Accepted\-Step}}
+\index{first\-Accepted\-Step@{first\-Accepted\-Step}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{first\-Accepted\-Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::first\-Accepted\-Step\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a1a7b580bbae9fcd5c49fa116e877ac5c}
+\hypertarget{classodes_1_1Radau5cc_af6debb655768cb0a251e2886544d87cb}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!fnewt@{fnewt}}
+\index{fnewt@{fnewt}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{fnewt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::fnewt\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_af6debb655768cb0a251e2886544d87cb}
+\hypertarget{classodes_1_1Radau5cc_ad867e67510b9f73391d1778c96bb8e06}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!gustafsson\-Test@{gustafsson\-Test}}
+\index{gustafsson\-Test@{gustafsson\-Test}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{gustafsson\-Test}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::gustafsson\-Test\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ad867e67510b9f73391d1778c96bb8e06}
+\hypertarget{classodes_1_1Radau5cc_afa3dc089844e77046c958a4ff2dcab1a}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!h@{h}}
+\index{h@{h}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::h\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_afa3dc089844e77046c958a4ff2dcab1a}
+\hypertarget{classodes_1_1Radau5cc_a868b61b5db9d458fd554f004ca366a52}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!hacc@{hacc}}
+\index{hacc@{hacc}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{hacc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::hacc\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a868b61b5db9d458fd554f004ca366a52}
+\hypertarget{classodes_1_1Radau5cc_ae66683695f55d21d7c11ca7e3323d0e9}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Hessenberg@{Hessenberg}}
+\index{Hessenberg@{Hessenberg}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Hessenberg}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ const bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Hessenberg =Fonct\-::\-Hessenberg\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ae66683695f55d21d7c11ca7e3323d0e9}
+\hypertarget{classodes_1_1Radau5cc_ad853d1040e37757aad020edde3b2ec28}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!hhfac@{hhfac}}
+\index{hhfac@{hhfac}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{hhfac}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::hhfac\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ad853d1040e37757aad020edde3b2ec28}
+\hypertarget{classodes_1_1Radau5cc_a73d88dc2c07d7e200a1c03dae8caa7f4}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!hmax@{hmax}}
+\index{hmax@{hmax}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{hmax}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::hmax\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a73d88dc2c07d7e200a1c03dae8caa7f4}
+\hypertarget{classodes_1_1Radau5cc_aa3b6b73884b0a085cf7f2b701940658e}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!hmaxn@{hmaxn}}
+\index{hmaxn@{hmaxn}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{hmaxn}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::hmaxn\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_aa3b6b73884b0a085cf7f2b701940658e}
+\hypertarget{classodes_1_1Radau5cc_a042b65cfeb0816edd1c2218ea9fe56c9}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!hold@{hold}}
+\index{hold@{hold}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{hold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::hold\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a042b65cfeb0816edd1c2218ea9fe56c9}
+\hypertarget{classodes_1_1Radau5cc_a9c91cdeb773885e6b7cf3699142c80eb}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!hopt@{hopt}}
+\index{hopt@{hopt}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{hopt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::hopt\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a9c91cdeb773885e6b7cf3699142c80eb}
+\hypertarget{classodes_1_1Radau5cc_a67b952c35d2c7ecddc9dd75cb2c3afe1}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Jac@{Jac}}
+\index{Jac@{Jac}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Jac}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf Matrix\-Real} {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Jac\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a67b952c35d2c7ecddc9dd75cb2c3afe1}
+\hypertarget{classodes_1_1Radau5cc_a3eed33adfb541114d62bafd3144bf188}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!last@{last}}
+\index{last@{last}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::last\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a3eed33adfb541114d62bafd3144bf188}
+\hypertarget{classodes_1_1Radau5cc_a8e67471bdbf858fff865561d859a066a}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Matrix\-Full@{Matrix\-Full}}
+\index{Matrix\-Full@{Matrix\-Full}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Matrix\-Full}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ const bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Matrix\-Full =({\bf n}-\/{\bf ninf})==1\&\&({\bf n}-\/{\bf nsup})==1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a8e67471bdbf858fff865561d859a066a}
+\hypertarget{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!n@{n}}
+\index{n@{n}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ const int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::n =Fonct\-::n\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a3be3f05d2cdf7268e7d09b62ad9ad494}
+\hypertarget{classodes_1_1Radau5cc_a39e641457e737321720c75578189d0db}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!naccpt@{naccpt}}
+\index{naccpt@{naccpt}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{naccpt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::naccpt\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a39e641457e737321720c75578189d0db}
+\hypertarget{classodes_1_1Radau5cc_af849903adc1f88a3bc6042994bec5621}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!ndec@{ndec}}
+\index{ndec@{ndec}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{ndec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::ndec\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_af849903adc1f88a3bc6042994bec5621}
+\hypertarget{classodes_1_1Radau5cc_a957de41c2a36e2f254836a6c05dbfb92}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!newt@{newt}}
+\index{newt@{newt}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{newt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::newt\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a957de41c2a36e2f254836a6c05dbfb92}
+\hypertarget{classodes_1_1Radau5cc_a6363884e5172cc77c13a1d9ca9ed630a}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!nfonccalled@{nfonccalled}}
+\index{nfonccalled@{nfonccalled}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{nfonccalled}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::nfonccalled\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a6363884e5172cc77c13a1d9ca9ed630a}
+\hypertarget{classodes_1_1Radau5cc_ac47e67a43369971eeb08c2d2200a76d5}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!ninf@{ninf}}
+\index{ninf@{ninf}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{ninf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ const int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::ninf =Fonct\-::nsub\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ac47e67a43369971eeb08c2d2200a76d5}
+\hypertarget{classodes_1_1Radau5cc_a98eae21674bed3d783e49f92f7c38a20}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!nit@{nit}}
+\index{nit@{nit}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{nit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::nit\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a98eae21674bed3d783e49f92f7c38a20}
+\hypertarget{classodes_1_1Radau5cc_ade6f8961bd6dacdc3e89761d8af04172}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!njac@{njac}}
+\index{njac@{njac}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{njac}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::njac\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ade6f8961bd6dacdc3e89761d8af04172}
+\hypertarget{classodes_1_1Radau5cc_a42980e5cf06bc0f4c1a0ef1a1922615f}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!nmax@{nmax}}
+\index{nmax@{nmax}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{nmax}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::nmax\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a42980e5cf06bc0f4c1a0ef1a1922615f}
+\hypertarget{classodes_1_1Radau5cc_a04e6193a9f5be15a7e969b2ad4e5f344}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!nrejct@{nrejct}}
+\index{nrejct@{nrejct}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{nrejct}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::nrejct\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a04e6193a9f5be15a7e969b2ad4e5f344}
+\hypertarget{classodes_1_1Radau5cc_af1a16f749cd5fd53c66af9a913a37d0a}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!nstep@{nstep}}
+\index{nstep@{nstep}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{nstep}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::nstep\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_af1a16f749cd5fd53c66af9a913a37d0a}
+\hypertarget{classodes_1_1Radau5cc_a4e80b8064e4d8f60262591531fcd1ff0}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!nsup@{nsup}}
+\index{nsup@{nsup}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{nsup}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ const int {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::nsup =Fonct\-::nsup\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a4e80b8064e4d8f60262591531fcd1ff0}
+\hypertarget{classodes_1_1Radau5cc_a99fc26950c9004ac83c8b16f8cc41070}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!only\-One\-Step@{only\-One\-Step}}
+\index{only\-One\-Step@{only\-One\-Step}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{only\-One\-Step}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::only\-One\-Step\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a99fc26950c9004ac83c8b16f8cc41070}
+\hypertarget{classodes_1_1Radau5cc_a4acabf9c37c68c6b50dd32c6a12724a6}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!posneg@{posneg}}
+\index{posneg@{posneg}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{posneg}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::posneg\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a4acabf9c37c68c6b50dd32c6a12724a6}
+\hypertarget{classodes_1_1Radau5cc_a0c3cc3ba99f9aca257eab5b3a1f4cb43}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!quot1@{quot1}}
+\index{quot1@{quot1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{quot1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::quot1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a0c3cc3ba99f9aca257eab5b3a1f4cb43}
+\hypertarget{classodes_1_1Radau5cc_a66d2ae6f5ecac2c7983fe54293a6cc30}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!quot2@{quot2}}
+\index{quot2@{quot2}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{quot2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::quot2\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a66d2ae6f5ecac2c7983fe54293a6cc30}
+\hypertarget{classodes_1_1Radau5cc_aedacfeb52f4072557c312adf7817bcf6}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!reject@{reject}}
+\index{reject@{reject}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{reject}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::reject\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_aedacfeb52f4072557c312adf7817bcf6}
+\hypertarget{classodes_1_1Radau5cc_a6fb4ed14d3b1141a927cbbaf3f3f5536}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!rtol@{rtol}}
+\index{rtol@{rtol}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{rtol}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::rtol\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a6fb4ed14d3b1141a927cbbaf3f3f5536}
+\hypertarget{classodes_1_1Radau5cc_a8809fb6e400f5eaa32331a2e463f9cdb}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!safe@{safe}}
+\index{safe@{safe}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{safe}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::safe\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a8809fb6e400f5eaa32331a2e463f9cdb}
+\hypertarget{classodes_1_1Radau5cc_acab8ee5b4ea97c71a0f34bf41f145a58}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!same\-Test\-Value@{same\-Test\-Value}}
+\index{same\-Test\-Value@{same\-Test\-Value}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{same\-Test\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::same\-Test\-Value\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_acab8ee5b4ea97c71a0f34bf41f145a58}
+\hypertarget{classodes_1_1Radau5cc_a2d4840f821ba5e059d73ca63a002aca1}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!save1@{save1}}
+\index{save1@{save1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{save1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::save1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a2d4840f821ba5e059d73ca63a002aca1}
+\hypertarget{classodes_1_1Radau5cc_a8928e81eefe11977cd13856b65048dac}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!save2@{save2}}
+\index{save2@{save2}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{save2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::save2\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a8928e81eefe11977cd13856b65048dac}
+\hypertarget{classodes_1_1Radau5cc_a060ca481b33c11ca111a49b25df64c80}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!save3@{save3}}
+\index{save3@{save3}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{save3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::save3\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a060ca481b33c11ca111a49b25df64c80}
+\hypertarget{classodes_1_1Radau5cc_a5f604f76403a66677e194915e2f2d8d8}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!scal@{scal}}
+\index{scal@{scal}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{scal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::scal\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a5f604f76403a66677e194915e2f2d8d8}
+\hypertarget{classodes_1_1Radau5cc_ab72c18864827bc09b414a8c01e956698}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!S\-Q6@{S\-Q6}}
+\index{S\-Q6@{S\-Q6}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{S\-Q6}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::S\-Q6\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ab72c18864827bc09b414a8c01e956698}
+\hypertarget{classodes_1_1Radau5cc_a04284948029a635e8d0d4ea79e15c5ea}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!startn@{startn}}
+\index{startn@{startn}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{startn}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ bool {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::startn\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a04284948029a635e8d0d4ea79e15c5ea}
+\hypertarget{classodes_1_1Radau5cc_a3538e815c4a1a4449692ef7cf5331fcc}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T11@{T11}}
+\index{T11@{T11}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T11}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T11\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a3538e815c4a1a4449692ef7cf5331fcc}
+\hypertarget{classodes_1_1Radau5cc_ac47257f4b685d8016d8bdc0aaf6c3861}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T12@{T12}}
+\index{T12@{T12}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T12}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T12\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ac47257f4b685d8016d8bdc0aaf6c3861}
+\hypertarget{classodes_1_1Radau5cc_a49b429abb614b8d4f41e6df611a12c06}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T13@{T13}}
+\index{T13@{T13}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T13}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T13\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a49b429abb614b8d4f41e6df611a12c06}
+\hypertarget{classodes_1_1Radau5cc_a5933359813b622b1dd1f67605df31521}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T21@{T21}}
+\index{T21@{T21}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T21}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T21\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a5933359813b622b1dd1f67605df31521}
+\hypertarget{classodes_1_1Radau5cc_a1c4adb6f7b47032fe75bd53884a37ef3}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T22@{T22}}
+\index{T22@{T22}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T22}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T22\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a1c4adb6f7b47032fe75bd53884a37ef3}
+\hypertarget{classodes_1_1Radau5cc_a7a1d50f08a07a822568cbe9d52b75d45}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T23@{T23}}
+\index{T23@{T23}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T23}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T23\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a7a1d50f08a07a822568cbe9d52b75d45}
+\hypertarget{classodes_1_1Radau5cc_ab80295b9270d7ac0dde3e7d36dcff866}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T31@{T31}}
+\index{T31@{T31}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T31}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T31\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ab80295b9270d7ac0dde3e7d36dcff866}
+\hypertarget{classodes_1_1Radau5cc_a340c376fb3c4521c3c8e95a7b9911792}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!thet@{thet}}
+\index{thet@{thet}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{thet}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::thet\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a340c376fb3c4521c3c8e95a7b9911792}
+\hypertarget{classodes_1_1Radau5cc_af9475ed436133a308c22edfda6892988}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!theta@{theta}}
+\index{theta@{theta}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{theta}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::theta\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_af9475ed436133a308c22edfda6892988}
+\hypertarget{classodes_1_1Radau5cc_adda256e4a50fe0b527b9a389ba06a9c4}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!thqold@{thqold}}
+\index{thqold@{thqold}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{thqold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::thqold\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_adda256e4a50fe0b527b9a389ba06a9c4}
+\hypertarget{classodes_1_1Radau5cc_a50cc7d8eee62bccf6069a4c1f43d019b}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I11@{T\-I11}}
+\index{T\-I11@{T\-I11}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I11}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I11\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a50cc7d8eee62bccf6069a4c1f43d019b}
+\hypertarget{classodes_1_1Radau5cc_aaed25bf9d94e2cbbbeed75c093c0406f}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I12@{T\-I12}}
+\index{T\-I12@{T\-I12}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I12}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I12\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_aaed25bf9d94e2cbbbeed75c093c0406f}
+\hypertarget{classodes_1_1Radau5cc_a6da247a0623462bb1d61e5c97d67a39f}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I13@{T\-I13}}
+\index{T\-I13@{T\-I13}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I13}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I13\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a6da247a0623462bb1d61e5c97d67a39f}
+\hypertarget{classodes_1_1Radau5cc_a14b80d1886a7562f3a72ce7acd738272}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I21@{T\-I21}}
+\index{T\-I21@{T\-I21}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I21}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I21\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a14b80d1886a7562f3a72ce7acd738272}
+\hypertarget{classodes_1_1Radau5cc_a77584ef2a5a6cccef4fe531e95c800d7}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I22@{T\-I22}}
+\index{T\-I22@{T\-I22}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I22}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I22\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a77584ef2a5a6cccef4fe531e95c800d7}
+\hypertarget{classodes_1_1Radau5cc_aafd01d1393c2dbe3edc148f073bf24f6}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I23@{T\-I23}}
+\index{T\-I23@{T\-I23}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I23}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I23\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_aafd01d1393c2dbe3edc148f073bf24f6}
+\hypertarget{classodes_1_1Radau5cc_a0b21d463e63aaa3ae216def4605ed64a}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I31@{T\-I31}}
+\index{T\-I31@{T\-I31}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I31}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I31\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a0b21d463e63aaa3ae216def4605ed64a}
+\hypertarget{classodes_1_1Radau5cc_a6707fd7852c5536fcdc9a85cb78cef5c}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I32@{T\-I32}}
+\index{T\-I32@{T\-I32}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I32}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I32\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a6707fd7852c5536fcdc9a85cb78cef5c}
+\hypertarget{classodes_1_1Radau5cc_a6641ca56a3e50256303f70f839365c93}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!T\-I33@{T\-I33}}
+\index{T\-I33@{T\-I33}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{T\-I33}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::T\-I33\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a6641ca56a3e50256303f70f839365c93}
+\hypertarget{classodes_1_1Radau5cc_abdf9186a294f8720b8d5100335b6e39a}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!tolst@{tolst}}
+\index{tolst@{tolst}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{tolst}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::tolst\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_abdf9186a294f8720b8d5100335b6e39a}
+\hypertarget{classodes_1_1Radau5cc_ae23acdd71ce8640aa40e111b4df06922}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!U1@{U1}}
+\index{U1@{U1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{U1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::U1\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ae23acdd71ce8640aa40e111b4df06922}
+\hypertarget{classodes_1_1Radau5cc_aecb9b0f5b18f8bb94a14435e20bdd65b}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!uround@{uround}}
+\index{uround@{uround}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{uround}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::uround\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_aecb9b0f5b18f8bb94a14435e20bdd65b}
+\hypertarget{classodes_1_1Radau5cc_ac6e95e640106e403c36b260fa97d1bb6}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!xend@{xend}}
+\index{xend@{xend}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{xend}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::xend\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_ac6e95e640106e403c36b260fa97d1bb6}
+\hypertarget{classodes_1_1Radau5cc_a46e492dffaba4f529881e74bda794bbd}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!xold@{xold}}
+\index{xold@{xold}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{xold}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::xold\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a46e492dffaba4f529881e74bda794bbd}
+\hypertarget{classodes_1_1Radau5cc_a9f9ba87113cef033764f5282f987a832}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!xph@{xph}}
+\index{xph@{xph}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{xph}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ double {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::xph\hspace{0.3cm}{\ttfamily [private]}}}\label{classodes_1_1Radau5cc_a9f9ba87113cef033764f5282f987a832}
+\hypertarget{classodes_1_1Radau5cc_af04c79b433c9fabdf12fe44a52158a67}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Z1@{Z1}}
+\index{Z1@{Z1}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Z1}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Z1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_af04c79b433c9fabdf12fe44a52158a67}
+\hypertarget{classodes_1_1Radau5cc_a596f99b5ee176439461a9e72da725c59}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Z1\-T@{Z1\-T}}
+\index{Z1\-T@{Z1\-T}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Z1\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Z1\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a596f99b5ee176439461a9e72da725c59}
+\hypertarget{classodes_1_1Radau5cc_aee840f9b8646bc3a0660c3c53ab7c988}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Z2@{Z2}}
+\index{Z2@{Z2}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Z2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Z2\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_aee840f9b8646bc3a0660c3c53ab7c988}
+\hypertarget{classodes_1_1Radau5cc_a4b4c5fa798698101e62b0180acd9d2a0}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Z2\-T@{Z2\-T}}
+\index{Z2\-T@{Z2\-T}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Z2\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Z2\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a4b4c5fa798698101e62b0180acd9d2a0}
+\hypertarget{classodes_1_1Radau5cc_a5b34e13256e93e89d9e8e5a9d00c9431}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Z3@{Z3}}
+\index{Z3@{Z3}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Z3}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Z3\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a5b34e13256e93e89d9e8e5a9d00c9431}
+\hypertarget{classodes_1_1Radau5cc_a5f581024591f9a6b4097994b8a9525a1}{\index{odes\-::\-Radau5cc@{odes\-::\-Radau5cc}!Z3\-T@{Z3\-T}}
+\index{Z3\-T@{Z3\-T}!odes::Radau5cc@{odes\-::\-Radau5cc}}
+\subsubsection[{Z3\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fonct $>$ {\bf fortran\-Vector\-F}$<${\bf n}$>$ {\bf odes\-::\-Radau5cc}$<$ Fonct $>$\-::Z3\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1Radau5cc_a5f581024591f9a6b4097994b8a9525a1}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Radau5-\/\-N\-G/include/\hyperlink{Radau5cc_8hpp}{Radau5cc.\-hpp}\end{DoxyCompactItemize}

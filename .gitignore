@@ -1,0 +1,13 @@
+*.log
+_*_.tex
+*.pyc
+publi.pdf
+*.aux
+toto*
+*out
+*.bbl
+*.blg
+Build*
+*~
+.ipynb_checkpoints
+Out*

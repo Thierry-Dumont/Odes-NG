@@ -1,0 +1,14 @@
+In file included from /homes/doua/tdumont/odes/trunk/Rock4-L/test/main.cpp:14:0:
+/homes/doua/tdumont/odes/trunk/Rock4-L/test/classF.hpp:5:1: error: for, while or do statement expected before ‘using’
+ using namespace std;
+ ^
+In file included from /homes/doua/tdumont/odes/trunk/common/include/MatrixType.hpp:3:0,
+                 from /homes/doua/tdumont/odes/trunk/Rock4-L/test/FRadau5.hpp:3,
+                 from /homes/doua/tdumont/odes/trunk/Rock4-L/test/main.cpp:4:
+/homes/doua/tdumont/odes/trunk/common/include/Matrices.hpp: In member function ‘void odes::Matrices<false, false, n, nsub, nsup>::decomc(double, double, const MatrixReal&) [with int n = 100; int nsub = 1; int nsup = 1; odes::Matrices<false, false, n, nsub, nsup>::MatrixReal = odes::fortranRectangularArray<100, 1, 1>]’:
+/homes/doua/tdumont/odes/trunk/common/include/Matrices.hpp:161:25: warning: ignoring ‘GCC ivdep’ annotation
+  for(int i=MAX(1,j-nsup);i<=MIN(n,j+nsub);i++)
+                         ^
+make[2]: *** [CMakeFiles/run.dir/main.cpp.o] Erreur 1
+make[1]: *** [CMakeFiles/run.dir/all] Erreur 2
+make: *** [all] Erreur 2

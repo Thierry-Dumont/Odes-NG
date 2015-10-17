@@ -1,0 +1,20 @@
+
+
+
+1) Doxygen documentation:
+
+Just do;
+ doxygen Doxyfile 
+
+Documentation goes in Doc/
+
+-html/ the html documentation.
+-latex the full Latex documentation (type make to generate it).
+-Refman a shorter version of the latex documentation. DO NOT DESTROY THIS
+   DIRECTORY. In refman, type twice "pdflatex refman" to get refman.pdf 
+
+2) The main page of the html documentation explains how to use this code.
+   A more readable version is the refman.pdf in Doc/Refman.
+
+3)test contains  examples, and some documentation.
+
