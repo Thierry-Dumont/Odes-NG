@@ -56,7 +56,7 @@ public:
   //! the RHS for Radau5.
   inline void operator()(double t,double * Restrict y,double * Restrict res) const
   {
-//ASSUME_ALIGNED(y, 64);//ASSUME_ALIGNED(res, 64);
+    //ASSUME_ALIGNED(y, 64);//ASSUME_ALIGNED(res, 64);
     res[0]=2*eh2*(y[1]-y[0])+f(y[0]);
 #include "Ivdep.hpp"
     for(int i=1;i<n-1;i++)
