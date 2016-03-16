@@ -1,40 +1,28 @@
 \hypertarget{index_Introduction}{}\section{Introduction}\label{index_Introduction}
-The source directories Radau5-\/\-N\-G, Rock4-\/\-N\-G, Rock4-\/\-L, Rodas-\/\-N\-G, S\-D\-I\-R\-K\-L and Symplectic\-R\-K contains sources of different Runge-\/\-Kutta methods written in C++.
+The source directories Radau5-\/\+N\+G, Rock4-\/\+N\+G, Rock4-\/\+L, Rodas-\/\+N\+G, S\+D\+I\+R\+K\+L and Symplectic\+R\+K contains sources of different Runge-\/\+Kutta methods written in C++.
 
-\begin{quotation}
-{\bfseries  Radau5-\/\-N\-G } is a rewritting of Hairer and Wanner code, optimized, but with some
-
-\end{quotation}
+\begin{quote}
+{\bfseries  Radau5-\/\+N\+G } is a rewritting of Hairer and Wanner code, optimized, but with some \end{quote}
 restrictions (see documentation).
 
-\begin{quotation}
-{\bfseries  Rock4-\/\-N\-G } is a rewritting of A. Abdulle code, avoiding vector copies.
-
-\end{quotation}
+\begin{quote}
+{\bfseries  Rock4-\/\+N\+G } is a rewritting of A. Abdulle code, avoiding vector copies. \end{quote}
 
 
-\begin{quotation}
-{\bfseries  Rock4-\/\-L } is an adaptation of Rock4 method ro linear (actually affine)
-
-\end{quotation}
+\begin{quote}
+{\bfseries  Rock4-\/\+L } is an adaptation of Rock4 method ro linear (actually affine) \end{quote}
 problems $ du/dt= A u +B.$, with $ A $ linear and $ B $ independent of $ t.$
 
-\begin{quotation}
-{\bfseries  Rodas-\/\-N\-G } is a rewritting of Hairer and Wanner code, optimized, but with some
-
-\end{quotation}
+\begin{quote}
+{\bfseries  Rodas-\/\+N\+G } is a rewritting of Hairer and Wanner code, optimized, but with some \end{quote}
 restrictions (see documentation).
 
-\begin{quotation}
-{\bfseries  S\-D\-I\-R\-K\-L} is a generic implementation of S\-D\-I\-R\-K methods in the linear (affine) case. Thus, linear systems must be solved.
-
-\end{quotation}
+\begin{quote}
+{\bfseries  S\+D\+I\+R\+K\+L} is a generic implementation of S\+D\+I\+R\+K methods in the linear (affine) case. Thus, linear systems must be solved. \end{quote}
 
 
-\begin{quotation}
-{\bfseries  Symplectic\-R\-K} is the (the family of) symplectic Gauss methods.
-
-\end{quotation}
+\begin{quote}
+{\bfseries  Symplectic\+R\+K} is the (the family of) symplectic Gauss methods. \end{quote}
 
 
 See documentation of individual programs.\hypertarget{index_General}{}\section{General considerations about implementation.}\label{index_General}
@@ -42,43 +30,31 @@ All is written in C++, and some program must be used with recent compilers (c++-
 
 This is a library of templates, no intermediate binary is created.
 
-For all these programs, a class must be created wich describes the program to be solved.\hypertarget{index_Directory}{}\subsection{Directory structure\-:}\label{index_Directory}
-\begin{quotation}
-{\bfseries  common/include} contains all the classes, methods and functions common to the different programs.
-
-\end{quotation}
+For all these programs, a class must be created wich describes the program to be solved.\hypertarget{index_Directory}{}\subsection{Directory structure\+:}\label{index_Directory}
+\begin{quote}
+{\bfseries  common/include} contains all the classes, methods and functions common to the different programs. \end{quote}
 
 
-\begin{quotation}
-for each program, the corresponding directory contains an {\bfseries include} directory, which stores the different classes of the program and {\bfseries test} directories.
+\begin{quote}
+for each program, the corresponding directory contains an {\bfseries include} directory, which stores the different classes of the program and {\bfseries test} directories. \end{quote}
+\hypertarget{index_test}{}\subsubsection{Test directories\+:}\label{index_test}
+Each {\bfseries  test} directory contains a main program, all the necessary classes, and a cmake file. To compile and test the program\+:
 
-\end{quotation}
-\hypertarget{index_test}{}\subsubsection{Test directories\-:}\label{index_test}
-Each {\bfseries  test} directory contains a main program, all the necessary classes, and a cmake file. To compile and test the program\-:
-
-\begin{quotation}
-Adapt C\-Make file if necessary.
-
-\end{quotation}
+\begin{quote}
+Adapt C\+Make file if necessary. \end{quote}
 
 
-\begin{quotation}
-{\bfseries cd Build} directory
-
-\end{quotation}
+\begin{quote}
+{\bfseries cd Build} directory \end{quote}
 
 
-\begin{quotation}
-{\bfseries cmake ..} (possibly with an option to determine the compiler you want to use); see the Cmake files provided.
-
-\end{quotation}
+\begin{quote}
+{\bfseries cmake ..} (possibly with an option to determine the compiler you want to use); see the Cmake files provided. \end{quote}
 
 
-\begin{quotation}
-{\bfseries  make} a {\bfseries  ./run } file is created.
-
-\end{quotation}
+\begin{quote}
+{\bfseries  make} a {\bfseries  ./run } file is created. \end{quote}
 
 
-\begin{quotation}
-{\bfseries run} to execute the program. \end{quotation}
+\begin{quote}
+{\bfseries run} to execute the program.\end{quote}

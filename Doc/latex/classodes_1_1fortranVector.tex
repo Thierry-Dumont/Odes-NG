@@ -1,6 +1,5 @@
-\hypertarget{classodes_1_1fortranVector}{\section{odes\-:\-:fortran\-Vector Class Reference}
-\label{classodes_1_1fortranVector}\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}}
-}
+\hypertarget{classodes_1_1fortranVector}{}\section{odes\+:\+:fortran\+Vector Class Reference}
+\label{classodes_1_1fortranVector}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
 
 
 Vector class (of doubles).  
@@ -8,18 +7,18 @@ Vector class (of doubles).
 
 
 
-{\ttfamily \#include $<$fortran\-Vector.\-hpp$>$}
+{\ttfamily \#include $<$fortran\+Vector.\+hpp$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classodes_1_1fortranVector_a1fb7a9d331cb23faf606e9ef75c18ef1}{fortran\-Vector} ()
+\hyperlink{classodes_1_1fortranVector_a1fb7a9d331cb23faf606e9ef75c18ef1}{fortran\+Vector} ()
 \item 
-\hyperlink{classodes_1_1fortranVector_aaa6fa4f6992cd736fff53abc7415dd87}{fortran\-Vector} (int k)
+\hyperlink{classodes_1_1fortranVector_aaa6fa4f6992cd736fff53abc7415dd87}{fortran\+Vector} (int k)
 \item 
-\hyperlink{classodes_1_1fortranVector_a258c9cacdb8adf64b21a9fdcf2edf7fb}{fortran\-Vector} (double $\ast$\-\_\-x, int \-\_\-size)
+\hyperlink{classodes_1_1fortranVector_a258c9cacdb8adf64b21a9fdcf2edf7fb}{fortran\+Vector} (double $\ast$\+\_\+x, int \+\_\+size)
 \item 
-\hyperlink{classodes_1_1fortranVector_a57ebd8f0cc1aa20cbe956ff5be3180c3}{$\sim$fortran\-Vector} ()
+\hyperlink{classodes_1_1fortranVector_a57ebd8f0cc1aa20cbe956ff5be3180c3}{$\sim$fortran\+Vector} ()
 \begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
 double \hyperlink{classodes_1_1fortranVector_acd2f3c622c5c901e0a2fcefc445fb74c}{operator()} (int i) const 
 \item 
@@ -27,13 +26,13 @@ double \& \hyperlink{classodes_1_1fortranVector_a9177196a3ec94139a163e7fa8b19b92
 \item 
 double $\ast$ \hyperlink{classodes_1_1fortranVector_ada6f1dfa695ada960f621d9728e0f8e0}{operator\&} () const 
 \begin{DoxyCompactList}\small\item\em return a pointer to the vector of double. \end{DoxyCompactList}\item 
-void \hyperlink{classodes_1_1fortranVector_a2efd6f462acf48bc8f064659f5a0dc40}{operator=} (\hyperlink{classodes_1_1fortranVector}{fortran\-Vector} V)
+void \hyperlink{classodes_1_1fortranVector_a2efd6f462acf48bc8f064659f5a0dc40}{operator=} (\hyperlink{classodes_1_1fortranVector}{fortran\+Vector} V)
 \item 
-void \hyperlink{classodes_1_1fortranVector_ae522acf0f26411ce0ee14c77cddd7bfa}{operator+=} (\hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&F)
+void \hyperlink{classodes_1_1fortranVector_ae522acf0f26411ce0ee14c77cddd7bfa}{operator+=} (\hyperlink{classodes_1_1fortranVector}{fortran\+Vector} \&F)
 \item 
-void \hyperlink{classodes_1_1fortranVector_a7f11009e278203c327c93d68e86117c9}{setsize} (unsigned int \-\_\-size)
+void \hyperlink{classodes_1_1fortranVector_a7f11009e278203c327c93d68e86117c9}{setsize} (unsigned int \+\_\+size)
 \item 
-int \hyperlink{classodes_1_1fortranVector_a0a9a82f6efc0a9e5ea40dc240eebc800}{get\-\_\-size} () const 
+int \hyperlink{classodes_1_1fortranVector_a0a9a82f6efc0a9e5ea40dc240eebc800}{get\+\_\+size} () const 
 \begin{DoxyCompactList}\small\item\em get the size \end{DoxyCompactList}\item 
 void \hyperlink{classodes_1_1fortranVector_a135030af7550fd1e76324303e1fb25e3}{print} (string s=\char`\"{}\char`\"{}) const 
 \begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -49,65 +48,65 @@ bool \hyperlink{classodes_1_1fortranVector_ace9b5d1e721b6f82ed090350181557b6}{de
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$int k$>$ }\\class \hyperlink{classodes_1_1fortranVector_a073cb7f07821b815ad65e098723e8a53}{fortran\-Array}
+{\footnotesize template$<$int k$>$ }\\class \hyperlink{classodes_1_1fortranVector_a073cb7f07821b815ad65e098723e8a53}{fortran\+Array}
 \item 
-{\footnotesize template$<$int k$>$ }\\class \hyperlink{classodes_1_1fortranVector_a6f2443030a60ee3f140d4969edbd2914}{fortran\-Vector\-F}
+{\footnotesize template$<$int k$>$ }\\class \hyperlink{classodes_1_1fortranVector_a6f2443030a60ee3f140d4969edbd2914}{fortran\+Vector\+F}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Vector class (of doubles). 
 
-Vector class (of doubles). We want to use fortran indexing (from 1 to...)\-: this is just a wrapper around an array of doubles. Note\-: this is not a very {\itshape safe} class!. (we are adult programmers \-:-\/) ). 
+Vector class (of doubles). We want to use fortran indexing (from 1 to...)\+: this is just a wrapper around an array of doubles. Note\+: this is not a very {\itshape safe} class!. (we are adult programmers \+:-\/) ). 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classodes_1_1fortranVector_a1fb7a9d331cb23faf606e9ef75c18ef1}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!fortran\-Vector@{fortran\-Vector}}
-\index{fortran\-Vector@{fortran\-Vector}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{fortran\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::fortran\-Vector\-::fortran\-Vector (
+\hypertarget{classodes_1_1fortranVector_a1fb7a9d331cb23faf606e9ef75c18ef1}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!fortran\+Vector@{fortran\+Vector}}
+\index{fortran\+Vector@{fortran\+Vector}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{fortran\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}odes\+::fortran\+Vector\+::fortran\+Vector (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_a1fb7a9d331cb23faf606e9ef75c18ef1}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_a1fb7a9d331cb23faf606e9ef75c18ef1}
 constructor \begin{DoxyNote}{Note}
 we construct an empty class, not usable. 
 \end{DoxyNote}
-\hypertarget{classodes_1_1fortranVector_aaa6fa4f6992cd736fff53abc7415dd87}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!fortran\-Vector@{fortran\-Vector}}
-\index{fortran\-Vector@{fortran\-Vector}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{fortran\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::fortran\-Vector\-::fortran\-Vector (
+\hypertarget{classodes_1_1fortranVector_aaa6fa4f6992cd736fff53abc7415dd87}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!fortran\+Vector@{fortran\+Vector}}
+\index{fortran\+Vector@{fortran\+Vector}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{fortran\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}odes\+::fortran\+Vector\+::fortran\+Vector (
 \begin{DoxyParamCaption}
 \item[{int}]{k}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_aaa6fa4f6992cd736fff53abc7415dd87}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_aaa6fa4f6992cd736fff53abc7415dd87}
 constructor 
 \begin{DoxyParams}{Parameters}
 {\em k} & size of the vector \\
 \hline
 \end{DoxyParams}
-\hypertarget{classodes_1_1fortranVector_a258c9cacdb8adf64b21a9fdcf2edf7fb}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!fortran\-Vector@{fortran\-Vector}}
-\index{fortran\-Vector@{fortran\-Vector}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{fortran\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::fortran\-Vector\-::fortran\-Vector (
+\hypertarget{classodes_1_1fortranVector_a258c9cacdb8adf64b21a9fdcf2edf7fb}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!fortran\+Vector@{fortran\+Vector}}
+\index{fortran\+Vector@{fortran\+Vector}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{fortran\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}odes\+::fortran\+Vector\+::fortran\+Vector (
 \begin{DoxyParamCaption}
-\item[{double $\ast$}]{\-\_\-x, }
-\item[{int}]{\-\_\-size}
+\item[{double $\ast$}]{\+\_\+x, }
+\item[{int}]{\+\_\+size}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_a258c9cacdb8adf64b21a9fdcf2edf7fb}
-build a \hyperlink{classodes_1_1fortranVector}{fortran\-Vector}. 
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_a258c9cacdb8adf64b21a9fdcf2edf7fb}
+build a \hyperlink{classodes_1_1fortranVector}{fortran\+Vector}. 
 \begin{DoxyParams}{Parameters}
-{\em \-\_\-x} & a vector of double \\
+{\em \+\_\+x} & a vector of double \\
 \hline
-{\em \-\_\-size} & size of the vector \\
+{\em \+\_\+size} & size of the vector \\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
 we \char`\"{}adopt\char`\"{} a vector, to be able to use fortran indexing; this is not safe! 
 \end{DoxyNote}
-\hypertarget{classodes_1_1fortranVector_a57ebd8f0cc1aa20cbe956ff5be3180c3}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!$\sim$fortran\-Vector@{$\sim$fortran\-Vector}}
-\index{$\sim$fortran\-Vector@{$\sim$fortran\-Vector}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{$\sim$fortran\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}odes\-::fortran\-Vector\-::$\sim$fortran\-Vector (
+\hypertarget{classodes_1_1fortranVector_a57ebd8f0cc1aa20cbe956ff5be3180c3}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!````~fortran\+Vector@{$\sim$fortran\+Vector}}
+\index{````~fortran\+Vector@{$\sim$fortran\+Vector}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{$\sim$fortran\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}odes\+::fortran\+Vector\+::$\sim$fortran\+Vector (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_a57ebd8f0cc1aa20cbe956ff5be3180c3}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_a57ebd8f0cc1aa20cbe956ff5be3180c3}
 
 
 destructor 
@@ -115,48 +114,48 @@ destructor
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classodes_1_1fortranVector_a0a9a82f6efc0a9e5ea40dc240eebc800}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!get\-\_\-size@{get\-\_\-size}}
-\index{get\-\_\-size@{get\-\_\-size}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{get\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int odes\-::fortran\-Vector\-::get\-\_\-size (
+\hypertarget{classodes_1_1fortranVector_a0a9a82f6efc0a9e5ea40dc240eebc800}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!get\+\_\+size@{get\+\_\+size}}
+\index{get\+\_\+size@{get\+\_\+size}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{get\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}int odes\+::fortran\+Vector\+::get\+\_\+size (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_a0a9a82f6efc0a9e5ea40dc240eebc800}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_a0a9a82f6efc0a9e5ea40dc240eebc800}
 
 
 get the size 
 
-\hypertarget{classodes_1_1fortranVector_ada6f1dfa695ada960f621d9728e0f8e0}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!operator\&@{operator\&}}
-\index{operator\&@{operator\&}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{operator\&}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ odes\-::fortran\-Vector\-::operator\& (
+\hypertarget{classodes_1_1fortranVector_ada6f1dfa695ada960f621d9728e0f8e0}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{operator\&}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ odes\+::fortran\+Vector\+::operator\& (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_ada6f1dfa695ada960f621d9728e0f8e0}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_ada6f1dfa695ada960f621d9728e0f8e0}
 
 
 return a pointer to the vector of double. 
 
-\hypertarget{classodes_1_1fortranVector_acd2f3c622c5c901e0a2fcefc445fb74c}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!operator()@{operator()}}
-\index{operator()@{operator()}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double odes\-::fortran\-Vector\-::operator() (
+\hypertarget{classodes_1_1fortranVector_acd2f3c622c5c901e0a2fcefc445fb74c}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!operator()@{operator()}}
+\index{operator()@{operator()}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double odes\+::fortran\+Vector\+::operator() (
 \begin{DoxyParamCaption}
 \item[{int}]{i}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_acd2f3c622c5c901e0a2fcefc445fb74c}
-operator ()\-: indexation 
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_acd2f3c622c5c901e0a2fcefc445fb74c}
+operator ()\+: indexation 
 \begin{DoxyParams}{Parameters}
 {\em i} & index (between 1 and n (included)). \\
 \hline
 \end{DoxyParams}
-\hypertarget{classodes_1_1fortranVector_a9177196a3ec94139a163e7fa8b19b92b}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!operator()@{operator()}}
-\index{operator()@{operator()}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double\& odes\-::fortran\-Vector\-::operator() (
+\hypertarget{classodes_1_1fortranVector_a9177196a3ec94139a163e7fa8b19b92b}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!operator()@{operator()}}
+\index{operator()@{operator()}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double\& odes\+::fortran\+Vector\+::operator() (
 \begin{DoxyParamCaption}
 \item[{int}]{i}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_a9177196a3ec94139a163e7fa8b19b92b}
-operator ()\-: indexation 
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_a9177196a3ec94139a163e7fa8b19b92b}
+operator ()\+: indexation 
 \begin{DoxyParams}{Parameters}
 {\em i} & index (between 1 and n (included)). \\
 \hline
@@ -164,25 +163,25 @@ operator ()\-: indexation
 \begin{DoxyNote}{Note}
 returns a reference (can be used as lvalue). 
 \end{DoxyNote}
-\hypertarget{classodes_1_1fortranVector_ae522acf0f26411ce0ee14c77cddd7bfa}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!operator+=@{operator+=}}
-\index{operator+=@{operator+=}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::fortran\-Vector\-::operator+= (
+\hypertarget{classodes_1_1fortranVector_ae522acf0f26411ce0ee14c77cddd7bfa}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}void odes\+::fortran\+Vector\+::operator+= (
 \begin{DoxyParamCaption}
-\item[{{\bf fortran\-Vector} \&}]{F}
+\item[{{\bf fortran\+Vector} \&}]{F}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_ae522acf0f26411ce0ee14c77cddd7bfa}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_ae522acf0f26411ce0ee14c77cddd7bfa}
 operator += 
 \begin{DoxyParams}{Parameters}
 {\em F} & to be added. \\
 \hline
 \end{DoxyParams}
-define the ivdep pragma for different compilers.\hypertarget{classodes_1_1fortranVector_a2efd6f462acf48bc8f064659f5a0dc40}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!operator=@{operator=}}
-\index{operator=@{operator=}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::fortran\-Vector\-::operator= (
+define the ivdep pragma for different compilers.\hypertarget{classodes_1_1fortranVector_a2efd6f462acf48bc8f064659f5a0dc40}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void odes\+::fortran\+Vector\+::operator= (
 \begin{DoxyParamCaption}
-\item[{{\bf fortran\-Vector}}]{V}
+\item[{{\bf fortran\+Vector}}]{V}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_a2efd6f462acf48bc8f064659f5a0dc40}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_a2efd6f462acf48bc8f064659f5a0dc40}
 copy constructor 
 \begin{DoxyParams}{Parameters}
 {\em V} & object to copy \\
@@ -191,47 +190,47 @@ copy constructor
 \begin{DoxyNote}{Note}
 nothing is checked! not safe. 
 \end{DoxyNote}
-define the ivdep pragma for different compilers.\hypertarget{classodes_1_1fortranVector_a135030af7550fd1e76324303e1fb25e3}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!print@{print}}
-\index{print@{print}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::fortran\-Vector\-::print (
+define the ivdep pragma for different compilers.\hypertarget{classodes_1_1fortranVector_a135030af7550fd1e76324303e1fb25e3}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!print@{print}}
+\index{print@{print}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void odes\+::fortran\+Vector\+::print (
 \begin{DoxyParamCaption}
 \item[{string}]{s = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_a135030af7550fd1e76324303e1fb25e3}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_a135030af7550fd1e76324303e1fb25e3}
 
 
 print 
 
-\hypertarget{classodes_1_1fortranVector_a7f11009e278203c327c93d68e86117c9}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!setsize@{setsize}}
-\index{setsize@{setsize}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{setsize}]{\setlength{\rightskip}{0pt plus 5cm}void odes\-::fortran\-Vector\-::setsize (
+\hypertarget{classodes_1_1fortranVector_a7f11009e278203c327c93d68e86117c9}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!setsize@{setsize}}
+\index{setsize@{setsize}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{setsize}]{\setlength{\rightskip}{0pt plus 5cm}void odes\+::fortran\+Vector\+::setsize (
 \begin{DoxyParamCaption}
-\item[{unsigned int}]{\-\_\-size}
+\item[{unsigned int}]{\+\_\+size}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classodes_1_1fortranVector_a7f11009e278203c327c93d68e86117c9}
-set size \-\_\-param \-\_\-size the size. 
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classodes_1_1fortranVector_a7f11009e278203c327c93d68e86117c9}
+set size \+\_\+param \+\_\+size the size. 
 
 \subsection{Friends And Related Function Documentation}
-\hypertarget{classodes_1_1fortranVector_a073cb7f07821b815ad65e098723e8a53}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!fortran\-Array@{fortran\-Array}}
-\index{fortran\-Array@{fortran\-Array}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{fortran\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int k$>$ friend class {\bf fortran\-Array}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classodes_1_1fortranVector_a073cb7f07821b815ad65e098723e8a53}
-\hypertarget{classodes_1_1fortranVector_a6f2443030a60ee3f140d4969edbd2914}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!fortran\-Vector\-F@{fortran\-Vector\-F}}
-\index{fortran\-Vector\-F@{fortran\-Vector\-F}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{fortran\-Vector\-F}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int k$>$ friend class {\bf fortran\-Vector\-F}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classodes_1_1fortranVector_a6f2443030a60ee3f140d4969edbd2914}
+\hypertarget{classodes_1_1fortranVector_a073cb7f07821b815ad65e098723e8a53}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!fortran\+Array@{fortran\+Array}}
+\index{fortran\+Array@{fortran\+Array}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{fortran\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int k$>$ friend class {\bf fortran\+Array}\hspace{0.3cm}{\ttfamily [friend]}}\label{classodes_1_1fortranVector_a073cb7f07821b815ad65e098723e8a53}
+\hypertarget{classodes_1_1fortranVector_a6f2443030a60ee3f140d4969edbd2914}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!fortran\+Vector\+F@{fortran\+Vector\+F}}
+\index{fortran\+Vector\+F@{fortran\+Vector\+F}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{fortran\+Vector\+F}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int k$>$ friend class {\bf fortran\+Vector\+F}\hspace{0.3cm}{\ttfamily [friend]}}\label{classodes_1_1fortranVector_a6f2443030a60ee3f140d4969edbd2914}
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classodes_1_1fortranVector_ace9b5d1e721b6f82ed090350181557b6}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!deletable@{deletable}}
-\index{deletable@{deletable}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{deletable}]{\setlength{\rightskip}{0pt plus 5cm}bool odes\-::fortran\-Vector\-::deletable\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1fortranVector_ace9b5d1e721b6f82ed090350181557b6}
-\hypertarget{classodes_1_1fortranVector_a4734531bec0ccbaf24f22c12969580db}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!size@{size}}
-\index{size@{size}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int odes\-::fortran\-Vector\-::size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1fortranVector_a4734531bec0ccbaf24f22c12969580db}
-\hypertarget{classodes_1_1fortranVector_aa92f26c38f887fca314d4e031b5ebe29}{\index{odes\-::fortran\-Vector@{odes\-::fortran\-Vector}!x@{x}}
-\index{x@{x}!odes::fortranVector@{odes\-::fortran\-Vector}}
-\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ odes\-::fortran\-Vector\-::x\hspace{0.3cm}{\ttfamily [protected]}}}\label{classodes_1_1fortranVector_aa92f26c38f887fca314d4e031b5ebe29}
+\hypertarget{classodes_1_1fortranVector_ace9b5d1e721b6f82ed090350181557b6}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!deletable@{deletable}}
+\index{deletable@{deletable}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{deletable}]{\setlength{\rightskip}{0pt plus 5cm}bool odes\+::fortran\+Vector\+::deletable\hspace{0.3cm}{\ttfamily [protected]}}\label{classodes_1_1fortranVector_ace9b5d1e721b6f82ed090350181557b6}
+\hypertarget{classodes_1_1fortranVector_a4734531bec0ccbaf24f22c12969580db}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!size@{size}}
+\index{size@{size}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int odes\+::fortran\+Vector\+::size\hspace{0.3cm}{\ttfamily [protected]}}\label{classodes_1_1fortranVector_a4734531bec0ccbaf24f22c12969580db}
+\hypertarget{classodes_1_1fortranVector_aa92f26c38f887fca314d4e031b5ebe29}{}\index{odes\+::fortran\+Vector@{odes\+::fortran\+Vector}!x@{x}}
+\index{x@{x}!odes\+::fortran\+Vector@{odes\+::fortran\+Vector}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ odes\+::fortran\+Vector\+::x\hspace{0.3cm}{\ttfamily [protected]}}\label{classodes_1_1fortranVector_aa92f26c38f887fca314d4e031b5ebe29}
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-common/include/\hyperlink{fortranVector_8hpp}{fortran\-Vector.\-hpp}\end{DoxyCompactItemize}
+common/include/\hyperlink{fortranVector_8hpp}{fortran\+Vector.\+hpp}\end{DoxyCompactItemize}
