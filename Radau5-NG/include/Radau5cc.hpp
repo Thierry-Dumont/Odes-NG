@@ -249,7 +249,8 @@ namespace odes
     double estrad(fortranVectorF<n>& y0,fortranVector& y,
 		double t,bool first,bool reject)
     {
-      double HEE1=DD1/h, HEE2=DD2/h, HEE3=DD3/h;
+      double h1=1.e0/h,n1=1.0e0/n;
+      double HEE1=DD1*h1, HEE2=DD2*h1, HEE3=DD3*h1;
       F2.lc3(HEE1,Z1,HEE2,Z2,HEE3,Z3);
       CONT1.sum(F2,y0);
       solvereal(CONT1,Jac);
@@ -258,7 +259,7 @@ namespace odes
 #include "Ivdep.hpp"
       for(int i=1;i<=n;i++)
 	err+=pow(CONT1(i)/scal(i),2);
-      err=MAX(sqrt(err/n),1.e-10);
+      err=MAX(sqrt(err*n1),1.e-10);
  
       if(err>=1.0)
        if(first||reject)
@@ -270,7 +271,7 @@ namespace odes
 	   err=0.0;
 	   for(int i=1;i<=n;i++)
 	     err+=pow(CONT1(i)/scal(i),2);
-	  err=MAX(sqrt(err/n),1.e-10);
+	  err=MAX(sqrt(err*n1),1.e-10);
 	 }
 
       return err;
@@ -606,7 +607,7 @@ namespace odes
 	      x=xph;
 	      Y+=Z3;
 	      
-	      double uC2M1=1./C2M1;
+	      double uC2M1=1./C2M1,uC2=1./C2;
 #include "Ivdep.hpp"
 	      for(int i=1;i<=n;i++)
 		save1(i)=(Z2(i)-Z3(i))*uC2M1;
@@ -614,7 +615,7 @@ namespace odes
 #include "Ivdep.hpp"
 	      for(int i=1;i<=n;i++)
 		save2(i)=((Z1(i)-Z2(i))*uC1MC2-save1(i))*uC1M1;
-	      double aaa=(1./C1MC2-1./C1)/C2,bbb=1./(C1MC2*C2);
+	      double aaa=(uC1MC2-uC1M1)*uC2,bbb=uC1MC2*uC2;
 #include "Ivdep.hpp"
 	      for(int i=1;i<=n;i++)
 		save3(i)=save2(i)-aaa*Z1(i)+bbb*Z2(i); 
@@ -623,7 +624,6 @@ namespace odes
 	      caljac=false;
 	      if(last||0.1*ABS(xend-x)<=ABS(x)*uround)
 		{
-		  //h=hopt;
 		  seth(x,hopt);
 		  break;
 		}
