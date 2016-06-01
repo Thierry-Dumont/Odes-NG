@@ -1,16 +1,17 @@
-\hypertarget{Hessenberg_8hpp}{\section{common/include/\-Hessenberg.hpp File Reference}
-\label{Hessenberg_8hpp}\index{common/include/\-Hessenberg.\-hpp@{common/include/\-Hessenberg.\-hpp}}
-}
-{\ttfamily \#include \char`\"{}fortran\-Array.\-hpp\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}fortran\-Vector.\-hpp\char`\"{}}\\*
-Include dependency graph for Hessenberg.\-hpp\-:\nopagebreak
+\hypertarget{Hessenberg_8hpp}{}\section{common/include/\+Hessenberg.hpp File Reference}
+\label{Hessenberg_8hpp}\index{common/include/\+Hessenberg.\+hpp@{common/include/\+Hessenberg.\+hpp}}
+{\ttfamily \#include \char`\"{}fortran\+Array.\+hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fortran\+Vector.\+hpp\char`\"{}}\\*
+Include dependency graph for Hessenberg.\+hpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{Hessenberg_8hpp__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,59 +21,59 @@ This graph shows which files directly or indirectly include this file\-:\nopageb
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{Hessenberg_8hpp_a74e75242132eaabbc1c512488a135926}{M\-I\-N}(x, y)~((x)$<$(y)?(x)\-:(y))
+\#define \hyperlink{Hessenberg_8hpp_a74e75242132eaabbc1c512488a135926}{M\+I\+N}(x,  y)~((x)$<$(y)?(x)\+:(y))
 \item 
-\#define \hyperlink{Hessenberg_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}{A\-B\-S}(a)~(((a) $>$= (0.\-0)) ? (a) \-: (-\/a))
+\#define \hyperlink{Hessenberg_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}{A\+B\+S}(a)~(((a) $>$= (0.\+0)) ? (a) \+: (-\/a))
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$int n$>$ }\\int \hyperlink{Hessenberg_8hpp_a8b6132799c779c907ed992fb0dd68a45}{dech} (\hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&A, int ip\mbox{[}$\,$\mbox{]})
+{\footnotesize template$<$int n$>$ }\\int \hyperlink{Hessenberg_8hpp_a8b6132799c779c907ed992fb0dd68a45}{dech} (\hyperlink{classodes_1_1fortranArray}{fortran\+Array}$<$ n $>$ \&A, int ip\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em Triangularization by Gaussian elimination of a Hessenberk Matrix. \end{DoxyCompactList}\item 
-{\footnotesize template$<$int n$>$ }\\void \hyperlink{Hessenberg_8hpp_aa30d03b19dd5fefaf55643a20d6a865a}{solh} (const \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&A, const int ip\mbox{[}$\,$\mbox{]}, \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&B)
+{\footnotesize template$<$int n$>$ }\\void \hyperlink{Hessenberg_8hpp_aa30d03b19dd5fefaf55643a20d6a865a}{solh} (const \hyperlink{classodes_1_1fortranArray}{fortran\+Array}$<$ n $>$ \&A, const int ip\mbox{[}$\,$\mbox{]}, \hyperlink{classodes_1_1fortranVector}{fortran\+Vector} \&B)
 \item 
-{\footnotesize template$<$int n$>$ }\\int \hyperlink{Hessenberg_8hpp_a266d75348673cf099ded7434558a73e5}{dechc} (\hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&Ar, \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&Ai, int ip\mbox{[}$\,$\mbox{]})
+{\footnotesize template$<$int n$>$ }\\int \hyperlink{Hessenberg_8hpp_a266d75348673cf099ded7434558a73e5}{dechc} (\hyperlink{classodes_1_1fortranArray}{fortran\+Array}$<$ n $>$ \&Ar, \hyperlink{classodes_1_1fortranArray}{fortran\+Array}$<$ n $>$ \&Ai, int ip\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em Triangularization by Gaussian elimination of a complex. \end{DoxyCompactList}\item 
-{\footnotesize template$<$int n$>$ }\\void \hyperlink{Hessenberg_8hpp_a1f58477a1574c6211ac203cd2ecd8168}{solhc} (const \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&Ar, const \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&Ai, const int ip\mbox{[}$\,$\mbox{]}, \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&Br, \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&Bi)
+{\footnotesize template$<$int n$>$ }\\void \hyperlink{Hessenberg_8hpp_a1f58477a1574c6211ac203cd2ecd8168}{solhc} (const \hyperlink{classodes_1_1fortranArray}{fortran\+Array}$<$ n $>$ \&Ar, const \hyperlink{classodes_1_1fortranArray}{fortran\+Array}$<$ n $>$ \&Ai, const int ip\mbox{[}$\,$\mbox{]}, \hyperlink{classodes_1_1fortranVector}{fortran\+Vector} \&Br, \hyperlink{classodes_1_1fortranVector}{fortran\+Vector} \&Bi)
 \item 
-{\footnotesize template$<$int n$>$ }\\void \hyperlink{Hessenberg_8hpp_ab7cdcf7b806d715c7190aed95554c14d}{householder} (const \hyperlink{classodes_1_1fortranArray}{fortran\-Array}$<$ n $>$ \&A, const double tau\mbox{[}$\,$\mbox{]}, const \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&X, \hyperlink{classodes_1_1fortranVector}{fortran\-Vector} \&Y, bool direct)
+{\footnotesize template$<$int n$>$ }\\void \hyperlink{Hessenberg_8hpp_ab7cdcf7b806d715c7190aed95554c14d}{householder} (const \hyperlink{classodes_1_1fortranArray}{fortran\+Array}$<$ n $>$ \&A, const double tau\mbox{[}$\,$\mbox{]}, const \hyperlink{classodes_1_1fortranVector}{fortran\+Vector} \&X, \hyperlink{classodes_1_1fortranVector}{fortran\+Vector} \&Y, bool direct)
 \end{DoxyCompactItemize}
 
 
 \subsection{Macro Definition Documentation}
-\hypertarget{Hessenberg_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}{\index{Hessenberg.\-hpp@{Hessenberg.\-hpp}!A\-B\-S@{A\-B\-S}}
-\index{A\-B\-S@{A\-B\-S}!Hessenberg.hpp@{Hessenberg.\-hpp}}
-\subsubsection[{A\-B\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-B\-S(
+\hypertarget{Hessenberg_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}{}\index{Hessenberg.\+hpp@{Hessenberg.\+hpp}!A\+B\+S@{A\+B\+S}}
+\index{A\+B\+S@{A\+B\+S}!Hessenberg.\+hpp@{Hessenberg.\+hpp}}
+\subsubsection[{A\+B\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+B\+S(
 \begin{DoxyParamCaption}
 \item[{}]{a}
 \end{DoxyParamCaption}
-)~(((a) $>$= (0.\-0)) ? (a) \-: (-\/a))}}\label{Hessenberg_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}
-\hypertarget{Hessenberg_8hpp_a74e75242132eaabbc1c512488a135926}{\index{Hessenberg.\-hpp@{Hessenberg.\-hpp}!M\-I\-N@{M\-I\-N}}
-\index{M\-I\-N@{M\-I\-N}!Hessenberg.hpp@{Hessenberg.\-hpp}}
-\subsubsection[{M\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-I\-N(
+)~(((a) $>$= (0.\+0)) ? (a) \+: (-\/a))}\label{Hessenberg_8hpp_ae2f08dc603ae93c402abd918ba4e23e1}
+\hypertarget{Hessenberg_8hpp_a74e75242132eaabbc1c512488a135926}{}\index{Hessenberg.\+hpp@{Hessenberg.\+hpp}!M\+I\+N@{M\+I\+N}}
+\index{M\+I\+N@{M\+I\+N}!Hessenberg.\+hpp@{Hessenberg.\+hpp}}
+\subsubsection[{M\+I\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+N(
 \begin{DoxyParamCaption}
 \item[{}]{x, }
 \item[{}]{y}
 \end{DoxyParamCaption}
-)~((x)$<$(y)?(x)\-:(y))}}\label{Hessenberg_8hpp_a74e75242132eaabbc1c512488a135926}
+)~((x)$<$(y)?(x)\+:(y))}\label{Hessenberg_8hpp_a74e75242132eaabbc1c512488a135926}
 
 
 \subsection{Function Documentation}
-\hypertarget{Hessenberg_8hpp_a8b6132799c779c907ed992fb0dd68a45}{\index{Hessenberg.\-hpp@{Hessenberg.\-hpp}!dech@{dech}}
-\index{dech@{dech}!Hessenberg.hpp@{Hessenberg.\-hpp}}
+\hypertarget{Hessenberg_8hpp_a8b6132799c779c907ed992fb0dd68a45}{}\index{Hessenberg.\+hpp@{Hessenberg.\+hpp}!dech@{dech}}
+\index{dech@{dech}!Hessenberg.\+hpp@{Hessenberg.\+hpp}}
 \subsubsection[{dech}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ int dech (
 \begin{DoxyParamCaption}
-\item[{{\bf fortran\-Array}$<$ n $>$ \&}]{A, }
+\item[{{\bf fortran\+Array}$<$ n $>$ \&}]{A, }
 \item[{int}]{ip\mbox{[}$\,$\mbox{]}}
 \end{DoxyParamCaption}
-)}}\label{Hessenberg_8hpp_a8b6132799c779c907ed992fb0dd68a45}
+)}\label{Hessenberg_8hpp_a8b6132799c779c907ed992fb0dd68a45}
 
 
 Triangularization by Gaussian elimination of a Hessenberk Matrix. 
 
-All what is necessary to compute with Hessenberg matrices (but not the reduction of a full matrix to Hessenberg form (see \hyperlink{Matrices_8hpp}{Matrices.\-hpp}). Triangularization by Gaussian elimination of a Hessenberk Matrix with lower Bandwidth ==1. 
+All what is necessary to compute with Hessenberg matrices (but not the reduction of a full matrix to Hessenberg form (see \hyperlink{Matrices_8hpp}{Matrices.\+hpp}). Triangularization by Gaussian elimination of a Hessenberk Matrix with lower Bandwidth ==1. 
 \begin{DoxyParams}{Parameters}
-{\em A} & the matrix (I\-N/\-O\-U\-T). \\
+{\em A} & the matrix (I\+N/\+O\+U\+T). \\
 \hline
 {\em ip} & index of pivots. \\
 \hline
@@ -80,17 +81,17 @@ All what is necessary to compute with Hessenberg matrices (but not the reduction
 \begin{DoxyNote}{Note}
 return 0 ii everything went well, otherwise the rank wher the matrix A was found singular. 
 
-this is a C++ transcription of D\-E\-C\-H (in H.\&W. fortran code decsol). 
+this is a C++ transcription of D\+E\+C\+H (in H.\&W. fortran code decsol). 
 \end{DoxyNote}
-\hypertarget{Hessenberg_8hpp_a266d75348673cf099ded7434558a73e5}{\index{Hessenberg.\-hpp@{Hessenberg.\-hpp}!dechc@{dechc}}
-\index{dechc@{dechc}!Hessenberg.hpp@{Hessenberg.\-hpp}}
+\hypertarget{Hessenberg_8hpp_a266d75348673cf099ded7434558a73e5}{}\index{Hessenberg.\+hpp@{Hessenberg.\+hpp}!dechc@{dechc}}
+\index{dechc@{dechc}!Hessenberg.\+hpp@{Hessenberg.\+hpp}}
 \subsubsection[{dechc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ int dechc (
 \begin{DoxyParamCaption}
-\item[{{\bf fortran\-Array}$<$ n $>$ \&}]{Ar, }
-\item[{{\bf fortran\-Array}$<$ n $>$ \&}]{Ai, }
+\item[{{\bf fortran\+Array}$<$ n $>$ \&}]{Ar, }
+\item[{{\bf fortran\+Array}$<$ n $>$ \&}]{Ai, }
 \item[{int}]{ip\mbox{[}$\,$\mbox{]}}
 \end{DoxyParamCaption}
-)}}\label{Hessenberg_8hpp_a266d75348673cf099ded7434558a73e5}
+)}\label{Hessenberg_8hpp_a266d75348673cf099ded7434558a73e5}
 
 
 Triangularization by Gaussian elimination of a complex. 
@@ -100,9 +101,9 @@ pure transciption of H. \& W. fortran code.
 \end{DoxyNote}
 
 \begin{DoxyParams}{Parameters}
-{\em Ar} & the matrix,real part (I\-N/\-O\-U\-T). \\
+{\em Ar} & the matrix,real part (I\+N/\+O\+U\+T). \\
 \hline
-{\em Ai} & the matrix,imaginary part (I\-N/\-O\-U\-T). \\
+{\em Ai} & the matrix,imaginary part (I\+N/\+O\+U\+T). \\
 \hline
 {\em ip} & index of pivots. \\
 \hline
@@ -110,28 +111,28 @@ pure transciption of H. \& W. fortran code.
 \begin{DoxyNote}{Note}
 return 0 ii everything went well, otherwise the rank wher the matrix A was found singular. 
 
-this is a C++ transcription of D\-E\-C\-H\-C (in H.\&W. fortran code decsol. 
+this is a C++ transcription of D\+E\+C\+H\+C (in H.\&W. fortran code decsol. 
 \end{DoxyNote}
-\hypertarget{Hessenberg_8hpp_ab7cdcf7b806d715c7190aed95554c14d}{\index{Hessenberg.\-hpp@{Hessenberg.\-hpp}!householder@{householder}}
-\index{householder@{householder}!Hessenberg.hpp@{Hessenberg.\-hpp}}
+\hypertarget{Hessenberg_8hpp_ab7cdcf7b806d715c7190aed95554c14d}{}\index{Hessenberg.\+hpp@{Hessenberg.\+hpp}!householder@{householder}}
+\index{householder@{householder}!Hessenberg.\+hpp@{Hessenberg.\+hpp}}
 \subsubsection[{householder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ void householder (
 \begin{DoxyParamCaption}
-\item[{const {\bf fortran\-Array}$<$ n $>$ \&}]{A, }
+\item[{const {\bf fortran\+Array}$<$ n $>$ \&}]{A, }
 \item[{const double}]{tau\mbox{[}$\,$\mbox{]}, }
-\item[{const {\bf fortran\-Vector} \&}]{X, }
-\item[{{\bf fortran\-Vector} \&}]{Y, }
+\item[{const {\bf fortran\+Vector} \&}]{X, }
+\item[{{\bf fortran\+Vector} \&}]{Y, }
 \item[{bool}]{direct}
 \end{DoxyParamCaption}
-)}}\label{Hessenberg_8hpp_ab7cdcf7b806d715c7190aed95554c14d}
-Given a Matrix A, in Hessenberg form, as computed by D\-G\-E\-H\-R\-D (lapack) with ilo=1 and ihi=n, and a vector X, compute\-: Y=(Product of Householder reflexions) X.
+)}\label{Hessenberg_8hpp_ab7cdcf7b806d715c7190aed95554c14d}
+Given a Matrix A, in Hessenberg form, as computed by D\+G\+E\+H\+R\+D (lapack) with ilo=1 and ihi=n, and a vector X, compute\+: Y=(Product of Householder reflexions) X.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & matrix computed in D\-G\-E\-H\-R\-D (with ilo=1 and ihi=n). \\
+{\em A} & matrix computed in D\+G\+E\+H\+R\+D (with ilo=1 and ihi=n). \\
 \hline
-{\em tau} & parameters computed in D\-G\-E\-H\-R\-D. \\
+{\em tau} & parameters computed in D\+G\+E\+H\+R\+D. \\
 \hline
-{\em X} & (I\-N). \\
+{\em X} & (I\+N). \\
 \hline
 {\em Y} & result. \\
 \hline
@@ -139,57 +140,57 @@ Given a Matrix A, in Hessenberg form, as computed by D\-G\-E\-H\-R\-D (lapack) w
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-that we use dgehrd (in \hyperlink{Matrices_8hpp}{Matrices.\-hpp}) to reduce the Jacobian matrix to Hessenberg form. We must adapt the computation to the output of this routine. 
+that we use dgehrd (in \hyperlink{Matrices_8hpp}{Matrices.\+hpp}) to reduce the Jacobian matrix to Hessenberg form. We must adapt the computation to the output of this routine. 
 \end{DoxyNote}
-\hypertarget{Hessenberg_8hpp_aa30d03b19dd5fefaf55643a20d6a865a}{\index{Hessenberg.\-hpp@{Hessenberg.\-hpp}!solh@{solh}}
-\index{solh@{solh}!Hessenberg.hpp@{Hessenberg.\-hpp}}
+\hypertarget{Hessenberg_8hpp_aa30d03b19dd5fefaf55643a20d6a865a}{}\index{Hessenberg.\+hpp@{Hessenberg.\+hpp}!solh@{solh}}
+\index{solh@{solh}!Hessenberg.\+hpp@{Hessenberg.\+hpp}}
 \subsubsection[{solh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ void solh (
 \begin{DoxyParamCaption}
-\item[{const {\bf fortran\-Array}$<$ n $>$ \&}]{A, }
+\item[{const {\bf fortran\+Array}$<$ n $>$ \&}]{A, }
 \item[{const int}]{ip\mbox{[}$\,$\mbox{]}, }
-\item[{{\bf fortran\-Vector} \&}]{B}
+\item[{{\bf fortran\+Vector} \&}]{B}
 \end{DoxyParamCaption}
-)}}\label{Hessenberg_8hpp_aa30d03b19dd5fefaf55643a20d6a865a}
+)}\label{Hessenberg_8hpp_aa30d03b19dd5fefaf55643a20d6a865a}
 Solution of a linear system where the matrix A was computed in dech.
 
 
 \begin{DoxyParams}{Parameters}
-{\em A} & the matrix computed in dech (I\-N) \\
+{\em A} & the matrix computed in dech (I\+N) \\
 \hline
-{\em ip} & the pivots obtained in dech. (I\-N) \\
+{\em ip} & the pivots obtained in dech. (I\+N) \\
 \hline
-{\em B} & the R\-H\-S on entry, the solution at the end (I\-N/\-O\-U\-T). \\
+{\em B} & the R\+H\+S on entry, the solution at the end (I\+N/\+O\+U\+T). \\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-this is a transcription of the S\-O\-L\-H routine in H.\& W. decsol. 
+this is a transcription of the S\+O\+L\+H routine in H.\& W. decsol. 
 \end{DoxyNote}
-\hypertarget{Hessenberg_8hpp_a1f58477a1574c6211ac203cd2ecd8168}{\index{Hessenberg.\-hpp@{Hessenberg.\-hpp}!solhc@{solhc}}
-\index{solhc@{solhc}!Hessenberg.hpp@{Hessenberg.\-hpp}}
+\hypertarget{Hessenberg_8hpp_a1f58477a1574c6211ac203cd2ecd8168}{}\index{Hessenberg.\+hpp@{Hessenberg.\+hpp}!solhc@{solhc}}
+\index{solhc@{solhc}!Hessenberg.\+hpp@{Hessenberg.\+hpp}}
 \subsubsection[{solhc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ void solhc (
 \begin{DoxyParamCaption}
-\item[{const {\bf fortran\-Array}$<$ n $>$ \&}]{Ar, }
-\item[{const {\bf fortran\-Array}$<$ n $>$ \&}]{Ai, }
+\item[{const {\bf fortran\+Array}$<$ n $>$ \&}]{Ar, }
+\item[{const {\bf fortran\+Array}$<$ n $>$ \&}]{Ai, }
 \item[{const int}]{ip\mbox{[}$\,$\mbox{]}, }
-\item[{{\bf fortran\-Vector} \&}]{Br, }
-\item[{{\bf fortran\-Vector} \&}]{Bi}
+\item[{{\bf fortran\+Vector} \&}]{Br, }
+\item[{{\bf fortran\+Vector} \&}]{Bi}
 \end{DoxyParamCaption}
-)}}\label{Hessenberg_8hpp_a1f58477a1574c6211ac203cd2ecd8168}
+)}\label{Hessenberg_8hpp_a1f58477a1574c6211ac203cd2ecd8168}
 Solution of a linear system where the matrix A was computed in dech.
 
 
 \begin{DoxyParams}{Parameters}
-{\em Ar} & matrix computed in dechc (I\-N) \\
+{\em Ar} & matrix computed in dechc (I\+N) \\
 \hline
-{\em Ai} & matrix computed in dechc (I\-N) \\
+{\em Ai} & matrix computed in dechc (I\+N) \\
 \hline
-{\em ip} & the pivots obtained in dech. (I\-N) \\
+{\em ip} & the pivots obtained in dech. (I\+N) \\
 \hline
-{\em Br} & the R\-H\-S on entry (real part) the solution at the end (I\-N/\-O\-U\-T). \\
+{\em Br} & the R\+H\+S on entry (real part) the solution at the end (I\+N/\+O\+U\+T). \\
 \hline
-{\em Bi} & the R\-H\-S on entry (imag. part) the solution at the end (I\-N/\-O\-U\-T). \\
+{\em Bi} & the R\+H\+S on entry (imag. part) the solution at the end (I\+N/\+O\+U\+T). \\
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-this is a C++ transcription of S\-O\-L\-H\-C (in H.\&W. fortran code decsol) 
+this is a C++ transcription of S\+O\+L\+H\+C (in H.\&W. fortran code decsol) 
 \end{DoxyNote}

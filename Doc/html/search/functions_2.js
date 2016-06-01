@@ -7,6 +7,7 @@ var searchData=
   ['destroydoublearray',['destroyDoubleArray',['../AllocateDestroyVector_8hpp.html#a31c643df2bd077ef02f98ddcb812abd4',1,'AllocateDestroyVector.hpp']]],
   ['dgbtrf_5f',['dgbtrf_',['../namespaceodes.html#a84c781070989698cdb58c37a5074a91c',1,'odes']]],
   ['dgbtrs_5f',['dgbtrs_',['../namespaceodes.html#a8ef9d46ddb5b78777217d2162ac4470f',1,'odes']]],
+  ['dgeev_5f',['dgeev_',['../namespaceodes.html#aff86990f12f528839d2ff3b40ed98b1a',1,'odes']]],
   ['dgehrd_5f',['dgehrd_',['../namespaceodes.html#a8e1a54591e1e244caf5bdda4a798210d',1,'odes']]],
   ['dgetrf_5f',['dgetrf_',['../namespaceodes.html#af0b7a0203a69c4fa322079ad196cdcae',1,'odes']]],
   ['dgetrs_5f',['dgetrs_',['../namespaceodes.html#acb38308231063d618ca8f4bfcf8f3912',1,'odes']]],
