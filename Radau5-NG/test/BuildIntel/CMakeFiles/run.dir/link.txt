@@ -1,1 +1,0 @@
-/usr/local/intel/composer_xe_2013_sp1.1.106/composer_xe_2013_sp1.1.106/bin/intel64/icpc     -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias  -opt-subscript-in-range  -fPIC CMakeFiles/run.dir/main.cc.o  -o run -rdynamic -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lmkl_lapack95_lp64 -lmkl_blas95_lp64 -lrt 

@@ -8,6 +8,7 @@ toto*
 *.bbl
 *.blg
 Build*
+Build
 *~
 .ipynb_checkpoints
 Out*

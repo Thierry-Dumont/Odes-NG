@@ -42,8 +42,8 @@ public:
   // n:  the number of variables.
   static const int n=3*nd; 
   // the Jacobian is full:
-  static const int nsub=n-1;
-  static const int nsup=n-1;
+  static const int nsub=2;
+  static const int nsup=2;
   // do we use Hessenberg reduction? 
   static const bool Hessenberg=true;
   // compute Jacobian numerically ?
@@ -106,9 +106,9 @@ public:
   inline void Jacobian(double t,fortranVector y,const fortranVector Fy,
 		        Matrix& Jac)
   {
-    for(int j=1;j<=n;j++)
-      for(int i=1;i<=n;i++)
-	Jac(i,j)=0.0;
+    // for(int j=1;j<=n;j++)
+    //   for(int i=1;i<=n;i++)
+    // 	Jac(i,j)=0.0;
     //linear part.
     double eh2=eps[0];
     Jac(1,1)=-2*eh2; Jac(1,2)=2*eh2;
