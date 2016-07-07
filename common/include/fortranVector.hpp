@@ -1,6 +1,6 @@
 #ifndef fortranVector__h
 #define fortranVector__h
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "fortranArray.hpp"
 #include "AllocateDestroyVector.hpp"
 #include <algorithm>
@@ -58,7 +58,7 @@ public:
   {
 #ifdef DEBUG
     if(x==0&&deletable) 
-      throw GenericException("~fortranVector: not allocated");
+      throw OdesException("~fortranVector: not allocated");
 #endif
     //if(deletable) delete[] x;
     if(deletable) destroyDoubleArray(x);
@@ -69,7 +69,7 @@ public:
   {
 #ifdef DEBUG
     if(i<1||i>size)
-      throw GenericException("fortranVector(), bad i",i,size);
+      throw OdesException("fortranVector(), bad i",i,size);
 #endif
     return *(x+i-1);
   }
@@ -80,7 +80,7 @@ public:
   {
 #ifdef DEBUG
     if(i<1||i>size)
-      throw GenericException("fortranVector(&), bad i",i,size);
+      throw OdesException("fortranVector(&), bad i",i,size);
 #endif
     return *(x+i-1);
   }  
@@ -198,7 +198,7 @@ public:
     {
 #ifdef DEBUG
       if(n!=X.get_size() ||n!=Y.get_size())
-	throw GenericException("fortranVectorF: setsum2, sizes differ",
+	throw OdesException("fortranVectorF: setsum2, sizes differ",
 			       n,X.get_size(),Y.get_size());
 #endif
       double *xx=&X,*yy=&Y;

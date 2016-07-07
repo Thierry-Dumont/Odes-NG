@@ -19,10 +19,10 @@ public:
 
   typedef Matrixtype<n,nsub,nsup>::Matrix Matrix;
   // constants:
-  static const double M=1.e+06;
-  static const double C=1.13e+03;
-  static const double A=7.89e-10;
-  static const double B=1.1e+07;
+  const double M=1.e+06;
+  const double C=1.13e+03;
+  const double A=7.89e-10;
+  const double B=1.1e+07;
   double MC;// g++ does not like MC as static const double MC=M*C.
   //! constructor
   E5()
@@ -52,7 +52,7 @@ public:
 		       Matrix& Jac)
   {
     // fake Jacobian.
-    throw GenericException("Analytical Jacobian not coded");
+    throw OdesException("Analytical Jacobian not coded");
   }
 };
 #endif

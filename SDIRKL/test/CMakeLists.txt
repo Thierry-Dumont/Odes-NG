@@ -28,7 +28,7 @@ ${CMAKE_SOURCE_DIR}/Lapl/.
 else ()
   set (USING_GNU TRUE)
   set(CMAKE_CXX_COMPILER "g++-4.9")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3 -g -std=c++11 -Wall -DALIGN_BLOCKED -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3 -g -std=c++14 -Wall -DALIGN_BLOCKED -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
 include_directories(
 ${CMAKE_SOURCE_DIR}/../include
 ${CMAKE_SOURCE_DIR}/../../common/include

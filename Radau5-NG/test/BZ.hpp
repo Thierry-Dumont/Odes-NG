@@ -1,6 +1,7 @@
 #ifndef BZ__h
 #define BZ__h
 #include "MatrixType.hpp"
+#include "Matrices.hpp"
 #include "MacrosForCompilers.hpp"
 /////////////////////////////////////////////////////////////////////////
 /// BZ system of 3 reaction diffusion equations in dmension 1.
@@ -44,14 +45,14 @@ public:
   // the Jacobian is full:
   static const int nsub=2;
   static const int nsup=2;
+  static const bool MatrixFull=true;
   // do we use Hessenberg reduction? 
-  static const bool Hessenberg=true;
+  static const bool Hessenberg=false;
   // compute Jacobian numerically ?
   static const bool ComputeJacobianNumerically=false;
 
 
   typedef Matrixtype<n,nsub,nsup>::Matrix Matrix;
- 
 
   //! contructor
   BZ()
@@ -103,7 +104,7 @@ public:
       res2[i]=eh2*(y2[i-1]-2*y2[i]+y2[i+1])+f3(y[i],y1[i],y2[i]);
     res2[nd-1]=2*eh2*(y2[nd-2]-y2[nd-1])+f3(y[nd-1],y1[nd-1],y2[nd-1]);
   }
-  inline void Jacobian(double t,fortranVector y,const fortranVector Fy,
+  inline void Jacobian(double& t,fortranVector& y,fortranVectorF<300>& Fy,
 		        Matrix& Jac)
   {
     // for(int j=1;j<=n;j++)

@@ -80,7 +80,7 @@ public:
   }
   inline void DF_t(double t,const fortranVector y,fortranVector& DFt)
   {
-    throw GenericException("Oregonator:  DF_t called");
+    throw OdesException("Oregonator:  DF_t called");
   }
 };
 #endif

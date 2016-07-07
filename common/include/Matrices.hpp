@@ -7,7 +7,7 @@
 #include "fortranVector.hpp"
 #include "AllocateDestroyVector.hpp"
 #include "Hessenberg.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 //#include <cblas.h>
 #define MAX(x,y) ((x)>(y)?(x):(y))
 #define MIN(x,y) ((x)<(y)?(x):(y))
@@ -51,7 +51,7 @@ namespace odes
       int nn=n,info;
       dgetrf_(&nn,&nn,&E1,&nn,&(ipivr[0]),&info);
       if(info!=0)
-	throw GenericException("odes::Matrices::decomr dgetrf,info=",info);
+	throw OdesException("odes::Matrices::decomr dgetrf,info=",info);
     }
     //! build and factorize "complex" matrix
     //! \param alpha : we add alpha*I to the real part of the Jacobian.
@@ -73,7 +73,7 @@ namespace odes
       int nn=n,info;
       zgetrf_(&nn,&nn,&E2R,&nn,&(ipivc[0]),&info);
       if(info!=0)
-	throw GenericException("odes::Matrices::decomc zgetrf,info=",info);
+	throw OdesException("odes::Matrices::decomc zgetrf,info=",info);
       
     }
     //! solve "real" part.
@@ -85,7 +85,7 @@ namespace odes
       char notrans='n';
       dgetrs_(&notrans,&nn,&un,&E1,&nn,&(ipivr[0]),&Z,&nn,&ier);
       if(ier!=0)
-	throw GenericException("odes::Matrices::solvereal, dgetrs,ier=",ier);
+	throw OdesException("odes::Matrices::solvereal, dgetrs,ier=",ier);
     }
     //! solve "imaginary" part.
     //! \param Zr IN/OUT: RHS, real part (IN); result,real part (OUT).  
@@ -103,7 +103,7 @@ namespace odes
       int nn=n,un=1,ier; char notrans='n';
       zgetrs_(&notrans,&nn,&un,&E2R,&nn,&(ipivc[0]),&Z2N,&nn,&ier);
       if(ier!=0)
-    	throw GenericException("odes::Matrices::solvecomplex, zgetrs,ier=",ier);
+    	throw OdesException("odes::Matrices::solvecomplex, zgetrs,ier=",ier);
 #include "Ivdep.hpp"
       for(int i=1;i<=n;i++)
     	{
@@ -140,7 +140,7 @@ namespace odes
     Matrices()
     {
       if(nsub>=n && nsup>=n)
-	throw GenericException("Matrices (banded): incorrect nsub or nsup", 
+	throw OdesException("Matrices (banded): incorrect nsub or nsup", 
 			       "nsub=",nsub,"nsup=",nsup,"n=",n);
     }
     //! see full matrix case.
@@ -151,7 +151,7 @@ namespace odes
       int nn=n,knsub=nsub,knsup=nsup,lldab=ldab,info;
       dgbtrf_(&nn,&nn,&knsub,&knsup,&E1,&lldab,&(ipivr[0]),&info);
       if(info!=0)
-	throw GenericException("odes::Matrices::decomr dgbtrf,info=",info);
+	throw OdesException("odes::Matrices::decomr dgbtrf,info=",info);
     }
     //! see full matrix case.
     inline void decomc(double alpha,double beta,const MatrixReal& Jac)
@@ -169,7 +169,7 @@ namespace odes
       int nn=n,knsub=nsub,knsup=nsup,lldab=ldab,info;
       zgbtrf_(&nn,&nn,&knsub,&knsup,&E2R,&lldab,&(ipivc[0]),&info);
       if(info!=0)
-	throw GenericException("odes::Matrices::decomc zgetrf,info=",info);
+	throw OdesException("odes::Matrices::decomc zgetrf,info=",info);
     }
     //! see full matrix case.
     inline void solvereal(fortranVectorF<n>& Z,const MatrixReal& Jac)
@@ -179,7 +179,7 @@ namespace odes
       dgbtrs_(&notrans,&nn,&knsub,&knsup,&un,&E1,&lldab,&(ipivr[0]),
 	      &Z,&nn,&ier);
       if(ier!=0)
-	throw GenericException("odes::Matrices::slvrad, dgetrs,ier=",ier);
+	throw OdesException("odes::Matrices::slvrad, dgetrs,ier=",ier);
     }
     //! see full matrix case.
     inline void solvecomplex(fortranVectorF<n>& Zr,fortranVectorF<n>& Zi,
@@ -195,7 +195,7 @@ namespace odes
       zgbtrs_(&notrans,&nn,&knsub,&knsup,&un,&E2R,&lldab,&(ipivc[0]),
 	      &Z2N,&nn,&ier);
       if(ier!=0)
-	throw GenericException("odes::Matrices::slvrad, zgetrs,ier=",ier);
+	throw OdesException("odes::Matrices::slvrad, zgetrs,ier=",ier);
 #include "Ivdep.hpp"
       for(int i=1;i<=n;i++)
 	{
@@ -256,7 +256,7 @@ namespace odes
 	    }
 	  dgehrd_(&nn,&ilo,&ihi,&Jac,&lda,tau,work,&k,&info);
 	  if(info!=0)
-	    throw GenericException("odes::Matrices::Matrices, decomr: info=",
+	    throw OdesException("odes::Matrices::Matrices, decomr: info=",
 				   info);
 	  calhes=false;
 	}
@@ -264,7 +264,7 @@ namespace odes
       E1.addDiag(fac1);
       int info=dech<n>(E1,ipr);
       if(info!=0)
-	throw GenericException("odes::Matrices::Matrices, decomr (dech): ",
+	throw OdesException("odes::Matrices::Matrices, decomr (dech): ",
 			       info);
   
     }
@@ -320,7 +320,7 @@ namespace odes
     //! constructor.
     Matrices()
     {
-      throw GenericException("Matrices cannot use Hessenberg option with",
+      throw OdesException("Matrices cannot use Hessenberg option with",
   			     "banded Matrices");
     }
     inline void decomr(double fac1,const MatrixReal& Jac){}

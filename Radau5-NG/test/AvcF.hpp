@@ -561,7 +561,7 @@ public:
 		        Matrix& Jac)
   {
     // fake Jacobian.
-    throw GenericException("Analytical Jacobian not coded");
+    throw OdesException("Analytical Jacobian not coded");
   }
 };
 #endif

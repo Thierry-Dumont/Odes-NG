@@ -1,7 +1,7 @@
 #ifndef fortranArray__h
 #define fortranArray__h
 #include "fortranVector.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include <string>
 #include <iostream>
 #include "AllocateDestroyVector.hpp"
@@ -44,7 +44,7 @@ public:
   {
 #ifdef DEBUG
     if(i<1||i>n||j<1||j>n)
-      throw GenericException("fortranArray(), bad i or j",i,j);
+      throw OdesException("fortranArray(), bad i or j",i,j);
 #endif
     return *(x+(j-1)*n+i-1);
   }
@@ -57,7 +57,7 @@ public:
   {
 #ifdef DEBUG
     if(i<1||i>n||j<1||j>n)
-      throw GenericException("fortranArray(&), bad i or j",i,j);
+      throw OdesException("fortranArray(&), bad i or j",i,j);
 #endif
     return *(x+(j-1)*n+i-1);
   }  

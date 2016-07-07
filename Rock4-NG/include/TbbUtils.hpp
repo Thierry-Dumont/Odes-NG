@@ -2,7 +2,7 @@
 #define TbbUtils__h
 #include "tbb/tbb.h"
 #include "MacrosForCompilers.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 using namespace tbb;
 #define ABS(a) (((a) >= (0.0)) ? (a) : (-a))
 #define MIN(x,y) ((x)<(y)?(x):(y))
@@ -94,7 +94,7 @@ namespace odes{
       switch(nvec)
 	{
 	case 1:
-	  throw GenericException("DoLinearComb, nvec=",nvec);
+	  throw OdesException("DoLinearComb, nvec=",nvec);
 	case 2:
 	  {
 	    double * Restrict x1=v[1]; a1=coeffs[1];
@@ -155,7 +155,7 @@ namespace odes{
 	  }
 	  break;	
 	default:
-	  throw GenericException("DoLinearComb, nvec=",nvec);
+	  throw OdesException("DoLinearComb, nvec=",nvec);
 	}
 
     }

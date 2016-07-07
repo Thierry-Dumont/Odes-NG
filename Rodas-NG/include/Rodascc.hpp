@@ -1,6 +1,6 @@
 #ifndef RODASCC__H
 #define RODASCC__H
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "fortranArray.hpp"
 #include "fortranVector.hpp"
 #include "protos_lapack.hpp"
@@ -147,7 +147,7 @@ namespace odes
 	  D34= 0.1599253148779520e+02;D35=-0.1882352941176471e+01;
 	  break;
 	default:
-	    throw GenericException("Rodascc, meth=",meth);
+	    throw OdesException("Rodascc, meth=",meth);
 	  
 	}
 
@@ -335,7 +335,7 @@ namespace odes
       while(!last)
 	{
 	  if (0.1e0*ABS(h)<=ABS(x)*uround)
-	    throw GenericException("Rodascc():, h too small",h);
+	    throw OdesException("Rodascc():, h too small",h);
 	  if(ABS(h)<10.*uround) //h=1.e-6;
 	    seth(x,1.e-6);
 	  seth(x,MIN(ABS(h),hmaxn)*posneg);
@@ -467,7 +467,7 @@ namespace odes
 	    }
 	  while(reject);
 	  if(nstep>nmax)
-	    throw GenericException("Rodas(): nstep too large:",nstep);
+	    throw OdesException("Rodas(): nstep too large:",nstep);
 	  if(onlyOneStep) break;
 	}
       

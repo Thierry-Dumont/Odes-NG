@@ -1,7 +1,7 @@
 #ifndef fortranRectangularComplexArray__h
 #define fortranRectangularComplexArray__h
 #include "fortranVector.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "AllocateDestroyVector.hpp"
 #include <string>
 #include <iostream>
@@ -52,10 +52,10 @@ namespace odes{
     {
 #ifdef DEBUG
       if(i<1||i>n||j<i-kl||j>i+ku||j<1||j>n)
-	throw GenericException("fortranRectangularComplexArray(), bad i or j:"
+	throw OdesException("fortranRectangularComplexArray(), bad i or j:"
 			       ,i,j,"kl=",kl,"ku=",ku);
       if(j*l1+i+cc<0||2*(j*l1+i+cc)>=size-1)
-	throw GenericException("fortranRectangularComplexArray()",
+	throw OdesException("fortranRectangularComplexArray()",
 			       "indexing problem",i,j,2*(j*l1+i+cc),size);
 #endif
     
@@ -70,10 +70,10 @@ namespace odes{
     {
 #ifdef DEBUG
     if(i<1||i>n||j<i-kl||j>i+ku||j<1||j>n)
-      throw GenericException("fortranRectangularComplexArray(), bad i or j:"
+      throw OdesException("fortranRectangularComplexArray(), bad i or j:"
 			     ,i,j,"kl=",kl,"ku=",ku);
     if(j*l1+i+cc<0||2*(j*l1+i+cc)>=size-1)
-       throw GenericException("fortranRectangularComplexArray()",
+       throw OdesException("fortranRectangularComplexArray()",
 			      "indexing problem",i,j,j*l1+i+cc,size);
 #endif
        return x[2*(j*l1+i+cc)];
@@ -86,10 +86,10 @@ namespace odes{
     {
 #ifdef DEBUG
     if(i<1||i>n||j<i-kl||j>i+ku||j<1||j>n)
-      throw GenericException("fortranRectangularComplexArray(), bad i or j:"
+      throw OdesException("fortranRectangularComplexArray(), bad i or j:"
 			     ,i,j,"kl=",kl,"ku=",ku);
     if(j*l1+i+cc<0||2*(j*l1+i+cc)>=size-1)
-       throw GenericException("fortranRectangularComplexArray()",
+       throw OdesException("fortranRectangularComplexArray()",
 			      "indexing problem",i,j,j*l1+i+cc);
 #endif
        return x[2*(j*l1+i+cc)+1];

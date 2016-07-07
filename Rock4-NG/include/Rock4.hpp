@@ -5,7 +5,7 @@
 #include "MacrosForCompilers.hpp"
 #include "AllocateDestroyVector.hpp"
 #include "history.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include <cmath>
 #include <string>
 #include <cstdlib>
@@ -213,7 +213,7 @@ namespace odes {
 	    h=ABS(tend-t);
 
 	  if (h<10.0e0*uround)
-	    throw GenericException("Rock4: step too small h=",h,"limit:",
+	    throw OdesException("Rock4: step too small h=",h,"limit:",
 				     10.0e0*uround);
 	  if(nrho==0)
 	    eigmax=F.rho();

@@ -1,6 +1,6 @@
 #ifndef Oregonator__h
 #define Oregonator__h
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "MatrixType.hpp"
 #include "MacrosForCompilers.hpp"
 ///////////////////////////////////////////////////////////////////

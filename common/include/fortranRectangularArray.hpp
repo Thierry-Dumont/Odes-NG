@@ -1,7 +1,7 @@
 #ifndef fortranRectangularArray__h
 #define fortranRectangularArray__h
 #include "fortranVector.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "AllocateDestroyVector.hpp"
 #include <string>
 #include <iostream>
@@ -54,10 +54,10 @@ public:
   {
 #ifdef DEBUG
     if(i<1||i>n||j<i-kl||j>i+ku||j<1||j>n)
-      throw GenericException("fortranRectangularArray(), bad i or j:",i,j,
+      throw OdesException("fortranRectangularArray(), bad i or j:",i,j,
 			     "kl=",kl,"ku=",ku);
     if(j*l1+i+cc<0||j*l1+i+cc>=size)
-       throw GenericException("fortranRectangularArray(),indexing problem",
+       throw OdesException("fortranRectangularArray(),indexing problem",
 			      i,j,j*l1+i+cc);
 #endif
     return *(x+j*l1+i+cc);
@@ -71,10 +71,10 @@ public:
   {
 #ifdef DEBUG
     if(i<1||i>n||j<i-kl||j>i+ku||j<1||j>n)
-      throw GenericException("fortranRectangularArray(), bad i or j:",i,j,
+      throw OdesException("fortranRectangularArray(), bad i or j:",i,j,
 			     "kl=",kl,"ku=",ku);
     if(j*l1+i+cc<0||j*l1+i+cc>=size)
-       throw GenericException("fortranRectangularArray(),indexing problem",
+       throw OdesException("fortranRectangularArray(),indexing problem",
 			      i,j,j*l1+i+cc);
 #endif
     return *(x+j*l1+i+cc);

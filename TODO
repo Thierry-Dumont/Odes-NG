@@ -5,17 +5,17 @@
 
 -Tous: OpenMP?
 
--assertion statique (compat.hpp)
+// -assertion statique (compat.hpp)
 
 -allocation sur bornes.
 
--c++11/c++14
+-c++11/c++14 <-compilation ok avec 14.
 
 -smart pointers ?
 
 -tableaux de taille fixe?
 
--GenericException -> odesexception dans le name space
+// -GenericException -> odesexception dans le name space
 
 -numeric limits ?
 

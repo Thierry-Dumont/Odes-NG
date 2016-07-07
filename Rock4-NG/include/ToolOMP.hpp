@@ -1,7 +1,7 @@
 #ifndef ToolOMP__h
 #define ToolOMP__h
 #include "Rock4Coeffs.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #define ABS(a) (((a) >= (0.0)) ? (a) : (-a))
 #define P2(x)  ((x*x))
 #include <iostream>

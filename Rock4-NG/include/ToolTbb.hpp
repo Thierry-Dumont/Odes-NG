@@ -1,7 +1,7 @@
 #ifndef ToolTbb__h
 #define ToolTbb__h
 #include "Rock4Coeffs.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "MacrosForCompilers.hpp"
 #include "TbbUtils.hpp"
 #define ABS(a) (((a) >= (0.0)) ? (a) : (-a))

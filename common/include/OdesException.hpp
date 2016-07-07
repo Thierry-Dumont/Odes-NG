@@ -1,5 +1,5 @@
-#ifndef GenericException_h
-#define GenericException_h
+#ifndef OdesException_h
+#define OdesException_h
 #include <iostream>
 using namespace std;
 /////////////////////////////////////////////////////////////////////////////
@@ -10,54 +10,55 @@ using namespace std;
 ///
 //// \brief an all-purpose exception class.
 ////////////////////////////////////////////////////////////////////////////
-class GenericException{
+namespace odes{
+class OdesException{
 public:
   //! O argument
-  GenericException()
+  OdesException()
   {}
   //! 1 argument
-  template<class A> GenericException(A x) 
+  template<class A> OdesException(A x) 
     {
       cout<<endl<<endl<<x<<endl<<endl;
     }
   //! 2 arguments
-  template<class A,class B> GenericException(A x,B y) 
+  template<class A,class B> OdesException(A x,B y) 
     {
       cout<<endl<<endl<<x<<" "<<y<<endl<<endl;
     }
   //! 3 arguments
-  template<class A,class B,class C> GenericException(A x,B y,C z) 
+  template<class A,class B,class C> OdesException(A x,B y,C z) 
     {
       cout<<endl<<endl<<x<<" "<<y<<" "<<z<<endl<<endl;
     }
   //! 4 arguments
-  template<class A,class B,class C,class D> GenericException(A x,B y,C z,D a)
+  template<class A,class B,class C,class D> OdesException(A x,B y,C z,D a)
     {
       cout<<endl<<endl<<x<<" "<<y<<" "<<z<<" "<<a<<endl<<endl;
     }
   //! 5 arguments
   template<class A,class B,class C,class D,class E> 
-    GenericException(A x,B y,C z,D a,E b)
+    OdesException(A x,B y,C z,D a,E b)
     {
       cout<<endl<<endl<<x<<" "<<y<<" "<<z<<" "<<a<<" "<<b<<endl<<endl;
     }
   //! 6 arguments
   template<class A,class B,class C,class D,class E,class F> 
-    GenericException(A x,B y,C z,D a,E b,F c)
+    OdesException(A x,B y,C z,D a,E b,F c)
     {
       cout<<endl<<endl<<x<<" "<<y<<" "<<z<<" "<<a<<" "<<b<<
 	" "<<c<<endl<<endl;
     }
   //! 7 arguments:
   template<class A,class B,class C,class D,class E,class F,class G> 
-  GenericException(A x,B y,C z,D a,E b,F c,G d)
+  OdesException(A x,B y,C z,D a,E b,F c,G d)
     {
       cout<<endl<<endl<<x<<" "<<y<<" "<<z<<" "<<a<<" "<<b<<
 	" "<<c<<" "<<d<<endl<<endl;
     }
   //! 8 arguments:
   template<class A,class B,class C,class D,class E,class F,class G,class H> 
-  GenericException(A x,B y,C z,D a,E b,F c,G d,H e)
+  OdesException(A x,B y,C z,D a,E b,F c,G d,H e)
     {
       cout<<endl<<endl<<x<<" "<<y<<" "<<z<<" "<<a<<" "<<b<<
 	" "<<c<<" "<<d<<" "<<e<<endl<<endl;
@@ -65,7 +66,7 @@ public:
   //! 9 arguments:
   template<class A,class B,class C,class D,class E,class F,class G,class H,
 	   class I> 
-  GenericException(A x,B y,C z,D a,E b,F c,G d,H e,I f)
+  OdesException(A x,B y,C z,D a,E b,F c,G d,H e,I f)
     {
       cout<<endl<<endl<<x<<" "<<y<<" "<<z<<" "<<a<<" "<<b<<
 	" "<<c<<" "<<d<<" "<<e<<" "<<f<<endl<<endl;
@@ -73,10 +74,11 @@ public:
   //! 10 arguments:
   template<class A,class B,class C,class D,class E,class F,class G,class H,
 	   class I,class J> 
-  GenericException(A x,B y,C z,D a,E b,F c,G d,H e,I f,J g)
+  OdesException(A x,B y,C z,D a,E b,F c,G d,H e,I f,J g)
     {
       cout<<endl<<endl<<x<<" "<<y<<" "<<z<<" "<<a<<" "<<b<<
 	" "<<c<<" "<<d<<" "<<e<<" "<<f<<" "<<g<<endl<<endl;
     }
+};
 };
 #endif

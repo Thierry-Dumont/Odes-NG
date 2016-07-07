@@ -24,7 +24,7 @@ elseif(${CMAKE_CXX_COMPILER} MATCHES "clang.*$")
 else ()
   set (USING_GNU TRUE)
   set(CMAKE_CXX_COMPILER "g++")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}   -g -O3 -std=c++11 -Wall  -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}   -g -O3 -std=c++14 -Wall  -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
 include_directories(
 ${CMAKE_SOURCE_DIR}/.
 $ENV{HOME}/odes/trunk/common/include

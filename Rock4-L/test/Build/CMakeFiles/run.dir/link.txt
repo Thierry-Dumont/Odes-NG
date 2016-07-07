@@ -1,1 +1,0 @@
-g++      -g -O3 -std=c++11 -Wall  -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math    CMakeFiles/run.dir/main.cpp.o  -o run -rdynamic -llapack 

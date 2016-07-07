@@ -1,6 +1,6 @@
 #ifndef rock4__h
 #define rock4__h
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "Rock4Coeffs.hpp"
 #include <iostream>
 #include <utility>
@@ -193,7 +193,7 @@ public:
   void operator()(Fct& F,Vect& y, double tend,double _h,double _t=0.0)
   {
     if(!initialized)
-      throw GenericException("rock4:: operator(): not initialized");
+      throw OdesException("rock4:: operator(): not initialized");
     kpass=0; funccall=0;
     firstStepWhasRejected=false;
     rejected=0;
@@ -233,7 +233,7 @@ public:
 		last=true;
 	      }
 	    if (h<10.0*uround)
-	      throw GenericException("rock4: step too small h=",h,"limit:",
+	      throw OdesException("rock4: step too small h=",h,"limit:",
 				     10.0*uround);
 
 	    eigmax=F.rho(y.whichIsUsed());

@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Rock4Coeffs.hpp"
 #include "MacrosForCompilers.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #define ABS(a) (((a) >= (0.0)) ? (a) : (-a))
 using namespace std;
 namespace odes {

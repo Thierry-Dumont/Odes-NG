@@ -1,1 +1,0 @@
-clang++    -O3 -Wall  -DCLANG    CMakeFiles/run.dir/main.cpp.o CMakeFiles/run.dir/Lapl/SuperLu.cpp.o CMakeFiles/run.dir/Lapl/csr.cpp.o  -o run -rdynamic -lsuperlu 

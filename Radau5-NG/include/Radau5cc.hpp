@@ -1,6 +1,6 @@
 #ifndef RADAU5CC__H
 #define RADAU5CC__H
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "fortranArray.hpp"
 #include "fortranVector.hpp"
 #include "protos_lapack.hpp"
@@ -8,6 +8,7 @@
 #include "compat.hpp"
 #include <cmath>
 #include <utility>
+//#include <type_traits>
 #ifdef LOGRADAU5
 #include "logger.hpp"
 #endif
@@ -26,9 +27,9 @@ namespace odes
   ////////////////////////////////////////////////////////////////////
   template<class Fonct> class Radau5cc: 
     private Matrices<(Fonct::n-Fonct::nsub)==1&&(Fonct::n-Fonct::nsup)==1,
-		     Fonct::Hessenberg,Fonct::n,Fonct::nsub,Fonct::nsup>,
-    compat<(Fonct::n-Fonct::nsub)==1&&(Fonct::n-Fonct::nsup)==1,
-	   Fonct::Hessenberg>
+      Fonct::Hessenberg,Fonct::n,Fonct::nsub,Fonct::nsup>,
+      compat<(Fonct::n-Fonct::nsub)==1&&(Fonct::n-Fonct::nsup)==1,
+      Fonct::Hessenberg>
   
   {
     static const int n=Fonct::n;
@@ -413,7 +414,7 @@ namespace odes
     inline void setFnewt(double _fnewt)
     {
       if(_fnewt<=uround/tolst)
-	throw GenericException("Radau5cc:setFnewt, _fnewt<=uround/tolst",
+	throw OdesException("Radau5cc:setFnewt, _fnewt<=uround/tolst",
 			       "_fnewt,uround,tolst=",_fnewt,uround,tolst);
       fnewt=_fnewt;
     }
@@ -494,7 +495,7 @@ namespace odes
       for(;;)
 	{
 	  if(nstep>nmax)
-	    throw GenericException("Radau5cc() nstep=",nstep,"too large, nmax=",
+	    throw OdesException("Radau5cc() nstep=",nstep,"too large, nmax=",
 				   nmax);
 
 	  do{//20 in Hairer.

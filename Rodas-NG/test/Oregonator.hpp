@@ -1,6 +1,6 @@
 #ifndef Oregonator__h
 #define Oregonator__h
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "MatrixType.hpp"
 ///////////////////////////////////////////////////////////////////
 /// Classical Oregonator problem. See Hairer & Wanner, t. 2.
@@ -56,7 +56,7 @@ public:
   }
   inline void DF_t(double t,const fortranVector y,fortranVector& DFt)
   {
-    throw GenericException("Oregonator:  DF_t called");
+    throw OdesException("Oregonator:  DF_t called");
   }
 };
 #endif

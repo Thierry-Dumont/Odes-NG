@@ -1,7 +1,7 @@
 #ifndef fortranComplexArray__h
 #define fortranComplexArray__h
 #include "fortranVector.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include <string>
 #include <iostream>
 #include "AllocateDestroyVector.hpp"
