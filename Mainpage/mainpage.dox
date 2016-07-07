@@ -24,7 +24,7 @@ See documentation of individual programs.
 
 \section General General considerations about implementation.
 
-All is written in C++, and some program must be used with recent compilers (c++-11 norm). Everuthing has been tested with g++, icc and clang compilers.
+All is written in C++, and some program must be used with recent compilers (c++-11 or c++-14 norm). Everything has been tested with g++, icc and clang compilers.
 
 This is a library of templates, no intermediate binary is created.
 
@@ -41,6 +41,8 @@ For all these programs, a class must be created wich describes the program to be
 Each  <b> test</b> directory contains a main program, all the necessary classes, and a cmake file. To compile and test the program:
 
 > Adapt CMake file if necessary. 
+
+> Create a directory, say: <b>Build</b>
 
 > <b>cd Build</b>  directory
 
