@@ -1,2 +1,30 @@
 -extrapolation dans SymplecticRK incomplete.
 -documentation a revoir.
+
+-Rock: OpenMP? 
+
+-Tous: OpenMP?
+
+-assertion statique (compat.hpp)
+
+-allocation sur bornes.
+
+-c++11/c++14
+
+-smart pointers ?
+
+-tableaux de taille fixe?
+
+-GenericException -> odesexception dans le name space
+
+-numeric limits ?
+
+==============
+Version(s) parallèles(s) de Radau5.
+==============
+
+-programmation comme héritage : mauvais.
+
+============
+Programmes de test.
+============
