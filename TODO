@@ -9,7 +9,7 @@
 
 -allocation sur bornes.
 
--c++11/c++14 <-compilation ok avec 14.
+// -c++11/c++14 <-compilation ok avec 14.
 
 -smart pointers ?
 
