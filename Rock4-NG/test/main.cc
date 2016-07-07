@@ -40,9 +40,9 @@ int main()
     y[i]=1.;
   for(int i=size/2;i<size;i++) y[i]=0.;
   //   cout<<y[i]<<" "; cout<<endl;
-
-  R(y,0.,0.001,0.001);
-  cout<<"ok"<<endl;
+  double t0=0.0, tend= 1., dt=tend;
+  R(y,t0,tend,dt);
+  cout<<"ok, last time step: "<<R.LastAcceptedTimeStep()<<endl;
  
   ofstream f; f.open("result");
   for(int i=0;i<size;i++)
@@ -57,7 +57,7 @@ int main()
   cout<<"Size        : "<<R.nbUnkn()<<endl;
 #ifdef Rock4_history
   R.get_history().print();
-  cout<<endl<<R.get_history().lastSuccess(1)<<endl;
+  cout<<endl<<R.get_history().lastSuccess(0)<<endl;
 #endif
   return 1;
 }

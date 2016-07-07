@@ -28,6 +28,7 @@ namespace odes {
     const int size;
     double atol,rtol;//tolerances for time steps adaptation.
     double uround,told;
+    double hlast;
     double *fn,*k1,*k2,*k3,*k4,*temp,*g0,*Vtemp;
     int mp[3],mdeg,funccal,nrej,nsteps,nacc,nstagesmax;
     Rock4Coeffs Coeffs;
@@ -176,6 +177,8 @@ namespace odes {
     inline int NbAccepted() const {return nacc;}
     //! number of rejected steps.
     inline int NbRejected() const {return nrej;}
+    //! last accepted time step.
+    inline double LastAcceptedTimeStep() const {return hlast;}
     //! number of unknowns.
     inline int nbUnkn() const {return size;}
 #ifdef Rock4_history
@@ -251,6 +254,7 @@ namespace odes {
 	      //accepted step.
 	      ++nacc; facmax=2.0e0;
 	      t+=h;
+	      hlast=h;
 	      if (reject)
 		{
 		  hnew=min(hnew,h);
@@ -288,8 +292,8 @@ namespace odes {
 	      nrho= nrho!=0? 0:1;
 	    }
 	}
-     
     }
+   
   };
 };
 #endif
