@@ -36,10 +36,8 @@ int main()
   //
   double* y=allocDoubleArray(size);
   for(int i=0;i<size/2;i++)
-    //y[i]=1.+(double) (i+1)/(double) size;
-    y[i]=1.;
-  for(int i=size/2;i<size;i++) y[i]=0.;
-  //   cout<<y[i]<<" "; cout<<endl;
+    y[i]=1.+(double) (i+1)/(double) size;
+
   double t0=0.0, tend= 1., dt=tend;
   R(y,t0,tend,dt);
   cout<<"ok, last time step: "<<R.LastAcceptedTimeStep()<<endl;
