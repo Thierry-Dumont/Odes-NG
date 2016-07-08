@@ -28,3 +28,7 @@ Version(s) parallèles(s) de Radau5.
 ============
 Programmes de test.
 ============
+
+-icc
+
+-clang
