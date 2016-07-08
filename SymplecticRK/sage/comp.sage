@@ -1,7 +1,8 @@
+
 #-----------------------------------------------------------------------------
 # define s (number of stages) and RR (precision) here.
 #-----------------------------------------------------------------------------
-s=8 #number of steps of the formula. Adapt to your needs...
+s=16 #number of steps of the formula. Adapt to your needs...
 RR=RealField(53) #classical "double" of C++.
 #RR=RealField(112) #this seems the precision (112 bits) of "long double" in g++
 #-----------------------------------------------------------------------------

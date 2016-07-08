@@ -1,21 +1,12 @@
 -extrapolation dans SymplecticRK incomplete.
 -documentation a revoir.
 
--Rock: OpenMP? 
-
--Tous: OpenMP?
 
 -Rock4-L le main n'est pas bon!
-
--allocation sur bornes.
-
-
 
 -smart pointers ?
 
 -tableaux de taille fixe?
-
-// -GenericException -> odesexception dans le name space
 
 -numeric limits ?
 
@@ -29,8 +20,10 @@ Version(s) parallèles(s) de Radau5.
 Programmes de test.
 ============
 
--icc: propager partout.
 
 -clang
 
 -lapack/blas parallèles.
+-parallélisation
+
+-améliorer les CMakeLists.txt
