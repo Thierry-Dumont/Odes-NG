@@ -10,13 +10,8 @@ enable_language(CXX)
 #  cmake ..
 #
 if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
-set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3  -g -xavx -fargument-noalias  -ansi-alias  -opt-subscript-in-range  -vec-report=0")
-include_directories(
-${CMAKE_SOURCE_DIR}/.
-$ENV{HOME}/odes/trunk/common/include
-$ENV{HOME}/odes/trunk/Radau5-NG/include
-$ENV{HOME}/odes/trunk/Rock4-L/include
-)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias -qopt-report-phase=vec -qopt-report-file=stdout -qopt-subscript-in-range -std=c++14 ")
+
 elseif(${CMAKE_CXX_COMPILER} MATCHES "clang.*$")
   set (USING_GNU TRUE)
   set(CMAKE_CXX_COMPILER "clang++")
@@ -25,15 +20,14 @@ else ()
   set (USING_GNU TRUE)
   set(CMAKE_CXX_COMPILER "g++")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}   -g -O3 -std=c++14 -Wall  -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
-include_directories(
-${CMAKE_SOURCE_DIR}/.
-$ENV{HOME}/odes/trunk/common/include
-$ENV{HOME}/odes/trunk/Radau5-NG/include
-$ENV{HOME}/odes/trunk/Rock4-L/include
-)
+
 
 endif ()
 
+include_directories(
+${CMAKE_SOURCE_DIR}/../include
+${CMAKE_SOURCE_DIR}/../../common/include
+)
 add_executable(
   run
   ../main.cpp

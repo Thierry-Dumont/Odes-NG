@@ -5,7 +5,11 @@
 //////////////////////////////////////////////////////////////////////
 #include "MacrosForCompilers.hpp"
 #ifdef ALIGN_BLOCKED
+#ifdef ICC
+#include <malloc.h>
+#else 
 #include "mm_malloc.h"
+#endif
 // Blocked alignment allocation.
 double *allocDoubleArray(int size)
 {return (double *) _mm_malloc(size*sizeof(double),BLOCK_FACTOR);}

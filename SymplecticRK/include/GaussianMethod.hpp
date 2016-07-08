@@ -3,6 +3,7 @@
 #include <cmath>
 #include <iostream>
 #include "GenericException.hpp"
+#include "icoeffs.hpp"
 //#define DEBUG
 namespace SymplectikRK{
   ///////////////////////////////////////////////////////////////////////////
@@ -38,6 +39,7 @@ namespace SymplectikRK{
     //initialize tables of coefficients.
     void init()
     {
+      icoeffs<2,double> ic; ic.init(a,b);
       switch(nsteps)
 	{
 	case 1:

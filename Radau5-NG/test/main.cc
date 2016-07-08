@@ -11,11 +11,11 @@ using namespace std;
 int main()
 {
   //---- define here the problem you want to treat:
-  //typedef Oregonator Fonc;
+  typedef Oregonator Fonc;
   //typedef KPP Fonc;
   //typedef AvcF Fonc;
   //typedef E5 Fonc;
-  typedef BZ Fonc;
+  //typedef BZ Fonc;
   //---------------------------------------------- 
   cout.precision(17);
 
