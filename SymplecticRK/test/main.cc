@@ -25,6 +25,7 @@ int main()
   cout.precision(53);
   //cout<<"h?"; cin>>h;
   ofstream fileout("result");
+  cout<<"n= "<<n<<endl;
   h=1.0; //in days
   double years=200;
   for(int it=0;it<years*365.25*h;it++)
