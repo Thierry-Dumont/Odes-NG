@@ -8,7 +8,7 @@ enable_language(CXX)
 #  cmake ..
 #
 if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
-  set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}   -DICC  -DALIGN_BLOCKED -restrict -O3  -g -std=c++0x -xavx -ipo -fargument-noalias  -ansi-alias -Wall -vec-report0")
+  set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias -qopt-report-phase=vec -qopt-report-file=stdout -qopt-subscript-in-range -std=c++14 ")
 include_directories(
 ${CMAKE_SOURCE_DIR}/../include
 ${CMAKE_SOURCE_DIR}/../../common/include
@@ -42,7 +42,7 @@ if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
     tbb
     tbbmalloc_proxy
     tbbmalloc
-    proc
+    #proc
     rt
     )
 else ()

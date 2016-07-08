@@ -10,14 +10,13 @@ enable_language(CXX)
 #  cmake ..
 #
 if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
- set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias  -qopt-subscript-in-range -std=c++14 ")
+  set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias -qopt-report-phase=vec -qopt-report-file=stdout -qopt-subscript-in-range -std=c++14 ")
 elseif(${CMAKE_CXX_COMPILER} MATCHES "clang++.*$")
   set (USING_GNU TRUE)
   set(CMAKE_CXX_COMPILER "clang++")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -Wall  -DCLANG")
 else ()
   set (USING_GNU TRUE)
-  #set(CMAKE_CXX_COMPILER "g++-4.9")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3 -g -Wall -std=c++11  -DALIGN_BLOCKED -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
 #-fopt-info-vec-missed  -fopt-info-vec -ffast-math
 endif ()

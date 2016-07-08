@@ -5,11 +5,11 @@
 
 -Tous: OpenMP?
 
-// -assertion statique (compat.hpp)
+-Rock4-L le main n'est pas bon!
 
 -allocation sur bornes.
 
-// -c++11/c++14 <-compilation ok avec 14.
+
 
 -smart pointers ?
 
@@ -29,6 +29,8 @@ Version(s) parallèles(s) de Radau5.
 Programmes de test.
 ============
 
--icc
+-icc: propager partout.
 
 -clang
+
+-lapack/blas parallèles.
