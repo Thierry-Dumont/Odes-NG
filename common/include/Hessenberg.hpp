@@ -21,6 +21,7 @@ using namespace odes;
 //!        matrix A was found singular.
 //! \note this is a C++ transcription of DECH (in H.&W. fortran code 
 //!       decsol).
+namespace odes{
 template<int n> int dech(fortranArray<n>& A,int ip[])
 {
   int ret=0;
@@ -275,4 +276,5 @@ template<int n> void householder(const fortranArray<n>& A,const double tau[],
 	Y(i)-=s*A(i,j);
     }
 }
+};
 #endif

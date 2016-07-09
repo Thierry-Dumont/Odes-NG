@@ -3,6 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 /// Define different methods to allocate arrays.
 //////////////////////////////////////////////////////////////////////
+namespace odes{
 #include "MacrosForCompilers.hpp"
 #ifdef ALIGN_BLOCKED
 #ifdef ICC
@@ -21,4 +22,6 @@ double *allocDoubleArray(int size){return new double[size];}
 void destroyDoubleArray(double *x){delete[] x;}
 #define ASSUME_ALIGNED(lvalueptr)
 #endif
+};
 #endif
+
