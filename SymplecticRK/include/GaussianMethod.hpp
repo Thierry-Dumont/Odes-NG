@@ -11,14 +11,13 @@ namespace SymplectikRK{
   /// \brief  Build coefficients for symplectic gaussian RK.
   ///////////////////////////////////////////////////////////////////////////
   using namespace odes;
-  template<int nsteps,class Double> class GaussianMethod
+  template<int nsteps,class Double> struct GaussianMethod
   {
     // default template, never instanciated.
   };
   // Classical "double" precision. 
-  template<int nsteps> class GaussianMethod<nsteps,double>
+  template<int nsteps> struct GaussianMethod<nsteps,double>
   {
-  protected:
     double a[nsteps*nsteps];
     double b[nsteps];//,d[nsteps];
   
@@ -51,7 +50,6 @@ namespace SymplectikRK{
 #endif
       return a[i*nsteps+j];
     }
-  public:
     //! verify theorem of Cooper (see Hairer & Co)
     void verify()
     {
@@ -64,9 +62,8 @@ namespace SymplectikRK{
     }
   };
   // long double of g++ on X86/64.
-  template<int nsteps> class GaussianMethod<nsteps,long double>
+  template<int nsteps> struct GaussianMethod<nsteps,long double>
   {
-  protected:
     typedef long double Double;
     Double a[nsteps*nsteps];
     Double b[nsteps],d[nsteps];

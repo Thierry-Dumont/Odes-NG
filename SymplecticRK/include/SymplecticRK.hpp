@@ -15,26 +15,25 @@ namespace SymplectikRK{
 ///
 /// \brief Symplectic RK method.
 //////////////////////////////////////////////////////////////////////////
-template<class Fonct,int nsteps,class Double=double> class SymplecticRK: 
-    private GaussianMethod<nsteps,Double>, private Extrap<nsteps,Double>
+template<class Fonct,int nsteps,class Double=double> class SymplecticRK
 {
   static const int n=Fonct::n;
   Double v[n],Y[n*nsteps],Y1[n*nsteps],w[n],delta[n],e[n],a[n];
   int iter,itermax;
   Double Old_h;
   Fonct f;
-
-  using GaussianMethod<nsteps,Double>::b;
-  using GaussianMethod<nsteps,Double>::A;
-  using GaussianMethod<nsteps,Double>::change_h;
+  Extrap<nsteps,Double> Ext;
+  GaussianMethod<nsteps,Double> G;
+  // using GaussianMethod<nsteps,Double>::b;
+  // using GaussianMethod<nsteps,Double>::A;
+  // using GaussianMethod<nsteps,Double>::change_h;
 
   Ftest<Double>  Test;
 public:
-  using GaussianMethod<nsteps,Double>::verify;
+  //using GaussianMethod<nsteps,Double>::verify;
   //! constructor.
   // \param _itermax max. iteration allowed.
-  SymplecticRK(int _itermax):GaussianMethod<nsteps,Double>(),
-			     Extrap<nsteps,Double>()
+  SymplecticRK(int _itermax)
   { 
     itermax=_itermax;
 #include "Ivdep.hpp"
@@ -60,7 +59,7 @@ public:
     if(Old_h!=h)
       {
 	Old_h=h;
-	change_h(h);
+	G.change_h(h);
       }
     // this vectorizes with gcc
     for(int j=0;j<n;j++)
@@ -95,7 +94,7 @@ public:
 	    for(int l=0;l<n;l++)
 #include "Ivdep.hpp"
 	      for(int j=0;j<nsteps;j++)
-		v[l]+=A(i,j)*Y1[j*n+l];
+		v[l]+=G.A(i,j)*Y1[j*n+l];
 
 	    Double *Yin=Y+i*n;
 #include "Ivdep.hpp"
@@ -122,7 +121,7 @@ public:
 	
 	  for(int i=0;i<nsteps;i++)
 	    {
-	      double bi=b[i];
+	      double bi=G.b[i];
 #include "Ivdep.hpp"
 	      for(int j=0;j<n;j++)
 		delta[j]+=bi*Y1[i*n+j];

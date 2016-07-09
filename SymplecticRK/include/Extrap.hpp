@@ -6,15 +6,14 @@
 /// (see "Geometric ...." 2nd edition, pages 326-327).
 ///////////////////////////////////////////////////////////////////////////////
 
-template<int nsteps,class Double> class Extrap
+template<int nsteps,class Double> struct Extrap
 {
   // default template, never instanciated.
 };
 // Classical "double" precision:
-template<int nsteps> class Extrap<nsteps,double>
+template<int nsteps> struct Extrap<nsteps,double>
 {
   static const int n2=nsteps*nsteps;
-protected:
   typedef double Double; 
   Double q[n2];
   //! constructor
@@ -81,7 +80,7 @@ private:
 
 
 // long double of g++ on X86/64
-template<int nsteps> class Extrap<nsteps,long double>
+template<int nsteps> struct Extrap<nsteps,long double>
 {
   static const int n2=nsteps*nsteps;
 protected:
