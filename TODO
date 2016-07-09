@@ -27,3 +27,5 @@ Programmes de test.
 -parallélisation
 
 -améliorer les CMakeLists.txt
+
+-vectoriser correctement Outer dans SymplecticRK
