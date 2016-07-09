@@ -1,17 +1,23 @@
 
 #-----------------------------------------------------------------------------
-# define s (number of stages) and RR (precision) here.
+# Compute the coefficients of the Gauss symplectic formula.
 #-----------------------------------------------------------------------------
-#s=2 #number of steps of the formula. Adapt to your needs...
-#RR=RealField(53) #classical "double" of C++.
-RR=QQbar
-Rpivot=RealField(1024)
-#Rout=RDF
-#RR=RealField(112) #this seems the precision (112 bits) of "long double" in g++
+# We fist compute the roots of the polynomial d/dx(x^s*(x-1)^s) in QQbar
+# (field of algebraic numbers). So roots are computed exactly.
+# We convert these roots in the field Rpivot, which is supposed to be
+# an extremly precise field of real floatting points numbers.
+# At the end the fnal result is converted in the field Rout which can be RDF
+# (corresponding to C language "double" or RealField(112) which corresponds
+# to C "long double"
+# Then we generate the specialized templates used by the C++ code.
+#
+# If we use directly RDF or RealField(112) a Rpivot, the precision of the
+# Cooper test is restrained, which possibly indicates a loss of precision.
+#
+
 #-----------------------------------------------------------------------------
-# DO NOT CHANGE ANYTHING BELOW THIS LINE.
-#-----------------------------------------------------------------------------
-R.<x> = RR[] #the polynomial ring.
+
+R.<x> = QQbar[] #the polynomial ring.
 
 def Cooper(s,A,B):
 #
@@ -21,7 +27,7 @@ def Cooper(s,A,B):
     return sum([abs(B[i][0]*A[i,j]+B[j][0]*A[j,i]-B[i][0]*B[j][0]) \
                 for i in range(s) for j in range(s)])
  
-def lcoeffs(s):
+def lcoeffs(s,Rout,Rpivot):
     p=x^s*(x-1)^s
     l=p.derivative(x,s) #the polynomial.
     theRoots=[Rpivot((l.roots()[i][0]).real()) for i in range(0,s)]
@@ -38,10 +44,11 @@ def lcoeffs(s):
             A[i,j]=Lj(theRoots[i])-Lj(0)
         B[j]=Lj(1)-Lj(0)
     print "Cooper,Rpivot = ",Cooper(s,A,B)
-    A.change_ring(Rout)
-    B.change_ring(Rout)
-    #print "computed",s,len(theRoots)
-    print "Cooper,Rout = ",Cooper(s,A,B)
+    AA=A.change_ring(Rout)
+    BB=B.change_ring(Rout)
+    #print AA.parent(),BB.parent()
+    #
+    print "Cooper,Rout = ",Cooper(s,AA,BB)
     la="initializer_list<double> la={"
     for i in range(0,s):
         for j in range(0,s):
@@ -59,11 +66,15 @@ def lcoeffs(s):
     d['lb']=lb
     return d
 ######################################################################
+# "main" program starts here.
+######################################################################
+
 rngs=[(RDF,"double"),(RealField(112),"long double")]
       
 cc="copy(la.begin(),la.end(),a);\ncopy(lb.begin(),lb.end(),b);\n}\n"
 
 fout=open("generated_coeffs.hpp","w")
+Rpivot=RealField(1024)
 for rng in rngs:
     Rout=rng[0]
     nm=rng[1]
@@ -71,7 +82,7 @@ for rng in rngs:
         a="template<> void icoeffs<"+str(i)+","+nm+">("+nm+"* a," \
             +nm+"* b)\n{\n"
         print "\n",nm,i
-        ll=lcoeffs(i)
+        ll=lcoeffs(i,Rout,Rpivot)
         a+=ll["la"]+"\n"+ll["lb"]+"\n"
         #
         fout.write(a)
