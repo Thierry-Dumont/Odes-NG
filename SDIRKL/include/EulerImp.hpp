@@ -4,6 +4,7 @@
 ////////////////////////////////////////////////////////////////////
 /// Euler implicite.
 ///////////////////////////////////////////////////////////////////
+namespace odes{
 struct EulerImp
 {
   static const int nstage=1; // number of stages.
@@ -18,5 +19,6 @@ struct EulerImp
     S[0]=1.;
     name="EulerImplicit";
   }
+};
 };
 #endif

@@ -6,7 +6,8 @@
 #include "GenericException.hpp"
 #include <cmath>
 #include <cstdlib>
-using namespace std; 
+using namespace std;
+namespace odes{
 ///////////////////////////////////////////////////////////////////////////
 /// A replacement for A. Abdulle rock4.f code for Rock4 method.
 ///  *We treat here linear and affine case* ie RHS must be:
@@ -376,5 +377,6 @@ namespace odes {
 	}
     }
   };
+};
 };
 #endif

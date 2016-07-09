@@ -4,6 +4,7 @@
 //////////////////////////////////////////////////////////////////////
 ///  Crouzeix method. cf. Hairer-Wanner page 100, figure 6.18
 //////////////////////////////////////////////////////////////////////
+namespace odes{
 struct RKMethod2
 {
   static const int nstage=3; //!< number of stages.
@@ -31,5 +32,6 @@ struct RKMethod2
     name="CrouzeixRaviart-A";
 
   }
+};
 };
 #endif

@@ -4,6 +4,7 @@
 /////////////////////////////////////////////////////////////////////////////
 /// Method page 100, table 6-5 in Hairer-Wanner T2, 2nd edition.
 /////////////////////////////////////////////////////////////////////////////
+namespace odes{
 struct RKMethod1
 {
   static const int nstage=5; //!< number of stages.
@@ -43,5 +44,6 @@ struct RKMethod1
 
     name="SDIRK-4L";
   }
+};
 };
 #endif

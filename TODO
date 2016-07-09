@@ -30,3 +30,5 @@ Programmes de test.
 -améliorer les CMakeLists.txt
 
 -vectoriser correctement Outer dans SymplecticRK
+
+   -rock4.hpp dans Rock4-NG ???

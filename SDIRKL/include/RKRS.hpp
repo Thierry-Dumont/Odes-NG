@@ -4,6 +4,7 @@
 /////////////////////////////////////////////////////////////////////////////
 /// Méthode of Ropp and Shadid JCP 203 (2005) 449-466.
 /////////////////////////////////////////////////////////////////////////////
+namespace odes{
 struct RKRS
 {
   static const int nstage=2; //!< number of stages.
@@ -26,5 +27,6 @@ struct RKRS
     name="RoppShadid";
     
   }
+};
 };
 #endif
