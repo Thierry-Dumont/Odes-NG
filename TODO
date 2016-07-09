@@ -20,7 +20,6 @@ Version(s) parallèles(s) de Radau5.
 Programmes de test.
 ============
 
-- tout est -il dans le namespace odes ?
 
 -clang
 
