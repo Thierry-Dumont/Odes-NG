@@ -1,13 +1,13 @@
 #include <iostream>
 #include <fstream>
 #include "SymplecticRK.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "Outer.hpp"
 #include "OuterUranus.hpp"
 #include "OuterNeptune.hpp"
 #include "Kepler2.hpp"
 using namespace std;
-using namespace SymplectikRK;
+using namespace odes;
 int main()
 {
   //typedef long double Double;
@@ -34,7 +34,7 @@ int main()
       if(!ok)
 	{
 	  cerr<<"last value: "<<Symp.lastdiff()<<endl;
-	  throw GenericException("SymplecticRK::step: non convergence. h=",h);
+	  throw OdesException("SymplecticRK::step: non convergence. h=",h);
 	}
       for(int l=0;l<n;l++)
 	fileout<<u[l]<<' '; fileout<<'\n';

@@ -1,6 +1,7 @@
 #ifndef Ftest__h
 #define Ftest__h
-#include "GenericException.hpp"
+#include "OdesException.hpp"
+namespace odes{
 /////////////////////////////////////////////////////////////////////////
 /// Perform stoping test vor different float representation.
 /// We take a value (t>0) near the minimum representable number.
@@ -10,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////
 template<class Double> class Ftest
 {
-  // non specialized version. Call it => errr at compile time.
+  // non specialized version. Call it => errr at compile time
 };
 /// the "double" (64 bits IEEE).
 template<> class Ftest<double>
@@ -55,5 +56,6 @@ public:
     return v<t && v>=vold;
   }
 
+};
 };
 #endif

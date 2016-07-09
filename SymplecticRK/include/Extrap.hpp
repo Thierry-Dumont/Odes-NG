@@ -1,11 +1,11 @@
 #ifndef Extrap__h
 #define Extrap__h
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 //////////////////////////////////////////////////////////////////////////////
 /// Class (template of) for the prediction of values at the next step.
 /// (see "Geometric ...." 2nd edition, pages 326-327).
 ///////////////////////////////////////////////////////////////////////////////
-
+namespace odes{
 template<int nsteps,class Double> struct Extrap
 {
   // default template, never instanciated.
@@ -72,8 +72,8 @@ private:
       q[62]=867.068862528872; q[63]=1371.02944430301; 
       break;
     default:
-      throw GenericException("Extrap, nsteps=",nsteps,
-			     "(limited to 8)");
+      throw OdesException("Extrap, nsteps=",nsteps,
+			  "(limited to 8)");
     }
   }
 };
@@ -182,9 +182,10 @@ private:
       q[63]=1371.02944430334963938799023683912;
       break;
     default:
-      throw GenericException("Extrap, nsteps=",nsteps,
-			     "(limited to 8)");
+      throw OdesException("Extrap, nsteps=",nsteps,
+			  "(limited to 8)");
     }
   } 
+};
 };
 #endif

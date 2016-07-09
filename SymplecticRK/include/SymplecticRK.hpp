@@ -8,7 +8,7 @@
 #define MAX(x,y) ((x)>(y)?(x):(y))
 #define ABS(a) (((a) >= (0.0)) ? (a) : (-a))
 using namespace std;
-namespace SymplectikRK{
+namespace odes{
 ///////////////////////////////////////////////////////////////////////////
 ///
 /// Symplectic RK method based on Gaussian quadrature.

@@ -2,10 +2,10 @@
 #define GaussianMethod__h
 #include <cmath>
 #include <iostream>
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include "icoeffs.hpp"
 //#define DEBUG
-namespace SymplectikRK{
+namespace odes{
   ///////////////////////////////////////////////////////////////////////////
   /// Build coefficients for symplectic gaussian RK.
   /// \brief  Build coefficients for symplectic gaussian RK.
@@ -45,7 +45,7 @@ namespace SymplectikRK{
     {
 #ifdef DEBUG
       if(i<0||i>=nsteps||j<0||j>nsteps)
-	throw GenericException("SymplecticRK::GaussianMethod::A(int i,int i), i",
+	throw OdesException("SymplecticRK::GaussianMethod::A(int i,int i), i",
 			       i," > nsteps or < 0");
 #endif
       return a[i*nsteps+j];
@@ -93,7 +93,7 @@ namespace SymplectikRK{
     {
 #ifdef DEBUG
       if(i<0||i>=nsteps||j<0||j>nsteps)
-	throw GenericException("SymplecticRK::GaussianMethod::A(int i,int i), i",
+	throw OdesException("SymplecticRK::GaussianMethod::A(int i,int i), i",
 			       i," > nsteps or < 0");
 #endif
       return a[i*nsteps+j];
