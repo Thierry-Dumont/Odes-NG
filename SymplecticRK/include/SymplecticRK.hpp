@@ -24,10 +24,6 @@ template<class Fonct,int nsteps,class Double=double> class SymplecticRK
   Fonct f;
   Extrap<nsteps,Double> Ext;
   GaussianMethod<nsteps,Double> G;
-  // using GaussianMethod<nsteps,Double>::b;
-  // using GaussianMethod<nsteps,Double>::A;
-  // using GaussianMethod<nsteps,Double>::change_h;
-
   Ftest<Double>  Test;
 public:
   //using GaussianMethod<nsteps,Double>::verify;
