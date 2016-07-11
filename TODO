@@ -1,10 +1,9 @@
--extrapolation dans SymplecticRK incomplete.
+-extrapolation dans SymplecticRK incomplete. templatiser!
+
 -documentation a revoir.
 
 
 -Rock4-L le main n'est pas bon!
-
--smart pointers ?
 
 -tableaux de taille fixe?
 
@@ -30,4 +29,3 @@ Programmes de test.
 
 -vectoriser correctement Outer dans SymplecticRK
 
-   -rock4.hpp dans Rock4-NG ???
