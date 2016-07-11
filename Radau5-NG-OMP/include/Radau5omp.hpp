@@ -83,15 +83,19 @@ namespace odes
     //! \param Fy computed values of F(t,y,..) (IN)
     inline void Jacobian(double t,fortranVector y,const fortranVector Fy)
     {
+#pragma omp parallel for schedule(static) collapse(2)
       for(int i=0;i<n;i++)
 	for(int j=0;j<nbthreads;j++)
 	  yy[j*nbthreads+i]=y(i+1);
+      cout<<"nbthreads: "<<nbthreads<<" ";
 Fonct Floc;
-#pragma omp parallel for schedule(static) private(Floc)
+//Matrices<MatrixFull,Hessenberg,n,ninf,nsup> M;
+#pragma omp parallel for schedule(static) firstprivate(Floc)
       for(int j=1;j<=n;j++)
 	{
 	  int rank=omp_get_thread_num();
-	  
+	  // if(rank==1)
+	  //   cout<<"rank: "<<rank<<" j= "<<j<<endl;
 	  double *yu=yy+rank*n;
 	  double ysafe=yu[j];
 	  double delt=sqrt(uround*MAX(1.e-5,ABS(ysafe))),udelt=1.0e+0/delt;
@@ -101,15 +105,17 @@ Fonct Floc;
 	  //F(t,&y,&R);
 	  Floc(t,yu,RR+rank*n);
 	  //cout<<"ici "<<rank<<endl;
-	  int i1=Ibegin(j),i2=Iend(j);
+	  //int i1=Ibegin(j),i2=Iend(j);
+	  int i1= MAX(1,j-nsup), i2=MIN(n,j+ninf);
 	  //cout<<n<<" "<<i1<<" "<<i2<<endl;
-#include "Ivdep.hpp"
+	  //#include "Ivdep.hpp"
 	  for(int i=i1;i<=i2;i++)
 	    Jac(i,j)=(RR[n*rank+i-1]-Fy(i))*udelt;
 	    //Jac(i,j)=(R(i)-Fy(i))*udelt;
 	  yu[j]=ysafe;
 	}
       nfonccalled+=n;
+      cout<<"end jac "<<nfonccalled<<endl;
     }
     //! make Newton matrices (factorize them).
     void doNewtonMatrices()

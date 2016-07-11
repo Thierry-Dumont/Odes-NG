@@ -21,7 +21,7 @@ class KPP
 public:
   // n: number of points in the finite difference discretization 
   //    this is also the number of variables.
-  static const int n=1000; 
+  static const int n=100; 
   // the Jacobian is tridiagonal:
   static const int nsub=1;
   static const int nsup=1;
@@ -36,6 +36,7 @@ public:
   //! contructor
   KPP()
   {
+    //cout<<"constructor"<<endl;
     // parameters of KPP equation:
     k=1.0;
     eps=0.001;
@@ -46,6 +47,8 @@ public:
   //! copy constructor
   KPP(const KPP& K)
   {
+    //cout<<"copy"<<endl;
+    k=K.k; eps=K.eps; h=K.h; eh2=K.eh2;
   }
   //! destructor
   ~KPP(){}
