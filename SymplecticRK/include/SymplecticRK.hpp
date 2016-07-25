@@ -65,6 +65,7 @@ public:
 
     bool success=false; 
 
+    
     // iteration loop (fixed point iteration):
     for(iter=0; iter<itermax;iter++)
       {
