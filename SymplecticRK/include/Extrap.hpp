@@ -1,6 +1,7 @@
 #ifndef Extrap__h
 #define Extrap__h
 #include "OdesException.hpp"
+#include "extrapcoeffs.hpp"
 //////////////////////////////////////////////////////////////////////////////
 /// Class (template of) for the prediction of values at the next step.
 /// (see "Geometric ...." 2nd edition, pages 326-327).

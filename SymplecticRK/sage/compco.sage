@@ -40,7 +40,7 @@ for rng in rngs:
     Rout=rng[0]
     nm=rng[1]
     for i in range(2,17):
-        a="template<> void icoeffs<"+str(i)+","+nm+">("+nm+"* c)\n{\n"
+        a="template<> void extrapcoeffs<"+str(i)+","+nm+">("+nm+"* c)\n{\n"
         print "\n",nm,i
         fout.write(a)
         ll=ccoeffs(i,Rout,Rpivot).list()
