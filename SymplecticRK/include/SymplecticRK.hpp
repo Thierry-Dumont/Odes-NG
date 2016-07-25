@@ -22,7 +22,7 @@ template<class Fonct,int nsteps,class Double=double> class SymplecticRK
   int iter,itermax;
   Double Old_h;
   Fonct f;
-  Extrap<nsteps,Double> Ext;
+  Extrap<n,nsteps,Double> Ext;
   GaussianMethod<nsteps,Double> G;
   Ftest<Double>  Test;
 public:
@@ -50,19 +50,27 @@ public:
   //! \param h time step.
   //! \param u initial value on input, value computed on output
   //! \note return true iff the fixed points iterations converged.
-  bool step(Double h,Double u[])
+  bool step(Double h,Double u[],bool& firstStep)
   {
+    bool do_extrap= !firstStep && Old_h==h;
     if(Old_h!=h)
       {
 	Old_h=h;
 	G.change_h(h);
+	Ext.change_h(h);
       }
-    // this vectorizes with gcc
-    for(int j=0;j<n;j++)
+    if(do_extrap)
+      Ext(Y1,Y,u);
+    else
+      {
+	// this vectorizes with gcc
+	for(int j=0;j<n;j++)
 #include "Ivdep.hpp"
-      for(int i=0;i<nsteps;i++)
-	Y[i*n+j]=u[j];
-
+	  for(int i=0;i<nsteps;i++)
+	    Y[i*n+j]=u[j];
+	firstStep=false;
+      }
+    
     bool success=false; 
 
     
@@ -74,12 +82,13 @@ public:
 #include "Ivdep.hpp"
 	    for(int j=0;j<n;j++) 
 	      v[j]=Y[i*n+j];
-	    f(v,w);
+	    f(v,w); //w-> Y1+i*n ???
 #include "Ivdep.hpp"
 	    for(int j=0;j<n;j++) Y1[i*n+j]=w[j];
 	  } 
 	Test=0.0;
-	
+
+	//heart of the RK method:
 	for(int i=0;i<nsteps;i++)
 	  {
 #include "Ivdep.hpp"

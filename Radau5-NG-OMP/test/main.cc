@@ -14,9 +14,9 @@ int main()
 
   //---- define here the problem you want to treat:
   //typedef Oregonator Fonc;
-  typedef KPP Fonc;
+  //typedef KPP Fonc;
   //typedef AvcF Fonc;
-  //typedef E5 Fonc;
+  typedef E5 Fonc;
   //typedef BZ Fonc;
   //---------------------------------------------- 
   cout.precision(17);
@@ -57,10 +57,10 @@ int main()
   // for(int i=0;i<n;i++)
   //   cout<<y[i]<<" "; cout<<endl;
   // cout<<"h= "<<h<<"  t= "<<t<<endl;
-  // ofstream result; result.open("result");
-  // for(int i=0;i<n;i++)
-  //   result<<y[i]<<endl;
-  // result.close();
+  ofstream result; result.open("result");
+  for(int i=0;i<n;i++)
+    result<<y[i]<<endl;
+  result.close();
 #ifdef LOGRADAU5
   ofstream logfile; logfile.open("logfile");
   logfile<<Rad.Log()<<endl;

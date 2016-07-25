@@ -23,11 +23,14 @@ public:
   const double C=1.13e+03;
   const double A=7.89e-10;
   const double B=1.1e+07;
-  double MC;// g++ does not like MC as static const double MC=M*C.
+  const double MC=M*C;
   //! constructor
   E5()
   {
-    MC=M*C;
+  }
+  //! copy constructor
+  E5(const E5& E)
+  {
   }
   //! destructor
   ~E5(){}
@@ -39,14 +42,15 @@ public:
   //! RHS for Radau5.
   inline void operator()(double t,double y[],double res[]) const
   {
-    res[0]=-A*y[0]-B*y[0]*y[2];
-    res[1]= A*y[0]            -MC*y[1]*y[2];
-    res[3]=        B*y[0]*y[2]             -C*y[3];
+    // res[0]=-A*y[0]-B*y[0]*y[2];
+    // res[1]= A*y[0]            -MC*y[1]*y[2];
+    // res[3]=        B*y[0]*y[2]             -C*y[3];
     // do not compute res[2] like this:
     //res[2]= A*y[0]-B*y[0]*y[2]-MC*y[1]*y[2]+C*y[3];
-    //but use use the invariant (see Hairer & Wanner t2):
+    //but use the invariant (see Hairer & Wanner t2):
 
-    res[2]=res[1]-res[3];
+    //res[2]=res[1]-res[3];
+    for(int i=0;i<4;i++) res[i]=y[i];
   }
   inline void Jacobian(double t,fortranVector y,const fortranVector Fy,
 		       Matrix& Jac)

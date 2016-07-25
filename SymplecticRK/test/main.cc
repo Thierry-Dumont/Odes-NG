@@ -28,9 +28,10 @@ int main()
   cout<<"n= "<<n<<endl;
   h=1.0; //in days
   double years=200;
+  bool firstep=true;
   for(int it=0;it<years*365.25*h;it++)
     {
-      bool ok=Symp.step(h,u);
+      bool ok=Symp.step(h,u,firstep);
       if(!ok)
 	{
 	  cerr<<"last value: "<<Symp.lastdiff()<<endl;
