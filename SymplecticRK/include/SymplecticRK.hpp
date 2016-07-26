@@ -18,7 +18,7 @@ namespace odes{
 template<class Fonct,int nsteps,class Double=double> class SymplecticRK
 {
   static const int n=Fonct::n;
-  Double v[n],Y[n*nsteps],Y1[n*nsteps],w[n],delta[n],e[n],a[n];
+  Double v[n],Y[n*nsteps],Y1[n*nsteps],delta[n],e[n],a[n];
   int iter,itermax;
   Double Old_h;
   Fonct f;
@@ -82,9 +82,9 @@ public:
 #include "Ivdep.hpp"
 	    for(int j=0;j<n;j++) 
 	      v[j]=Y[i*n+j];
-	    f(v,w); //w-> Y1+i*n ???
-#include "Ivdep.hpp"
-	    for(int j=0;j<n;j++) Y1[i*n+j]=w[j];
+
+	    f(v,Y1+i*n);
+
 	  } 
 	Test=0.0;
 

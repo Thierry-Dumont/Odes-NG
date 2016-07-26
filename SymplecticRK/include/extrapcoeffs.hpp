@@ -1,7 +1,6 @@
 #ifndef extrapcoeffs__h
 #define extrapcoeffs__h
 #include <initializer_list>
-//#include <type_traits>
 #include "OdesException.hpp"
 using namespace std;
 namespace odes{
