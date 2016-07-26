@@ -5,6 +5,8 @@
 //////////////////////////////////////////////////////////////////////////////
 /// Class (template of) for the prediction of values at the next step.
 /// (see "Geometric ...." 2nd edition, pages 326-327).
+/// This is the method described at page 326 of Hairer and Co., based on
+/// extrapolation based on the collocation polynomial.
 ///////////////////////////////////////////////////////////////////////////////
 namespace odes{
 
@@ -36,13 +38,13 @@ namespace odes{
     {
       for(int i=0;i<nsteps;i++)
 	{
-	  for(int j=0;j<n;j++)
-	    Y[nsteps*i+j]=u[j];
-	  for(int s=0;s<nsteps;s++)
+	  for(int l=0;l<n;l++)
+	    Y[nsteps*i+l]=u[l];
+	  for(int j=0;j<nsteps;j++)
 	    {
-	      double qc=q[nsteps*i+s];
-	      for(int j=0;j<n;j++)
-		Y[nsteps*i+j]+=qc*F[nsteps*s+j];
+	      double beta=q[nsteps*i+j];
+	      for(int l=0;l<n;l++)
+		Y[nsteps*i+l]+=beta*F[nsteps*j+l];
 	    }
 	}
 	    

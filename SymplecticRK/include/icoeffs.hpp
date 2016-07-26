@@ -1,15 +1,12 @@
 #ifndef icoeffs__h
 #define icoeffs__h
 #include <initializer_list>
-#include <type_traits>
 #include "OdesException.hpp"
 using namespace std;
 namespace odes{
   template<int nsteps,class Double> void icoeffs(Double* a,Double* b)
   {
-   //static_assert(nsteps>1 && nsteps<=16,"\n\n nsteps must be >1 and <=16.\n");
-
-   // static assertion does not give always clear message; so we prefer to
+   // static assertion does not give always clear messages; so we prefer to
    // throw an exception at run time:
     throw OdesException("SymplecticRK::GaussianMethod::icoeffs:",
 			"nsteps must be in range [2,16];\nhere we have",
