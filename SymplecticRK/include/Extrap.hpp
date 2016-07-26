@@ -39,8 +39,11 @@ namespace odes{
 	  for(int j=0;j<n;j++)
 	    Y[nsteps*i+j]=u[j];
 	  for(int s=0;s<nsteps;s++)
-	    for(int j=0;j<n;j++)
-	      Y[nsteps*i+j]+=q[nsteps*s+j]*F[nsteps*s+j];
+	    {
+	      double qc=q[nsteps*i+s];
+	      for(int j=0;j<n;j++)
+		Y[nsteps*i+j]+=qc*F[nsteps*s+j];
+	    }
 	}
 	    
     }

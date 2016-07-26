@@ -17,7 +17,7 @@ int main()
   //typedef OuterNeptune<Double> F;
   //typedef Kepler2<Double> F;
   const int n=F::n;
-  SymplecticRK<F,8,Double> Symp(100);
+  SymplecticRK<F,16,Double> Symp(100);
   Double u[n];
   Symp.rhs().init(u);
   //Symp.verify();
