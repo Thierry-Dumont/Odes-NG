@@ -68,7 +68,7 @@ public:
 #include "Ivdep.hpp"
 	  for(int i=0;i<nsteps;i++)
 	    Y[i*n+j]=u[j];
-	firstStep=false;
+	//firstStep=false;
       }
     
     bool success=false; 

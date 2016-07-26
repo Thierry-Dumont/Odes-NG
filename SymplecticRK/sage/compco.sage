@@ -14,19 +14,23 @@ def ccoeffs(s,Rcoeffs,Rpivot):
     V=Matrix(RQ,s,s)
     for j in range(0,s):
         for k in range(0,s):
-            V[k,j]=theRoots[j]^k
+            V[j,k]=theRoots[j]^k
     # the RHS:
     W=Matrix(RQ,s,s)
-    for j in range(0,s):
+    for k in range(0,s):
         for i in range(0,s):
-            W[i,j]=((1+theRoots[j])^(i+1))/(i+1)
+            W[k,i]=((1+theRoots[i])^(k+1))/(k+1)
+    Vt=V.transpose()
+    Wt=W.transpose()
     # computing in algebraic numbers is too slow.
     # first, convert the V and W ti Rpivot, which is supposed to be a
     # set of very precise floats:
-    W1=W.change_ring(Rpivot)
-    V1=V.change_ring(Rpivot)
+    V1=Vt.change_ring(Rpivot)
+    W1=Wt.change_ring(Rpivot)
+    
     # the continuous extrapolation coefficients:
-    return (V1\W1).change_ring(Rcoeffs)
+    result=(V1\W1).transpose()
+    return result.change_ring(Rcoeffs)
 ######################################################################
 # "main" program starts here.
 ######################################################################

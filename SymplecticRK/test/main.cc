@@ -17,7 +17,7 @@ int main()
   //typedef OuterNeptune<Double> F;
   //typedef Kepler2<Double> F;
   const int n=F::n;
-  SymplecticRK<F,16,Double> Symp(100);
+  SymplecticRK<F,8,Double> Symp(100);
   Double u[n];
   Symp.rhs().init(u);
   //Symp.verify();
@@ -37,11 +37,13 @@ int main()
 	  cerr<<"last value: "<<Symp.lastdiff()<<endl;
 	  throw OdesException("SymplecticRK::step: non convergence. h=",h);
 	}
-      for(int l=0;l<n;l++)
-	fileout<<u[l]<<' '; fileout<<'\n';
+      // for(int l=0;l<n;l++)
+      // 	fileout<<u[l]<<' '; fileout<<'\n';
+      
 	//fileout<<Symp.rhs().H(u)<<'\n';
       //cout<<Symp.rhs().H(u)<<endl;
     }
   fileout.close();
-    
+
+  cout<<"end."<<endl;
 }
