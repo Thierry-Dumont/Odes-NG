@@ -1,4 +1,4 @@
-#define LOGRADAU5
+//#define LOGRADAU5
 #include <iostream>
 #include <fstream>
 #include "Radau5cc.hpp"
@@ -38,7 +38,6 @@ int main()
   //nloops=1;
   for(int i=0;i<nloops;i++)//loop on the same problem.
     {
-      //h=0.01; xend=1;
       Rad.rhs().init(y);
       Rad.setNmax(100000);
       t=0.0;
@@ -48,10 +47,15 @@ int main()
 	}
       catch( OdesException )
 	{
+	  #ifdef LOGRADAU5
 	  ofstream logfile; logfile.open("logfile");
 	  logfile<<Rad.Log()<<endl;
 	  logfile.close();
 	  throw OdesException("abort! logfile created.");
+	  #else
+	   throw OdesException("abort!");
+	  #endif
+	  
 	}
       //cout<<"loop: "<<i<<endl;
     }

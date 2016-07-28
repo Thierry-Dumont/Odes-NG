@@ -449,7 +449,7 @@ namespace odes
 #ifdef LOGRADAU5
       Logger.clear();
 #endif
-      cout<<"op: "<<_h<<" "<<x<< " "<<_xend<<endl;
+
       //initialize counters:
       naccpt=0; nrejct=0; njac=0;nfonccalled=0;
       //-------------------
