@@ -5,7 +5,7 @@
 //////////////////////////////////////////////////////////////////////////////
 /// Class (template of) for the prediction of values at the next step.
 /// (see "Geometric ...." 2nd edition, pages 326-327).
-/// This is the method described at page 326 of Hairer and Co., based on
+/// This is the method described at page 326 of Hairer and Co., based on an
 /// extrapolation based on the collocation polynomial.
 ///////////////////////////////////////////////////////////////////////////////
 namespace odes{
@@ -18,7 +18,8 @@ namespace odes{
     //! constructor
     Extrap()
     {
-      init();
+      // copy coefficients in q[].
+      extrapcoeffs<nsteps,Double>(q);
     }
     //! destructor.
     ~Extrap(){}
@@ -26,7 +27,9 @@ namespace odes{
     //! \param h
     void change_h(double h)
     {
-      init();
+       // copy coefficients in q[].
+      extrapcoeffs<nsteps,Double>(q);
+      //
       for(int i=0;i<n2;i++)
 	q[i]*=h;
     }
@@ -49,12 +52,7 @@ namespace odes{
 	}
 	    
     }
-private:
-  void init()
-  {
-    // copy coefficients in q[].
-    extrapcoeffs<nsteps,Double>(q);
-  }
+
 };
 
 

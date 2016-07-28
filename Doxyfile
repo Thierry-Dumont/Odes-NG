@@ -753,8 +753,9 @@ WARN_LOGFILE           =
 # spaces.
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = ./Mainpage/ common/include Radau5-NG/include
-		         Rock4-L/include  Rodas-NG/include SymplecticRK/include 
+INPUT                  = ./Mainpage/ common/include Radau5-NG/include \
+		         Rock4-L/include \
+			 Rodas-NG/include SymplecticRK/include \
                          Rock4-NG/include  SDIRKL/include
 
 
