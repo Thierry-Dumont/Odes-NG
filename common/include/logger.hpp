@@ -46,29 +46,48 @@ namespace odes
     {
       L.push_back(event(_time,_step,_TheEvent, _value));
     }
-    //! print
-    //! \param E eventype, for filtering results.
-    void print(eventType E=all)
+    //! convert to a string.
+    //!\param E filter on a given  type of event; if E==all, use all events. 
+    string tostring(eventType E=all) const
     {
-      
       string names[6]={"success","rejectedStep","NewtonFailed",
 			      "NewtonWillNotConverge","changedH","all"};
+      string ret="";
       int count=0;
-      for(list<event>::iterator I=L.begin();I!=L.end();I++)
+      for(list<event>::const_iterator I=L.begin();I!=L.end();I++)
 	{ 
 	  event Ev=*I;
 	  if(Ev.TheEvent==E|| E==all)
 	    {
-	      cout<<++count<<
-		" Time: "<<Ev.time<<" step: "<<Ev.step<<" Event: "<<
-		names[Ev.TheEvent];
+	      string tmp=to_string(++count)+
+	       	" Time: "+to_string(Ev.time)+" step: "+to_string(Ev.step)
+	       	+" Event: "+names[Ev.TheEvent];
 	      if(Ev.TheEvent==changedH)
-		cout<<" new step: "<<Ev.value;
-	      cout<<endl;
+	      	tmp+=" new step: "+to_string(Ev.value);
+	      tmp+="\n";
+	      ret+=tmp;
 	    }
-	} 
-      if(count==0) cout<<"No event."<<endl;
+	}
+      return ret;
     }
-  }; 
+    //! print
+    //! \param E eventype, for filtering results.
+    void print(eventType E=all)
+    {
+ 
+      string s=tostring(all);
+      if(s.size()>0)
+	cout<<s;
+      else
+	cout<<"No event."<<endl;
+    }
+  };
+  ///! overload <<
+  std::ostream& operator<<(std::ostream& os, const logger& obj)
+  {
+    // write obj to stream
+    os<<obj.tostring();
+    return os;
+  }
 }
 #endif

@@ -1,4 +1,4 @@
-//#define LOGRADAU5
+#define LOGRADAU5
 #include <iostream>
 #include <fstream>
 #include "Radau5cc.hpp"
@@ -11,11 +11,11 @@ using namespace std;
 int main()
 {
   //---- define here the problem you want to treat:
-  typedef Oregonator Fonc;
+  //typedef Oregonator Fonc;
   //typedef KPP Fonc;
   //typedef AvcF Fonc;
   //typedef E5 Fonc;
-  //typedef BZ Fonc;
+  typedef BZ Fonc;
   //---------------------------------------------- 
   cout.precision(17);
 
@@ -31,25 +31,35 @@ int main()
   int nloops;
 
   double y[n];
-  // cout<<"initial time step?"; cin>>h;
-  // cout<<"integration time?";  cin>>xend;
-  // cout<<"how many loops on the problem?"; cin >>nloops;
+  cout<<"initial time step?"; cin>>h;
+  cout<<"integration time?";  cin>>xend;
+  cout<<"how many loops on the problem?"; cin >>nloops;
   //h=1.; xend=500.; 
-  nloops=1;
+  //nloops=1;
   for(int i=0;i<nloops;i++)//loop on the same problem.
     {
-      h=0.01; xend=1;
+      //h=0.01; xend=1;
       Rad.rhs().init(y);
       Rad.setNmax(100000);
       t=0.0;
-      Rad(h,t,xend,&(y[0]));
+      try
+	{
+	  Rad(h,t,xend,&(y[0]));
+	}
+      catch( OdesException )
+	{
+	  ofstream logfile; logfile.open("logfile");
+	  logfile<<Rad.Log()<<endl;
+	  logfile.close();
+	  throw OdesException("abort! logfile created.");
+	}
       //cout<<"loop: "<<i<<endl;
     }
-
-  // cout<<"nstep= "<<Rad.getNstep()<<" njac= "<<Rad.getNJac()<<
-  //   " naccpt= "<<Rad.getNaccpt()<<" nreject= "<<Rad.getNrejct()<<
-  //   " ndec= "<<Rad.getNdec()<<endl;
-  // cout<<"first accepted step: "<<Rad.getfirstAcceptedStep()<<endl;
+  cout<<endl<<endl;
+  cout<<"nstep= "<<Rad.getNstep()<<" njac= "<<Rad.getNJac()<<
+    " naccpt= "<<Rad.getNaccpt()<<" nreject= "<<Rad.getNrejct()<<
+     " ndec= "<<Rad.getNdec()<<endl;
+  cout<<"first accepted step: "<<Rad.getfirstAcceptedStep()<<endl;
 
   // cout<<"y= ";
   // for(int i=0;i<n;i++)
@@ -60,10 +70,11 @@ int main()
   //   result<<y[i]<<endl;
   // result.close();
 #ifdef LOGRADAU5
+  Rad.Log().print();
   ofstream logfile; logfile.open("logfile");
   logfile<<Rad.Log()<<endl;
   logfile.close();
   cout<<"logfile created."<<endl;
 #endif
-  cout<<"ok"<<endl;
+  cout<<endl<<"ok."<<endl;
 }

@@ -339,7 +339,7 @@ namespace odes
 	      Matrices<MatrixFull,Hessenberg,n,ninf,nsup>()
     {
       //setTestPolicy(_sameTestValue,_atol,_rtol);
-      
+
       double   sq3=sqrt(3.0);
       SQ6=sqrt(6.0e0);
       C1=(4.-SQ6)/10.;    C2=(4.+SQ6)/10.;
@@ -449,6 +449,7 @@ namespace odes
 #ifdef LOGRADAU5
       Logger.clear();
 #endif
+      cout<<"op: "<<_h<<" "<<x<< " "<<_xend<<endl;
       //initialize counters:
       naccpt=0; nrejct=0; njac=0;nfonccalled=0;
       //-------------------
@@ -494,10 +495,10 @@ namespace odes
 
       for(;;)
 	{
+	  
 	  if(nstep>nmax)
 	    throw OdesException("Radau5cc() nstep=",nstep,"too large, nmax=",
-				   nmax);
-
+				  nmax);
 	  do{//20 in Hairer.
 	    ++nstep;
 	    // starting values for newton iteration:
