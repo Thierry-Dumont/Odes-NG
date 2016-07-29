@@ -47,7 +47,6 @@ public:
   //! provide a method for the initial condition.
   void init(double * Restrict y)
   {
-    cout<<"dans init"<<endl;
     for(int i=0;i<=n/2;i++)
       y[i]=0.9999999;
     for(int i=n/2+1;i<n;i++)

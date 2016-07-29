@@ -1,8 +1,8 @@
 #include <iostream>
 #include "protos_lapack.hpp"
 #include "AllocateDestroyVector.hpp"
-//#include "FRadau5.hpp"
-//#include "Radau5cc.hpp"
+#include "FRadau5.hpp"
+#include "Radau5cc.hpp"
 #include "Rock4L.hpp"
 #include "binit.hpp"
 #include <fstream>
@@ -43,10 +43,11 @@ int main()
   //Radau5 integration:
   //
   double atol[n],rtol[n]; 
-  atol[0]=1.e-25; rtol[0]=1.e-25;
+  atol[0]=1.e-10; rtol[0]=1.e-10;
   double *y=allocDoubleArray(n);
   Radau5cc<FRadau5> Rad(true,atol,rtol);
   bool ok;
+  
   do
     {
       // find acceptable atol and rtol, as small as possible.
@@ -59,7 +60,7 @@ int main()
 	  Rad.rhs().init(y);
 	  Rad(h,t,Tinteg,&(y[0]));
 	}
-      catch(GenericException)
+      catch(OdesException)
 	{
 	  ok=false;
 	  atol[0]*=2; rtol[0]*=2;
@@ -68,6 +69,7 @@ int main()
     }
   while(!ok);
   //ok, we have a solution at order 4, as precise as possible with Radau5.
+  cout<<"Solution, using Radau5: "<<endl;
   print(y,n);
 
   
@@ -93,9 +95,6 @@ int main()
       Rock4L<F,affine> MonRock(monF);
      
       Rad.rhs().init(yR);
-      cout<<"yR: ";
-      for(int i=0;i<n;i++)
-	cout<<yR[i]<<" ";cout<<endl;
       binit(b,n);
       if(affine)
 	MonRock(yR,b,t0,Tinteg,dt);

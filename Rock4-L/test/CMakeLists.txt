@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8)
 project(Radau5-NG)
 enable_language(CXX)
 #
@@ -23,6 +23,7 @@ endif ()
 include_directories(
 ${CMAKE_SOURCE_DIR}/../include
 ${CMAKE_SOURCE_DIR}/../../common/include
+${CMAKE_SOURCE_DIR}/../../Radau5-NG/include/
 )
 add_executable(
   run

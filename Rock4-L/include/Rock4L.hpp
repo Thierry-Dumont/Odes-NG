@@ -3,7 +3,7 @@
 #include "Rock4Coeffs.hpp"
 #include "MacrosForCompilers.hpp"
 #include "AllocateDestroyVector.hpp"
-#include "GenericException.hpp"
+#include "OdesException.hpp"
 #include <cmath>
 #include <cstdlib>
 using namespace std;
@@ -43,7 +43,6 @@ namespace odes{
 ///
 ///    where in[], s[], g[] and out[] are vectors of size n.        
 //////////////////////////////////////////////////////////////////////////
-namespace odes {
   template<class Fonc,bool Affine=false> class Rock4L
   {
     Fonc* Fp;
@@ -289,7 +288,7 @@ namespace odes {
     void operator()(double *y,double t0,double tend, double _h)
     {
       if(Affine)
-	throw GenericException("Rock4::operator() called as affine");
+	throw OdesException("Rock4::operator() called as affine");
       int mdego=0; nsteps=0;
       nrej=0; nacc=0;nstagesmax=0;
       Fonc& F=*Fp;
@@ -306,13 +305,13 @@ namespace odes {
 	    h=abs(tend-t);
 
 	  if (h<10.0e0*uround)
-	    throw GenericException("Rock4: step too small h=",h,"limit:",
+	    throw OdesException("Rock4: step too small h=",h,"limit:",
 				     10.0e0*uround);
 
 	  ++pass;
 	  mdeg=sqrt((3.e0+h*eigmax)/0.353e0)+1;
 	  if (mdeg>152)
-	    throw GenericException("Rock4: degree limited to 152."
+	    throw OdesException("Rock4: degree limited to 152."
 				   "Here you need:",mdeg,
 				   "You should decrease time step");
 	  mdeg=max(mdeg,5)-4;
@@ -338,7 +337,7 @@ namespace odes {
     void operator()(double *y,double *b, double t0,double tend, double _h)
     {
       if(!Affine)
-	throw GenericException("Rock4::operator() called as not affine");
+	throw OdesException("Rock4::operator() called as not affine");
       int mdego=0; nsteps=0;
       nrej=0; nacc=0;nstagesmax=0;
       Fonc& F=*Fp;
@@ -355,13 +354,13 @@ namespace odes {
 	    h=abs(tend-t);
 
 	  if (h<10.0e0*uround)
-	    throw GenericException("Rock4: step too small h=",h,"limit:",
+	    throw OdesException("Rock4: step too small h=",h,"limit:",
 				     10.0e0*uround);
 
 	  ++pass;
 	  mdeg=sqrt((3.e0+h*eigmax)/0.353e0)+1;
 	  if (mdeg>152)
-	    throw GenericException("Rock4: degree limited to 152."
+	    throw OdesException("Rock4: degree limited to 152."
 				   "Here you need:",mdeg,
 				   "You should decrease time step");
 	  mdeg=max(mdeg,5)-4;
@@ -378,5 +377,5 @@ namespace odes {
     }
   };
 };
-};
+
 #endif
