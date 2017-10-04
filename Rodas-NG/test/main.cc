@@ -1,5 +1,6 @@
-//#define LOGRADAU5
+#define LOGRODAS
 #include <iostream>
+#include <fstream>
 #include "AllocateDestroyVector.hpp"
 #include "Rodascc.hpp"
 #include "AvcF.hpp"
@@ -24,9 +25,9 @@ int main()
   double h,t,xend;
   int nloops;
   double *y=allocDoubleArray(n);
-  //cout<<"initial time step?"; cin>>h;
-  //cout<<"integration time?";  cin>>xend;
-  h=1.; xend=100.;nloops=1000;
+  cout<<"initial time step?"; cin>>h;
+  cout<<"integration time?";  cin>>xend;
+  cout<<"how many loops on the problem?"; cin>>nloops; 
   
   for(int i=0;i<nloops;i++)
     {
@@ -39,12 +40,19 @@ int main()
     " naccpt= "<<Rod.getNaccpt()<<" nreject= "<<Rod.getNrejct()<<
     " ndec= "<<Rod.getNdec()<<endl;
   cout<<"first accepted step: "<<Rod.getfirstAcceptedStep()<<endl;
-  cout<<"y= ";
-  for(int i=0;i<n;i++)
-    cout<<y[i]<<" "; cout<<endl;
+
+  // Uncomment this to print the final solution:
+  // cout<<"y= ";
+  // for(int i=0;i<n;i++)
+  //   cout<<y[i]<<" ";
+  // cout<<endl;
   cout<<"h= "<<h<<"  t= "<<t<<endl;
-#ifdef LOGRADAU5
-  Rod.Log().print();
+#ifdef LOGRODAS
+  //Rod.Log().print(); //produces a lot of output.
+  ofstream logfile; logfile.open("logfile");
+  logfile<<Rod.Log()<<endl;
+  logfile.close();
+  cout<<"logfile created."<<endl;
 #endif
   cout<<"ok"<<endl;
 }

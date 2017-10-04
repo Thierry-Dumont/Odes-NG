@@ -346,7 +346,8 @@ namespace odes
 	      last=true;
 	    }
 	  else
-	    hopt=h; xold=x;
+	    hopt=h;
+	  xold=x;
 
 	  F(x,&Y,&DY1);
 	  

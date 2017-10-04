@@ -14,14 +14,16 @@ Available examples are :
 
 Oregonator.hpp (3 equations, stiff)
 AvcF.hpp       (21 equations, stiff).
+E5.hpp         (4 equations).
 -> Modify "typedef" intructions to choose one example.
 
 
 3--
-->define or not LOGRADAU5
-    If defined, this will produce a lot of output at runtime.
+->define or not LOGRADAS
+    If defined, this will create a "logfile" file.
 
 4---
+mkdir Build
 cd Build
 cmake ..
 make
