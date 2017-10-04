@@ -41,7 +41,7 @@ public :
     double h1=h*h,ah1=a/h1;
     out[0]=(-2.*in[0]+2.*in[1])*ah1 +b*s[0];
     ASSUME_ALIGNED(out);ASSUME_ALIGNED(in);ASSUME_ALIGNED(s);
-#include "Ivdep.hpp"
+#pragma omp parallel for
     for(int i=1;i<Size-1;i++)
       {
 	out[i]=in[i-1]-2*in[i]+in[i+1];
@@ -59,7 +59,7 @@ public :
    
     out[0]=a*((-2.*in[0]+2.*in[1])/h1 +g[0])+b*s[0];
     ASSUME_ALIGNED(out);ASSUME_ALIGNED(in);ASSUME_ALIGNED(g);
-#include "Ivdep.hpp"
+#pragma omp parallel for
     for(int i=1;i<Size-1;i++)
     {
       out[i]=in[i-1]-2*in[i]+in[i+1];
@@ -76,7 +76,7 @@ public :
     double h1=h*h,ah1=a/h1; 
  
     out[0]=(-2.*in[0]+2.*in[1])*ah1;
-#include "Ivdep.hpp"
+#pragma omp parallel for
     for(int i=1;i<Size-1;i++)
       {
 	out[i]=in[i-1]-2*in[i]+in[i+1];
@@ -102,7 +102,7 @@ public :
  
     out[0]=a*((-2.*in[0]+2.*in[1])/h1+g[0])+b*in[0]+c*s[0];
 
-#include "Ivdep.hpp"
+#pragma omp parallel for
     for(int i=1;i<Size-1;i++)
       {
 	out[i]=a*((in[i-1]-2*in[i]+in[i+1])/h1+g[i])+b*in[i]+c*s[i];

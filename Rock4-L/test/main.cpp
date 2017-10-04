@@ -8,12 +8,14 @@
 #include <fstream>
 #include <cmath>
 #include <string>
-#include "classF.hpp"
+#include "F.hpp"
 
 
 using namespace std;
 using namespace odes;
-
+//
+// We compare solutions with Radau5 and solutions with Rock4L.
+//
 //! norm of the difference of 2 vectors.
 double normdiff(int n,double x[],double y[])
 {
@@ -37,7 +39,7 @@ int main()
   // Problem:
   static const bool affine=false;
   //
-  double Tinteg=0.1;
+  double Tinteg=0.5;
   double *b=allocDoubleArray(n);//new double[n];
   //
   //Radau5 integration:
@@ -71,8 +73,7 @@ int main()
   //ok, we have a solution at order 4, as precise as possible with Radau5.
   cout<<"Solution, using Radau5: "<<endl;
   print(y,n);
-
-  
+    
   //
   ofstream f("gplot",ios::out|ios :: trunc);
   ofstream outR("OutR",ios::out|ios :: trunc);
@@ -84,11 +85,13 @@ int main()
     cout<<"LINEAR"<<endl;
   double *yR=allocDoubleArray(n);
 
-  //compute using Rock, with decreasing time steps:
-  for(int l=2;l<10;l++)
+  //compute using Rock, with decreasing time steps, and compare with the
+  // "best" solution obtained by Radau5:
+
+  double dt = Tinteg/2.;
+  for(int l=0;l<30;l++)
     {
-      int np=pow(2,l);
-      double dt=Tinteg/(double) np;
+      dt/= 1.25;
       double t0=0;
 
       F monF(n);
@@ -102,15 +105,13 @@ int main()
 	MonRock(yR,t0,Tinteg,dt);
 
 
-      cout<<endl<<"stages: "<<MonRock.NbStages()<<"  Nb. Pas: "<<
+      cout<<endl<<"stages: "<<MonRock.NbStages()<<"  Nb. steps: "<<
 	MonRock.NbSteps()<<endl;
    
-      //cout<<"t0,tend,dt "<<t0<<" "<<Tinteg<<" "<<dt<<endl;
-
-      // difference between Radau5 computation and Rock4 computation:
+       // difference between Radau5 computation and Rock4 computation:
       cout<<"ROCK err: "<<normdiff(n,yR,y)<<" dt: "<<dt<<endl;
  
-      outR<<log10(dt)<<" "<<log10(normdiff(n,yR,y))<<endl;
+      outR<<dt<<" "<<normdiff(n,yR,y)<<endl;
       
       cout<<"n= "<<n<<endl;
       for(int i=0;i<n;i++)
@@ -121,5 +122,6 @@ int main()
  
   destroyDoubleArray(yR);
   destroyDoubleArray(y);
+  cout<<"The solution is in OutF, error/time_step in OutR."<<endl;
   cout<<"end"<<endl;
 }
