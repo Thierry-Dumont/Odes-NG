@@ -7,7 +7,7 @@
 class E5
 {
 public:
-  // there are 3 variables.
+  // there are 4 variables.
   static const int n=4;
   // the Jacobian matrix is full:
   static const int nsub=n-1;

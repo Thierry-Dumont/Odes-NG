@@ -5,11 +5,10 @@
 #include "MacrosForCompilers.hpp"
 #include "AllocateDestroyVector.hpp"
 #include "Rock4.hpp"
-#ifdef USE_TBB
-#include "ToolTbb.hpp"
+//#include "ToolTbb.hpp"
 #include "LaplTBB.hpp"
 #endif
-//#include "ToolOMP.hpp"
+#include "ToolOMP.hpp"
 #include "Lapl1OMP.hpp"
 using namespace std;
 using namespace odes;

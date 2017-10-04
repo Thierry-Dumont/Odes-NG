@@ -3,8 +3,7 @@
 
 1---
 
- Adapt CMakeList to your needs. Examples are CMakeLists.txt.gcc and 
-CMakeLists.txt.INTEL.
+ Adapt CMakeList to your needs. 
 
 Intel compiler:
 -DINTELCOMP : include some pragmas.
@@ -14,18 +13,23 @@ Available examples are :
 
 Oregonator.hpp (3 equations, stiff)
 AvcF.hpp       (21 equations, stiff).
+BZ.hpp         (a 1d PDE (the Belousov Zhabotinsky problem) Jacobian is sparse).
+KPP.hpp        (a 1d PDE (the classical Fisher KPP problem).
+
 -> Modify "typedef" intructions to choose one example.
 
 
 3--
 ->define or not LOGRADAU5
-    If defined, this will produce a lot of output at runtime.
+    If defined, this will produce a "logfile" file.
 
 4---
+mkdir Build
 cd Build
 cmake ..
 make
-run is created. ./run to execute the code
+run is created.
+./run to execute the code
 
 
 

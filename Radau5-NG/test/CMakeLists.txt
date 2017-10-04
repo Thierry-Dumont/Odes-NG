@@ -14,9 +14,7 @@ if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
 
 else ()
   set (USING_GNU TRUE)
-  #set(CMAKE_CXX_COMPILER "g++-4.9")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3 -g -Wall -std=c++11  -DALIGN_BLOCKED -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
-#-fopt-info-vec-missed  -fopt-info-vec -ffast-math
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3 -g   -DALIGN_BLOCKED -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
 endif ()
 include_directories(
 ${CMAKE_SOURCE_DIR}/../include

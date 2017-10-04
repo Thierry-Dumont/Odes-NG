@@ -1,4 +1,4 @@
-//#define LOGRADAU5
+#define LOGRADAU5
 #include <iostream>
 #include <fstream>
 #include "Radau5cc.hpp"
@@ -11,11 +11,11 @@ using namespace std;
 int main()
 {
   //---- define here the problem you want to treat:
-  //typedef Oregonator Fonc;
+  typedef Oregonator Fonc;
   //typedef KPP Fonc;
   //typedef AvcF Fonc;
   //typedef E5 Fonc;
-  typedef BZ Fonc;
+  //typedef BZ Fonc;
   //---------------------------------------------- 
   cout.precision(17);
 
@@ -23,7 +23,7 @@ int main()
   double atol[n],rtol[n]; atol[0]=1.e-5; rtol[0]=1.e-5;
 
 #ifdef ICC
-  cout<<"ICC"<<endl;
+  cout<<"ICC compiled."<<endl;
 #endif
   cout<<n<<" equations."<<endl;
   Radau5cc<Fonc> Rad(true,atol,rtol);
@@ -34,8 +34,7 @@ int main()
   cout<<"initial time step?"; cin>>h;
   cout<<"integration time?";  cin>>xend;
   cout<<"how many loops on the problem?"; cin >>nloops;
-  //h=1.; xend=500.; 
-  //nloops=1;
+ 
   for(int i=0;i<nloops;i++)//loop on the same problem.
     {
       Rad.rhs().init(y);
@@ -57,7 +56,6 @@ int main()
 	  #endif
 	  
 	}
-      //cout<<"loop: "<<i<<endl;
     }
   cout<<endl<<endl;
   cout<<"nstep= "<<Rad.getNstep()<<" njac= "<<Rad.getNJac()<<
@@ -65,16 +63,8 @@ int main()
      " ndec= "<<Rad.getNdec()<<endl;
   cout<<"first accepted step: "<<Rad.getfirstAcceptedStep()<<endl;
 
-  // cout<<"y= ";
-  // for(int i=0;i<n;i++)
-  //   cout<<y[i]<<" "; cout<<endl;
-  // cout<<"h= "<<h<<"  t= "<<t<<endl;
-  // ofstream result; result.open("result");
-  // for(int i=0;i<n;i++)
-  //   result<<y[i]<<endl;
-  // result.close();
 #ifdef LOGRADAU5
-  Rad.Log().print();
+  //Rad.Log().print();// uncomment produces a lot of output.
   ofstream logfile; logfile.open("logfile");
   logfile<<Rad.Log()<<endl;
   logfile.close();

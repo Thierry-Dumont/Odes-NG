@@ -22,7 +22,7 @@ double normdiff(int n,double x[],double y[])
     ret=pow((x[i]-y[i]),2);
   return sqrt(ret);
 }
-//! easy print a vector.
+//! easy print of a vector.
 void print(double x[],int n)
 {
   cout<<endl<<endl;
