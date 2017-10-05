@@ -40,7 +40,6 @@ public :
   {
     double h1=h*h,ah1=a/h1;
     out[0]=(-2.*in[0]+2.*in[1])*ah1 +b*s[0];
-    ASSUME_ALIGNED(out);ASSUME_ALIGNED(in);ASSUME_ALIGNED(s);
 #pragma omp parallel for
     for(int i=1;i<Size-1;i++)
       {
@@ -58,7 +57,6 @@ public :
     double h1=h*h;
    
     out[0]=a*((-2.*in[0]+2.*in[1])/h1 +g[0])+b*s[0];
-    ASSUME_ALIGNED(out);ASSUME_ALIGNED(in);ASSUME_ALIGNED(g);
 #pragma omp parallel for
     for(int i=1;i<Size-1;i++)
     {
@@ -72,7 +70,6 @@ public :
   void operator()(double * in, double * s, double a, double b,double c,
 		  double *out)
   {
-    ASSUME_ALIGNED(out);ASSUME_ALIGNED(in);ASSUME_ALIGNED(s);
     double h1=h*h,ah1=a/h1; 
  
     out[0]=(-2.*in[0]+2.*in[1])*ah1;
@@ -95,9 +92,6 @@ public :
   void operator()(double * in, double * s, double a, double b,double c,
 		  double *g,double *out)
   {
-    ASSUME_ALIGNED(out);ASSUME_ALIGNED(in);
-    ASSUME_ALIGNED(s);ASSUME_ALIGNED(g);
-    
     double h1=h*h; 
  
     out[0]=a*((-2.*in[0]+2.*in[1])/h1+g[0])+b*in[0]+c*s[0];

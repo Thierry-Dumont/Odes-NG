@@ -116,7 +116,8 @@ public:
   {
     cout<<s<<" ";
     for(int i=0;i<size;i++)
-      cout<<x[i]<<' '; cout<<endl;
+      cout<<x[i]<<' ';
+    cout<<endl;
   }
 #ifdef DEBUG
   //! for debuging. Put a name.
@@ -416,7 +417,8 @@ public:
     {
       cout<<s<<" ";
       for(int i=0;i<size;i++)
-	cout<<y[i]<<' '; cout<<endl;
+	cout<<y[i]<<' ';
+      cout<<endl;
     }
   };
 }

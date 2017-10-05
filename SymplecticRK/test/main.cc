@@ -38,9 +38,10 @@ int main()
 	  throw OdesException("SymplecticRK::step: non convergence. h=",h);
 	}
       for(int l=0;l<n;l++)
-      	fileout<<u[l]<<' '; fileout<<'\n';
+      	fileout<<u[l]<<' ';
+      fileout<<'\n';
       
-	fileout<<Symp.rhs().H(u)<<'\n';
+      fileout<<Symp.rhs().H(u)<<'\n';
       cout<<Symp.rhs().H(u)<<endl;
     }
   fileout.close();

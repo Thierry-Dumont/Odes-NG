@@ -125,13 +125,13 @@ public:
 	for(int i=0;i<n;i++)
 	  delta[i]=0.0;
 	
-	  for(int i=0;i<nsteps;i++)
-	    {
-	      double bi=G.b[i];
+	for(int i=0;i<nsteps;i++)
+	  {
+	    double bi=G.b[i];
 #include "Ivdep.hpp"
-	      for(int j=0;j<n;j++)
-		delta[j]+=bi*Y1[i*n+j];
-	    }
+	    for(int j=0;j<n;j++)
+	      delta[j]+=bi*Y1[i*n+j];
+	  }
 #include "Ivdep.hpp"
 	for(int i=0;i<n;i++)
 	  a[i]=u[i];
