@@ -62,7 +62,7 @@ namespace odes
 	      string tmp=to_string(++count)+
 	       	" Time: "+to_string(Ev.time)+" step: "+to_string(Ev.step)
 	       	+" Event: "+names[Ev.TheEvent];
-	      if(Ev.TheEvent==changedH)
+	      if(Ev.TheEvent==changedH || Ev.TheEvent==rejectedStep)
 	      	tmp+=" new step: "+to_string(Ev.value);
 	      tmp+="\n";
 	      ret+=tmp;

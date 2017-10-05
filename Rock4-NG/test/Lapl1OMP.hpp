@@ -8,6 +8,7 @@ class Lapl1
 {
   const int Size;
   double nu,h,uh2,rspec;
+  const double pi=4*atan(1.0);  
 public:
   //! constructor
   //! \param _size  size of the system.
@@ -15,7 +16,8 @@ public:
   {
     nu=0.01;
     h=1./(Size-1.e0); uh2=nu/(h*h); rspec=4.*uh2;
-  } 
+  }
+  //! destructor.
   ~Lapl1(){} 
   //! y=F(x)
   //! \param x
@@ -32,7 +34,14 @@ public:
   //! return spectral radius.
   inline  double rho() const {
     return rspec;
-  } 
+  }
+  //! initial conditions.
+  //! \param x
+  void init(double x[])
+  {
+    for(int i=0;i<Size;i++)
+      x[i]=cos(4*pi*i*h);
+  }
   //! return size.
   inline int size() const {return Size;}
 };

@@ -37,11 +37,11 @@ int main()
 	  cerr<<"last value: "<<Symp.lastdiff()<<endl;
 	  throw OdesException("SymplecticRK::step: non convergence. h=",h);
 	}
-      // for(int l=0;l<n;l++)
-      // 	fileout<<u[l]<<' '; fileout<<'\n';
+      for(int l=0;l<n;l++)
+      	fileout<<u[l]<<' '; fileout<<'\n';
       
-	//fileout<<Symp.rhs().H(u)<<'\n';
-      //cout<<Symp.rhs().H(u)<<endl;
+	fileout<<Symp.rhs().H(u)<<'\n';
+      cout<<Symp.rhs().H(u)<<endl;
     }
   fileout.close();
 

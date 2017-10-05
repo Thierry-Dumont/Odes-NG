@@ -1,10 +1,10 @@
 #ifndef Rock4__h
 #define Rock4__h
 #include "Rock4Coeffs.hpp"
-#include "ToolSequential.hpp"
+#include "ToolOMP.hpp"
 #include "MacrosForCompilers.hpp"
 #include "AllocateDestroyVector.hpp"
-#include "history.hpp"
+#include "logger.hpp"
 #include "OdesException.hpp"
 #include <cmath>
 #include <string>
@@ -19,10 +19,11 @@ using namespace std;
 ///                based on Open-MP or Tbb.
 //////////////////////////////////////////////////////////////////////////
 namespace odes {
-  template<class Fonc,class Engine=ToolSequential<Fonc> > class Rock4
+  template<class Fonc> class Rock4
   {
-#ifdef Rock4_history
-    history H;
+    typedef ToolOMP<Fonc> Engine;
+#ifdef LOGROCK4
+    logger Logit;
 #endif
     Fonc* Fp;
     const int size;
@@ -168,7 +169,7 @@ namespace odes {
       atol=_atol; rtol=_rtol;
     }
     //! number of stages used (we count both methods).
-    inline int NbStages() const {return nstagesmax;}
+    inline int NbStages() const {return mdeg;}
     //! number of RHS computed
     inline int NbRhsComputed() const {return funccal;}
     //! number of steps performed.
@@ -181,8 +182,8 @@ namespace odes {
     inline double LastAcceptedTimeStep() const {return hlast;}
     //! number of unknowns.
     inline int nbUnkn() const {return size;}
-#ifdef Rock4_history
-    inline history& get_history(){return H;}
+#ifdef LOGROCK4
+    inline logger& Log(){return Logit;}
 #endif
     //! operator() performs the step, by delegating to kernel.
     //! \param  y IN/OUT. Initial values on input, final values on output.
@@ -262,8 +263,8 @@ namespace odes {
 		  reject=false;
 		  nrejloc=0;
 		}
-#ifdef Rock4_history
-	      H.push(h,true);
+#ifdef LOGROCK4
+	      Logit.put(t,pass,success,hnew);
 #endif
 	      hp=h; h=hnew;
 	      errp=err;
@@ -274,8 +275,8 @@ namespace odes {
 	    }
 	  else
 	    {
-#ifdef Rock4_history
-	      H.push(h,false);
+#ifdef LOGROCK4
+	      Logit.put(t,pass,rejectedStep,hnew);
 #endif
 	      reject= true;
 	      //last=false;
