@@ -84,7 +84,7 @@ public :
       }
     out[Size-1]=(2.*in[Size-2]-2.*in[Size-1])*ah1;
     
-#include "Ivdep.hpp"
+#pragma omp parallel for
     for(int i=0;i<Size;i++)
     {  
       out[i]=out[i]+b*in[i]+c*s[i];
