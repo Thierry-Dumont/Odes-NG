@@ -7,6 +7,7 @@
 #include "Oregonator.hpp"
 #include "KPP.hpp"
 #include "E5.hpp"
+#include <time.h>
 using namespace std;
 int main()
 {
@@ -27,20 +28,21 @@ int main()
   double *y=allocDoubleArray(n);
   cout<<"initial time step?"; cin>>h;
   cout<<"integration time?";  cin>>xend;
-  cout<<"how many loops on the problem?"; cin>>nloops; 
+  cout<<"how many loops on the problem?"; cin>>nloops;
   
+  clock_t clkStart =  clock();// we measure execution time.
   for(int i=0;i<nloops;i++)
     {
       Rod.rhs().init(y);
       t=0.0;
       Rod(h,t,xend,&(y[0]));
     }
-
+  auto texec = static_cast<double>(clock() - clkStart)/CLOCKS_PER_SEC;
   cout<<"nstep= "<<Rod.getNstep()<<" njac= "<<Rod.getNJac()<<
     " naccpt= "<<Rod.getNaccpt()<<" nreject= "<<Rod.getNrejct()<<
     " ndec= "<<Rod.getNdec()<<endl;
   cout<<"first accepted step: "<<Rod.getfirstAcceptedStep()<<endl;
-
+  cout<<"Execution time (ms per loop): "<<1000.*texec/nloops<<endl;
   // Uncomment this to print the final solution:
   // cout<<"y= ";
   // for(int i=0;i<n;i++)

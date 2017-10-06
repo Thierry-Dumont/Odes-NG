@@ -7,6 +7,7 @@
 #include "KPP.hpp"
 #include "E5.hpp"
 #include "BZ.hpp"
+#include <time.h>
 using namespace std;
 int main()
 {
@@ -34,7 +35,8 @@ int main()
   cout<<"initial time step?"; cin>>h;
   cout<<"integration time?";  cin>>xend;
   cout<<"how many loops on the problem?"; cin >>nloops;
- 
+  
+  clock_t clkStart =  clock();// we measure execution time.
   for(int i=0;i<nloops;i++)//loop on the same problem.
     {
       Rad.rhs().init(y);
@@ -57,12 +59,14 @@ int main()
 	  
 	}
     }
+  auto texec = static_cast<double>(clock() - clkStart)/CLOCKS_PER_SEC;
+  
   cout<<endl<<endl;
   cout<<"nstep= "<<Rad.getNstep()<<" njac= "<<Rad.getNJac()<<
     " naccpt= "<<Rad.getNaccpt()<<" nreject= "<<Rad.getNrejct()<<
      " ndec= "<<Rad.getNdec()<<endl;
   cout<<"first accepted step: "<<Rad.getfirstAcceptedStep()<<endl;
-
+  cout<<"Execution time (ms per loop): "<<1000.*texec/nloops<<endl;
 #ifdef LOGRADAU5
   //Rad.Log().print();// uncomment produces a lot of output.
   ofstream logfile; logfile.open("logfile");
