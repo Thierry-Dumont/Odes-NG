@@ -1,5 +1,7 @@
 
       Plese, read the full documentation in Doc/ !
+0---
+   We treat only homogeneous systems: dy/dt = f(y).
 
 1---
 

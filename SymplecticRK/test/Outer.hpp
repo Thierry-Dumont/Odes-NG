@@ -25,7 +25,7 @@ template<class Double> class Outer
  public:
   static const int n=36;
   Double masses[6],G;
-  //constructor
+  //! constructor
   Outer()
   {
     //qJupiter:
@@ -80,10 +80,12 @@ template<class Double> class Outer
 	    dp[3*l+s]+=c*(q[3*j+s]-q[3*l+s]);
 	}
   }
+  //! define the RHS (we solve dX/dt= RHS = Y.
+  //! \param X in
+  //! \param Y out
   inline void operator()(Double X[],Double Y[]) const
   {
 
-    
     //symplify notations with references:
     Double *p=X+18, *q=X;// q: position, p: momentum.
     Double *dp=Y+18,*dq=Y;// q: position, p: momentum
@@ -93,6 +95,8 @@ template<class Double> class Outer
 
     //
   }
+  //! The Hamiltonian.
+  //! \param X.
   inline Double H(Double X[]) const //Hairer and Co. page 9..
   {
     //symplify notations:
@@ -114,6 +118,8 @@ template<class Double> class Outer
     ret-= G*s;
     return ret;
   }
+  //! U = initial conditions.
+  //! \param U
   inline void init(Double U[])
   {
     Double *p=U+18,*q=U;// q: position, p: momentum.
@@ -140,7 +146,7 @@ template<class Double> class Outer
     //momentum:
     for(int i=0;i<=5;i++)
       for(int j=0;j<3;j++)
-	p[3*i+j]*=masses[i];
+	p[3*i+j]*= masses[i];
   }
 };
 #endif

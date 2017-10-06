@@ -8,8 +8,30 @@ This library contains:
 
 1) optimized rewritings of classical stiff ODES solvers.
 
-2) specialized versions of stabilized explicit solvers, mainly for parabolic PDEs.
+2) specialized versions of stabilized explicit solvers, mainly for parabolic
+PDEs.
 
 
 It is yet experimental !
 ======================
+
+Doxygen documentation:
+---------------------
+
+Just do;
+ doxygen Doxyfile 
+
+Documentation goes in Doc/
+
+-html/ the html documentation.
+-latex the full Latex documentation (type make to generate it).
+
+
+The main page of the html documentation explains how to use this code.
+   A more readable version is the refman.pdf in Doc/Refman.
+
+test/ contains  examples, and some documentation.
+
+Fortran/ subdirectory contains original programs from Hairer and Wanner.
+
+sage/ subdirectory contains SageMath material used to build the codes.

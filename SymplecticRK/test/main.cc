@@ -42,7 +42,7 @@ int main()
       fileout<<'\n';
       
       fileout<<Symp.rhs().H(u)<<'\n';
-      cout<<Symp.rhs().H(u)<<endl;
+      //cout<<Symp.rhs().H(u)<<endl; //produces a lot of output.
     }
   fileout.close();
 
