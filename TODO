@@ -1,31 +1,16 @@
 
--documentation a revoir.
+-Improve documentation 
 
-- références bibliographiques.
-
-
--Rock4-L: test du cas affine ?
-
--tableaux de taille fixe?
+- bibliography
 
 -numeric limits ?
-
-==============
-Version(s) parallèles(s) de Radau5.
-==============
-
-
-============
-Programmes de test. Genre test Python ?
-============
-
 
 -clang
 
 -lapack/blas parallèles.
--parallélisation
 
--améliorer les CMakeLists.txt
 
--vectoriser correctement Outer dans SymplecticRK
+-improve  CMakeLists.txt
+
+- Rock2, classical, inear and affine, with error control.
 

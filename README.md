@@ -23,12 +23,16 @@ Just do;
 
 Documentation goes in Doc/
 
--html/ the html documentation.
--latex the full Latex documentation (type make to generate it).
+ * html/ the html documentation.
+
+ * latex the full Latex documentation (type make to generate it).
 
 
 The main page of the html documentation explains how to use this code.
    A more readable version is the refman.pdf in Doc/Refman.
+
+Structure:
+---------
 
 test/ contains  examples, and some documentation.
 
