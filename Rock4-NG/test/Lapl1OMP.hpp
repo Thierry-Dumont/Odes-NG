@@ -8,7 +8,8 @@ class Lapl1
 {
   const int Size;
   double nu,h,uh2,rspec;
-  const double pi=4*atan(1.0);  
+  const double pi=4*atan(1.0);
+  double f(double u) const {return u*(1-u);}
 public:
   //! constructor
   //! \param _size  size of the system.
@@ -25,11 +26,13 @@ public:
   inline void operator()(double * Restrict x,double * Restrict  y) const
   {
     ASSUME_ALIGNED(x); ASSUME_ALIGNED(y);
-    y[0]= uh2*(x[1]-x[0]);
-#include "Ivdep.hpp"
+    y[0]= uh2*(x[1]-x[0]) +f(x[0]);
+#ifdef ROCK4_OMP
+#pragma omp parallel for
+#endif 
     for(int i=1;i<Size-1;i++)
-       y[i]=uh2*(x[i-1]-2.0*x[i]+x[i+1]);
-    y[Size-1]= uh2*(x[Size-2]-x[Size-1]);
+      y[i]=uh2*(x[i-1]-2.0*x[i]+x[i+1]) + f(x[i]);
+    y[Size-1]= uh2*(x[Size-2]-x[Size-1]) + f(x[Size-1]);
   }
   //! return spectral radius.
   inline  double rho() const {
@@ -39,6 +42,9 @@ public:
   //! \param x
   void init(double x[])
   {
+#ifdef ROCK4_OMP
+#pragma omp parallel for
+#endif     
     for(int i=0;i<Size;i++)
       x[i]=cos(4*pi*i*h);
   }

@@ -5,7 +5,7 @@
 #include "MacrosForCompilers.hpp"
 #include "AllocateDestroyVector.hpp"
 #include "Rock4.hpp"
-
+#include <time.h>
 #include "Lapl1OMP.hpp"
 using namespace std;
 using namespace odes;
@@ -19,18 +19,34 @@ int main()
   std::cout.precision(16);
   F Ff(size);
 
+  double h,xend;
+  int nloops;
+  cout<<"initial time step?"; cin>>h;
+  cout<<"integration time?";  cin>>xend;
+  cout<<"how many loops on the problem?"; cin >>nloops;
   Rock4<F> R(Ff);
 
   R.setTolerances(1.e-5,1.e-5);
   //
   double* y=allocDoubleArray(size);
-  for(int rep=0;rep<1;rep++)
+  
+  clock_t clkStart =  clock();// we measure execution time.
+  for(int rep=0;rep<nloops;rep++)
     {
       Ff.init(y);
   
-      double t0=0.0, tend= 1., dt=tend;
-      R(y,t0,tend,dt);
+      double t0=0.0;
+      try{
+	R(y,t0,xend,h);
+      }
+      catch(odes::OdesException)
+	{
+#ifdef LOGROCK4
+	  R.Log().print();
+#endif	  
+	}
     }
+  auto texec = static_cast<double>(clock() - clkStart)/CLOCKS_PER_SEC;
   cout<<"ok, last time step: "<<R.LastAcceptedTimeStep()<<endl;
  
   ofstream f; f.open("result");
@@ -38,14 +54,16 @@ int main()
     f<<y[i]<<endl;
   f.close();
   destroyDoubleArray(y);
+#ifdef LOGROCK4
+  R.Log().print();
+#endif  
   cout<<"Func called : "<<R.NbRhsComputed()<<endl;
   cout<<"Nb. stages  : "<<R.NbStages()<<endl;
   cout<<"Nb. steps   : "<<R.NbSteps()<<endl;
   cout<<"Nb. accepted: "<<R.NbAccepted()<<endl;
   cout<<"Nb. rejected: "<<R.NbRejected()<<endl;
   cout<<"Size        : "<<R.nbUnkn()<<endl;
-#ifdef LOGROCK4
-  R.Log().print();
-#endif
+  cout<<"Execution time (ms per loop): "<<1000.*texec/nloops<<endl;
+
   return 1;
 }

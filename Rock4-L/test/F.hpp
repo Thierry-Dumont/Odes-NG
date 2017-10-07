@@ -27,19 +27,18 @@ public :
    }
   //! destructor
   ~F(){}
-  //! return number of points
+  //! return number of unknowns.
   int size ()const
   {
     return Size;
   }
 
-
-
   //! a \Delta in  + b s. 
-  void operator()(double * in, double * s, double a, double b,double *out)
+  void operator()(double* in, double* s, double a, double b,double* out)
   {
     double h1=h*h,ah1=a/h1;
     out[0]=(-2.*in[0]+2.*in[1])*ah1 +b*s[0];
+    
 #pragma omp parallel for
     for(int i=1;i<Size-1;i++)
       {
@@ -51,8 +50,8 @@ public :
 
   }
  //! a (\Delta in + g)  + b s 
-  void operator()(double * in, double * s, double a, double b, double *g,
-		  double *out)
+  void operator()(double* in, double* s, double a, double b, double*g,
+		  double* out)
   {
     double h1=h*h;
    
@@ -67,8 +66,8 @@ public :
       +b*s[Size-1];
   }
   // out = aAin + b in + c s
-  void operator()(double * in, double * s, double a, double b,double c,
-		  double *out)
+  void operator()(double* in, double* s, double a, double b,double c,
+		  double* out)
   {
     double h1=h*h,ah1=a/h1; 
  
@@ -89,8 +88,8 @@ public :
 
   }
   // out = a(Ain+g) + b in + c s
-  void operator()(double * in, double * s, double a, double b,double c,
-		  double *g,double *out)
+  void operator()(double* in, double* s, double a, double b,double c,
+		  double* g,double* out)
   {
     double h1=h*h; 
  
