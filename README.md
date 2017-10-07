@@ -29,7 +29,7 @@ Documentation goes in Doc/
 
 
 The main page of the html documentation explains how to use this code.
-   A more readable version is the refman.pdf in Doc/Refman.
+
 
 Structure:
 ---------
