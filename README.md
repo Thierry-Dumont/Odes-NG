@@ -8,8 +8,8 @@ This library contains:
 
 1) optimized rewritings of classical **_stiff_** ODES solvers.
 
-2) specialized versions of stabilized explicit solvers, mainly for parabolic
-PDEs.
+2) specialized versions of **_sstabilized explicit solvers_**, mainly for  **_parabolic
+PDEs_**.
 
 
 It is yet experimental !
@@ -36,6 +36,6 @@ Structure:
 
 test/ contains  examples, and some documentation.
 
-Fortran/ subdirectory contains original programs from Hairer and Wanner.
+Subdirectories Fortran/ contains original programs from Hairer and Wanner.
 
 sage/ subdirectory contains SageMath material used to build the codes.
