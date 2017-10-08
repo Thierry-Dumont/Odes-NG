@@ -49,4 +49,6 @@ Each  <b> test</b> directory contains a main program, all the necessary classes,
 
 > <b>run</b> to execute the program.
 
+Programs have been tested with recent versions of g++ and icc.
+
 */

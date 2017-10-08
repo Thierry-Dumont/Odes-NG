@@ -1,7 +1,7 @@
 *.log
 _*_.tex
 *.pyc
-publi.pdf
+.pdf
 *.aux
 toto*
 *out

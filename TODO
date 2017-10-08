@@ -7,9 +7,6 @@
 
 -clang
 
--lapack/blas parallèles.
-
-
 -improve  CMakeLists.txt
 
 - Rock2, classical, inear and affine, with error control.
