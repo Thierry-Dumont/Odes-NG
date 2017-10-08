@@ -11,7 +11,7 @@ This library contains:
 2) specialized versions of **_stabilized explicit solvers_**, mainly for  **_parabolic
 PDEs_**.
 
-Stabilized explicit solvers (Rock*) are multi-threaded (openmp).
+_Stabilized explicit solvers (Rock*) are multi-threaded (openmp)._
 
 It is yet experimental !
 ======================
