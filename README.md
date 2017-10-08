@@ -8,7 +8,7 @@ This library contains:
 
 1) optimized rewritings of classical **_stiff_** ODES solvers.
 
-2) specialized versions of **_sstabilized explicit solvers_**, mainly for  **_parabolic
+2) specialized versions of **_stabilized explicit solvers_**, mainly for  **_parabolic
 PDEs_**.
 
 
@@ -39,3 +39,16 @@ test/ contains  examples, and some documentation.
 Subdirectories Fortran/ contains original programs from Hairer and Wanner.
 
 sage/ subdirectory contains SageMath material used to build the codes.
+
+Concept:
+-------
+
+User pprovides a C++ _class_ which should completely discribes the problem:
+
+* RHS (and possibly Jacobian of RHS).
+* Size (number of equations).
+* Some operators if necessary.
+* Constants.
+* ...
+
+This allow to inline functions in the case of a rather simple RHS.
