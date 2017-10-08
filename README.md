@@ -3,7 +3,7 @@ Odes-NG
 
 **C++ library of (Ordinary) Differential  Equations solvers.**
 
-_(A New Generation of solvers)_
+_(NG? because it is a  New Generation of solvers)_
 
 This library contains:
 
