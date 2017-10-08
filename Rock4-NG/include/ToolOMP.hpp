@@ -8,7 +8,7 @@ using namespace std;
 namespace odes {
   ///////////////////////////////////////////////////////////////////////////
   /// Perform basic operations for Rock4. This is the both for sequential
-  /// ans openmp computations.
+  /// and openmp computations.
   ///
   //////////////////////////////////////////////////////////////////////////
   template<class Fonc> class ToolOMP

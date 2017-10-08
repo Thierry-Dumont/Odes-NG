@@ -45,7 +45,7 @@ sage/ subdirectory contains SageMath material used to build the codes.
 Concept:
 -------
 
-User provides a C++ _class_ which should completely describe the problem:
+User provides a _C++ class_ which should completely describe the problem:
 
 * RHS (and if necessary Jacobian of RHS).
 * Size (number of equations).

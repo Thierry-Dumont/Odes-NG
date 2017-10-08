@@ -6,6 +6,7 @@
 #include "AllocateDestroyVector.hpp"
 #include "logger.hpp"
 #include "OdesException.hpp"
+#include "switchAdr.hpp"
 #include <cmath>
 #include <string>
 #include <cstdlib>
@@ -32,15 +33,9 @@ namespace odes {
     double hlast;
     double *fn,*k1,*k2,*k3,*k4,*temp,*g0,*Vtemp;
     int mp[3],mdeg,funccal,nrej,nsteps,nacc,nstagesmax;
-    Rock4Coeffs Coeffs;
+    Rck4Coeffs Coeffs;
  
-    //! switch 2 adresses.
-    //! \param a
-    //! \param b
-    inline void switchAdr(double *&a,double *&b)
-    {
-      double *c=a; a=b;b=c;
-    }
+
     void mdegre(int& mdeg)
     {
       mp[2]=1;

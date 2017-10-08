@@ -4,6 +4,7 @@
 #include "MacrosForCompilers.hpp"
 #include "AllocateDestroyVector.hpp"
 #include "OdesException.hpp"
+#include "switchAdr.hpp"
 #include <cmath>
 #include <cstdlib>
 using namespace std;
@@ -82,13 +83,7 @@ namespace odes{
       double *temp=g0;
       g0=g1; g1=g2;g2=temp;
     }
-    //! switch 2 adresses.
-    //! \param a
-    //! \param b
-    inline void switchAdr(double *&a,double *&b)
-    {
-      double *c=a; a=b;b=c;
-    }
+   
     //! find degree of formula.
     void mdegre(int& mdeg)
     {
