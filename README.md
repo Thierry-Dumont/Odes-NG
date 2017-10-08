@@ -6,7 +6,7 @@ C++ library of (Ordinary) Differential  Equations solvers.
 
 This library contains:
 
-1) optimized rewritings of classical stiff ODES solvers.
+1) optimized rewritings of classical *stiff* ODES solvers.
 
 2) specialized versions of stabilized explicit solvers, mainly for parabolic
 PDEs.
@@ -28,7 +28,7 @@ Documentation goes in Doc/
  * latex the full Latex documentation (type make to generate it).
 
 
-The main page of the html documentation explains how to use this code.
+The main page of the html documentation explains how to use these codes.
 
 
 Structure:
