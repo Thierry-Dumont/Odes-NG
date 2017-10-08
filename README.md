@@ -11,6 +11,7 @@ This library contains:
 2) specialized versions of **_stabilized explicit solvers_**, mainly for  **_parabolic
 PDEs_**.
 
+Stabilized explicit solvers (Rock*) are multi-threaded (openmp).
 
 It is yet experimental !
 ======================
@@ -52,3 +53,5 @@ User provides a C++ _class_ which should completely discribes the problem:
 * ...
 
 This allow to inline functions in the case of a rather simple RHS.
+
+
