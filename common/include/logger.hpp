@@ -3,6 +3,7 @@
 #include <list>
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 namespace odes
 {
@@ -26,6 +27,8 @@ namespace odes
       }
     };
     list<event> L;
+    const string names[6]={"success","rejectedStep","NewtonFailed",
+			      "NewtonWillNotConverge","changedH","all"};
     
   public:
     //! constructor
@@ -50,8 +53,6 @@ namespace odes
     //!\param E filter on a given  type of event; if E==all, use all events. 
     string tostring(eventType E=all) const
     {
-      string names[6]={"success","rejectedStep","NewtonFailed",
-			      "NewtonWillNotConverge","changedH","all"};
       string ret="";
       int count=0;
       for(list<event>::const_iterator I=L.begin();I!=L.end();I++)
@@ -69,17 +70,6 @@ namespace odes
 	    }
 	}
       return ret;
-    }
-    //! print
-    //! \param E eventype, for filtering results.
-    void print(eventType E=all)
-    {
- 
-      string s=tostring(all);
-      if(s.size()>0)
-	cout<<s;
-      else
-	cout<<"No event."<<endl;
     }
   };
   ///! overload <<

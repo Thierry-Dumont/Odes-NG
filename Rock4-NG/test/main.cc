@@ -42,7 +42,7 @@ int main()
       catch(odes::OdesException)
 	{
 #ifdef LOGROCK4
-	  R.Log().print();
+	  cout<<R.Log()<<endl;
 #endif	  
 	}
     }
@@ -55,7 +55,7 @@ int main()
   f.close();
   destroyDoubleArray(y);
 #ifdef LOGROCK4
-  R.Log().print();
+  cout<<R.Log()<<endl;
 #endif  
   cout<<"Func called : "<<R.NbRhsComputed()<<endl;
   cout<<"Nb. stages  : "<<R.NbStages()<<endl;

@@ -33,7 +33,7 @@ namespace odes {
     double hlast;
     double *fn,*k1,*k2,*k3,*k4,*temp,*g0,*Vtemp;
     int mp[3],mdeg,funccal,nrej,nsteps,nacc,nstagesmax;
-    Rck4Coeffs Coeffs;
+    Rock4Coeffs Coeffs;
  
 
     void mdegre(int& mdeg)

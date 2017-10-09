@@ -40,12 +40,11 @@ int main()
   for(int i=0;i<nloops;i++)//loop on the same problem.
     {
       Rad.rhs().init(y);
-      Rad.setNmax(100000);
+      Rad.setNmax(10000);
       t=0.0;
-      try
-	{
-	  Rad(h,t,xend,&(y[0]));
-	}
+      try{
+	Rad(h,t,xend,&(y[0]));
+      }
       catch( OdesException )
 	{
 	  #ifdef LOGRADAU5
@@ -54,7 +53,7 @@ int main()
 	  logfile.close();
 	  throw OdesException("abort! logfile created.");
 	  #else
-	   throw OdesException("abort!");
+	  throw OdesException("abort!");
 	  #endif
 	  
 	}
@@ -62,17 +61,17 @@ int main()
   auto texec = static_cast<double>(clock() - clkStart)/CLOCKS_PER_SEC;
   
   cout<<endl<<endl;
-  cout<<"nstep= "<<Rad.getNstep()<<" njac= "<<Rad.getNJac()<<
-    " naccpt= "<<Rad.getNaccpt()<<" nreject= "<<Rad.getNrejct()<<
-     " ndec= "<<Rad.getNdec()<<endl;
+  cout<<"nstep= "<<Rad.getNstep()<<"\nnjac= "<<Rad.getNJac()<<
+    "\nnaccpt= "<<Rad.getNaccpt()<<"\nnreject= "<<Rad.getNrejct()<<
+     "\nndec= "<<Rad.getNdec()<<endl;
   cout<<"first accepted step: "<<Rad.getfirstAcceptedStep()<<endl;
-  cout<<"Execution time (ms per loop): "<<1000.*texec/nloops<<endl;
+  cout<<"\nExecution time (milli seconds per loop): "<<1000.*texec/nloops<<endl;
 #ifdef LOGRADAU5
-  //Rad.Log().print();// uncomment produces a lot of output.
+  //std::cout<<Rad.Log()<<endl;// uncomment produces a lot of output.
   ofstream logfile; logfile.open("logfile");
   logfile<<Rad.Log()<<endl;
   logfile.close();
-  cout<<"logfile created."<<endl;
+  cout<<"\nlogfile created."<<endl;
 #endif
   cout<<endl<<"ok."<<endl;
 }
