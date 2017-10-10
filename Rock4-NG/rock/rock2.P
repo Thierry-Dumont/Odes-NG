@@ -1,8 +1,0 @@
-extern int rock2_(integer *neqn, doublereal *t, doublereal *tend, doublereal *h__, doublereal *y, U_fp f, doublereal *atol, doublereal *rtol, doublereal *work, integer *iwork, integer *idid);
-extern int rockcore_(integer *neqn, doublereal *t, doublereal *tend, doublereal *h__, doublereal *y, S_fp f, doublereal *work, doublereal *yn, doublereal *fn, doublereal *yjm1, doublereal *yjm2, integer *ms, doublereal *atol, doublereal *rtol, integer *ntol, doublereal *recf, doublereal *fp1, doublereal *fp2, integer *iwork, logical *arret, doublereal *uround, integer *idid);
-extern int rtstep_(integer *neqn, doublereal *t, doublereal *h__, doublereal *y, S_fp f, doublereal *yn, doublereal *fn, doublereal *yjm1, doublereal *yjm2, integer *mdeg, integer *mp, doublereal *err, doublereal *atol, doublereal *rtol, integer *ntol, doublereal *recf, doublereal *fp1, doublereal *fp2);
-extern int mdegr_(integer *mdeg, integer *mp, integer *ms);
-extern int rocktrho_(integer *neqn, doublereal *t, doublereal *y, S_fp f, doublereal *yn, doublereal *fn, doublereal *work, doublereal *z__, doublereal *fz, doublereal *eigmax, doublereal *uround, integer *idid, integer *iwork);
-/*:ref: rockcore_ 14 22 4 7 7 7 7 214 7 7 7 7 7 4 7 7 4 7 7 7 4 12 7 4 */
-/*:ref: rho_ 7 3 4 7 7 */
-/* Rerunning f2c -P may change prototypes or declarations. */
