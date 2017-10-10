@@ -21,7 +21,8 @@ See documentation of individual programs.
 
 \section General General considerations about implementation.
 
-All is written in C++, and some program must be used with recent compilers (c++-11 or c++-14 norm). Everything has been tested with g++, icc and clang compilers.
+All is written in C++, and some program must be used with recent compilers (c++-11 or c++-14 norm). Everything has been tested with g++, icc compilers (but
+a problem remains with clang).
 
 This is a library of templates, no intermediate binary is created.
 
