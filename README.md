@@ -1,15 +1,15 @@
 Odes-NG
 =======
 
-**C++ library of (Ordinary) Differential  Equations solvers.**
+**C++ library of (Ordinary) Differential  Equations solvers, with routines adapted to Parabolic Equations.**
 
-_(NG? because it is a  New Generation of solvers)._
+_(Why NG? because it is a  New Generation of solvers)._
 
 This library contains:
 
 1) optimized rewritings of classical **_stiff_** ODES solvers.
 
-2) specialized versions of **_stabilized explicit solvers_**, mainly for  **_parabolic
+2) specialized versions of **_stabilized explicit solvers_**, mainly for  **_large systems resulting from parabolic
 PDEs_**.
 
 _Stabilized explicit solvers (Rock*) are multi-threaded (openmp)._
