@@ -38,8 +38,6 @@ Structure:
 
 test/ contains  examples, and some documentation.
 
-Subdirectories Fortran/ contains original programs from Hairer and Wanner.
-
 sage/ subdirectory contains SageMath material used to build the codes.
 
 Concept:
@@ -56,3 +54,5 @@ User provides a _C++ class_ which should completely describe the problem:
 This allow to inline functions in the case of a rather simple RHS.
 
 
+The original codes for Radau5, Rodas, Rock2 and Rock4 can be found at
+https://www.unige.ch/~hairer/software.html
