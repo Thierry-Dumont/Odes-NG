@@ -1,6 +1,8 @@
 Odes-NG
 =======
 
+$$\frac{du}{dt} =f(u).$$
+
 **C++ library of (Ordinary) Differential  Equations solvers, with routines adapted to Parabolic Equations.**
 
 _(Why NG? because it is a  New Generation of solvers)._
@@ -17,20 +19,7 @@ _Stabilized explicit solvers (Rock*) are multi-threaded (openmp)._
 It is yet experimental !
 ======================
 
-Doxygen documentation:
----------------------
 
-Just do;
- doxygen Doxyfile 
-
-Documentation goes in Doc/
-
- * html/ the html documentation.
-
- * latex the full Latex documentation (type make to generate it).
-
-
-The main page of the html documentation explains how to use these codes.
 
 
 Structure:
@@ -56,3 +45,13 @@ This allow to inline functions in the case of a rather simple RHS.
 
 The original codes for Radau5, Rodas, Rock2 and Rock4 can be found at
 https://www.unige.ch/~hairer/software.html
+
+Doxygen documentation:
+---------------------
+
+Just do;
+ doxygen Doxyfile 
+
+Documentation (html and latex) goes in Doc/
+
+ The main page of the html documentation explains how to use these codes.
