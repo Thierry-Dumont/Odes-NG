@@ -1,7 +1,6 @@
 Odes-NG
 =======
 
-$$\frac{du}{dt} =f(u).$$
 
 **C++ library of (Ordinary) Differential  Equations solvers, with routines adapted to Parabolic Equations.**
 
