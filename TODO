@@ -5,8 +5,6 @@
 
 -numeric limits ?
 
--clang
-
 -improve  CMakeLists.txt
 
 - Rock2, classical, inear and affine, with error control.

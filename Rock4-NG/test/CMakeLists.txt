@@ -16,7 +16,8 @@ ${CMAKE_SOURCE_DIR}/../../common/include
 
 else ()
   set (USING_GNU TRUE)
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -Wall  -O3  -std=c++14 -g -DGCC -DALIGN_BLOCKED  -march=native -fopenmp")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -Wall  -O3  -std=c++14 -g -DGCC -DALIGN_BLOCKED  -march=native  -fopenmp ")
+  #-fopenmp 
 include_directories(
 ${CMAKE_SOURCE_DIR}/../include
 ${CMAKE_SOURCE_DIR}/../../common/include
@@ -48,10 +49,6 @@ else ()
   target_link_libraries(
     run
     lapack 
-    tbb
-    tbbmalloc_proxy
-    tbbmalloc
-    rt
     )
 endif ()
 
