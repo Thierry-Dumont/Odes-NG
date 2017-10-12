@@ -8,7 +8,7 @@ _(Why NG? because it is a  New Generation of solvers)._
 
 This library contains:
 
-1) optimized rewritings of classical **_stiff_** ODES solvers.
+1) optimized rewriting of classical **_stiff_** ODES solvers.
 
 2) specialized versions of **_stabilized explicit solvers_**, mainly for  **_large systems resulting from parabolic
 PDEs_**.
@@ -21,17 +21,17 @@ It is yet experimental !
 Numerical Methods:
 -----------------
 
--Radau5-NG : rewriting of the classical Radau5 code (by Hairer and Wanner).
+* Radau5-NG : rewriting of the classical Radau5 code (by Hairer and Wanner).
 
--Rock4-NG  : rewriting of the code of A. Abdulle, with less memory copies.
+* Rock4-NG  : rewriting of the code of A. Abdulle, with less memory copies.
 
--Rock4-L   : specialisation of Rock4 for linear problems.
+* Rock4-L   : specialization of Rock4 for linear problems.
 
--Rodas-NG  : rewirting of the code Rodas (by Hairer and Wanner).
+* Rodas-NG  : rewriting of the code Rodas (by Hairer and Wanner).
 
--SDIRKL    : SDIRK methods, for linear problems.
+* SDIRKL    : SDIRK methods, for linear problems.
 
--SymplectikRK : Gaussian symplectic methods.
+* SymplectikRK : Gaussian symplectic methods.
 
 
 
