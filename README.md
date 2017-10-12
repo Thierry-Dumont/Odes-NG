@@ -57,10 +57,17 @@ Documentation (html and latex) goes in Doc/
 How to build and run the tests:
 -------------------------------
 cd Radau5-NG   (or Rock4-L, Rock4-NG, and so on)
+
 cd test
+
 mkdir Build
+
 cd Build
+
 export CXX=your_compiler (with your compiler = g++ or icc or clang++)
+
 cmake ..
+
 make
+
 ./run
