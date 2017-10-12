@@ -18,6 +18,22 @@ _Stabilized explicit solvers (Rock*) are multi-threaded (openmp)._
 It is yet experimental !
 ======================
 
+Numerical Methods:
+-----------------
+
+-Radau5-NG : rewriting of the classical Radau5 code (by Hairer and Wanner).
+
+-Rock4-NG  : rewriting of the code of A. Abdulle, with less memory copies.
+
+-Rock4-L   : specialisation of Rock4 for linear problems.
+
+-Rodas-NG  : rewirting of the code Rodas (by Hairer and Wanner).
+
+-SDIRKL    : SDIRK methods, for linear problems.
+
+-SymplectikRK : Gaussian symplectic methods.
+
+
 
 Structure:
 ---------
