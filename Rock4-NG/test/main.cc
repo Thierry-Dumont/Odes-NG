@@ -1,4 +1,4 @@
-#define LOGROCK4
+//#define LOGROCK4
 #define ROCK4_OMP
 #include <iostream>
 #include <fstream>

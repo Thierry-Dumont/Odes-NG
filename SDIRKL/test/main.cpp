@@ -75,7 +75,7 @@ int main()
   double beta=1.0;
 
   RK R; //just to get the name!
-  f.open(R.name);
+  f.open(R.name.c_str());
   exact ExactSol(n);
   ExactSol.exactsolAtt(Tinteg,sol,beta);
  
