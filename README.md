@@ -38,9 +38,13 @@ Numerical Methods:
 Structure:
 ---------
 
-test/ contains  examples, and some documentation.
+* Odes/common/include/: contains parts of code common to all integrators.
 
-sage/ subdirectory contains SageMath material used to build the codes.
+* For each integrator, the directory contains:
+
+   * include/ :the core integrator.
+   * test/ : examples, and some documentation.
+   * An optional sage/ subdirectory contains SageMath material used to build the codes.
 
 Concept:
 -------
@@ -72,7 +76,7 @@ Documentation (html and latex) goes in Doc/
 
 How to build and run the tests:
 -------------------------------
-cd Radau5-NG   (or Rock4-L, Rock4-NG, and so on)
+cd Radau5-NG   (or Rock4-L, Rock4-NG, Rodas-NG and so on)
 
 cd test
 
