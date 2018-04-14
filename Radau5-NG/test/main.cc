@@ -24,9 +24,10 @@ int main()
   double atol[n],rtol[n]; atol[0]=1.e-5; rtol[0]=1.e-5;
 
 #ifdef ICC
-  cout<<"ICC compiled."<<endl;
+  cout<<"Compiled with ICC."<<endl;
 #endif
   cout<<n<<" equations."<<endl;
+  
   Radau5cc<Fonc> Rad(true,atol,rtol);
   double h,t,xend;
   int nloops;
@@ -61,11 +62,15 @@ int main()
   auto texec = static_cast<double>(clock() - clkStart)/CLOCKS_PER_SEC;
   
   cout<<endl<<endl;
+  
   cout<<"nstep= "<<Rad.getNstep()<<"\nnjac= "<<Rad.getNJac()<<
     "\nnaccpt= "<<Rad.getNaccpt()<<"\nnreject= "<<Rad.getNrejct()<<
      "\nndec= "<<Rad.getNdec()<<endl;
+  
   cout<<"first accepted step: "<<Rad.getfirstAcceptedStep()<<endl;
+  
   cout<<"\nExecution time (milli seconds per loop): "<<1000.*texec/nloops<<endl;
+
 #ifdef LOGRADAU5
   //std::cout<<Rad.Log()<<endl;// uncomment produces a lot of output.
   ofstream logfile; logfile.open("logfile");
@@ -73,5 +78,5 @@ int main()
   logfile.close();
   cout<<"\nlogfile created."<<endl;
 #endif
-  cout<<endl<<"ok."<<endl;
+  cout<<endl<<"end."<<endl;
 }
