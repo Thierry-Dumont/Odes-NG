@@ -1,11 +1,12 @@
 
--Improve documentation 
+- Improve documentation 
 
 - bibliography
 
 -numeric limits ?
 
--improve  CMakeLists.txt
+- improve  CMakeLists.txt
 
-- Rock2, classical, inear and affine, with error control.
+- Add Rock2-NG, classical, and ROCK2-L linear and affine, with error control,
+new versions of Rock-2 (order 2).
 

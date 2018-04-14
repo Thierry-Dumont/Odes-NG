@@ -42,7 +42,7 @@ Structure:
 
 * For each integrator, the directory contains:
 
-   * include/ :the core integrator.
+   * include/ : the core integrator.
    * test/ : examples, and some documentation.
    * An optional sage/ subdirectory contains SageMath material used to build the codes.
 
@@ -68,26 +68,22 @@ Doxygen documentation:
 
 Just do:
 
+```
  doxygen Doxyfile 
-
+```
 Documentation (html and latex) goes in Doc/
 
  The main page of the html documentation explains how to use these codes.
 
 How to build and run the tests:
 -------------------------------
+```
 cd Radau5-NG   (or Rock4-L, Rock4-NG, Rodas-NG and so on)
-
 cd test
-
 mkdir Build
-
 cd Build
-
-export CXX=your_compiler (with your compiler = g++ or icc or clang++)
-
+export CXX=your_compiler (with your compiler = g++ or icc or clang++; default:g++)
 cmake ..
-
 make
-
 ./run
+```
