@@ -12,6 +12,7 @@ int main()
 {
   //typedef long double Double;
   typedef double Double;
+  //
   typedef Outer<Double> F;
   //typedef OuterUranus<Double> F;
   //typedef OuterNeptune<Double> F;
@@ -23,12 +24,12 @@ int main()
   //Symp.verify();
   Double h;
   cout.precision(53);
-  //cout<<"h?"; cin>>h;
   ofstream fileout("result");
-  cout<<"n= "<<n<<endl;
-  h=1.0; //in days
-  double years=200;
+  cout<<"n= "<<n<<"  unknowns."<<endl;
+  h=1.0; //time step in days
+  double years=200;// integration time in years.
   bool firstep=true;
+  
   for(int it=0;it<years*365.25*h;it++)
     {
       bool ok=Symp.step(h,u,firstep);
@@ -42,9 +43,10 @@ int main()
       fileout<<'\n';
       
       fileout<<Symp.rhs().H(u)<<'\n';
-      //cout<<Symp.rhs().H(u)<<endl; //produces a lot of output.
+      //cout<<Symp.rhs().H(u)<<endl; //uncomment produces a lot of output.
     }
+  
   fileout.close();
-
+  cout<<"file ./result is created"<<endl;
   cout<<"end."<<endl;
 }

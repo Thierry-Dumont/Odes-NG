@@ -11,12 +11,14 @@
 #include <string>
 using namespace std;
 using namespace odes;
+// The exact solution:
 class exact{
   const int l=25;
   const int n;
   const double pi;
   const double h;
 public:
+  
   exact(int _n):n(_n),pi(4.*atan(1.0)),h(1./((double) (n-1)))
   {
   }
@@ -54,9 +56,9 @@ int main()
 {
   // RK method:
   //typedef RKMethod1 RK;
-  //typedef RKMethod2 RK;
+  typedef RKMethod2 RK;
   //typedef RKRS RK;
-  typedef CrN RK;
+  //typedef CrN RK;
   //typedef EulerImp RK;
   
 
@@ -94,9 +96,12 @@ int main()
 	//S.step(x);
       double diff=normdiff(n,x,sol);
       cout<<endl<<"step: "<<dt<<" "<<diff<<endl;
-      f<<log(dt)<<" "<<log(diff)<<endl;
+      f<<dt<<" "<<diff<<endl;
  
     }
+  cout<<endl<<endl<<
+    "In file ./"<<R.name<<" you will find the error as a fonction of the time step"<<endl;
+  cout<<"Just gnuplot this file (in logscale for both axis)"<<endl;
   f.close();
   cout<<"end"<<endl;
 }
