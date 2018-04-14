@@ -91,7 +91,7 @@ make
 References:
 ----------
 To learn about Ordinary Differential Equations solvers, have a look at
-the _bible_ which are  the three books:
+the _bible_:
 
 * _Solving Ordinary Differential Equations I_, by Hairer,
 Nørsett,, Wanner,
