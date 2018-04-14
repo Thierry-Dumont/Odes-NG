@@ -41,6 +41,9 @@ int main()
       }
       catch(odes::OdesException)
 	{
+	  cout<<"If you got a message like 'Rock4: step too small',";
+	  cout<<" you probably need to restart with smaller initial time step";
+	  cout<<" and integration time."<<endl<<endl;;
 #ifdef LOGROCK4
 	  cout<<R.Log()<<endl;
 #endif	  

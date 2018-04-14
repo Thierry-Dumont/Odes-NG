@@ -44,6 +44,7 @@ Structure:
 
    * include/ : the core integrator.
    * test/ : examples, and some documentation.
+	 * Also note that in test/, you will find additional documentation.
    * An optional sage/ subdirectory contains SageMath material used to build the codes.
 
 Concept:
@@ -87,3 +88,12 @@ cmake ..
 make
 ./run
 ```
+References:
+----------
+To learn about Ordinary Differential Equations solvers, have a look at
+the _bible_ which are  the three books:
+
+* _Solving Ordinary Differential Equations I_, by Hairer, Ernst,
+Nørsett, Syvert P., Wanner, Gerhard,
+* _Solving Ordinary Differential Equations II Stiff and Differential-Algebraic Problems_ by Hairer, Ernst, Wanner, Gerhard,
+* _Geometric Numerical Integration_ by Hairer, Ernst, Lubich, Christian, Wanner, Gerhard.
