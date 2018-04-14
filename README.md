@@ -93,7 +93,8 @@ References:
 To learn about Ordinary Differential Equations solvers, have a look at
 the _bible_ which are  the three books:
 
-* _Solving Ordinary Differential Equations I_, by Hairer, Ernst,
-Nørsett, Syvert P., Wanner, Gerhard,
-* _Solving Ordinary Differential Equations II Stiff and Differential-Algebraic Problems_ by Hairer, Ernst, Wanner, Gerhard,
-* _Geometric Numerical Integration_ by Hairer, Ernst, Lubich, Christian, Wanner, Gerhard.
+* _Solving Ordinary Differential Equations I_, by Hairer,
+Nørsett,, Wanner,
+* _Solving Ordinary Differential Equations II Stiff and
+  Differential-Algebraic Problems_ by Hairer and  Wanner,
+* _Geometric Numerical Integration_ by Hairer, Lubich and  Wanner.
