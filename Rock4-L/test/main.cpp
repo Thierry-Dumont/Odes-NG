@@ -34,7 +34,6 @@ void print(double x[],int n)
 }
 int main()
 {
-  //typedef FRadau5 F;
   static const int n=FRadau5::n;
   // Problem:
   static const bool affine=false;
@@ -45,11 +44,12 @@ int main()
   //Radau5 integration:
   //
   double atol[n],rtol[n]; 
-  atol[0]=1.e-10; rtol[0]=1.e-10;
+  atol[0]=1.e-8; rtol[0]=1.e-8;
   double *y=allocDoubleArray(n);
   Radau5cc<FRadau5> Rad(true,atol,rtol);
   bool ok;
-  
+
+  cout<<endl<<"1) Find acceptable atol and rtol in Radau5, as small as possible:"<<endl;
   do
     {
       // find acceptable atol and rtol, as small as possible.
@@ -66,27 +66,29 @@ int main()
 	{
 	  ok=false;
 	  atol[0]*=2; rtol[0]*=2;
-	  cout<<"tol: "<<atol[0]<<" "<<rtol[0]<<endl;
+	  cout<<"tol: "<<atol[0]<<" "<<rtol[0];//<<endl;
 	}
     }
   while(!ok);
-  //ok, we have a solution at order 4, as precise as possible with Radau5.
-  cout<<"Solution, using Radau5: "<<endl;
-  print(y,n);
+
+  
+  cout<<endl<<"Ok, we have a reference solution at order 4, as precisely computed as possible with Radau5."<<endl<<endl;
+
+  // Uncomment to print results.
+  // cout<<"The solution, using Radau5: "<<endl;
+  // print(y,n);
     
-  //
-  ofstream f("gplot",ios::out|ios :: trunc);
-  ofstream outR("OutR",ios::out|ios :: trunc);
-  ofstream outF("OutF",ios::out|ios :: trunc);
+  cout<<"2) Now, we compute with Rock4, with decreasing time steps,";
+  cout<<" and we compare the results with the 'best' solution obtained with Radau5:"<<endl<<endl;
 
   if(affine)
-    cout<<"AFFINE"<<endl;
+    cout<<"problem is AFFINE."<<endl;
   else
-    cout<<"LINEAR"<<endl;
+    cout<<"problem is LINEAR."<<endl;
   double *yR=allocDoubleArray(n);
-
-  //compute using Rock, with decreasing time steps, and compare with the
-  // "best" solution obtained by Radau5:
+   
+  ofstream outR("OutR",ios::out|ios :: trunc);
+  ofstream outF("OutF",ios::out|ios :: trunc);
 
   double dt = Tinteg/2.;
   for(int l=0;l<30;l++)
@@ -113,15 +115,19 @@ int main()
  
       outR<<dt<<" "<<normdiff(n,yR,y)<<endl;
       
-      cout<<"n= "<<n<<endl;
-      for(int i=0;i<n;i++)
-	outF<<yR[i]<<endl;;
+ 
      }
-  print(yR,n);
-  f.close();
+  // uncomment to print the results:
+  // cout<<"n= "<<n<<endl;
+  // for(int i=0;i<n;i++)
+  //   outF<<yR[i]<<endl;
+  // print(yR,n);
  
   destroyDoubleArray(yR);
   destroyDoubleArray(y);
-  cout<<"The solution is in OutF, error/time_step in OutR."<<endl;
-  cout<<"end"<<endl;
+  
+  cout<<endl<<"The best solution computed with Rock4 is in ./OutF, error vs.time_step for Rock4 in ./OutR."<<endl;
+  cout<<"You can just gnuplot these files (with logscale on both axis for ./OutR)."<<endl;
+  
+  cout<<endl;
 }
