@@ -38,13 +38,12 @@ Numerical Methods:
 Structure:
 ---------
 
-* Odes/common/include/: contains parts of code common to all integrators.
+* Odes-NG/common/include/: contains parts of code common to _all_ integrators.
 
 * For each integrator, the directory contains:
 
    * include/ : the core integrator.
    * test/ : examples, and some documentation.
-	 * Also note that in test/, you will find additional documentation.
    * An optional sage/ subdirectory contains SageMath material used to build the codes.
 
 Concept:
