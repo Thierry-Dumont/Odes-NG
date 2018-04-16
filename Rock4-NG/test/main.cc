@@ -15,21 +15,27 @@ int main()
 
   typedef FKPP F;
 
-  static const int size=500; 
-  std::cout.precision(16);
-  F Ff(size);
-
+  int size;
   double h,xend;
-  cout<<"initial time step?"; cin>>h;
-  cout<<"integration time for each step?";  cin>>xend;
-  Rock4<F> R(Ff);
-  cout<<"We integrate on [0,"<<xend<<"]."<<endl<<endl;
+  std::cout.precision(16);
+  
 
+  
+  cout<<endl<<"Spatial discretization: how many points?"; cin>>size;
+  cout<<"Initial time step?"; cin>>h;
+  cout<<"Integration time?";  cin>>xend;
+  cout<<endl<<"We integrate on t=[0,"<<xend<<"], with "<<
+    size<<" points in x."<<endl<<endl;
+  
+  F Ff(size);
+  Rock4<F> R(Ff);
+  
   R.setTolerances(1.e-7,1.e-7);
   //
   double* y=allocDoubleArray(size);
   Ff.init(y);
-  double t0=0.0;
+
+   double t0=0.0;
   clock_t clkStart =  clock();// we measure execution time.
  
   try{
@@ -45,9 +51,9 @@ int main()
 #endif
  
     }
- 
-  auto texec = static_cast<double>(clock() - clkStart)/CLOCKS_PER_SEC;
   cout<<"ok, last time step: "<<R.LastAcceptedTimeStep()<<endl<<endl;
+  
+  auto texec = static_cast<double>(clock() - clkStart)/CLOCKS_PER_SEC;
  
   ofstream f; f.open("result");
   for(int i=0;i<size;i++)
@@ -56,6 +62,7 @@ int main()
   cout<<"Results at the end of the integration are in file './result'"<<
     endl<<endl;
   destroyDoubleArray(y);
+  
 #ifdef LOGROCK4
   cout<<R.Log()<<endl;
 #endif  

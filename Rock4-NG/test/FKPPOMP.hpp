@@ -6,11 +6,12 @@
 using namespace std;
 class FKPP
 {
-  //This is the Fisher-KPP equation in dimension 1.
+  // This is the Fisher-KPP equation in dimension 1.
   // du/dt=  \nu u" + 0.5 u (1-u).
+  // 
   const int Size;
   double nu,h,uh2,rspec;
-  double f(double u) const
+  double f(double u) const 
   {
     // bound f in [0,1] is necessary due to floating approximations 
     // (otherwise, we will surely return values >1 => explosion !).

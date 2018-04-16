@@ -44,9 +44,7 @@ namespace odes {
       double temp1=h*Coeffs.recf(mr+2*(deg-2)+1),
 	temp3=-Coeffs.recf(mr+2*(deg-2)+2);
       double temp2=1.0-temp3;
-      //not vec
-      // for(int i=0;i<size;i++)
-      // g0[i]=temp1*F(i,g1)+temp2*g1[i]+temp3*g0[i];
+      //
       F(g1,vtemp);
       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
       ASSUME_ALIGNED(vtemp);
@@ -63,9 +61,7 @@ namespace odes {
       // here, degree==2.
       double temp1=h*Coeffs.recf(mr+1),	temp3=-Coeffs.recf(mr+2);
       double temp2=1.0-temp3;
-      //not vec     
-      // for(int i=0;i<size;i++)
-      //  	g2[i]=temp1*F(i,g1)+temp2*g1[i]+temp3*g0[i];
+
       F(g1,g2);
       ASSUME_ALIGNED(g0); ASSUME_ALIGNED(g1);
       ASSUME_ALIGNED(g2);
