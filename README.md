@@ -89,7 +89,7 @@ make
 ```
 References:
 ----------
-To learn about Ordinary Differential Equations solvers, have a look at
+To learn about Ordinary Differential Equations solvers, you should read 
 the _bible_:
 
 * _Solving Ordinary Differential Equations I_, by Hairer,
