@@ -34,7 +34,6 @@ public:
   //! RHS for Radau5.
   inline void operator()(double t,double * Restrict y,double * Restrict res)
   {
-//ASSUME_ALIGNED(y, 64);//ASSUME_ALIGNED(res, 64);
     res[0]=77.27*(y[1]+y[0]*(1.-8.375e-06*y[0]-y[1]));
     res[1]=(y[2]-(1.+y[0])*y[1])*u7;
     res[2]=0.161*(y[0]-y[2]);

@@ -1,5 +1,4 @@
 
-      Please, read the full documentation in Doc/ !
 
    We treat only homogeneous systems: dy/dt = f(y).
 
@@ -19,8 +18,13 @@
    
  - KPP.hpp        (a 1d PDE (the classical Fisher KPP problem).
 
-   Modify "typedef" intructions in main.cc to choose one example.
+   Modify "typedef" instructions in main.cc to choose one example.
 
+ We recommend to have a look at  _Oregonator.hpp_ which is quite simple.
+In this example, the Jacobian is provided, but you can use it or not
+by changing the 
+flag _ComputeJacobianNumerically_ (if set to true, the  Jacobian is computed by
+finite differences, and the method _Jacobian_ is not used).
 
 
 3. define or not LOGRADAU5
