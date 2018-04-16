@@ -1,25 +1,32 @@
-#ifndef Lapl1OMP__h
-#define Lapl1OMP__h
+#ifndef FKPPOMP__h
+#define FKPPOMP__h
 #include "MacrosForCompilers.hpp"
 #include "AllocateDestroyVector.hpp"
 #include <iostream>
 using namespace std;
-class Lapl1
+class FKPP
 {
+  //This is the Fisher-KPP equation in dimension 1.
+  // du/dt=  \nu u" + 0.5 u (1-u).
   const int Size;
   double nu,h,uh2,rspec;
-  const double pi=4*atan(1.0);
-  double f(double u) const {return u*(1-u);}
+  double f(double u) const
+  {
+    // bound f in [0,1] is necessary due to floating approximations 
+    // (otherwise, we will surely return values >1 => explosion !).
+    return min(1.,max(0.,0.5*u*(1-u)));
+
+  }
 public:
   //! constructor
   //! \param _size  size of the system.
-  Lapl1(int _size): Size(_size)
+  FKPP(int _size): Size(_size)
   {
-    nu=0.01;
-    h=1./(Size-1.e0); uh2=nu/(h*h); rspec=4.*uh2;
+    nu=0.002;
+    h=1./(Size-1.e0); uh2=nu/(h*h); rspec=4.*uh2+1.;
   }
   //! destructor.
-  ~Lapl1(){} 
+  ~FKPP(){} 
   //! y=F(x)
   //! \param x
   //! \param y
@@ -46,9 +53,9 @@ public:
 #pragma omp parallel for
 #endif     
     for(int i=0;i<Size;i++)
-      x[i]=cos(4*pi*i*h);
+      x[i] = i<Size/2 ? 1.: 0.;
   }
-  //! return size.
+  //! return size of the problem (number of unknowns).
   inline int size() const {return Size;}
 };
 #endif
