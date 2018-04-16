@@ -25,3 +25,8 @@ main.cpp:
  //typedef EulerImp RK;
 ```
 
+Note:
+----
+We use _SuperLU_ to solve sparse linear systems. You need
+ to install it, or to replace it by something else. It is a standard
+ package in popular Linux distributions.

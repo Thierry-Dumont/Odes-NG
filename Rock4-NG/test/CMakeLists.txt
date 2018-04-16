@@ -1,29 +1,24 @@
 cmake_minimum_required(VERSION 2.6)
-project(Radau5-NG)
+project(Odes-NG)
 enable_language(CXX)
 #
 # To use intel compiler:
-# CXX=icpc F90=ifort cmake ..
+# CXX=icpc cmake ..
 # otherwise, to use g++:
 #  cmake ..
 #
-if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
-  set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias -qopt-report-phase=vec -qopt-report-file=stdout -qopt-subscript-in-range -std=c++14 -qopenmp")
 include_directories(
 ${CMAKE_SOURCE_DIR}/../include
 ${CMAKE_SOURCE_DIR}/../../common/include
 )
 
+if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
+  set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias -qopt-report-phase=vec -qopt-report-file=stdout -qopt-subscript-in-range -std=c++14 -qopenmp")
+
+
 else ()
   set (USING_GNU TRUE)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -Wall  -O3  -std=c++14 -g -DGCC -DALIGN_BLOCKED  -march=native  -fopenmp ")
-  #-fopenmp 
-include_directories(
-${CMAKE_SOURCE_DIR}/../include
-${CMAKE_SOURCE_DIR}/../../common/include
-${CMAKE_SOURCE_DIR}/tbb/include
-)
-link_directories(${CMAKE_SOURCE_DIR}/tbb/lib/)
 
 endif ()
 
@@ -42,7 +37,6 @@ if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
     tbb
     tbbmalloc_proxy
     tbbmalloc
-    #proc
     rt
     )
 else ()

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(Radau5-NG)
+project(Odes-NG)
 enable_language(CXX)
 #
 # To use intel compiler:
@@ -9,6 +9,14 @@ enable_language(CXX)
 # otherwise, to use g++:
 #  cmake ..
 #
+
+include_directories(
+${CMAKE_SOURCE_DIR}/../include
+${CMAKE_SOURCE_DIR}/../../common/include
+${CMAKE_SOURCE_DIR}/../../Radau5-NG/include/
+)
+
+
 if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias -qopt-report-phase=vec -qopt-report-file=stdout -qopt-subscript-in-range -std=c++14 -qopenmp")
 
@@ -20,11 +28,6 @@ else ()
 
 endif ()
 
-include_directories(
-${CMAKE_SOURCE_DIR}/../include
-${CMAKE_SOURCE_DIR}/../../common/include
-${CMAKE_SOURCE_DIR}/../../Radau5-NG/include/
-)
 add_executable(
   run
   ../main.cpp
