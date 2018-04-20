@@ -33,7 +33,8 @@ Numerical Methods:
 
 * SymplectikRK : Gaussian symplectic methods.
 
-
+We hope to add at least 2 other methods in the (near?) future: a
+rewritten version of Rock2, and a specialization of Rock2 for linear problems.
 
 Structure:
 ---------
@@ -44,7 +45,7 @@ Structure:
 
    * include/ : the core integrator.
    * test/ : examples, and some documentation.
-   * An optional sage/ subdirectory contains SageMath material used to build the codes.
+   * An optional sage/ sub-directory contains SageMath material used to build the codes.
 
 Concept:
 -------
@@ -97,3 +98,6 @@ Nørsett,, Wanner,
 * _Solving Ordinary Differential Equations II Stiff and
   Differential-Algebraic Problems_ by Hairer and  Wanner,
 * _Geometric Numerical Integration_ by Hairer, Lubich and  Wanner.
+
+About Rock methods, you can also read
+[this paper](https://mathicse.epfl.ch/files/content/sites/mathicse/files/Mathicse%20reports%202011/27.2011_AA.pdf).
