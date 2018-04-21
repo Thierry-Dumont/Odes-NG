@@ -19,12 +19,4 @@ normalized.
 Outer.hpp lets you simulate the solar system, where the inner planets
 are accumulated with the sun.
 
-* Then:
-```
-mkdir Build
-cd Build
-cmake ..
-make
-./run 
-```
-to compile and execute the code.
+* Then, compile and run thecode as explained in the main page of Odes-NG.

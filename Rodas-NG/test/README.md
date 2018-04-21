@@ -1,10 +1,10 @@
-Please, read the full documentation in Doc/ !
-------------------------------------------
+
+
 
 1. Adapt CMakeList to your needs, if necessary.
 
 Intel compiler:
--DINTELCOMP : include some pragmas.
+-DINTELCOMP  includes some pragmas.
 
 2. Available examples are :
 
@@ -18,14 +18,7 @@ E5.hpp         (4 equations).
 3. define or not LOGR0DAS
     If defined, this will create a "logfile" file.
 
-4. To compile and run:
-```
-mkdir Build
-cd Build
-cmake ..
-make
-./run 
-```
+4. Compile and run (see mainpage of Odes-NG).
 
-
+Please, read the full documentation in Doc/ !
  

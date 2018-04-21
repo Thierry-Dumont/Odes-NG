@@ -1,11 +1,11 @@
 
 
-   We treat only homogeneous systems: dy/dt = f(y).
+   #### We treat only homogeneous systems: dy/dt = f(y).
 
 
 1. Adapt CMakeList to your needs. 
 
- For the Intel compiler: -DINTELCOMP : includes some pragmas.
+ For the Intel compiler: -DINTELCOMP  includes some pragmas.
 
 2. Available examples are :
 

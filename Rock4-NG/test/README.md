@@ -1,18 +1,17 @@
-We solve a non linear problem, the Fisher-KPP equation in dimension 1
----------------------------------------------------------------------
+### As an example solve a non linear problem, the Fisher-KPP equation  in  dimension 1:
+
 
 du/dt= \nu u" + 0.5 u (1-u).
 
-on the interval [0,1].
+on the interval [0,1], discretized in space by finite differences of
+order 2.
 
 Thus the spectral radius of the linearized problem is bounded by 
-4*\nu/h^2 + 1, where h=1/Size (Size is the number of unknowns, and we
-discretize in space by uniform finite differences).
+4*\nu/h^2 + 1, where h=1/Size (Size is the number of unknowns).
 
 
+### NB:
 
-NB:
---
 
 * add #define ROCK4_OMP in your main.cc if you want the code to run in
   parallel with openmp. In this case you also need to parallelize your RHS (see
