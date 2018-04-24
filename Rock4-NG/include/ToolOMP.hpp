@@ -88,6 +88,9 @@ namespace odes {
       ASSUME_ALIGNED(cible);  ASSUME_ALIGNED(y);
       ASSUME_ALIGNED(x1);
       //VEC!
+#ifdef ROCK4_OMP
+#pragma omp parallel for
+#endif       
       for(int i=0;i<size;i++)
 	cible[i]=y[i]+a1*x1[i];
     }
