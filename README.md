@@ -88,6 +88,11 @@ cmake ..
 make
 ./run
 ```
+
+Note that:
+---------
+Odes-NG introduces the namespace **odes**.
+
 References:
 ----------
 To learn about Ordinary Differential Equations solvers, you should read 
