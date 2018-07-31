@@ -23,9 +23,13 @@ Numerical Methods:
 
 * Radau5-NG : rewriting of the classical Radau5 code (by Hairer and Wanner).
 
-* Rock4-NG  : rewriting of the code of A. Abdulle, with less memory copies.
+* Rock4-NG  : rewriting of the Rock4 code of A. Abdulle, with less memory copies.
 
 * Rock4-L   : specialization of Rock4 for linear problems.
+
+*  Rock2-NG: rewriting of the Rock2 code of A. Abdulle, with less
+   memory copies. :new:
+
 
 * Rodas-NG  : rewriting of the code Rodas (by Hairer and Wanner).
 
@@ -33,8 +37,8 @@ Numerical Methods:
 
 * SymplectikRK : Gaussian symplectic methods.
 
-We hope to add at least 2 other methods in the (near?) future: a
-rewritten version of Rock2, and a specialization of Rock2 for linear problems.
+We hope to add a specialization of Rock2 for linear problems in the
+near future.
 
 Structure:
 ---------
@@ -91,7 +95,8 @@ make
 
 Note that:
 ---------
-Odes-NG introduces the namespace **odes**.
+* Odes-NG introduces the namespace **odes**.
+* Rock* codes are multithreaded (OpenMP).
 
 References:
 ----------
