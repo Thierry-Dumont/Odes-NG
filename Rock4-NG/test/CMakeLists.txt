@@ -6,7 +6,7 @@ enable_language(CXX)
 # CXX=icpc cmake ..
 # otherwise, to use g++:
 #  cmake ..
-#
+# for clang:   CXX=clang++ cmake ..
 include_directories(
 ${CMAKE_SOURCE_DIR}/../include
 ${CMAKE_SOURCE_DIR}/../../common/include

@@ -5,7 +5,7 @@ enable_language(CXX)
 # To use intel compiler:
 # CXX=icpc  cmake ..
 # to use clang:
-# CXX=clang cmake ..
+# CXX=clang++ cmake ..
 # otherwise, to use g++:
 #  cmake ..
 #
