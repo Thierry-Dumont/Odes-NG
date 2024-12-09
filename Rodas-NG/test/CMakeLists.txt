@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8)
 project(Odes-NG)
 enable_language(CXX)
 #
@@ -9,20 +9,21 @@ enable_language(CXX)
 # otherwise, to use g++:
 #  cmake ..
 #
-if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
-  set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias -qopt-report-phase=vec -qopt-report-file=stdout -qopt-subscript-in-range -std=c++14 ")
-elseif(${CMAKE_CXX_COMPILER} MATCHES "clang.*$")
-  set (USING_GNU TRUE)
-  set(CMAKE_CXX_COMPILER "clang++")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -Wall  -DCLANG -std=c++11 ")
-else ()
-  set (USING_GNU TRUE)
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3 -g  -DALIGN_BLOCKED -DGCC  -march=native -ftree-vectorize  -fstrict-aliasing  -std=c++11")
-endif ()
 include_directories(
 ${CMAKE_SOURCE_DIR}/../include
 ${CMAKE_SOURCE_DIR}/../../common/include
 )
+
+if (${CMAKE_CXX_COMPILER} MATCHES "icpc.*$")
+  set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS}  -DICC -DALIGN_BLOCKED -restrict -O3   -g -xavx -fargument-noalias  -ansi-alias -qopt-report-phase=vec -qopt-report-file=stdout -qopt-subscript-in-range -std=c++14 ")
+
+else ()
+  set (USING_GNU TRUE)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3 -g  -DGCC  -std=c++14 -march=native -ftree-vectorize  -fstrict-aliasing -ffast-math")
+  #  -DALIGN_BLOCKED
+endif ()
+
+
 add_executable(
   run
   ../main.cc
